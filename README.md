@@ -18,7 +18,7 @@ Python is easy to read if you know English which makes it pretty non-intimidatin
 
 ### 1. Clone the Repository
 To get the repository on your computer you must clone it from Github.
-*Git and Github are not the same!* Git is a program installed on your computer that manages repositories. Github is just a place where they are stored.
+**Git and Github are not the same!** Git is a program installed on your computer that manages repositories. Github is just a place where they are stored.
 
 Be aware that this will create a new folder named python-learning inside the folder your terminal is at. If you aren't comfortable with the terminal, you can go into a folder using the regular Windows file explorer and type *cmd* on the address bar at the top.
 This will open a console on that folder.
@@ -68,3 +68,18 @@ If you are ever in the command line inside a folder and want to open it in VSCod
 code .
 ```
 code is the command for VSCode and . is the shortcut for "current folder". Basically opening the current folder in VSCode :)
+
+### 6. Commit your changes and push them to the repo
+After you have made your folder, subfolder and created your Venv (which creates a .venv folder), your file explorer inside VSCode should have a structure kinda like this.
+```
+├── dev/
+│   ├── your-name/
+│   │   ├── calculator/
+│   │   │   ├── venv/             # Virtual environment folder
+│   │   │   ├── your_python_files.py
+│   │   └── another-project/      # Example of another project folder
+│   │       ├── venv/             # Virtual environment folder
+│   │       ├── project_code.py
+```
+Your code only exists on your computer though, so to keep it safe and traceable, you have to push it to the repo using Git.
+You can use VSCode's visual interface for Git, a button on the sidebar called Source Control which should tell you that there are changes to Commit. Add a short message that explains the changes you made, eg. "Create user folder and initialize project Calculator" or something else that feels right and press Commit and then Sync (it **pulls** changes from the repo and then **pushes** your own).
