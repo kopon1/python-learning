@@ -1,4 +1,4 @@
-# 🐍 Python Learning Project – Setup Guide
+# 🐍 Python Learning Repo – Setup Guide
 Welcome! This guide will help you get started with Python, set up your own workspace in the project, and understand how to work with virtual environments (`venv`) and Git.
 
 ## Tools You'll Need
