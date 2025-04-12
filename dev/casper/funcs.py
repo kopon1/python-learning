@@ -5,7 +5,7 @@
 def input_to_int(question):
     while True:
         try:
-            num = input(f"{question}\nEnter 'q' to exit: ").lower()
+            num = input(f"{question}\nEnter 'q' to exit: ")
             if num.isdigit():
                 return int(num)
             elif num == "q":

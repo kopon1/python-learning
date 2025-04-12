@@ -50,8 +50,11 @@ def calc():
             num1 = input_to_int("Choose your first number ")
             num2 = input_to_int("Choose your second number ")
             print(substract(num1, num2))
+        elif opt is None:
+            return
         else:
             print("Invalid choice, please try again")
+            return
             
 # function that prompts user to access calculator or exit 
 
@@ -64,11 +67,12 @@ def user_choice():
             elif choice is None:
                 return
             else:
-                print("Please enter a valid choice")
+                print("Please enter a valid choice.")
         except Exception:
             print("Error")
                         
 print(user_choice())
+print("exiting program test test test")
     
 
 
