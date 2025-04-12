@@ -4,18 +4,14 @@
 
 def input_to_int(question):
     while True:
-        num = input(f"{question}\nEnter 'q' to exit: ").lower()
-        if num.isdigit():
-            return int(num)
-        elif num == "q":
-            return None
-        else:
-            print("Please enter a valid input.")
-            
-def error():
-    while True:
         try:
-            return None
+            num = input(f"{question}\nEnter 'q' to exit: ").lower()
+            if num.isdigit():
+                return int(num)
+            elif num == "q":
+                return None
+            else:
+                print("Please enter a valid input.")
         except ValueError as e:
             print("Invalid input.", e)
         except ZeroDivisionError as e:
