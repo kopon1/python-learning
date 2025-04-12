@@ -1,30 +1,31 @@
+from funcs import input_to_int
 # Calculator Project
 
 
-# function for input validation
-def input_to_int():
-    num = float(input("Choose first number"))
-    try:
-        num.isdigit()
-    except ValueError as e:
-        print("Invalid input. Please try again! ", e)
-    
-    except ZeroDivisionError:
-        print("Can't divide by zero, meat head.", e)
-        
-    except Exception:
-        print("Error", e)
-validate = input_to_int()
-
 # function for adding
-def add(x,y):
-    num1 = input()
-    num2 = input()
-    answer = num1 + num2
-    return add(num1, num2)
-
+def add(x, y):
+    answer = x + y
+    return answer
 # function for multiplying
+
+def multiply(x,y):
+    answer = x * y
+    return answer
 
 # function for dividing
 
+def divide(x,y):
+    answer = x / y
+    return answer
+
 # function for substracting
+
+def substract(x,y):
+    answer = x - y
+    return answer
+
+
+# TEST
+num1 = input_to_int("Choose your first number ")
+num2 = input_to_int("Choose your second number ")
+print(substract(num1, num2))
