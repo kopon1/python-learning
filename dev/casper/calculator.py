@@ -36,18 +36,26 @@ def calc():
     while True:
         if opt == 1:
             num1 = input_to_int("Choose your first number ")
+            if num1 is None:
+                return
             num2 = input_to_int("Choose your second number ")
             print(add(num1, num2))
         elif opt == 2:
             num1 = input_to_int("Choose your first number ")
+            if num1 is None:
+                return
             num2 = input_to_int("Choose your second number ")
             print(multiply(num1, num2))
         elif opt == 3:
             num1 = input_to_int("Choose your first number ")
+            if num1 is None:
+                return
             num2 = input_to_int("Choose your second number ")
             print(divide(num1, num2))
         elif opt == 4:
             num1 = input_to_int("Choose your first number ")
+            if num1 is None:
+                return
             num2 = input_to_int("Choose your second number ")
             print(substract(num1, num2))
         elif opt is None:
