@@ -3,6 +3,12 @@ from funcs import input_to_int
 # Calculator Project
 
 
+# List that saves user inputs
+inputs = [
+    
+]
+
+
 # function for adding
 def add(x, y):
         answer = x + y
@@ -42,8 +48,7 @@ def calc():
             num2 = input_to_int("Choose your second number ")
             if num2 is None:
                 return
-            print(add(num1, num2))
-            print(collect_process_inputs())
+            return add(num1, num2).append(inputs)
         elif opt == 2:
             num1 = input_to_int("Choose your first number ")
             if num1 is None:
@@ -87,30 +92,31 @@ def user_choice():
                 return
             else:
                 print("Please enter a valid choice.")
-        except Exception:
-            print("Error")
+        except Exception as e:
+            print("Error", e)
                         
 # print(user_choice())
-print("exiting program test test test")
+# print("exiting program test test test")
 
 
 
-def collect_process_inputs():
+def collect_process_inputs(inputs, prompt):
     
     # List where valid user inputs will be saved
-    inputs = [
-        
-    ]
-    for i in range(4):
-        save_inputs = user_choice()
-        inputs.append(save_inputs)
-        
-    result = " | ".join(inputs)
-    
-    return inputs, result
 
-print(collect_process_inputs())
-print("tsettsetste")
+    for i in inputs:
+        
+        save_input = user_choice()
+        inputs.append(save_input)
+    
+        result = "|".join(inputs)
+
+        return inputs, result
+
+print(collect_process_inputs(inputs, user_choice()))
+print("exiting program test test test")
+print(inputs)
+
 
     
 
