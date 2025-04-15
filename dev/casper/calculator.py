@@ -1,4 +1,5 @@
 from funcs import input_to_int
+# from funcs import collect_process_inputs
 # Calculator Project
 
 
@@ -18,7 +19,7 @@ def divide(x,y):
     while True:
         try:
             answer = x / y
-            return answer
+            return round(answer, 2)
         except ZeroDivisionError:
             print("Can't divide by zero meat head.")
             return None
@@ -39,30 +40,40 @@ def calc():
             if num1 is None:
                 return
             num2 = input_to_int("Choose your second number ")
+            if num2 is None:
+                return
             print(add(num1, num2))
+            print(collect_process_inputs())
         elif opt == 2:
             num1 = input_to_int("Choose your first number ")
             if num1 is None:
                 return
             num2 = input_to_int("Choose your second number ")
+            if num2 is None:
+                return
             print(multiply(num1, num2))
         elif opt == 3:
             num1 = input_to_int("Choose your first number ")
             if num1 is None:
                 return
             num2 = input_to_int("Choose your second number ")
+            if num2 is None:
+                return
             print(divide(num1, num2))
         elif opt == 4:
             num1 = input_to_int("Choose your first number ")
             if num1 is None:
                 return
             num2 = input_to_int("Choose your second number ")
+            if num2 is None:
+                return
             print(substract(num1, num2))
         elif opt is None:
             return
         else:
             print("Invalid choice, please try again")
             return
+            
             
 # function that prompts user to access calculator or exit 
 
@@ -79,9 +90,27 @@ def user_choice():
         except Exception:
             print("Error")
                         
-print(user_choice())
+# print(user_choice())
 print("exiting program test test test")
 
+
+
+def collect_process_inputs():
+    
+    # List where valid user inputs will be saved
+    inputs = [
+        
+    ]
+    for i in range(4):
+        save_inputs = user_choice()
+        inputs.append(save_inputs)
+        
+    result = " | ".join(inputs)
+    
+    return inputs, result
+
+print(collect_process_inputs())
+print("tsettsetste")
 
     
 
