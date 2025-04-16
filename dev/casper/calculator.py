@@ -5,8 +5,7 @@ from funcs import input_to_int
 
 # List that saves user inputs
 inputs = []
-
-
+print(inputs)
 # function for adding
 def add(x, y):
         answer = x + y
@@ -46,19 +45,31 @@ def calc():
         
         if opt == 1:
             result = add(num1, num2)
-            inputs.append(...)
-            
-            print(result)
-            return
+            total = f"{num1} + {num2} = {result}"
+            inputs.append(total)
+            print(total)
+            return 
+        
         elif opt == 2:
-            print(multiply(num1, num2))
-            return
+            result = multiply(num1, num2)
+            total = f"{num1} * {num2} = {result}"
+            inputs.append(total)
+            print(total)
+            return total
+            
+            
         elif opt == 3:
-            print(divide(num1, num2))
-            return
+            result = divide(num1, num2)
+            total = f"{num1} / {num2} = {result}"
+            inputs.append(total)
+            print(total)
+            return total
         elif opt == 4:
-            print(substract(num1, num2))
-            return
+            result = substract(num1, num2)
+            total = f"{num1} - {num2} = {result}"
+            inputs.append(total)
+            print(total)
+            return total
         elif opt is None:
             return
         else:
