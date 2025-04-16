@@ -4,9 +4,7 @@ from funcs import input_to_int
 
 
 # List that saves user inputs
-inputs = [
-    
-]
+inputs = []
 
 
 # function for adding
@@ -31,7 +29,6 @@ def divide(x,y):
             return None
 
 # function for substracting
-
 def substract(x,y):
     answer = x - y
     return answer
@@ -39,40 +36,29 @@ def substract(x,y):
 
 # function that handles user's choice to add, divide, multiply or substract
 def calc():
-    opt = input_to_int("Enter:\n1 to add\n2 to multiply\n3 to divide\n4 to substract")
+    opt = input_to_int("Enter:\n1 to add\n2 to multiply\n3 to divide\n4 to subtract")
+        
     while True:
+        num1 = input_to_int("Choose your first number ")
+        if num1 is None: return
+        num2 = input_to_int("Choose your second number ")
+        if num2 is None: return
+        
         if opt == 1:
-            num1 = input_to_int("Choose your first number ")
-            if num1 is None:
-                return
-            num2 = input_to_int("Choose your second number ")
-            if num2 is None:
-                return
-            return add(num1, num2).append(inputs)
+            result = add(num1, num2)
+            inputs.append(...)
+            
+            print(result)
+            return
         elif opt == 2:
-            num1 = input_to_int("Choose your first number ")
-            if num1 is None:
-                return
-            num2 = input_to_int("Choose your second number ")
-            if num2 is None:
-                return
             print(multiply(num1, num2))
+            return
         elif opt == 3:
-            num1 = input_to_int("Choose your first number ")
-            if num1 is None:
-                return
-            num2 = input_to_int("Choose your second number ")
-            if num2 is None:
-                return
             print(divide(num1, num2))
+            return
         elif opt == 4:
-            num1 = input_to_int("Choose your first number ")
-            if num1 is None:
-                return
-            num2 = input_to_int("Choose your second number ")
-            if num2 is None:
-                return
             print(substract(num1, num2))
+            return
         elif opt is None:
             return
         else:
