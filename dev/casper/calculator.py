@@ -5,7 +5,6 @@ from funcs import input_to_int
 
 # List that saves user inputs
 inputs = []
-print(inputs)
 # function for adding
 def add(x, y):
         answer = x + y
@@ -42,40 +41,38 @@ def calc():
         if num1 is None: return
         num2 = input_to_int("Choose your second number ")
         if num2 is None: return
-        
+# if statements*** change opt variable and convert user input into operator +*/-
         if opt == 1:
+            opt = "+"
             result = add(num1, num2)
-            total = f"{num1} + {num2} = {result}"
-            inputs.append(total)
-            print(total)
-            return 
         
         elif opt == 2:
+            opt = "*"
             result = multiply(num1, num2)
-            total = f"{num1} * {num2} = {result}"
-            inputs.append(total)
-            print(total)
-            return total
-            
-            
+        
         elif opt == 3:
+            opt = "/"
             result = divide(num1, num2)
-            total = f"{num1} / {num2} = {result}"
-            inputs.append(total)
-            print(total)
-            return total
+            
         elif opt == 4:
+            opt = "-"
             result = substract(num1, num2)
-            total = f"{num1} - {num2} = {result}"
-            inputs.append(total)
-            print(total)
-            return total
+           
         elif opt is None:
             return
+        
         else:
             print("Invalid choice, please try again")
-            return
-            
+# compress code into printing final result and append to inputs list            
+        try:
+            total = f"{num1} {opt} {num2} = {result}"
+            inputs.append(total)
+            print(total)
+            print(inputs)
+        except ValueError as e:
+            print("Please try again", e)
+        
+
             
 # function that prompts user to access calculator or exit 
 
