@@ -34,44 +34,44 @@ def substract(x,y):
 
 # function that handles user's choice to add, divide, multiply or substract
 def calc():
-    opt = input_to_int("Enter:\n1 to add\n2 to multiply\n3 to divide\n4 to subtract")
-        
+    
+    
     while True:
-        num1 = input_to_int("Choose your first number ")
-        if num1 is None: return
-        num2 = input_to_int("Choose your second number ")
-        if num2 is None: return
-# if statements*** change opt variable and convert user input into operator +*/-
-        if opt == 1:
-            opt = "+"
-            result = add(num1, num2)
+            num1 = input_to_int("Choose your first number ")
+            if num1 is None: return
         
-        elif opt == 2:
-            opt = "*"
-            result = multiply(num1, num2)
-        
-        elif opt == 3:
-            opt = "/"
-            result = divide(num1, num2)
+            num2 = input_to_int("Choose your second number ")
+            if num2 is None: return    
             
-        elif opt == 4:
-            opt = "-"
-            result = substract(num1, num2)
-           
-        elif opt is None:
-            return
-        
-        else:
-            print("Invalid choice, please try again")
+            opt = input_to_int("Enter:\n1 to add\n2 to multiply\n3 to divide\n4 to subtract")
+
+    # if statements*** change opt variable and convert user input into operator +*/-
+            
+            if opt == 1:
+                opt = "+"
+                result = add(num1, num2)
+
+            elif opt == 2:
+                opt = "*"
+                result = multiply(num1, num2)
+                
+            elif opt == 3:
+                opt = "/"
+                result = divide(num1, num2)
+                
+            elif opt == 4:
+                opt = "-"
+                result = substract(num1, num2)
+
+            elif opt is None:
+                return
+            else:
+                print("Invalid choice, please try again")
+                
 # compress code into printing final result and append to inputs list            
-        try:
             total = f"{num1} {opt} {num2} = {result}"
             inputs.append(total)
             print(total)
-            print(inputs)
-        except ValueError as e:
-            print("Please try again", e)
-        
 
             
 # function that prompts user to access calculator or exit 
@@ -79,9 +79,11 @@ def calc():
 def user_choice():
     while True:
         try:
-            choice = input_to_int("What would you like to do? Enter 1 to access calculator")
+            choice = input_to_int("What would you like to do? Enter 1 to access calculator or 2 to access previous history.")
             if choice == 1:
                 calc()
+            elif choice == 2:
+                delete_input()
             elif choice is None:
                 return
             else:
@@ -92,22 +94,33 @@ def user_choice():
 # print(user_choice())
 # print("exiting program test test test")
 
-
-
-def collect_process_inputs(inputs, prompt):
+def delete_input():
+    while True:
+        
+        
+        for x, element in enumerate(inputs, start=1):
+                print(f"{x}: {element}")
+        opt = input_to_int("This is your saved history.\nEnter 1 to delete.")
+        
+        if opt is None:
+            return
+        
+        elif opt == 1:
+            inp_list = list(inputs)
+            rmv = int(input("Enter which number you want to delete: "))
+            
+        if rmv <= 0 or rmv >= len(inp_list):
+            print("Pick a number from the list dummy")
+            continue
+        del inputs[inp_list[rmv]]
+        return
+        
     
+
+
     # List where valid user inputs will be saved
 
-    for i in inputs:
-        
-        save_input = user_choice()
-        inputs.append(save_input)
-    
-        result = "|".join(inputs)
-
-        return inputs, result
-
-print(collect_process_inputs(inputs, user_choice()))
+print(user_choice())
 print("exiting program test test test")
 print(inputs)
 
