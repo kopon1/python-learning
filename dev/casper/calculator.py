@@ -1,6 +1,4 @@
 from funcs import input_to_int
-# from funcs import collect_process_inputs
-# Calculator Project
 
 
 # List that saves user inputs
