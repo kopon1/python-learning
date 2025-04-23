@@ -97,20 +97,22 @@ def user_choice():
 def delete_input():
     
     while True:
-        for x, element in enumerate(inputs, start=1):
+        for x, element in enumerate(inputs):
                 print(f"{x}: {element}")
                 
         opt = int(input_to_int("This is your saved history.\nEnter which number you want to delete from history."))
-    
+        rmv = int(opt)
         if opt is None:
             return
-    
-        inp_list = list(inputs)
+        
+
+
             
-        if opt <= 0 or opt >= len(inp_list):
+        if opt <= 0 or opt >= len(inputs):
             print("Pick a number from the list dummy")
             continue
-        del inputs[inp_list[opt]]
+        del inputs[rmv]
+        print(inputs)
         return
         
 
