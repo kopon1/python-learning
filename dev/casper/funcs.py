@@ -1,6 +1,6 @@
 
 
-# Validate user input into an integer
+# Validate user input into an integer and handle exceptions
 
 def input_to_int(question):
     while True:
@@ -9,7 +9,7 @@ def input_to_int(question):
             if num == "q":
                 return None
             elif num:
-                return float(num)
+                return int(num)
             else:
                 print("Please enter a valid input.")
         except ValueError as e:
@@ -19,20 +19,3 @@ def input_to_int(question):
         except Exception as e:
             print("Error.", e)
             
-            
-# Save user input, operator and return value 
-
-
-# def collect_process_inputs():
-    
-#     # List where valid user inputs will be saved
-#     inputs = [
-        
-#     ]
-#     for i in range(4):
-#         save_inputs = input_to_int(question="")
-#         inputs.append(save_inputs)
-        
-#     result = " | ".join(inputs)
-    
-#     return inputs, result
