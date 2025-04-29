@@ -1,5 +1,5 @@
 from funcs import input_to_int
-from funcs import input_to_float
+from funcs import appropiate_input_num
 # List that saves user inputs
 inputs = []
 
@@ -9,10 +9,10 @@ def calc():
     
     
     while True:
-            num1 = input_to_float("Choose your first number ", float)
+            num1 = appropiate_input_num("Choose your first number ")
             if num1 is None: return
         
-            num2 = input_to_float("Choose your second number ", float)
+            num2 = appropiate_input_num("Choose your second number ")
             if num2 is None: return    
             
             opt = input_to_int("Enter:\n1 to add\n2 to multiply\n3 to divide\n4 to subtract")

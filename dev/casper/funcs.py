@@ -19,20 +19,33 @@ def input_to_int(question):
         except Exception as e:
             print("Error.", e)
             
-def input_to_float(question, number):
+def appropiate_input_num(question, number_type=None):
     while True:
-        try:
-            if number is int:
-                return int(input_to_int(question))
-            elif number is float:
-                return input_to_int(question)
-            else:
-                print("Please enter a valid input.")
-        except ValueError as e:
-            print("Invalid input.", e)
-        except ZeroDivisionError as e:
-            print("Can't divide by zero.", e)
-        except Exception as e:
-            print("Error.", e)
+        input_to_int(question)
+        if number_type is None:
+                if '.' in number_type:
+                    try:
+                        return float(number_type)
+                    except ValueError:
+                        pass
+                else:
+                    try:
+                        return int(number_type)
+                    except ValueError:
+                        pass
+        else:
+            try:
+                if number_type == int:
+                    return int(number_type)
+                elif number_type == float:
+                    return float(number_type)
+                elif number_type == complex:
+                    return complex(number_type)
+                else:
+                    raise ValueError("Invalid number type specified.")
+            except ValueError:
+                pass
+        print("Please enter a valid input.")
+            
         
             
