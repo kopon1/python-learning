@@ -1,5 +1,5 @@
 from funcs import input_to_int
-
+from funcs import input_to_float
 # List that saves user inputs
 inputs = []
 
@@ -9,10 +9,10 @@ def calc():
     
     
     while True:
-            num1 = float(input_to_int("Choose your first number "))
+            num1 = input_to_float("Choose your first number ", float)
             if num1 is None: return
         
-            num2 = float(input_to_int("Choose your second number "))
+            num2 = input_to_float("Choose your second number ", float)
             if num2 is None: return    
             
             opt = input_to_int("Enter:\n1 to add\n2 to multiply\n3 to divide\n4 to subtract")
@@ -34,7 +34,7 @@ def calc():
                     print("Can't divide by zero")
                     continue
                 else:
-                    result = num1 / num2  
+                    result = (num1 / num2)
                      
             elif opt == 4:
                 opt = "-"
@@ -45,8 +45,9 @@ def calc():
             else:
                 print("Invalid choice, please try again")
                 
-# compress code into printing final result and append to inputs list            
-            total = f"{num1} {opt} {num2} = {result}"
+# compress code into printing final result and append to inputs list     
+       
+            total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
             inputs.append(total)
             print(total)
 

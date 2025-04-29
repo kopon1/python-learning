@@ -19,3 +19,20 @@ def input_to_int(question):
         except Exception as e:
             print("Error.", e)
             
+def input_to_float(question, number):
+    while True:
+        try:
+            if number is int:
+                return int(input_to_int(question))
+            elif number is float:
+                return input_to_int(question)
+            else:
+                print("Please enter a valid input.")
+        except ValueError as e:
+            print("Invalid input.", e)
+        except ZeroDivisionError as e:
+            print("Can't divide by zero.", e)
+        except Exception as e:
+            print("Error.", e)
+        
+            
