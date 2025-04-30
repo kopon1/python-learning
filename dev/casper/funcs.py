@@ -19,33 +19,51 @@ def input_to_int(question):
         except Exception as e:
             print("Error.", e)
             
-def appropiate_input_num(question, number_type=None):
+def appropiate_input_num(question):
     while True:
-        input_to_int(question)
-        if number_type is None:
-                if '.' in number_type:
-                    try:
-                        return float(number_type)
-                    except ValueError:
-                        pass
+        try:
+            num = input(f"{question}\nEnter 'q' to exit.\n")
+            if num == "q":
+                return None
+            elif num:
+                if '.' in num:
+                    return float(num)
                 else:
-                    try:
-                        return int(number_type)
-                    except ValueError:
-                        pass
-        else:
-            try:
-                if number_type == int:
-                    return int(number_type)
-                elif number_type == float:
-                    return float(number_type)
-                elif number_type == complex:
-                    return complex(number_type)
-                else:
-                    raise ValueError("Invalid number type specified.")
-            except ValueError:
-                pass
-        print("Please enter a valid input.")
-            
+                    return int(num)
+            else:
+                print("Please enter a valid input.")
+        except ValueError as e:
+            print("Invalid input.", e)
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        # num = input(f"{question}\nEnter 'q' to exit.\n")
+        # if num is None:
+        #     return None
+        # elif '.' in num:
+        #     return float(num)
+        # elif num is int:
+        #     return int(num)
+        # else:
+        #     try:
+        #         if num == int:
+        #             return int(num)
+        #         elif num == float:
+        #             return float(num)
+        #         elif num == complex:
+        #             return complex(num)
+        #         else:
+        #             raise ValueError("Invalid number type specified.")
+        #     except ValueError:
+        #         pass
+        # print("Please enter a valid input.")
+
             
