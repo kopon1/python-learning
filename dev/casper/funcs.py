@@ -1,6 +1,5 @@
 
 # Validate user input into an integer and handle exceptions
-
 def input_to_int(question):
     while True:
         try:
@@ -18,8 +17,7 @@ def input_to_int(question):
         except Exception as e:
             print("Error.", e)
 
-# Validate user input into a float or int and handle exceptions
-         
+# Validate user input into a float or int and handle exceptions    
 def appropiate_input_num(question):
     while True:
         try:
@@ -36,8 +34,7 @@ def appropiate_input_num(question):
         except ValueError as e:
             print("Invalid input.", e)
 
-# remove saved user inputs from file
-      
+# remove saved user inputs from file     
 def remove_lines(filepath, lines_to_remove):
     f = open(filepath, "r+")
     with open("inputs.txt", "r+") as file:

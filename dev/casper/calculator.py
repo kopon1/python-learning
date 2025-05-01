@@ -6,18 +6,10 @@ import datetime
 # List that saves user inputs
 inputs = []
 
-# header for the csv file
-header = ["Operation", "Time"]
-
-with open("inputs.csv", "w", newline="") as f:
-    writer = csv.writer(f)
-    writer.writerow(header)
-
 # function that gets the current time and formats it
-
 def get_current_time():
     now = datetime.datetime.now()
-    return now.strftime("%Y-%m-%d %H:%M:%S")
+    return now.strftime("%D-%M-%Y, %H:%M:%S")
 
 # append user inputs to a file
 f = open("inputs.txt")
@@ -35,7 +27,6 @@ def calc():
             opt = input_to_int("Enter:\n1 to add\n2 to multiply\n3 to divide\n4 to subtract")
 
     # if statements*** change opt variable and convert user input into operator +*/-
-            
             if opt == 1:
                 opt = "+"
                 result = num1 + num2
@@ -63,13 +54,11 @@ def calc():
                 print("Invalid choice, please try again")
                 
 # compress code into printing final result and append to inputs list
-
             total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
             inputs.append(f"{total}, {get_current_time()}")
             print(total)
             
 # append inputs list to file
-
             with open("inputs.txt", "a") as f:
                 for item in inputs:
                     f.write(item + "\n")
@@ -81,7 +70,6 @@ def calc():
             
             
 # function that prompts user to access calculator or exit 
-
 def user_choice():
     while True:
         try:
@@ -90,8 +78,8 @@ def user_choice():
                 calc()
             elif choice == 2:
                 f = open("inputs.csv", "r+")
-                for x, element in enumerate(f):
-                    print(f"{x}: {element}")
+                for x, line in enumerate(f):
+                    print(f"{x}: {line}")
             elif choice == 3:
                 delete_input()
             elif choice is None:
@@ -101,8 +89,7 @@ def user_choice():
         except Exception as e:
             print("Error", e)
 
-# function that handles deleting user inputs from file
-
+# function that handles deleting user inputs from file 
 def delete_input():
     while True:
 # open file and read it, then print it to the user enumerating the lines
