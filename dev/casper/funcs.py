@@ -36,6 +36,7 @@ def appropiate_input_num(question):
             print("Invalid input.", e)
         
         
+
         
         
         
@@ -45,25 +46,6 @@ def appropiate_input_num(question):
         
         
         
-        # num = input(f"{question}\nEnter 'q' to exit.\n")
-        # if num is None:
-        #     return None
-        # elif '.' in num:
-        #     return float(num)
-        # elif num is int:
-        #     return int(num)
-        # else:
-        #     try:
-        #         if num == int:
-        #             return int(num)
-        #         elif num == float:
-        #             return float(num)
-        #         elif num == complex:
-        #             return complex(num)
-        #         else:
-        #             raise ValueError("Invalid number type specified.")
-        #     except ValueError:
-        #         pass
-        # print("Please enter a valid input.")
+    
 
             

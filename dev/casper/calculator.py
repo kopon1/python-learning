@@ -1,8 +1,12 @@
 from funcs import input_to_int
 from funcs import appropiate_input_num
+
 # List that saves user inputs
 inputs = []
 
+# append user inputs to a file
+f = open("inputs.txt")
+f.close()
 
 # function that handles user's choice to add, divide, multiply or substract
 def calc():
@@ -45,10 +49,11 @@ def calc():
             else:
                 print("Invalid choice, please try again")
                 
-# compress code into printing final result and append to inputs list     
-       
+# compress code into printing final result and append to inputs.txt file
             total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
-            inputs.append(total)
+            f = open("inputs.txt", "a")
+            f.write(total + "\n")
+            f.close()
             print(total)
 
             
@@ -61,6 +66,7 @@ def user_choice():
             if choice == 1:
                 calc()
             elif choice == 2:
+            
                 delete_input()
             elif choice is None:
                 return
@@ -69,21 +75,25 @@ def user_choice():
         except Exception as e:
             print("Error", e)
 
+# function that handles deleting user inputs from file
+
 def delete_input():
-    
     while True:
-        for x, element in enumerate(inputs):
+# open file and read it, then print it to the user enumerating the lines
+        f = open("inputs.txt", "r")
+        for x, element in enumerate(f):
                 print(f"{x}: {element}")
                 
         opt = input_to_int("This is your saved history.\nEnter which number you want to delete from history.")
         if opt is None:
             return
-          
-        if opt <= 0 or opt >= len(inputs):
+        # ***LEN NOT WORKING, FIX IT***
+        if opt <= 0 or opt >= len(f):
             print("Pick a number from the list dummy")
             continue
-        del inputs[opt]
-        print(inputs)
+        del f[opt]
+        print(f.read())
+        f.close()
         return 
         
 user_choice()
