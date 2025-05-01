@@ -1,9 +1,23 @@
 
-from funcs import input_to_int, appropiate_input_num, remove_lines, txt_to_csv
+from funcs import input_to_int, appropiate_input_num, remove_lines
+import csv
+import datetime
+
 # List that saves user inputs
-inputs = [
-    
-]
+inputs = []
+
+# header for the csv file
+header = ["Operation", "Time"]
+
+with open("inputs.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(header)
+
+# function that gets the current time and formats it
+
+def get_current_time():
+    now = datetime.datetime.now()
+    return now.strftime("%Y-%m-%d %H:%M:%S")
 
 # append user inputs to a file
 f = open("inputs.txt")
@@ -49,17 +63,22 @@ def calc():
                 print("Invalid choice, please try again")
                 
 # compress code into printing final result and append to inputs list
+
             total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
-            inputs.append(total)
+            inputs.append(f"{total}, {get_current_time()}")
             print(total)
+            
 # append inputs list to file
+
             with open("inputs.txt", "a") as f:
                 for item in inputs:
                     f.write(item + "\n")
+            f.close()
             
+            with open("inputs.csv", "a") as f:
+                for item in inputs:
+                    f.write(item + "\n")
             
-            
-
             
 # function that prompts user to access calculator or exit 
 
@@ -70,7 +89,7 @@ def user_choice():
             if choice == 1:
                 calc()
             elif choice == 2:
-                f = open("inputs.csv", "r")
+                f = open("inputs.csv", "r+")
                 for x, element in enumerate(f):
                     print(f"{x}: {element}")
             elif choice == 3:
