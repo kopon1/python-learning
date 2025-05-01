@@ -1,5 +1,5 @@
 
-from funcs import input_to_int, appropiate_input_num, remove_lines
+from funcs import input_to_int, appropiate_input_num, remove_lines, txt_to_csv
 # List that saves user inputs
 inputs = [
     
@@ -53,7 +53,7 @@ def calc():
             inputs.append(total)
             print(total)
 # append inputs list to file
-            with open("inputs.txt", "w") as f:
+            with open("inputs.txt", "a") as f:
                 for item in inputs:
                     f.write(item + "\n")
             
@@ -66,10 +66,14 @@ def calc():
 def user_choice():
     while True:
         try:
-            choice = input_to_int("What would you like to do? Enter 1 to access calculator or 2 to access previous history.")
+            choice = input_to_int("What would you like to do?\nEnter:\n1 to access calculator\n2 to access previous history\n3 to delete history")
             if choice == 1:
                 calc()
             elif choice == 2:
+                f = open("inputs.csv", "r")
+                for x, element in enumerate(f):
+                    print(f"{x}: {element}")
+            elif choice == 3:
                 delete_input()
             elif choice is None:
                 return

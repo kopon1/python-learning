@@ -1,4 +1,4 @@
-
+import csv
 
 # Validate user input into an integer and handle exceptions
 
@@ -47,9 +47,15 @@ def remove_lines(filepath, lines_to_remove):
         f.writelines(line for i, line in enumerate(lines) if i + 1 not in lines_to_remove)
         f.truncate()
 
+def txt_to_csv():
+    with open("inputs.txt", "r") as f:
+        reader = csv.reader(f)
+        with open("inputs.csv", "a", newline="") as csvfile:
+            writer = csv.writer(csvfile)
+            for row in reader:
+                writer.writerow(row)
 
 
-        
 
         
         
