@@ -12,7 +12,7 @@ def get_current_time():
     return now.strftime("%D-%M-%Y, %H:%M:%S")
 
 # append user inputs to a file
-f = open("inputs.txt")
+f = open("inputs.csv", "r")
 f.close()
 
 # function that handles user's choice to add, divide, multiply or substract
@@ -59,14 +59,10 @@ def calc():
             print(total)
             
 # append inputs list to file
-            with open("inputs.txt", "a") as f:
-                for item in inputs:
-                    f.write(item + "\n")
-            f.close()
-            
             with open("inputs.csv", "a") as f:
                 for item in inputs:
                     f.write(item + "\n")
+            f.close()
             
             
 # function that prompts user to access calculator or exit 

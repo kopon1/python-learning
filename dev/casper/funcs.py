@@ -37,7 +37,7 @@ def appropiate_input_num(question):
 # remove saved user inputs from file     
 def remove_lines(filepath, lines_to_remove):
     f = open(filepath, "r+")
-    with open("inputs.txt", "r+") as file:
+    with open("inputs.csv", "r+") as file:
         lines = f.readlines()
         f.seek(0)
         f.writelines(line for i, line in enumerate(lines) if i + 1 not in lines_to_remove)
