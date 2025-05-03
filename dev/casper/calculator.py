@@ -5,15 +5,13 @@ import datetime
 
 # List that saves user inputs
 inputs = []
+f = "inputs.csv"
+headers = []
 
 # function that gets the current time and formats it
 def get_current_time():
     now = datetime.datetime.now()
     return now.strftime("%D-%M-%Y, %H:%M:%S")
-
-# append user inputs to a file
-f = open("inputs.csv", "r")
-f.close()
 
 # function that handles user's choice to add, divide, multiply or substract
 def calc():
@@ -59,10 +57,15 @@ def calc():
             print(total)
             
 # append inputs list to file
-            with open("inputs.csv", "a") as f:
-                for item in inputs:
-                    f.write(item + "\n")
-            f.close()
+            with open("inputs.csv", "a") as csv_file:
+                fieldnames = ["Operations", "Time"]
+                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter="\t")
+                csv_writer.writeheader()
+            
+                for line in inputs:
+                    csv_writer.writerow(line + "\n")
+                    
+           
             
             
 # function that prompts user to access calculator or exit 
@@ -73,9 +76,15 @@ def user_choice():
             if choice == 1:
                 calc()
             elif choice == 2:
-                f = open("inputs.csv", "r+")
-                for x, line in enumerate(f):
-                    print(f"{x}: {line}")
+                with open("inputs.csv", "r") as csv_file:
+                    csv_reader = csv.DictReader(csv_file, delimiter="\t")
+                    
+                    for line in csv_reader:
+                        print(line)
+            
+                # f = open("inputs.csv", "r")
+                # for x, line in enumerate(f):
+                #     print(f"{x}: {line}")
             elif choice == 3:
                 delete_input()
             elif choice is None:
@@ -89,14 +98,14 @@ def user_choice():
 def delete_input():
     while True:
 # open file and read it, then print it to the user enumerating the lines
-        f = open("inputs.txt", "r")
+        f = open("inputs.csv", "r")
         for x, element in enumerate(f):
                 print(f"{x}: {element}")
                 
         opt = input_to_int("This is your saved history.\nEnter which number you want to delete from history.")
         if opt is None:
             return
-        remove_lines("inputs.txt", [opt])
+        remove_lines("inputs.csv", [opt])
         
 user_choice()
 
