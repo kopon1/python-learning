@@ -1,4 +1,3 @@
-
 # Validate user input into an integer and handle exceptions
 def input_to_int(question):
     while True:
@@ -43,8 +42,15 @@ def remove_lines(filepath, lines_to_remove):
         f.writelines(line for i, line in enumerate(lines) if i + 1 not in lines_to_remove)
         f.truncate()
 
+# ***IGNORE*** PRACTICE PRACTICE PRACTICE
+class person:
+    def __init__(self, name, age, profession):
+        self.name = name
+        self.age = age
+        self.profession = profession
 
-
+person1 = person("Bob", 99, "Unemployed")
+print(person1)
         
         
         

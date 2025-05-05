@@ -63,7 +63,7 @@ def calc():
                 csv_writer.writeheader()
             
                 for line in inputs:
-                    csv_writer.writerow(line + "\n")
+                    csv_writer.writerow(line)
                     
            
             
