@@ -1,0 +1,3480 @@
+syntax = "proto3";
+package codeium;
+import "google/protobuf/timestamp.proto";\n
+
+
+// Auto-generated stubs (verify field types!)
+
+
+message ChatMetrics {
+    // Class: exa.chat_pb.CodeBlockInfo
+}
+
+message IntentFunctionExplain {
+    // Class: exa.chat_pb.IntentGeneric
+}
+
+message IntentFunctionUnitTests {
+    // Class: exa.chat_pb.IntentFunctionRefactor
+}
+
+message IntentClassExplain {
+    // Class: exa.chat_pb.IntentFunctionDocstring
+}
+
+message IntentCodeBlockRefactor {
+    // Class: exa.chat_pb.IntentCodeBlockExplain
+}
+
+message IntentGenerateCode {
+    // Class: exa.chat_pb.IntentProblemExplain
+}
+
+message IntentFastApply {
+    // Class: exa.chat_pb.IntentSearch
+}
+
+message ChatMessageActionSearch {
+    // Class: exa.chat_pb.ChatMessageIntent
+}
+
+message ChatMessageActionGeneric {
+    // Class: exa.chat_pb.ChatMessageActionEdit
+}
+
+message ChatMessageStatus {
+    // Class: exa.chat_pb.ChatMessageStatusContextRelevancy
+}
+
+message ChatMessageAction {
+    // Class: exa.chat_pb.ChatMessageError
+}
+
+message Conversation {
+    // Class: exa.chat_pb.ChatMessage
+}
+
+message PromptCacheOptions {
+    // Class: exa.chat_pb.ChatMessagePrompt
+}
+
+message ChatToolChoice {
+    // Class: exa.chat_pb.ChatToolDefinition
+}
+
+message ChatMentionsSearchResponse {
+    // Class: exa.chat_pb.ChatMentionsSearchRequest
+}
+
+message EnterpriseExternalModelConfig {
+    // Class: exa.chat_pb.GetChatMessageRequest
+}
+
+message FormattedChatMessage {
+    // Class: exa.chat_pb.ChatExperimentStatus
+}
+
+message CompletionConfiguration {
+    // Class: exa.codeium_common_pb.CompletionsRequest
+}
+
+message ActionPointer {
+    // Class: exa.codeium_common_pb.PromptElementRange
+}
+
+message ExperimentWithVariant {
+    // Class: exa.codeium_common_pb.PromptAnnotationRange
+}
+
+message ExperimentLanguageServerVersionPayload {
+    // Class: exa.codeium_common_pb.ExperimentConfig
+}
+
+message ExperimentMiddleModeTokenPayload {
+    // Class: exa.codeium_common_pb.ExperimentModelConfigPayload
+}
+
+message ExperimentSentryPayload {
+    // Class: exa.codeium_common_pb.ExperimentMultilineModelThresholdPayload
+}
+
+message ExperimentProfilingTelemetrySampleRatePayload {
+    // Class: exa.codeium_common_pb.TeamOrganizationalControls
+}
+
+message PromptElementKindInfo {
+    // Class: exa.codeium_common_pb.ModelOrAlias
+}
+
+message PromptStageLatency {
+    // Class: exa.codeium_common_pb.PromptElementInclusionMetadata
+}
+
+message Completion {
+    // Class: exa.codeium_common_pb.CompletionResponse
+}
+
+message SingleModelCompletionProfile {
+    // Class: exa.codeium_common_pb.StreamingCompletionInfo
+}
+
+message StreamingCompletion {
+    // Class: exa.codeium_common_pb.CompletionProfile
+}
+
+message PackedStreamingCompletionMaps {
+    // Class: exa.codeium_common_pb.StreamingCompletionMap
+}
+
+message StreamingCompletionResponse {
+    // Class: exa.codeium_common_pb.StreamingEvalSuffixInfo
+}
+
+message CompletionWithLatencyInfo {
+    // Class: exa.codeium_common_pb.CompletionLatencyInfo
+}
+
+message Embedding {
+    // Class: exa.codeium_common_pb.EmbeddingsRequest
+}
+
+message RewardsRequest {
+    // Class: exa.codeium_common_pb.EmbeddingResponse
+}
+
+message Metadata {
+    // Class: exa.codeium_common_pb.RewardsResponse
+}
+
+message ErrorTrace {
+    // Class: exa.codeium_common_pb.EditorOptions
+}
+
+message SearchResultRecord {
+    // Class: exa.codeium_common_pb.Event
+}
+
+message EmbeddingMetadata {
+    // Class: exa.codeium_common_pb.WorkspacePath
+}
+
+message WorkspaceIndexData {
+    // Class: exa.codeium_common_pb.MockResponseData
+}
+
+message PartialIndexMetadata {
+    // Class: exa.codeium_common_pb.WorkspaceStats
+}
+
+message ClassInfo {
+    // Class: exa.codeium_common_pb.FunctionInfo
+}
+
+message AllowedModelConfig {
+    // Class: exa.codeium_common_pb.ClientModelConfig
+}
+
+message TopUpStatus {
+    // Class: exa.codeium_common_pb.PlanInfo
+}
+
+message UserStatus {
+    // Class: exa.codeium_common_pb.PlanStatus
+}
+
+message PerforceDepotInfo {
+    // Class: exa.codeium_common_pb.ScmWorkspaceInfo
+}
+
+message CodeContextItem {
+    // Class: exa.codeium_common_pb.GitRepoInfo
+}
+
+message WordCount {
+    // Class: exa.codeium_common_pb.SnippetWithWordCount
+}
+
+message CaptureFileRequestData {
+    // Class: exa.codeium_common_pb.Repository
+}
+
+message CompletionByDateEntry {
+    // Class: exa.codeium_common_pb.CompletionStatistics
+}
+
+message ChatStats {
+    // Class: exa.codeium_common_pb.CompletionByLanguageEntry
+}
+
+message ChatStatsByModelEntry {
+    // Class: exa.codeium_common_pb.ChatStatsByDateEntry
+}
+
+message CommandStatsByDateEntry {
+    // Class: exa.codeium_common_pb.CommandStats
+}
+
+message CascadeNUXState {
+    // Class: exa.codeium_common_pb.UserTableStats
+}
+
+message UserSettings {
+    // Class: exa.codeium_common_pb.UserNUXState
+}
+
+message ExternalModel {
+    // Class: exa.codeium_common_pb.ModelFeatures
+}
+
+message ApiProviderRoutingConfig {
+    // Class: exa.codeium_common_pb.ModelInfo
+}
+
+message ApiProviderConfig {
+    // Class: exa.codeium_common_pb.ApiProviderConfigMap
+}
+
+message CompletionExample {
+    // Class: exa.codeium_common_pb.ModelConfig
+}
+
+message CciWithSubrange {
+    // Class: exa.codeium_common_pb.CompletionExampleWithMetadata
+}
+
+message PathScopeItem {
+    // Class: exa.codeium_common_pb.ContextSubrange
+}
+
+message TextBlock {
+    // Class: exa.codeium_common_pb.FileLineRange
+}
+
+message RepositoryPathScopeItem {
+    // Class: exa.codeium_common_pb.RepositoryScopeItem
+}
+
+message ConsoleLogLine {
+    // Class: exa.codeium_common_pb.KnowledgeBaseScopeItem
+}
+
+message DOMElementScopeItem {
+    // Class: exa.codeium_common_pb.ConsoleLogScopeItem
+}
+
+message ContextScopeItem {
+    // Class: exa.codeium_common_pb.RecipeScopeItem
+}
+
+message NodeExecutionRecord {
+    // Class: exa.codeium_common_pb.ContextScope
+}
+
+message Guideline {
+    // Class: exa.codeium_common_pb.GraphExecutionState
+}
+
+message ChatNodeConfig {
+    // Class: exa.codeium_common_pb.GuidelineItem
+}
+
+message CompletionDelta {
+    // Class: exa.codeium_common_pb.MQueryConfig
+}
+
+message ChatCompletionInfo {
+    // Class: exa.codeium_common_pb.CompletionDeltaMap
+}
+
+message Status {
+    // Class: exa.codeium_common_pb.ChatToolCall
+}
+
+message Range {
+    // Class: exa.codeium_common_pb.DocumentPosition
+}
+
+message PromptComponents {
+    // Class: exa.codeium_common_pb.Document
+}
+
+message PinnedContextConfig {
+    // Class: exa.codeium_common_pb.TextOrScopeItem
+}
+
+message RepositoryPath {
+    // Class: exa.codeium_common_pb.PinnedContext
+}
+
+message Rule {
+    // Class: exa.codeium_common_pb.DefaultPinnedContextConfig
+}
+
+message LanguageServerDiagnostics {
+    // Class: exa.codeium_common_pb.RuleViolation
+}
+
+message IndexerDbStats {
+    // Class: exa.codeium_common_pb.IndexerStats
+}
+
+message FaissStateStats {
+    // Class: exa.codeium_common_pb.LocalSqliteFaissDbStats
+}
+
+message LastUpdateRecord {
+    // Class: exa.codeium_common_pb.PostgresDbStats
+}
+
+message SuperCompleteFilterReason {
+    // Class: exa.codeium_common_pb.ModelUsageStats
+}
+
+message IntellisenseSuggestion {
+    // Class: exa.codeium_common_pb.CodeDiagnostic
+}
+
+message DocumentQuery {
+    // Class: exa.codeium_common_pb.DocumentLinesElement
+}
+
+message DocumentOutline {
+    // Class: exa.codeium_common_pb.DocumentOutlineElement
+}
+
+message CodebaseCluster {
+    // Class: exa.codeium_common_pb.ProductEvent
+}
+
+message KnowledgeBaseChunk {
+    // Class: exa.codeium_common_pb.CodebaseClusterList
+}
+
+message KnowledgeBaseItemWithMetadata {
+    // Class: exa.codeium_common_pb.KnowledgeBaseItem
+}
+
+message ImageData {
+    // Class: exa.codeium_common_pb.KnowledgeBaseGroup
+}
+
+message MarkdownHeader {
+    // Class: exa.codeium_common_pb.MarkdownChunk
+}
+
+message TerminalShellCommandData {
+    // Class: exa.codeium_common_pb.TerminalShellCommandHeader
+}
+
+message TerminalShellCommandStreamChunk {
+    // Class: exa.codeium_common_pb.TerminalShellCommandTrailer
+}
+
+message TerminalCommandData {
+    // Class: exa.codeium_common_pb.TerminalShellCommand
+}
+
+message WindsurfDeployment {
+    // Class: exa.codeium_common_pb.WindsurfProject
+}
+
+message TeamConfig {
+    // Class: exa.codeium_common_pb.WebDocsOption
+}
+
+message McpServerTemplate {
+    // Class: exa.codeium_common_pb.WebAppDeploymentConfig
+}
+
+message McpCommandTemplate {
+    // Class: exa.codeium_common_pb.McpServerCommand
+}
+
+message UnleashContext {
+    // Class: exa.codeium_common_pb.McpCommandVariable
+}
+
+message ModelNotification {
+    // Class: exa.codeium_common_pb.MetricsRecord
+}
+
+message UnifiedDiff {
+    // Class: exa.codeium_common_pb.ModelNotificationExperimentPayload
+}
+
+message DiffBlock {
+    // Class: exa.diff_action_pb.UnifiedDiff.UnifiedDiffLine
+}
+
+message CharacterDiff {
+    // Class: exa.diff_action_pb.CharacterDiffChange
+}
+
+message ComboDiff {
+    // Class: exa.diff_action_pb.ComboDiffLine
+}
+
+message DiffList {
+    // Class: exa.diff_action_pb.DiffSet
+}
+
+message IndexBuildConfig {
+    // Class: exa.index_pb.IndexDbVersion
+}
+
+message AutoIndexConfig {
+    // Class: exa.index_pb.RepositoryConfig
+}
+
+message VectorIndexStats {
+    // Class: exa.index_pb.IndexConfig
+}
+
+message Index {
+    // Class: exa.index_pb.ProgressBar
+}
+
+message Repository {
+    // Class: exa.index_pb.Index.RepoStats
+}
+
+message ManagementMetadata {
+    // Class: exa.index_pb.RequestIndexVersion
+}
+
+message AddRepositoryResponse {
+    // Class: exa.index_pb.AddRepositoryRequest
+}
+
+message EnableIndexingResponse {
+    // Class: exa.index_pb.EnableIndexingRequest
+}
+
+message DisableIndexingResponse {
+    // Class: exa.index_pb.DisableIndexingRequest
+}
+
+message EditRepositoryResponse {
+    // Class: exa.index_pb.EditRepositoryRequest
+}
+
+message DeleteRepositoryResponse {
+    // Class: exa.index_pb.DeleteRepositoryRequest
+}
+
+message GetRepositoriesRequest {
+    // Class: exa.index_pb.GetRepositoriesFilter
+}
+
+message GetIndexesRequest {
+    // Class: exa.index_pb.GetRepositoriesResponse
+}
+
+message GetIndexRequest {
+    // Class: exa.index_pb.GetIndexesResponse
+}
+
+message RemoteIndexStats {
+    // Class: exa.index_pb.GetIndexResponse
+}
+
+message GetRemoteIndexStatsResponse {
+    // Class: exa.index_pb.GetRemoteIndexStatsRequest
+}
+
+message AddIndexResponse {
+    // Class: exa.index_pb.AddIndexRequest
+}
+
+message CancelIndexingResponse {
+    // Class: exa.index_pb.CancelIndexingRequest
+}
+
+message RetryIndexingResponse {
+    // Class: exa.index_pb.RetryIndexingRequest
+}
+
+message DeleteIndexResponse {
+    // Class: exa.index_pb.DeleteIndexRequest
+}
+
+message PruneDatabaseResponse {
+    // Class: exa.index_pb.PruneDatabaseRequest
+}
+
+message GetDatabaseStatsResponse {
+    // Class: exa.index_pb.GetDatabaseStatsRequest
+}
+
+message SetIndexConfigResponse {
+    // Class: exa.index_pb.SetIndexConfigRequest
+}
+
+message GetIndexConfigResponse {
+    // Class: exa.index_pb.GetIndexConfigRequest
+}
+
+message GetNumberConnectionsResponse {
+    // Class: exa.index_pb.GetNumberConnectionsRequest
+}
+
+message GetConnectionsDebugInfoResponse {
+    // Class: exa.index_pb.GetConnectionsDebugInfoRequest
+}
+
+message GetIndexedRepositoriesResponse {
+    // Class: exa.index_pb.GetIndexedRepositoriesRequest
+}
+
+message GetMatchingFilePathsRequest {
+    // Class: exa.index_pb.RepositoryFilter
+}
+
+message GetNearestCCIsFromEmbeddingRequest {
+    // Class: exa.index_pb.GetMatchingFilePathsResponse
+}
+
+message GetNearestCCIsFromEmbeddingResponse {
+    // Class: exa.index_pb.ScoredContextItem
+}
+
+message GetEmbeddingsForCodeContextItemsResponse {
+    // Class: exa.index_pb.GetEmbeddingsForCodeContextItemsRequest
+}
+
+message IndexerEvent {
+    // Class: exa.index_pb.IndexStats
+}
+
+message Untrack {
+    // Class: exa.index_pb.IndexerEvent.Deletion
+}
+
+message AddWorkspaceInfo {
+    // Class: exa.index_pb.IndexerEvent.Update
+}
+
+message RemoveWorkspace {
+    // Class: exa.index_pb.IndexerEvent.AddWorkspace
+}
+
+message AddCommit {
+    // Class: exa.index_pb.IndexerEvent.IgnoreWorkspace
+}
+
+message GithubUser {
+    // Class: exa.opensearch_clients_pb.TimeRange
+}
+
+message AddGithubUsersResponse {
+    // Class: exa.opensearch_clients_pb.AddGithubUsersRequest
+}
+
+message AddUsersRequest {
+    // Class: exa.opensearch_clients_pb.UserInfo
+}
+
+message KnowledgeBaseSearchRequest {
+    // Class: exa.opensearch_clients_pb.AddUsersResponse
+}
+
+message GetKnowledgeBaseScopeItemsRequest {
+    // Class: exa.opensearch_clients_pb.KnowledgeBaseSearchResponse
+}
+
+message GetKnowledgeBaseItemsFromScopeItemsRequest {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseScopeItemsResponse
+}
+
+message IngestSlackDataRequest {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseItemsFromScopeItemsResponse
+}
+
+message IngestGithubDataRequest {
+    // Class: exa.opensearch_clients_pb.IngestSlackDataResponse
+}
+
+message IngestGoogleDriveDataRequest {
+    // Class: exa.opensearch_clients_pb.IngestGithubDataResponse
+}
+
+message IngestJiraDataRequest {
+    // Class: exa.opensearch_clients_pb.IngestGoogleDriveDataResponse
+}
+
+message IngestJiraPayloadRequest {
+    // Class: exa.opensearch_clients_pb.IngestJiraDataResponse
+}
+
+message ForwardResult {
+    // Class: exa.opensearch_clients_pb.IngestJiraPayloadResponse
+}
+
+message ForwardSlackPayloadResponse {
+    // Class: exa.opensearch_clients_pb.ForwardSlackPayloadRequest
+}
+
+message IngestSlackPayloadResponse {
+    // Class: exa.opensearch_clients_pb.IngestSlackPayloadRequest
+}
+
+message CommonDocumentWithScore {
+    // Class: exa.opensearch_clients_pb.CommonDocument
+}
+
+message QuerySearchResponse {
+    // Class: exa.opensearch_clients_pb.SearchResult
+}
+
+message OpenSearchAddRepositoryResponse {
+    // Class: exa.opensearch_clients_pb.OpenSearchAddRepositoryRequest
+}
+
+message OpenSearchGetIndexResponse {
+    // Class: exa.opensearch_clients_pb.OpenSearchGetIndexRequest
+}
+
+message HybridSearchResponse {
+    // Class: exa.opensearch_clients_pb.HybridSearchRequest
+}
+
+message GraphSearchResponse {
+    // Class: exa.opensearch_clients_pb.GraphSearchRequest
+}
+
+message ConnectorConfigSlack {
+    // Class: exa.opensearch_clients_pb.ConnectorConfig
+}
+
+message ConnectorConfigGoogleDrive {
+    // Class: exa.opensearch_clients_pb.ConnectorConfigGithub
+}
+
+message ConnectorInternalConfig {
+    // Class: exa.opensearch_clients_pb.ConnectorConfigJira
+}
+
+message GithubRepoConfig {
+    // Class: exa.opensearch_clients_pb.ConnectorInternalConfigSlack
+}
+
+message ConnectorInternalConfigGoogleDrive {
+    // Class: exa.opensearch_clients_pb.ConnectorInternalConfigGithub
+}
+
+message ConnectKnowledgeBaseAccountRequest {
+    // Class: exa.opensearch_clients_pb.ConnectorInternalConfigJira
+}
+
+message DeleteKnowledgeBaseConnectionResponse {
+    // Class: exa.opensearch_clients_pb.DeleteKnowledgeBaseConnectionRequest
+}
+
+message UpdateConnectorConfigResponse {
+    // Class: exa.opensearch_clients_pb.UpdateConnectorConfigRequest
+}
+
+message ConnectorAdditionalParamsSlack {
+    // Class: exa.opensearch_clients_pb.ConnectorAdditionalParams
+}
+
+message ConnectKnowledgeBaseAccountResponse {
+    // Class: exa.opensearch_clients_pb.ConnectorAdditionalParamsGithub
+}
+
+message CancelKnowledgeBaseJobsResponse {
+    // Class: exa.opensearch_clients_pb.CancelKnowledgeBaseJobsRequest
+}
+
+message ConnectorState {
+    // Class: exa.opensearch_clients_pb.DocumentTypeCount
+}
+
+message GetKnowledgeBaseConnectorStateResponse {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseConnectorStateRequest
+}
+
+message GetKnowledgeBaseJobStatesRequest {
+    // Class: exa.opensearch_clients_pb.JobState
+}
+
+message SlackMessagePayload {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseJobStatesResponse
+}
+
+message SlackPayload {
+    // Class: exa.opensearch_clients_pb.SlackChannelPayload
+}
+
+message GetKnowledgeBaseWebhookUrlResponse {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseWebhookUrlRequest
+}
+
+message GetConnectorInternalConfigResponse {
+    // Class: exa.opensearch_clients_pb.GetConnectorInternalConfigRequest
+}
+
+message RecordAnalyticsEventResponse {
+    // Class: exa.product_analytics_pb.RecordAnalyticsEventRequest
+}
+
+message Team {
+    // Class: exa.seat_management_pb.User
+}
+
+message UserSettings {
+    // Class: exa.seat_management_pb.PreapprovedUser
+}
+
+message GetUserStatusRequest {
+    // Class: exa.seat_management_pb.UserRole
+}
+
+message GetCurrentUserRequest {
+    // Class: exa.seat_management_pb.GetUserStatusResponse
+}
+
+message GetCurrentUserResponse {
+    // Class: exa.seat_management_pb.ReferralInfo
+}
+
+message GetUsersResponse {
+    // Class: exa.seat_management_pb.GetUsersRequest
+}
+
+message GetRolesForUserResponse {
+    // Class: exa.seat_management_pb.GetRolesForUserRequest
+}
+
+message AddUserRoleResponse {
+    // Class: exa.seat_management_pb.AddUserRoleRequest
+}
+
+message RemoveUserRoleResponse {
+    // Class: exa.seat_management_pb.RemoveUserRoleRequest
+}
+
+message RegisterUserResponse {
+    // Class: exa.seat_management_pb.RegisterUserRequest
+}
+
+message CreateFbUserResponse {
+    // Class: exa.seat_management_pb.CreateFbUserRequest
+}
+
+message UpdateNameResponse {
+    // Class: exa.seat_management_pb.UpdateNameRequest
+}
+
+message GetProfilePicturePresignedUploadUrlResponse {
+    // Class: exa.seat_management_pb.GetProfilePicturePresignedUploadUrlRequest
+}
+
+message ProfilePictureUploadCompleteResponse {
+    // Class: exa.seat_management_pb.ProfilePictureUploadCompleteRequest
+}
+
+message GetProfileDataResponse {
+    // Class: exa.seat_management_pb.GetProfileDataRequest
+}
+
+message DeleteProfilePictureResponse {
+    // Class: exa.seat_management_pb.DeleteProfilePictureRequest
+}
+
+message UpdateInboundSourceResponse {
+    // Class: exa.seat_management_pb.UpdateInboundSourceRequest
+}
+
+message DeleteUserResponse {
+    // Class: exa.seat_management_pb.DeleteUserRequest
+}
+
+message GetLicenseResponse {
+    // Class: exa.seat_management_pb.GetLicenseRequest
+}
+
+message RequestTeamAccessResponse {
+    // Class: exa.seat_management_pb.RequestTeamAccessRequest
+}
+
+message UserTeamStatusUpdateItem {
+    // Class: exa.seat_management_pb.UpdateUserTeamStatusRequest
+}
+
+message GetTeamMetadataRequest {
+    // Class: exa.seat_management_pb.UpdateUserTeamStatusResponse
+}
+
+message RemoveUserFromTeamRequest {
+    // Class: exa.seat_management_pb.GetTeamMetadataResponse
+}
+
+message RefreshTeamInviteIdRequest {
+    // Class: exa.seat_management_pb.RemoveUserFromTeamResponse
+}
+
+message GrantPreapprovalRequest {
+    // Class: exa.seat_management_pb.RefreshTeamInviteIdResponse
+}
+
+message GrantPreapprovalResponse {
+    // Class: exa.seat_management_pb.GrantPreapprovalRequest.PreapprovalUserItem
+}
+
+message GetPreapprovalsResponse {
+    // Class: exa.seat_management_pb.GetPreapprovalsRequest
+}
+
+message GetPreapprovalMetadataResponse {
+    // Class: exa.seat_management_pb.GetPreapprovalMetadataRequest
+}
+
+message AcceptPreapprovalResponse {
+    // Class: exa.seat_management_pb.AcceptPreapprovalRequest
+}
+
+message RejectPreapprovalResponse {
+    // Class: exa.seat_management_pb.RejectPreapprovalRequest
+}
+
+message GetPreapprovalForUserResponse {
+    // Class: exa.seat_management_pb.GetPreapprovalForUserRequest
+}
+
+message RevokePreapprovalResponse {
+    // Class: exa.seat_management_pb.RevokePreapprovalRequest
+}
+
+message SubscribeToPlanResponse {
+    // Class: exa.seat_management_pb.SubscribeToPlanRequest
+}
+
+message PurchaseCascadeCreditsResponse {
+    // Class: exa.seat_management_pb.PurchaseCascadeCreditsRequest
+}
+
+message UpdateCreditTopUpSettingsResponse {
+    // Class: exa.seat_management_pb.UpdateCreditTopUpSettingsRequest
+}
+
+message GetTeamBillingResponse {
+    // Class: exa.seat_management_pb.GetTeamBillingRequest
+}
+
+message PaymentMethod {
+    // Class: exa.seat_management_pb.GetTeamBillingResponse.Invoice
+}
+
+message FailedSubscriptionPayment {
+    // Class: exa.seat_management_pb.GetTeamBillingResponse.PaymentMethod.CardType
+}
+
+message UpdateSeatsResponse {
+    // Class: exa.seat_management_pb.UpdateSeatsRequest
+}
+
+message UpdatePlanResponse {
+    // Class: exa.seat_management_pb.UpdatePlanRequest
+}
+
+message CancelPlanRequest {
+    // Class: exa.seat_management_pb.BillingUpdate
+}
+
+message UpdateBillingRequest {
+    // Class: exa.seat_management_pb.CancelPlanResponse
+}
+
+message GetUserSubscriptionRequest {
+    // Class: exa.seat_management_pb.UpdateBillingResponse
+}
+
+message IsUsernameAvailableRequest {
+    // Class: exa.seat_management_pb.GetUserSubscriptionResponse
+}
+
+message UpdateUsernameRequest {
+    // Class: exa.seat_management_pb.IsUsernameAvailableResponse
+}
+
+message ProvisionTeamRequest {
+    // Class: exa.seat_management_pb.UpdateUsernameResponse
+}
+
+message ProvisionCascadeSeatsRequest {
+    // Class: exa.seat_management_pb.ProvisionTeamResponse
+}
+
+message UpdateOccupationRequest {
+    // Class: exa.seat_management_pb.ProvisionCascadeSeatsResponse
+}
+
+message UpdateProfileRequest {
+    // Class: exa.seat_management_pb.UpdateOccupationResponse
+}
+
+message UpdateProfileVisibilityRequest {
+    // Class: exa.seat_management_pb.UpdateProfileResponse
+}
+
+message AddUsersToTeamRequest {
+    // Class: exa.seat_management_pb.UpdateProfileVisibilityResponse
+}
+
+message GetPublicProfileRequest {
+    // Class: exa.seat_management_pb.AddUsersToTeamResponse
+}
+
+message UpdateUserRolesRequest {
+    // Class: exa.seat_management_pb.GetPublicProfileResponse
+}
+
+message BulkUpdateUserRolesRequest {
+    // Class: exa.seat_management_pb.UpdateUserRolesResponse
+}
+
+message GetTeamActivityRequest {
+    // Class: exa.seat_management_pb.BulkUpdateUserRolesResponse
+}
+
+message UserActivity {
+    // Class: exa.seat_management_pb.GetTeamActivityResponse
+}
+
+message GetSSOProviderResponse {
+    // Class: exa.seat_management_pb.GetSSOProviderRequest
+}
+
+message SaveSSOProviderResponse {
+    // Class: exa.seat_management_pb.SaveSSOProviderRequest
+}
+
+message JoinTeamWithSSOLoginRequest {
+    // Class: exa.seat_management_pb.SAMLAuthProvider
+}
+
+message UserSSOLoginRedirectRequest {
+    // Class: exa.seat_management_pb.JoinTeamWithSSOLoginResponse
+}
+
+message EnterpriseLicenseConfig {
+    // Class: exa.seat_management_pb.UserSSOLoginRedirectResponse
+}
+
+message DeleteTeamResponse {
+    // Class: exa.seat_management_pb.DeleteTeamRequest
+}
+
+message ProvisionFreeProTierResponse {
+    // Class: exa.seat_management_pb.ProvisionFreeProTierRequest
+}
+
+message GetTeamsFeaturesResponse {
+    // Class: exa.seat_management_pb.GetTeamsFeaturesRequest
+}
+
+message GetTeamsFeaturesInternalResponse {
+    // Class: exa.seat_management_pb.GetTeamsFeaturesInternalRequest
+}
+
+message SetTeamsFeaturesRequest {
+    // Class: exa.seat_management_pb.UpdateTeamsFeaturesInternalRequest
+}
+
+message SetTeamsFeaturesResponse {
+    // Class: exa.seat_management_pb.UpdateTeamsFeaturesInternalResponse
+}
+
+message UpdateUserFeaturesInternalResponse {
+    // Class: exa.seat_management_pb.UpdateUserFeaturesInternalRequest
+}
+
+message UserTeamDetails {
+    // Class: exa.seat_management_pb.BulkEditUserApprovalsRequest
+}
+
+message BulkEditUserApprovalsInternalRequest {
+    // Class: exa.seat_management_pb.BulkEditUserApprovalsResponse
+}
+
+message GetTeamSettingsRequest {
+    // Class: exa.seat_management_pb.BulkEditUserApprovalsInternalResponse
+}
+
+message UpdateCascadeWebSearchEnabledRequest {
+    // Class: exa.seat_management_pb.GetTeamSettingsResponse
+}
+
+message GetGroupsRequest {
+    // Class: exa.seat_management_pb.UpdateCascadeWebSearchEnabledResponse
+}
+
+message GetGroupsResponse {
+    // Class: exa.seat_management_pb.Group
+}
+
+message CreateTeamApiSecretResponse {
+    // Class: exa.seat_management_pb.CreateTeamApiSecretRequest
+}
+
+message UpdateTeamApiSecretResponse {
+    // Class: exa.seat_management_pb.UpdateTeamApiSecretRequest
+}
+
+message TeamApiSecret {
+    // Class: exa.seat_management_pb.GetAllTeamApiSecretsRequest
+}
+
+message DeleteTeamApiSecretRequest {
+    // Class: exa.seat_management_pb.GetAllTeamApiSecretsResponse
+}
+
+message GetUserNotificationsRequest {
+    // Class: exa.seat_management_pb.DeleteTeamApiSecretResponse
+}
+
+message TeamPreapprovalMetadata {
+    // Class: exa.seat_management_pb.GetUserNotificationsResponse
+}
+
+message ConnectGithubAccountResponse {
+    // Class: exa.seat_management_pb.ConnectGithubAccountRequest
+}
+
+message DisconnectGithubAccountResponse {
+    // Class: exa.seat_management_pb.DisconnectGithubAccountRequest
+}
+
+message GetGitHubAccountStatusResponse {
+    // Class: exa.seat_management_pb.GetGitHubAccountStatusRequest
+}
+
+message GetGitHubAccessTokenResponse {
+    // Class: exa.seat_management_pb.GetGitHubAccessTokenRequest
+}
+
+message UpdateCodeiumAccessResponse {
+    // Class: exa.seat_management_pb.UpdateCodeiumAccessRequest
+}
+
+message CreateRoleResponse {
+    // Class: exa.seat_management_pb.CreateRoleRequest
+}
+
+message DeleteRoleResponse {
+    // Class: exa.seat_management_pb.DeleteRoleRequest
+}
+
+message UpdateRoleResponse {
+    // Class: exa.seat_management_pb.UpdateRoleRequest
+}
+
+message Role {
+    // Class: exa.seat_management_pb.GetRolesRequest
+}
+
+message GetMucsInfoRequest {
+    // Class: exa.seat_management_pb.GetRolesResponse
+}
+
+message GetMucsInfoResponse {
+    // Class: exa.seat_management_pb.MonthlyMucsMessage
+}
+
+message GetCascadeAnalyticsResponse {
+    // Class: exa.seat_management_pb.GetCascadeAnalyticsRequest
+}
+
+message GetPlanStatusResponse {
+    // Class: exa.seat_management_pb.GetPlanStatusRequest
+}
+
+message GetWrapped2024Request {
+    // Class: exa.seat_management_pb.Wrapped2024
+}
+
+message FlexCreditChronicleEntry {
+    // Class: exa.seat_management_pb.GetWrapped2024Response
+}
+
+message AveryReason {
+    // Class: exa.seat_management_pb.ReferrerReason
+}
+
+message GetTeamCreditEntriesRequest {
+    // Class: exa.seat_management_pb.PurchaseReason
+}
+
+message SendPhoneVerificationRequest {
+    // Class: exa.seat_management_pb.GetTeamCreditEntriesResponse
+}
+
+message SendEmailVerificationRequest {
+    // Class: exa.seat_management_pb.SendPhoneVerificationResponse
+}
+
+message CreateEnterpriseRequest {
+    // Class: exa.seat_management_pb.SendEmailVerificationResponse
+}
+
+message UpdateEnterpriseRequest {
+    // Class: exa.seat_management_pb.CreateEnterpriseResponse
+}
+
+message UpdateTeamConfigRequest {
+    // Class: exa.seat_management_pb.UpdateEnterpriseResponse
+}
+
+message UpdateTeamConfigExternalRequest {
+    // Class: exa.seat_management_pb.UpdateTeamConfigResponse
+}
+
+message GetTeamConfigRecordRequest {
+    // Class: exa.seat_management_pb.UpdateTeamConfigExternalResponse
+}
+
+message GetTeamInfoRequest {
+    // Class: exa.seat_management_pb.GetTeamConfigRecordResponse
+}
+
+message GetTeamInfoResponse {
+    // Class: exa.seat_management_pb.UserInfo
+}
+
+message IsValidReferralCodeResponse {
+    // Class: exa.seat_management_pb.IsValidReferralCodeRequest
+}
+
+message ProcessReferralCodeResponse {
+    // Class: exa.seat_management_pb.ProcessReferralCodeRequest
+}
+
+message UpdatePlanDetailsInternalResponse {
+    // Class: exa.seat_management_pb.UpdatePlanDetailsInternalRequest
+}
+
+message RemoveUsersFromTeamInternalResponse {
+    // Class: exa.seat_management_pb.RemoveUsersFromTeamInternalRequest
+}
+
+message InitiateTopUpResponse {
+    // Class: exa.seat_management_pb.InitiateTopUpRequest
+}
+
+message AddExtraFlexCreditsInternalRequest {
+    // Class: exa.seat_management_pb.UserCascadeDetails
+}
+
+message QuerySelectionField {
+    // Class: exa.seat_management_pb.AddExtraFlexCreditsInternalResponse
+}
+
+message QueryAggregationField {
+    // Class: exa.user_analytics_pb.QueryFilterField
+}
+
+message CustomQueryRequest {
+    // Class: exa.user_analytics_pb.QueryOrderField
+}
+
+message CustomQueryResponse {
+    // Class: exa.user_analytics_pb.QueryResponseItem
+}
+
+message GetAnalyticsResponse {
+    // Class: exa.user_analytics_pb.GetAnalyticsRequest
+}
+
+message AnalyticsResponse {
+    // Class: exa.user_analytics_pb.AnalyticsRequest
+}
+
+message UserPageAnalyticsResponse {
+    // Class: exa.user_analytics_pb.UserPageAnalyticsRequest
+}
+
+message GetPublicAnalyticsResponse {
+    // Class: exa.user_analytics_pb.GetPublicAnalyticsRequest
+}
+
+message QueryResult {
+    // Class: exa.user_analytics_pb.QueryRequest
+}
+
+message QueryResultCompletionStats {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionStats
+}
+
+message QueryResultCompletionsByDay {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByDay
+}
+
+message QueryResultCompletionsByLanguage {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByLanguage
+}
+
+message QueryResultCompletionsByIde {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByIde
+}
+
+message QueryResultCompletionsByRepository {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByRepository
+}
+
+message QueryResultChatsByDay {
+    // Class: exa.user_analytics_pb.QueryRequestChatsByDay
+}
+
+message QueryRequestActiveUserCount {
+    // Class: exa.user_analytics_pb.QueryRequestAllChatsByDay
+}
+
+message QueryRequestAllChatStatsByModel {
+    // Class: exa.user_analytics_pb.QueryRequestChatStatsByModel
+}
+
+message QueryRequestAllUsersCompletionsByDay {
+    // Class: exa.user_analytics_pb.QueryResultChatStatsByModel
+}
+
+message QueryRequestAllUsersCompletionStats {
+    // Class: exa.user_analytics_pb.QueryRequestAllUsersCompletionsByLanguage
+}
+
+message QueryResultCompletionsByApiKey {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByApiKey
+}
+
+message QueryRequestPercentCodeWritten {
+    // Class: exa.user_analytics_pb.QueryResultActiveUserCount
+}
+
+message QueryRequestCharsPerOpportunity {
+    // Class: exa.user_analytics_pb.QueryResultPercentCodeWritten
+}
+
+message QueryRequestChatStats {
+    // Class: exa.user_analytics_pb.QueryResultCharsPerOpportunity
+}
+
+message QueryRequestCommandStats {
+    // Class: exa.user_analytics_pb.QueryResultChatStats
+}
+
+message QueryRequestActiveDaysByApiKey {
+    // Class: exa.user_analytics_pb.QueryResultCommandStats
+}
+
+message QueryResultError {
+    // Class: exa.user_analytics_pb.QueryResultActiveDaysByApiKey
+}
+
+message GetPreferredTimeZoneResponse {
+    // Class: exa.user_analytics_pb.GetPreferredTimeZoneRequest
+}
+
+message Api {
+    // Class: google.protobuf.Any
+}
+
+message Mixin {
+    // Class: google.protobuf.Method
+}
+
+message CodeGeneratorRequest {
+    // Class: google.protobuf.compiler.Version
+}
+
+message File {
+    // Class: google.protobuf.compiler.CodeGeneratorResponse
+}
+
+message FileDescriptorProto {
+    // Class: google.protobuf.FileDescriptorSet
+}
+
+message ExtensionRange {
+    // Class: google.protobuf.DescriptorProto
+}
+
+message ExtensionRangeOptions {
+    // Class: google.protobuf.DescriptorProto.ReservedRange
+}
+
+message FieldDescriptorProto {
+    // Class: google.protobuf.ExtensionRangeOptions.Declaration
+}
+
+message EnumDescriptorProto {
+    // Class: google.protobuf.OneofDescriptorProto
+}
+
+message EnumValueDescriptorProto {
+    // Class: google.protobuf.EnumDescriptorProto.EnumReservedRange
+}
+
+message MethodDescriptorProto {
+    // Class: google.protobuf.ServiceDescriptorProto
+}
+
+message MessageOptions {
+    // Class: google.protobuf.FileOptions
+}
+
+message EditionDefault {
+    // Class: google.protobuf.FieldOptions
+}
+
+message EnumOptions {
+    // Class: google.protobuf.OneofOptions
+}
+
+message ServiceOptions {
+    // Class: google.protobuf.EnumValueOptions
+}
+
+message UninterpretedOption {
+    // Class: google.protobuf.MethodOptions
+}
+
+message FeatureSet {
+    // Class: google.protobuf.UninterpretedOption.NamePart
+}
+
+message FeatureSetEditionDefault {
+    // Class: google.protobuf.FeatureSetDefaults
+}
+
+message Location {
+    // Class: google.protobuf.SourceCodeInfo
+}
+
+message Annotation {
+    // Class: google.protobuf.GeneratedCodeInfo
+}
+
+message Empty {
+    // Class: google.protobuf.Duration
+}
+
+message SourceContext {
+    // Class: google.protobuf.FieldMask
+}
+
+message Value {
+    // Class: google.protobuf.Struct
+}
+
+message Timestamp {
+    // Class: google.protobuf.ListValue
+}
+
+message Field {
+    // Class: google.protobuf.Type
+}
+
+message EnumValue {
+    // Class: google.protobuf.Enum
+}
+
+message DoubleValue {
+    // Class: google.protobuf.Option
+}
+
+message Int64Value {
+    // Class: google.protobuf.FloatValue
+}
+
+message Int32Value {
+    // Class: google.protobuf.UInt64Value
+}
+
+message BoolValue {
+    // Class: google.protobuf.UInt32Value
+}
+
+message BytesValue {
+    // Class: google.protobuf.StringValue
+}
+
+message FileDescriptorSet {
+    // Class: google.rpc.Status
+}
+
+message DescriptorProto {
+    // Class: google.protobuf.FileDescriptorProto
+}
+
+message ReservedRange {
+    // Class: google.protobuf.DescriptorProto.ExtensionRange
+}
+
+message Declaration {
+    // Class: google.protobuf.ExtensionRangeOptions
+}
+
+message OneofDescriptorProto {
+    // Class: google.protobuf.FieldDescriptorProto
+}
+
+message EnumReservedRange {
+    // Class: google.protobuf.EnumDescriptorProto
+}
+
+message ServiceDescriptorProto {
+    // Class: google.protobuf.EnumValueDescriptorProto
+}
+
+message FileOptions {
+    // Class: google.protobuf.MethodDescriptorProto
+}
+
+message FieldOptions {
+    // Class: google.protobuf.MessageOptions
+}
+
+message OneofOptions {
+    // Class: google.protobuf.FieldOptions.EditionDefault
+}
+
+message EnumValueOptions {
+    // Class: google.protobuf.EnumOptions
+}
+
+message MethodOptions {
+    // Class: google.protobuf.ServiceOptions
+}
+
+message NamePart {
+    // Class: google.protobuf.UninterpretedOption
+}
+
+message FeatureSetDefaults {
+    // Class: google.protobuf.FeatureSet
+}
+
+message SourceCodeInfo {
+    // Class: google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault
+}
+
+message GeneratedCodeInfo {
+    // Class: google.protobuf.SourceCodeInfo.Location
+}
+
+message Timestamp {
+    // Class: google.protobuf.GeneratedCodeInfo.Annotation
+}
+
+message Any {
+    // Class: google.protobuf.Duration
+}
+
+message FieldMask {
+    // Class: google.protobuf.Empty
+}
+
+message Value {
+    // Class: google.protobuf.Struct
+}
+
+message DoubleValue {
+    // Class: google.protobuf.ListValue
+}
+
+message Int64Value {
+    // Class: google.protobuf.FloatValue
+}
+
+message Int32Value {
+    // Class: google.protobuf.UInt64Value
+}
+
+message BoolValue {
+    // Class: google.protobuf.UInt32Value
+}
+
+message BytesValue {
+    // Class: google.protobuf.StringValue
+}
+
+message CodeGeneratorRequest {
+    // Class: google.protobuf.compiler.Version
+}
+
+message File {
+    // Class: google.protobuf.compiler.CodeGeneratorResponse
+}
+
+message Type {
+    // Class: google.protobuf.SourceContext
+}
+
+message Enum {
+    // Class: google.protobuf.Field
+}
+
+message Option {
+    // Class: google.protobuf.EnumValue
+}
+
+message Method {
+    // Class: google.protobuf.Api
+}
+
+message Status {
+    // Class: google.protobuf.Mixin
+}
+
+message CompletionConfiguration {
+    // Class: exa.codeium_common_pb.CompletionsRequest
+}
+
+message ActionPointer {
+    // Class: exa.codeium_common_pb.PromptElementRange
+}
+
+message ExperimentWithVariant {
+    // Class: exa.codeium_common_pb.PromptAnnotationRange
+}
+
+message ExperimentLanguageServerVersionPayload {
+    // Class: exa.codeium_common_pb.ExperimentConfig
+}
+
+message ExperimentMiddleModeTokenPayload {
+    // Class: exa.codeium_common_pb.ExperimentModelConfigPayload
+}
+
+message ExperimentSentryPayload {
+    // Class: exa.codeium_common_pb.ExperimentMultilineModelThresholdPayload
+}
+
+message ExperimentProfilingTelemetrySampleRatePayload {
+    // Class: exa.codeium_common_pb.TeamOrganizationalControls
+}
+
+message PromptElementKindInfo {
+    // Class: exa.codeium_common_pb.ModelOrAlias
+}
+
+message PromptStageLatency {
+    // Class: exa.codeium_common_pb.PromptElementInclusionMetadata
+}
+
+message Completion {
+    // Class: exa.codeium_common_pb.CompletionResponse
+}
+
+message SingleModelCompletionProfile {
+    // Class: exa.codeium_common_pb.StreamingCompletionInfo
+}
+
+message StreamingCompletion {
+    // Class: exa.codeium_common_pb.CompletionProfile
+}
+
+message PackedStreamingCompletionMaps {
+    // Class: exa.codeium_common_pb.StreamingCompletionMap
+}
+
+message StreamingCompletionResponse {
+    // Class: exa.codeium_common_pb.StreamingEvalSuffixInfo
+}
+
+message CompletionWithLatencyInfo {
+    // Class: exa.codeium_common_pb.CompletionLatencyInfo
+}
+
+message Embedding {
+    // Class: exa.codeium_common_pb.EmbeddingsRequest
+}
+
+message RewardsRequest {
+    // Class: exa.codeium_common_pb.EmbeddingResponse
+}
+
+message Metadata {
+    // Class: exa.codeium_common_pb.RewardsResponse
+}
+
+message ErrorTrace {
+    // Class: exa.codeium_common_pb.EditorOptions
+}
+
+message SearchResultRecord {
+    // Class: exa.codeium_common_pb.Event
+}
+
+message EmbeddingMetadata {
+    // Class: exa.codeium_common_pb.WorkspacePath
+}
+
+message WorkspaceIndexData {
+    // Class: exa.codeium_common_pb.MockResponseData
+}
+
+message PartialIndexMetadata {
+    // Class: exa.codeium_common_pb.WorkspaceStats
+}
+
+message ClassInfo {
+    // Class: exa.codeium_common_pb.FunctionInfo
+}
+
+message AllowedModelConfig {
+    // Class: exa.codeium_common_pb.ClientModelConfig
+}
+
+message TopUpStatus {
+    // Class: exa.codeium_common_pb.PlanInfo
+}
+
+message UserStatus {
+    // Class: exa.codeium_common_pb.PlanStatus
+}
+
+message PerforceDepotInfo {
+    // Class: exa.codeium_common_pb.ScmWorkspaceInfo
+}
+
+message CodeContextItem {
+    // Class: exa.codeium_common_pb.GitRepoInfo
+}
+
+message WordCount {
+    // Class: exa.codeium_common_pb.SnippetWithWordCount
+}
+
+message CaptureFileRequestData {
+    // Class: exa.codeium_common_pb.Repository
+}
+
+message CompletionByDateEntry {
+    // Class: exa.codeium_common_pb.CompletionStatistics
+}
+
+message ChatStats {
+    // Class: exa.codeium_common_pb.CompletionByLanguageEntry
+}
+
+message ChatStatsByModelEntry {
+    // Class: exa.codeium_common_pb.ChatStatsByDateEntry
+}
+
+message CommandStatsByDateEntry {
+    // Class: exa.codeium_common_pb.CommandStats
+}
+
+message CascadeNUXState {
+    // Class: exa.codeium_common_pb.UserTableStats
+}
+
+message UserSettings {
+    // Class: exa.codeium_common_pb.UserNUXState
+}
+
+message ExternalModel {
+    // Class: exa.codeium_common_pb.ModelFeatures
+}
+
+message ApiProviderRoutingConfig {
+    // Class: exa.codeium_common_pb.ModelInfo
+}
+
+message ApiProviderConfig {
+    // Class: exa.codeium_common_pb.ApiProviderConfigMap
+}
+
+message CompletionExample {
+    // Class: exa.codeium_common_pb.ModelConfig
+}
+
+message CciWithSubrange {
+    // Class: exa.codeium_common_pb.CompletionExampleWithMetadata
+}
+
+message PathScopeItem {
+    // Class: exa.codeium_common_pb.ContextSubrange
+}
+
+message TextBlock {
+    // Class: exa.codeium_common_pb.FileLineRange
+}
+
+message RepositoryPathScopeItem {
+    // Class: exa.codeium_common_pb.RepositoryScopeItem
+}
+
+message ConsoleLogLine {
+    // Class: exa.codeium_common_pb.KnowledgeBaseScopeItem
+}
+
+message DOMElementScopeItem {
+    // Class: exa.codeium_common_pb.ConsoleLogScopeItem
+}
+
+message ContextScopeItem {
+    // Class: exa.codeium_common_pb.RecipeScopeItem
+}
+
+message NodeExecutionRecord {
+    // Class: exa.codeium_common_pb.ContextScope
+}
+
+message Guideline {
+    // Class: exa.codeium_common_pb.GraphExecutionState
+}
+
+message ChatNodeConfig {
+    // Class: exa.codeium_common_pb.GuidelineItem
+}
+
+message CompletionDelta {
+    // Class: exa.codeium_common_pb.MQueryConfig
+}
+
+message ChatCompletionInfo {
+    // Class: exa.codeium_common_pb.CompletionDeltaMap
+}
+
+message Status {
+    // Class: exa.codeium_common_pb.ChatToolCall
+}
+
+message Range {
+    // Class: exa.codeium_common_pb.DocumentPosition
+}
+
+message PromptComponents {
+    // Class: exa.codeium_common_pb.Document
+}
+
+message PinnedContextConfig {
+    // Class: exa.codeium_common_pb.TextOrScopeItem
+}
+
+message RepositoryPath {
+    // Class: exa.codeium_common_pb.PinnedContext
+}
+
+message Rule {
+    // Class: exa.codeium_common_pb.DefaultPinnedContextConfig
+}
+
+message LanguageServerDiagnostics {
+    // Class: exa.codeium_common_pb.RuleViolation
+}
+
+message IndexerDbStats {
+    // Class: exa.codeium_common_pb.IndexerStats
+}
+
+message FaissStateStats {
+    // Class: exa.codeium_common_pb.LocalSqliteFaissDbStats
+}
+
+message LastUpdateRecord {
+    // Class: exa.codeium_common_pb.PostgresDbStats
+}
+
+message SuperCompleteFilterReason {
+    // Class: exa.codeium_common_pb.ModelUsageStats
+}
+
+message IntellisenseSuggestion {
+    // Class: exa.codeium_common_pb.CodeDiagnostic
+}
+
+message DocumentQuery {
+    // Class: exa.codeium_common_pb.DocumentLinesElement
+}
+
+message DocumentOutline {
+    // Class: exa.codeium_common_pb.DocumentOutlineElement
+}
+
+message CodebaseCluster {
+    // Class: exa.codeium_common_pb.ProductEvent
+}
+
+message KnowledgeBaseChunk {
+    // Class: exa.codeium_common_pb.CodebaseClusterList
+}
+
+message KnowledgeBaseItemWithMetadata {
+    // Class: exa.codeium_common_pb.KnowledgeBaseItem
+}
+
+message ImageData {
+    // Class: exa.codeium_common_pb.KnowledgeBaseGroup
+}
+
+message MarkdownHeader {
+    // Class: exa.codeium_common_pb.MarkdownChunk
+}
+
+message TerminalShellCommandData {
+    // Class: exa.codeium_common_pb.TerminalShellCommandHeader
+}
+
+message TerminalShellCommandStreamChunk {
+    // Class: exa.codeium_common_pb.TerminalShellCommandTrailer
+}
+
+message TerminalCommandData {
+    // Class: exa.codeium_common_pb.TerminalShellCommand
+}
+
+message WindsurfDeployment {
+    // Class: exa.codeium_common_pb.WindsurfProject
+}
+
+message TeamConfig {
+    // Class: exa.codeium_common_pb.WebDocsOption
+}
+
+message McpServerTemplate {
+    // Class: exa.codeium_common_pb.WebAppDeploymentConfig
+}
+
+message McpCommandTemplate {
+    // Class: exa.codeium_common_pb.McpServerCommand
+}
+
+message UnleashContext {
+    // Class: exa.codeium_common_pb.McpCommandVariable
+}
+
+message ModelNotification {
+    // Class: exa.codeium_common_pb.MetricsRecord
+}
+
+message StartChatClientRequestStreamRequest {
+    // Class: exa.codeium_common_pb.ModelNotificationExperimentPayload
+}
+
+message AddCascadeInputRequest {
+    // Class: exa.chat_client_server_pb.ChatClientRequest
+}
+
+message UnifiedDiff {
+    // Class: exa.chat_client_server_pb.SendActionToChatPanelRequest
+}
+
+message DiffBlock {
+    // Class: exa.diff_action_pb.UnifiedDiff.UnifiedDiffLine
+}
+
+message CharacterDiff {
+    // Class: exa.diff_action_pb.CharacterDiffChange
+}
+
+message ComboDiff {
+    // Class: exa.diff_action_pb.ComboDiffLine
+}
+
+message DiffList {
+    // Class: exa.diff_action_pb.DiffSet
+}
+
+message ChatMetrics {
+    // Class: exa.chat_pb.CodeBlockInfo
+}
+
+message IntentFunctionExplain {
+    // Class: exa.chat_pb.IntentGeneric
+}
+
+message IntentFunctionUnitTests {
+    // Class: exa.chat_pb.IntentFunctionRefactor
+}
+
+message IntentClassExplain {
+    // Class: exa.chat_pb.IntentFunctionDocstring
+}
+
+message IntentCodeBlockRefactor {
+    // Class: exa.chat_pb.IntentCodeBlockExplain
+}
+
+message IntentGenerateCode {
+    // Class: exa.chat_pb.IntentProblemExplain
+}
+
+message IntentFastApply {
+    // Class: exa.chat_pb.IntentSearch
+}
+
+message ChatMessageActionSearch {
+    // Class: exa.chat_pb.ChatMessageIntent
+}
+
+message ChatMessageActionGeneric {
+    // Class: exa.chat_pb.ChatMessageActionEdit
+}
+
+message ChatMessageStatus {
+    // Class: exa.chat_pb.ChatMessageStatusContextRelevancy
+}
+
+message ChatMessageAction {
+    // Class: exa.chat_pb.ChatMessageError
+}
+
+message Conversation {
+    // Class: exa.chat_pb.ChatMessage
+}
+
+message PromptCacheOptions {
+    // Class: exa.chat_pb.ChatMessagePrompt
+}
+
+message ChatToolChoice {
+    // Class: exa.chat_pb.ChatToolDefinition
+}
+
+message ChatMentionsSearchResponse {
+    // Class: exa.chat_pb.ChatMentionsSearchRequest
+}
+
+message EnterpriseExternalModelConfig {
+    // Class: exa.chat_pb.GetChatMessageRequest
+}
+
+message FormattedChatMessage {
+    // Class: exa.chat_pb.ChatExperimentStatus
+}
+
+message ContextChangeActiveDocument {
+    // Class: exa.context_module_pb.ContextChangeEvent
+}
+
+message ContextChangeChatMessageReceived {
+    // Class: exa.context_module_pb.ContextChangeCursorPosition
+}
+
+message ContextChangeOracleItems {
+    // Class: exa.context_module_pb.ContextChangeOpenDocuments
+}
+
+message ContextChangePinnedGuideline {
+    // Class: exa.context_module_pb.ContextChangePinnedContext
+}
+
+message RetrievedCodeContextItemMetadata {
+    // Class: exa.context_module_pb.ContextChangeActiveNode
+}
+
+message CodeContextItemWithRetrievalMetadata {
+    // Class: exa.context_module_pb.CciWithSubrangeWithRetrievalMetadata
+}
+
+message CodeContextProviderMetadata {
+    // Class: exa.context_module_pb.FileNameWithRetrievalMetadata
+}
+
+message ContextModuleStateStats {
+    // Class: exa.context_module_pb.ContextModuleStats
+}
+
+message PersistentContextModuleState {
+    // Class: exa.context_module_pb.CodeContextItemIndexStats
+}
+
+message LocalNodeState {
+    // Class: exa.context_module_pb.ContextModuleResult
+}
+
+message IndexBuildConfig {
+    // Class: exa.index_pb.IndexDbVersion
+}
+
+message AutoIndexConfig {
+    // Class: exa.index_pb.RepositoryConfig
+}
+
+message VectorIndexStats {
+    // Class: exa.index_pb.IndexConfig
+}
+
+message Index {
+    // Class: exa.index_pb.ProgressBar
+}
+
+message Repository {
+    // Class: exa.index_pb.Index.RepoStats
+}
+
+message ManagementMetadata {
+    // Class: exa.index_pb.RequestIndexVersion
+}
+
+message AddRepositoryResponse {
+    // Class: exa.index_pb.AddRepositoryRequest
+}
+
+message EnableIndexingResponse {
+    // Class: exa.index_pb.EnableIndexingRequest
+}
+
+message DisableIndexingResponse {
+    // Class: exa.index_pb.DisableIndexingRequest
+}
+
+message EditRepositoryResponse {
+    // Class: exa.index_pb.EditRepositoryRequest
+}
+
+message DeleteRepositoryResponse {
+    // Class: exa.index_pb.DeleteRepositoryRequest
+}
+
+message GetRepositoriesRequest {
+    // Class: exa.index_pb.GetRepositoriesFilter
+}
+
+message GetIndexesRequest {
+    // Class: exa.index_pb.GetRepositoriesResponse
+}
+
+message GetIndexRequest {
+    // Class: exa.index_pb.GetIndexesResponse
+}
+
+message RemoteIndexStats {
+    // Class: exa.index_pb.GetIndexResponse
+}
+
+message GetRemoteIndexStatsResponse {
+    // Class: exa.index_pb.GetRemoteIndexStatsRequest
+}
+
+message AddIndexResponse {
+    // Class: exa.index_pb.AddIndexRequest
+}
+
+message CancelIndexingResponse {
+    // Class: exa.index_pb.CancelIndexingRequest
+}
+
+message RetryIndexingResponse {
+    // Class: exa.index_pb.RetryIndexingRequest
+}
+
+message DeleteIndexResponse {
+    // Class: exa.index_pb.DeleteIndexRequest
+}
+
+message PruneDatabaseResponse {
+    // Class: exa.index_pb.PruneDatabaseRequest
+}
+
+message GetDatabaseStatsResponse {
+    // Class: exa.index_pb.GetDatabaseStatsRequest
+}
+
+message SetIndexConfigResponse {
+    // Class: exa.index_pb.SetIndexConfigRequest
+}
+
+message GetIndexConfigResponse {
+    // Class: exa.index_pb.GetIndexConfigRequest
+}
+
+message GetNumberConnectionsResponse {
+    // Class: exa.index_pb.GetNumberConnectionsRequest
+}
+
+message GetConnectionsDebugInfoResponse {
+    // Class: exa.index_pb.GetConnectionsDebugInfoRequest
+}
+
+message GetIndexedRepositoriesResponse {
+    // Class: exa.index_pb.GetIndexedRepositoriesRequest
+}
+
+message GetMatchingFilePathsRequest {
+    // Class: exa.index_pb.RepositoryFilter
+}
+
+message GetNearestCCIsFromEmbeddingRequest {
+    // Class: exa.index_pb.GetMatchingFilePathsResponse
+}
+
+message GetNearestCCIsFromEmbeddingResponse {
+    // Class: exa.index_pb.ScoredContextItem
+}
+
+message GetEmbeddingsForCodeContextItemsResponse {
+    // Class: exa.index_pb.GetEmbeddingsForCodeContextItemsRequest
+}
+
+message IndexerEvent {
+    // Class: exa.index_pb.IndexStats
+}
+
+message Untrack {
+    // Class: exa.index_pb.IndexerEvent.Deletion
+}
+
+message AddWorkspaceInfo {
+    // Class: exa.index_pb.IndexerEvent.Update
+}
+
+message RemoveWorkspace {
+    // Class: exa.index_pb.IndexerEvent.AddWorkspace
+}
+
+message AddCommit {
+    // Class: exa.index_pb.IndexerEvent.IgnoreWorkspace
+}
+
+message IntentRelevance {
+    // Class: exa.code_edit.code_edit_pb.RelevantCodeContext
+}
+
+message FileChange {
+    // Class: exa.code_edit.code_edit_pb.CodeContextItemChange
+}
+
+message CodeChangeWithContext {
+    // Class: exa.code_edit.code_edit_pb.Intent
+}
+
+message CommitToFileChangeRequest {
+    // Class: exa.code_edit.code_edit_pb.GitCommit
+}
+
+message CommitToFileChangeResponse {
+    // Class: exa.code_edit.code_edit_pb.GitFilePatch
+}
+
+message CodeRetrievalResult {
+    // Class: exa.code_edit.code_edit_pb.CodeRetrievalEvalTask
+}
+
+message CodeContextItemWithClassification {
+    // Class: exa.code_edit.code_edit_pb.RetrieverClassification
+}
+
+message RetrievalMetrics {
+    // Class: exa.code_edit.code_edit_pb.RetrieverInfo
+}
+
+message InstructionWithId {
+    // Class: exa.code_edit.code_edit_pb.CodeRetrievalEvalResult
+}
+
+message TimeRange {
+    // Class: exa.code_edit.code_edit_pb.InstructionWithIdList
+}
+
+message AddGithubUsersRequest {
+    // Class: exa.opensearch_clients_pb.GithubUser
+}
+
+message UserInfo {
+    // Class: exa.opensearch_clients_pb.AddGithubUsersResponse
+}
+
+message AddUsersResponse {
+    // Class: exa.opensearch_clients_pb.AddUsersRequest
+}
+
+message KnowledgeBaseSearchResponse {
+    // Class: exa.opensearch_clients_pb.KnowledgeBaseSearchRequest
+}
+
+message GetKnowledgeBaseScopeItemsResponse {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseScopeItemsRequest
+}
+
+message GetKnowledgeBaseItemsFromScopeItemsResponse {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseItemsFromScopeItemsRequest
+}
+
+message IngestSlackDataResponse {
+    // Class: exa.opensearch_clients_pb.IngestSlackDataRequest
+}
+
+message IngestGithubDataResponse {
+    // Class: exa.opensearch_clients_pb.IngestGithubDataRequest
+}
+
+message IngestGoogleDriveDataResponse {
+    // Class: exa.opensearch_clients_pb.IngestGoogleDriveDataRequest
+}
+
+message IngestJiraDataResponse {
+    // Class: exa.opensearch_clients_pb.IngestJiraDataRequest
+}
+
+message IngestJiraPayloadResponse {
+    // Class: exa.opensearch_clients_pb.IngestJiraPayloadRequest
+}
+
+message ForwardSlackPayloadRequest {
+    // Class: exa.opensearch_clients_pb.ForwardResult
+}
+
+message IngestSlackPayloadRequest {
+    // Class: exa.opensearch_clients_pb.ForwardSlackPayloadResponse
+}
+
+message CommonDocument {
+    // Class: exa.opensearch_clients_pb.IngestSlackPayloadResponse
+}
+
+message SearchResult {
+    // Class: exa.opensearch_clients_pb.CommonDocumentWithScore
+}
+
+message OpenSearchAddRepositoryRequest {
+    // Class: exa.opensearch_clients_pb.QuerySearchResponse
+}
+
+message OpenSearchGetIndexRequest {
+    // Class: exa.opensearch_clients_pb.OpenSearchAddRepositoryResponse
+}
+
+message HybridSearchRequest {
+    // Class: exa.opensearch_clients_pb.OpenSearchGetIndexResponse
+}
+
+message GraphSearchRequest {
+    // Class: exa.opensearch_clients_pb.HybridSearchResponse
+}
+
+message ConnectorConfig {
+    // Class: exa.opensearch_clients_pb.GraphSearchResponse
+}
+
+message ConnectorConfigGithub {
+    // Class: exa.opensearch_clients_pb.ConnectorConfigSlack
+}
+
+message ConnectorConfigJira {
+    // Class: exa.opensearch_clients_pb.ConnectorConfigGoogleDrive
+}
+
+message ConnectorInternalConfigSlack {
+    // Class: exa.opensearch_clients_pb.ConnectorInternalConfig
+}
+
+message ConnectorInternalConfigGithub {
+    // Class: exa.opensearch_clients_pb.GithubRepoConfig
+}
+
+message ConnectorInternalConfigJira {
+    // Class: exa.opensearch_clients_pb.ConnectorInternalConfigGoogleDrive
+}
+
+message DeleteKnowledgeBaseConnectionRequest {
+    // Class: exa.opensearch_clients_pb.ConnectKnowledgeBaseAccountRequest
+}
+
+message UpdateConnectorConfigRequest {
+    // Class: exa.opensearch_clients_pb.DeleteKnowledgeBaseConnectionResponse
+}
+
+message ConnectorAdditionalParams {
+    // Class: exa.opensearch_clients_pb.UpdateConnectorConfigResponse
+}
+
+message ConnectorAdditionalParamsGithub {
+    // Class: exa.opensearch_clients_pb.ConnectorAdditionalParamsSlack
+}
+
+message CancelKnowledgeBaseJobsRequest {
+    // Class: exa.opensearch_clients_pb.ConnectKnowledgeBaseAccountResponse
+}
+
+message DocumentTypeCount {
+    // Class: exa.opensearch_clients_pb.CancelKnowledgeBaseJobsResponse
+}
+
+message GetKnowledgeBaseConnectorStateRequest {
+    // Class: exa.opensearch_clients_pb.ConnectorState
+}
+
+message JobState {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseConnectorStateResponse
+}
+
+message GetKnowledgeBaseJobStatesResponse {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseJobStatesRequest
+}
+
+message SlackChannelPayload {
+    // Class: exa.opensearch_clients_pb.SlackMessagePayload
+}
+
+message GetKnowledgeBaseWebhookUrlRequest {
+    // Class: exa.opensearch_clients_pb.SlackPayload
+}
+
+message GetConnectorInternalConfigRequest {
+    // Class: exa.opensearch_clients_pb.GetKnowledgeBaseWebhookUrlResponse
+}
+
+message WorkflowSpec {
+    // Class: exa.opensearch_clients_pb.GetConnectorInternalConfigResponse
+}
+
+message CodingStepState {
+    // Class: exa.cortex_pb.CortexPlanSummaryComponent
+}
+
+message CortexStepOutline {
+    // Class: exa.cortex_pb.CortexPlanState
+}
+
+message CortexResearchState {
+    // Class: exa.cortex_pb.CortexStepState
+}
+
+message CortexWorkflowState {
+    // Class: exa.cortex_pb.ResearchDebugInfo
+}
+
+message PlanInput {
+    // Class: exa.cortex_pb.CortexRunState
+}
+
+message ActionSpecCreateFile {
+    // Class: exa.cortex_pb.ActionSpec
+}
+
+message LineRangeTarget {
+    // Class: exa.cortex_pb.ActionSpecDeleteFile
+}
+
+message ReplacementChunk {
+    // Class: exa.cortex_pb.CommandContentTarget
+}
+
+message ActionState {
+    // Class: exa.cortex_pb.ActionSpecCommand
+}
+
+message ActionDebugInfo {
+    // Class: exa.cortex_pb.ActionResult
+}
+
+message ActionResultEdit {
+    // Class: exa.cortex_pb.ActionDebugInfo.DebugInfoEntry
+}
+
+message PlanState {
+    // Class: exa.cortex_pb.RetrievalStatus
+}
+
+message CortexPlanConfig {
+    // Class: exa.cortex_pb.PlanDebugInfo
+}
+
+message PlanConfig {
+    // Class: exa.cortex_pb.CortexConfig
+}
+
+message WorkspaceInitializationData {
+    // Class: exa.cortex_pb.CortexPlanSummary
+}
+
+message CortexWorkspaceMetadata {
+    // Class: exa.cortex_pb.StateInitializationData
+}
+
+message CortexTrajectory {
+    // Class: exa.cortex_pb.CortexTrajectoryMetadata
+}
+
+message CascadeTrajectorySummaries {
+    // Class: exa.cortex_pb.CascadeTrajectorySummary
+}
+
+message ImplicitTrajectory {
+    // Class: exa.cortex_pb.CortexTrajectoryReference
+}
+
+message MessagePromptMetadata {
+    // Class: exa.cortex_pb.CortexStepGeneratorMetadata
+}
+
+message CacheBreakpointMetadata {
+    // Class: exa.cortex_pb.ChatModelMetadata
+}
+
+message CortexStepMetadata {
+    // Class: exa.cortex_pb.ChatStartMetadata
+}
+
+message CortexErrorDetails {
+    // Class: exa.cortex_pb.CortexStepUpdate
+}
+
+message TrajectoryScope {
+    // Class: exa.cortex_pb.CortexTrajectoryStep
+}
+
+message CascadeConfig {
+    // Class: exa.cortex_pb.CascadeExecutorConfig
+}
+
+message CascadeConversationalPlannerConfig {
+    // Class: exa.cortex_pb.TrajectoryConversionConfig
+}
+
+message CascadeAgenticPlannerManagerConfig {
+    // Class: exa.cortex_pb.SectionOverrideConfig
+}
+
+message CascadeAgenticPlannerConfig {
+    // Class: exa.cortex_pb.CascadeAgenticPlannerApplierConfig
+}
+
+message MqueryToolConfig {
+    // Class: exa.cortex_pb.CascadeResearchPlannerConfig
+}
+
+message FindToolConfig {
+    // Class: exa.cortex_pb.GrepToolConfig
+}
+
+message InspectClusterToolConfig {
+    // Class: exa.cortex_pb.ClusterQueryToolConfig
+}
+
+message ListDirToolConfig {
+    // Class: exa.cortex_pb.AutoCommandConfig
+}
+
+message KnowledgeBaseSearchToolConfig {
+    // Class: exa.cortex_pb.RunCommandToolConfig
+}
+
+message ReplaceContentToolConfig {
+    // Class: exa.cortex_pb.FastApplyFallbackConfig
+}
+
+message IntentToolConfig {
+    // Class: exa.cortex_pb.CodeToolConfig
+}
+
+message SuggestedResponseConfig {
+    // Class: exa.cortex_pb.ViewFileToolConfig
+}
+
+message MemoryToolConfig {
+    // Class: exa.cortex_pb.SearchWebToolConfig
+}
+
+message CustomRecipeConfig {
+    // Class: exa.cortex_pb.McpToolConfig
+}
+
+message ProxyWebServerToolConfig {
+    // Class: exa.cortex_pb.AutoFixLintsConfig
+}
+
+message EnterpriseToolConfig {
+    // Class: exa.cortex_pb.DeployWebAppToolConfig
+}
+
+message CascadeToolConfig {
+    // Class: exa.cortex_pb.ViewCodeItemToolConfig
+}
+
+message ReadKnowledgeBaseItemToolConfig {
+    // Class: exa.cortex_pb.CascadePassivePlannerConfig
+}
+
+message BaseTrajectoryIdentifier {
+    // Class: exa.cortex_pb.CascadePlannerConfig
+}
+
+message DeploymentInteractionPayload {
+    // Class: exa.cortex_pb.CascadeUserBinaryConfirmation
+}
+
+message CascadeDeployInteractionSpec {
+    // Class: exa.cortex_pb.CascadeDeployInteraction
+}
+
+message CascadeUserInteraction {
+    // Class: exa.cortex_pb.RequestedInteraction
+}
+
+message CortexStepFinish {
+    // Class: exa.cortex_pb.CortexStepDummy
+}
+
+message CortexStepCheckpoint {
+    // Class: exa.cortex_pb.CortexStepPlanInput
+}
+
+message CortexStepMquery {
+    // Class: exa.cortex_pb.CheckpointConfig
+}
+
+message FastApplyFallbackInfo {
+    // Class: exa.cortex_pb.ReplacementChunkInfo
+}
+
+message CortexStepProposeCode {
+    // Class: exa.cortex_pb.CortexStepCodeAction
+}
+
+message GrepSearchResult {
+    // Class: exa.cortex_pb.CortexStepGitCommit
+}
+
+message InformPlannerConfig {
+    // Class: exa.cortex_pb.CortexStepInformPlanner
+}
+
+message CortexStepGrepSearch {
+    // Class: exa.cortex_pb.DiffBasedCommandEvalConfig
+}
+
+message CortexStepViewFile {
+    // Class: exa.cortex_pb.CortexStepFind
+}
+
+message CortexStepListDirectory {
+    // Class: exa.cortex_pb.ListDirectoryResult
+}
+
+message CortexStepClusterQuery {
+    // Class: exa.cortex_pb.CortexStepCompileDiagnostic
+}
+
+message CortexStepCompile {
+    // Class: exa.cortex_pb.CortexStepListClusters
+}
+
+message CortexStepUserInput {
+    // Class: exa.cortex_pb.CortexTrajectoryToPromptConfig
+}
+
+message CortexStepPlannerResponse {
+    // Class: exa.cortex_pb.ActiveUserState
+}
+
+message CortexStepViewCodeItem {
+    // Class: exa.cortex_pb.CortexStepFileBreakdown
+}
+
+message CortexStepSearchKnowledgeBase {
+    // Class: exa.cortex_pb.CortexStepWriteToFile
+}
+
+message CortexStepSuggestedResponses {
+    // Class: exa.cortex_pb.CortexStepLookupKnowledgeBase
+}
+
+message CortexStepInspectCluster {
+    // Class: exa.cortex_pb.CortexStepErrorMessage
+}
+
+message CortexStepRunCommand {
+    // Class: exa.cortex_pb.RunCommandOutput
+}
+
+message CortexStepReadUrlContent {
+    // Class: exa.cortex_pb.CortexStepRelatedFiles
+}
+
+message CortexStepViewContentChunk {
+    // Class: exa.cortex_pb.CortexStepReadKnowledgeBaseItem
+}
+
+message CortexStepReadDeploymentConfig {
+    // Class: exa.cortex_pb.CortexStepSearchWeb
+}
+
+message CortexStepCheckDeployStatus {
+    // Class: exa.cortex_pb.CortexStepDeployWebApp
+}
+
+message CascadeState {
+    // Class: exa.cortex_pb.CortexStepClipboard
+}
+
+message CortexStepCommandStatus {
+    // Class: exa.cortex_pb.CascadePanelState
+}
+
+message CortexMemoryMetadata {
+    // Class: exa.cortex_pb.CortexMemory
+}
+
+message CortexMemoryScope {
+    // Class: exa.cortex_pb.CortexMemoryText
+}
+
+message CortexMemoryLocalScope {
+    // Class: exa.cortex_pb.CortexMemoryGlobalScope
+}
+
+message CortexStepMemory {
+    // Class: exa.cortex_pb.CortexMemoryAllScope
+}
+
+message MemoryConfig {
+    // Class: exa.cortex_pb.CortexStepRetrieveMemory
+}
+
+message CodeStepCreationOptions {
+    // Class: exa.cortex_pb.ViewedFileTrackerConfig
+}
+
+message UserGrepStepCreationOptions {
+    // Class: exa.cortex_pb.ViewFileStepCreationOptions
+}
+
+message CustomToolSpec {
+    // Class: exa.cortex_pb.SnapshotToStepsOptions
+}
+
+message CortexStepAutoCascadeBroadcast {
+    // Class: exa.cortex_pb.CortexStepCustomTool
+}
+
+message McpServerSpec {
+    // Class: exa.cortex_pb.CortexStepPostPrReview
+}
+
+message CortexStepMcpTool {
+    // Class: exa.cortex_pb.McpServerInfo
+}
+
+message CortexStepToolCallProposal {
+    // Class: exa.cortex_pb.CortexStepManagerFeedback
+}
+
+message CortexStepTrajectoryChoice {
+    // Class: exa.cortex_pb.CortexStepToolCallChoice
+}
+
+message CortexStepProxyWebServer {
+    // Class: exa.cortex_pb.CortexStepCreateRecipe
+}
+
+message TrajectoryJudgeConfig {
+    // Class: exa.cortex_pb.McpServerState
+}
+
+message EphemeralMessagesConfig {
+    // Class: exa.cortex_pb.CortexStepViewFileOutline
+}
+
+message RevertMetadata {
+    // Class: exa.cortex_pb.HeuristicPrompt
+}
+
+message GitRepoInfo {
+    // Class: exa.cortex_pb.TrajectoryPrefixMetadata
+}
+
+message GithubPullRequestInfo {
+    // Class: exa.auto_cascade_common_pb.SessionInfo
+}
+
+message CascadePluginCommand {
+    // Class: exa.cascade_plugins_pb.CascadePluginTemplate
+}
+
+message CascadePluginCommandVariable {
+    // Class: exa.cascade_plugins_pb.CascadePluginCommandTemplate
+}
+
+message GetAvailableCascadePluginsResponse {
+    // Class: exa.cascade_plugins_pb.GetAvailableCascadePluginsRequest
+}
+
+message InstallCascadePluginResponse {
+    // Class: exa.cascade_plugins_pb.InstallCascadePluginRequest
+}
+
+message GetGithubPullRequestInfoResponse {
+    // Class: exa.language_server_pb.GetGithubPullRequestInfoRequest
+}
+
+message UpdateAutoCascadeGithubCredentialsResponse {
+    // Class: exa.language_server_pb.UpdateAutoCascadeGithubCredentialsRequest
+}
+
+message SendUserAutoCascadeMessageResponse {
+    // Class: exa.language_server_pb.SendUserAutoCascadeMessageRequest
+}
+
+message DeleteAutoCascadeSessionResponse {
+    // Class: exa.language_server_pb.DeleteAutoCascadeSessionRequest
+}
+
+message CheckoutAutoCascadeSessionBranchResponse {
+    // Class: exa.language_server_pb.CheckoutAutoCascadeSessionBranchRequest
+}
+
+message DiffAutoCascadeSessionBranchResponse {
+    // Class: exa.language_server_pb.DiffAutoCascadeSessionBranchRequest
+}
+
+message MergeAutoCascadeSessionBranchResponse {
+    // Class: exa.language_server_pb.MergeAutoCascadeSessionBranchRequest
+}
+
+message SubmitCodingPlanSummaryResponse {
+    // Class: exa.language_server_pb.SubmitCodingPlanSummaryRequest
+}
+
+message GetAllCortexPlansResponse {
+    // Class: exa.language_server_pb.GetAllCortexPlansRequest
+}
+
+message RecordCortexFeedbackResponse {
+    // Class: exa.language_server_pb.RecordCortexFeedbackRequest
+}
+
+message NewCortexPlanResponse {
+    // Class: exa.language_server_pb.NewCortexPlanRequest
+}
+
+message GetCortexPlanResponse {
+    // Class: exa.language_server_pb.GetCortexPlanRequest
+}
+
+message CommitCodingPlanResponse {
+    // Class: exa.language_server_pb.CommitCodingPlanRequest
+}
+
+message ReplanCodingPlanResponse {
+    // Class: exa.language_server_pb.ReplanCodingPlanRequest
+}
+
+message PrepareActionResponse {
+    // Class: exa.language_server_pb.PrepareActionRequest
+}
+
+message ApplyActionResponse {
+    // Class: exa.language_server_pb.ApplyActionRequest
+}
+
+message EditActionResponse {
+    // Class: exa.language_server_pb.EditActionRequest
+}
+
+message HandleStreamingCommandResponse {
+    // Class: exa.language_server_pb.HandleStreamingCommandRequest
+}
+
+message GetCompletionsRequest {
+    // Class: exa.language_server_pb.MultilineConfig
+}
+
+message AcceptCompletionRequest {
+    // Class: exa.language_server_pb.GetCompletionsResponse
+}
+
+message ProvideCompletionFeedbackRequest {
+    // Class: exa.language_server_pb.AcceptCompletionResponse
+}
+
+message HeartbeatRequest {
+    // Class: exa.language_server_pb.ProvideCompletionFeedbackResponse
+}
+
+message GetStatusRequest {
+    // Class: exa.language_server_pb.HeartbeatResponse
+}
+
+message GetCascadeModelConfigsRequest {
+    // Class: exa.language_server_pb.GetStatusResponse
+}
+
+message TeamOrganizationalControls {
+    // Class: exa.language_server_pb.GetCascadeModelConfigsResponse
+}
+
+message GetTeamOrganizationalControlsResponse {
+    // Class: exa.language_server_pb.GetTeamOrganizationalControlsRequest
+}
+
+message GetMcpServerTemplatesResponse {
+    // Class: exa.language_server_pb.GetMcpServerTemplatesRequest
+}
+
+message GetCommandModelConfigsResponse {
+    // Class: exa.language_server_pb.GetCommandModelConfigsRequest
+}
+
+message GetExternalModelResponse {
+    // Class: exa.language_server_pb.GetProcessesRequest
+}
+
+message GetProcessesResponse {
+    // Class: exa.language_server_pb.GetExternalModelRequest
+}
+
+message GetAuthTokenResponse {
+    // Class: exa.language_server_pb.GetAuthTokenRequest
+}
+
+message RecordEventResponse {
+    // Class: exa.language_server_pb.RecordEventRequest
+}
+
+message CancelRequestResponse {
+    // Class: exa.language_server_pb.CancelRequestRequest
+}
+
+message EditConfigurationResponse {
+    // Class: exa.language_server_pb.EditConfigurationRequest
+}
+
+message ValidateWindsurfJSAppProjectNameResponse {
+    // Class: exa.language_server_pb.ValidateWindsurfJSAppProjectNameRequest
+}
+
+message SaveWindsurfJSAppProjectNameResponse {
+    // Class: exa.language_server_pb.SaveWindsurfJSAppProjectNameRequest
+}
+
+message RegisterUserResponse {
+    // Class: exa.language_server_pb.RegisterUserRequest
+}
+
+message ClusteredSearchResponse {
+    // Class: exa.language_server_pb.ClusteredSearchRequest
+}
+
+message WellSupportedLanguagesResponse {
+    // Class: exa.language_server_pb.WellSupportedLanguagesRequest
+}
+
+message ProgressBarsResponse {
+    // Class: exa.language_server_pb.ProgressBarsRequest
+}
+
+message RecordSearchDocOpenResponse {
+    // Class: exa.language_server_pb.RecordSearchDocOpenRequest
+}
+
+message RecordSearchResultsViewResponse {
+    // Class: exa.language_server_pb.RecordSearchResultsViewRequest
+}
+
+message ContextInfoResponse {
+    // Class: exa.language_server_pb.ContextInfoRequest
+}
+
+message RefreshContextForIdeActionResponse {
+    // Class: exa.language_server_pb.RefreshContextForIdeActionRequest
+}
+
+message GetMatchingCodeContextResponse {
+    // Class: exa.language_server_pb.GetMatchingCodeContextRequest
+}
+
+message GetMatchingIndexedReposResponse {
+    // Class: exa.language_server_pb.GetMatchingIndexedReposRequest
+}
+
+message GetMessageTokenCountRequest {
+    // Class: exa.language_server_pb.GetChatMessageResponse
+}
+
+message RecordChatFeedbackRequest {
+    // Class: exa.language_server_pb.GetMessageTokenCountResponse
+}
+
+message RecordChatPanelSessionRequest {
+    // Class: exa.language_server_pb.RecordChatFeedbackResponse
+}
+
+message GetChatExperimentsRequest {
+    // Class: exa.language_server_pb.RecordChatPanelSessionResponse
+}
+
+message GetUserAnalyticsSummaryRequest {
+    // Class: exa.language_server_pb.GetChatExperimentsResponse
+}
+
+message GetUserStatusRequest {
+    // Class: exa.language_server_pb.GetUserAnalyticsSummaryResponse
+}
+
+message GetProfileDataRequest {
+    // Class: exa.language_server_pb.GetUserStatusResponse
+}
+
+message CaptureCodeRequest {
+    // Class: exa.language_server_pb.GetProfileDataResponse
+}
+
+message CaptureFileRequest {
+    // Class: exa.language_server_pb.CaptureCodeResponse
+}
+
+message GetChangelogRequest {
+    // Class: exa.language_server_pb.CaptureFileResponse
+}
+
+message GetFunctionsRequest {
+    // Class: exa.language_server_pb.GetChangelogResponse
+}
+
+message GetClassInfosRequest {
+    // Class: exa.language_server_pb.GetFunctionsResponse
+}
+
+message ExitRequest {
+    // Class: exa.language_server_pb.GetClassInfosResponse
+}
+
+message State {
+    // Class: exa.language_server_pb.ExitResponse
+}
+
+message LatencyInfo {
+    // Class: exa.language_server_pb.RequestInfo
+}
+
+message CompletionPart {
+    // Class: exa.language_server_pb.Suffix
+}
+
+message SearchResult {
+    // Class: exa.language_server_pb.CompletionItem
+}
+
+message ProgressBar {
+    // Class: exa.language_server_pb.SearchResultCluster
+}
+
+message ExactSearchOptions {
+    // Class: exa.language_server_pb.ExactSearchQuery
+}
+
+message ExactSearchResult {
+    // Class: exa.language_server_pb.ExactSearchPreviewOptions
+}
+
+message AddTrackedWorkspaceRequest {
+    // Class: exa.language_server_pb.ExactSearchMatchPreview
+}
+
+message RemoveTrackedWorkspaceRequest {
+    // Class: exa.language_server_pb.AddTrackedWorkspaceResponse
+}
+
+message GetWorkspaceEditStateRequest {
+    // Class: exa.language_server_pb.RemoveTrackedWorkspaceResponse
+}
+
+message GetWorkspaceEditStateResponse {
+    // Class: exa.language_server_pb.WorkspaceEditState
+}
+
+message WorkspaceInfo {
+    // Class: exa.language_server_pb.GetWorkspaceInfosRequest
+}
+
+message GenerateCommitMessageRequest {
+    // Class: exa.language_server_pb.GetWorkspaceInfosResponse
+}
+
+message GenerateCommitMessageResponse {
+    // Class: exa.language_server_pb.CommitMessageData
+}
+
+message RecordCommitMessageSaveResponse {
+    // Class: exa.language_server_pb.RecordCommitMessageSaveRequest
+}
+
+message GetUserSettingsResponse {
+    // Class: exa.language_server_pb.GetUserSettingsRequest
+}
+
+message SetUserSettingsResponse {
+    // Class: exa.language_server_pb.SetUserSettingsRequest
+}
+
+message GetDebugDiagnosticsResponse {
+    // Class: exa.language_server_pb.GetDebugDiagnosticsRequest
+}
+
+message CodeTrackerState {
+    // Class: exa.language_server_pb.CodeRange
+}
+
+message GetSuggestedContextScopeItemsResponse {
+    // Class: exa.language_server_pb.GetSuggestedContextScopeItemsRequest
+}
+
+message GetMatchingContextScopeItemsResponse {
+    // Class: exa.language_server_pb.GetMatchingContextScopeItemsRequest
+}
+
+message LocalIndexStatus {
+    // Class: exa.language_server_pb.ContextStatus
+}
+
+message BrainStatus {
+    // Class: exa.language_server_pb.IndexStatus
+}
+
+message GetBrainStatusResponse {
+    // Class: exa.language_server_pb.GetBrainStatusRequest
+}
+
+message GetAutoCascadeSessionsResponse {
+    // Class: exa.language_server_pb.GetAutoCascadeSessionsRequest
+}
+
+message SetPinnedContextRequest {
+    // Class: exa.language_server_pb.SetPinnedGuidelineRequest
+}
+
+message SetPinnedContextResponse {
+    // Class: exa.language_server_pb.SetPinnedGuidelineResponse
+}
+
+message SetupUniversitySandboxResponse {
+    // Class: exa.language_server_pb.SetupUniversitySandboxRequest
+}
+
+message UnifiedDiff {
+    // Class: exa.language_server_pb.UnifiedDiffChange
+}
+
+message RenderInsertionSideHintResponse {
+    // Class: exa.language_server_pb.RenderInsertionSideHintRequest
+}
+
+message RenderRequestMetadata {
+    // Class: exa.language_server_pb.RenderConfig
+}
+
+message CodeTheme {
+    // Class: exa.language_server_pb.RenderedSideHintDisplayOptions
+}
+
+message OnboardingState {
+    // Class: exa.language_server_pb.OnboardingItemState
+}
+
+message ResetOnboardingResponse {
+    // Class: exa.language_server_pb.ResetOnboardingRequest
+}
+
+message SkipOnboardingResponse {
+    // Class: exa.language_server_pb.SkipOnboardingRequest
+}
+
+message GetUserTrajectoryDebugResponse {
+    // Class: exa.language_server_pb.GetUserTrajectoryDebugRequest
+}
+
+message ForceBackgroundResearchRefreshResponse {
+    // Class: exa.language_server_pb.ForceBackgroundResearchRefreshRequest
+}
+
+message InitializeCascadePanelStateResponse {
+    // Class: exa.language_server_pb.InitializeCascadePanelStateRequest
+}
+
+message StartCascadeResponse {
+    // Class: exa.language_server_pb.StartCascadeRequest
+}
+
+message GetCascadeTrajectoryResponse {
+    // Class: exa.language_server_pb.GetCascadeTrajectoryRequest
+}
+
+message GetCascadeTrajectoryStepsResponse {
+    // Class: exa.language_server_pb.GetCascadeTrajectoryStepsRequest
+}
+
+message GetAllCascadeTrajectoriesResponse {
+    // Class: exa.language_server_pb.GetAllCascadeTrajectoriesRequest
+}
+
+message CancelCascadeInvocationResponse {
+    // Class: exa.language_server_pb.CancelCascadeInvocationRequest
+}
+
+message CancelCascadeStepsResponse {
+    // Class: exa.language_server_pb.CancelCascadeStepsRequest
+}
+
+message SendUserCascadeMessageResponse {
+    // Class: exa.language_server_pb.SendUserCascadeMessageRequest
+}
+
+message RevertToCascadeStepResponse {
+    // Class: exa.language_server_pb.RevertToCascadeStepRequest
+}
+
+message HandleCascadeUserInteractionResponse {
+    // Class: exa.language_server_pb.HandleCascadeUserInteractionRequest
+}
+
+message AcknowledgeCascadeCodeEditResponse {
+    // Class: exa.language_server_pb.AcknowledgeCascadeCodeEditRequest
+}
+
+message GetCodeValidationStatesResponse {
+    // Class: exa.language_server_pb.GetCodeValidationStatesRequest
+}
+
+message DeleteCascadeTrajectoryRequest {
+    // Class: exa.language_server_pb.ValidationState
+}
+
+message ResolveOutstandingStepsRequest {
+    // Class: exa.language_server_pb.DeleteCascadeTrajectoryResponse
+}
+
+message StreamTerminalShellCommandResponse {
+    // Class: exa.language_server_pb.ResolveOutstandingStepsResponse
+}
+
+message GetWebDocsOptionsResponse {
+    // Class: exa.language_server_pb.GetWebDocsOptionsRequest
+}
+
+message UpdateDevExperimentsResponse {
+    // Class: exa.language_server_pb.UpdateDevExperimentsRequest
+}
+
+message GetActiveAppDeploymentForWorkspaceResponse {
+    // Class: exa.language_server_pb.GetActiveAppDeploymentForWorkspaceRequest
+}
+
+message GetWindsurfJSAppDeploymentResponse {
+    // Class: exa.language_server_pb.GetWindsurfJSAppDeploymentRequest
+}
+
+message GetCascadeMemoriesResponse {
+    // Class: exa.language_server_pb.GetCascadeMemoriesRequest
+}
+
+message DeleteCascadeMemoryResponse {
+    // Class: exa.language_server_pb.DeleteCascadeMemoryRequest
+}
+
+message UpdateCascadeMemoryResponse {
+    // Class: exa.language_server_pb.UpdateCascadeMemoryRequest
+}
+
+message GetUserMemoriesResponse {
+    // Class: exa.language_server_pb.GetUserMemoriesRequest
+}
+
+message RefreshMcpServersResponse {
+    // Class: exa.language_server_pb.RefreshMcpServersRequest
+}
+
+message GetMcpServerStatesResponse {
+    // Class: exa.language_server_pb.GetMcpServerStatesRequest
+}
+
+message GetAllWorkflowsResponse {
+    // Class: exa.language_server_pb.GetAllWorkflowsRequest
+}
+
+message SendActionToChatPanelResponse {
+    // Class: exa.language_server_pb.SendActionToChatPanelRequest
+}
+
+message RecordUserGrepResponse {
+    // Class: exa.language_server_pb.RecordUserGrepRequest
+}
+
+message GetUnleashDataResponse {
+    // Class: exa.language_server_pb.GetUnleashDataRequest
+}
+
+message ShouldEnableUnleashResponse {
+    // Class: exa.language_server_pb.ShouldEnableUnleashRequest
+}
+
+message GetPatchAndCodeChangeResponse {
+    // Class: exa.language_server_pb.GetPatchAndCodeChangeRequest
+}
+
+message CreateTrajectoryShareResponse {
+    // Class: exa.language_server_pb.CreateTrajectoryShareRequest
+}
+
+message GetAvailableCascadePluginsResponse {
+    // Class: exa.language_server_pb.GetAvailableCascadePluginsRequest
+}
+
+message InstallCascadePluginResponse {
+    // Class: exa.language_server_pb.InstallCascadePluginRequest
+}
+
+message LanguageServerStartedResponse {
+    // Class: exa.extension_server_pb.LanguageServerStartedRequest
+}
+
+message OpenSettingResponse {
+    // Class: exa.extension_server_pb.OpenSettingRequest
+}
+
+message OpenFilePointerResponse {
+    // Class: exa.extension_server_pb.OpenFilePointerRequest
+}
+
+message InsertCodeAtCursorResponse {
+    // Class: exa.extension_server_pb.InsertCodeAtCursorRequest
+}
+
+message LogEventRequest {
+    // Class: exa.extension_server_pb.EventMetadataRecord
+}
+
+message CheckTerminalShellSupportRequest {
+    // Class: exa.extension_server_pb.LogEventResponse
+}
+
+message ExecuteCommandRequest {
+    // Class: exa.extension_server_pb.CheckTerminalShellSupportResponse
+}
+
+message ShowTerminalResponse {
+    // Class: exa.extension_server_pb.ShowTerminalRequest
+}
+
+message OpenVirtualFileResponse {
+    // Class: exa.extension_server_pb.OpenVirtualFileRequest
+}
+
+message SaveDocumentResponse {
+    // Class: exa.extension_server_pb.SaveDocumentRequest
+}
+
+message AwaitNewLintsConfig {
+    // Class: exa.extension_server_pb.GetLintErrorsRequest
+}
+
+message OpenDiffZonesRequest {
+    // Class: exa.extension_server_pb.GetLintErrorsResponse
+}
+
+message OpenExternalUrlRequest {
+    // Class: exa.extension_server_pb.OpenDiffZonesResponse
+}
+
+message HandleAsyncPostMessageRequest {
+    // Class: exa.extension_server_pb.OpenExternalUrlResponse
+}
+
+message PlaySoundRequest {
+    // Class: exa.extension_server_pb.HandleAsyncPostMessageResponse
+}
+
+message OpenWindsurfRulesFileRequest {
+    // Class: exa.extension_server_pb.PlaySoundResponse
+}
+
+message RefreshURIsRequest {
+    // Class: exa.extension_server_pb.OpenWindsurfRulesFileResponse
+}
+
+message OpenPluginPageRequest {
+    // Class: exa.extension_server_pb.RefreshURIsResponse
+}
+
+message OpenPluginConfigModalRequest {
+    // Class: exa.extension_server_pb.OpenPluginPageResponse
+}
+
+message StreamReactiveUpdatesRequest {
+    // Class: exa.extension_server_pb.OpenPluginConfigModalResponse
+}
+
+message TestProto {
+    // Class: exa.reactive_component_pb.StreamReactiveUpdatesResponse
+}
+
+message FieldDiff {
+    // Class: exa.reactive_component_pb.MessageDiff
+}
+
+message MapDiff {
+    // Class: exa.reactive_component_pb.RepeatedDiff
+}
+
+message SingularValue {
+    // Class: exa.reactive_component_pb.MapKeyDiff
+}
+
+message ChatMessageWithFeedback {
+    // Class: exa.reactive_component_pb.TestDiffProto
+}
+
+message PinnedSystemErrorFeedback {
+    // Class: exa.chat_web_server_pb.FastApply
+}
+
+message ChatMessageState {
+    // Class: exa.chat_web_server_pb.PinnedSystemFeedback
+}
+
+message OpenFilePointer {
+    // Class: exa.chat_web_server_pb.ClearConversation
+}
+
+message ApplyDiff {
+    // Class: exa.chat_web_server_pb.InsertCodeAtCursor
+}
+
+message HandshakeRequest {
+    // Class: exa.chat_web_server_pb.HideDiff
+}
+
+message ChatExperimentStatus {
+    // Class: exa.chat_web_server_pb.ErrorResponse
+}
+
+message StateUpdate {
+    // Class: exa.chat_web_server_pb.HandshakeResponse
+}
+
+message Heartbeat {
+    // Class: exa.chat_web_server_pb.CancelInfightMessage
+}
+
+message SetDraftQueryRequest {
+    // Class: exa.chat_web_server_pb.UpdateUserSettingsRequest
+}
+
+message DismissPinnedSystemFeedback {
+    // Class: exa.chat_web_server_pb.RetryLastMessage
+}
+
+message WebServerResponse {
+    // Class: exa.chat_web_server_pb.WebServerRequest
+}
+
+message GetMatchingIndexedReposRequest {
+    // Class: exa.chat_web_server_pb.OnboardingState
+}
+
+message GetMatchingCodeContextRequest {
+    // Class: exa.chat_web_server_pb.GetMatchingIndexedReposResponse
+}
+
+message QuerySelectionField {
+    // Class: exa.chat_web_server_pb.GetMatchingCodeContextResponse
+}
+
+message QueryAggregationField {
+    // Class: exa.user_analytics_pb.QueryFilterField
+}
+
+message CustomQueryRequest {
+    // Class: exa.user_analytics_pb.QueryOrderField
+}
+
+message CustomQueryResponse {
+    // Class: exa.user_analytics_pb.QueryResponseItem
+}
+
+message GetAnalyticsResponse {
+    // Class: exa.user_analytics_pb.GetAnalyticsRequest
+}
+
+message AnalyticsResponse {
+    // Class: exa.user_analytics_pb.AnalyticsRequest
+}
+
+message UserPageAnalyticsResponse {
+    // Class: exa.user_analytics_pb.UserPageAnalyticsRequest
+}
+
+message GetPublicAnalyticsResponse {
+    // Class: exa.user_analytics_pb.GetPublicAnalyticsRequest
+}
+
+message QueryResult {
+    // Class: exa.user_analytics_pb.QueryRequest
+}
+
+message QueryResultCompletionStats {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionStats
+}
+
+message QueryResultCompletionsByDay {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByDay
+}
+
+message QueryResultCompletionsByLanguage {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByLanguage
+}
+
+message QueryResultCompletionsByIde {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByIde
+}
+
+message QueryResultCompletionsByRepository {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByRepository
+}
+
+message QueryResultChatsByDay {
+    // Class: exa.user_analytics_pb.QueryRequestChatsByDay
+}
+
+message QueryRequestActiveUserCount {
+    // Class: exa.user_analytics_pb.QueryRequestAllChatsByDay
+}
+
+message QueryRequestAllChatStatsByModel {
+    // Class: exa.user_analytics_pb.QueryRequestChatStatsByModel
+}
+
+message QueryRequestAllUsersCompletionsByDay {
+    // Class: exa.user_analytics_pb.QueryResultChatStatsByModel
+}
+
+message QueryRequestAllUsersCompletionStats {
+    // Class: exa.user_analytics_pb.QueryRequestAllUsersCompletionsByLanguage
+}
+
+message QueryResultCompletionsByApiKey {
+    // Class: exa.user_analytics_pb.QueryRequestCompletionsByApiKey
+}
+
+message QueryRequestPercentCodeWritten {
+    // Class: exa.user_analytics_pb.QueryResultActiveUserCount
+}
+
+message QueryRequestCharsPerOpportunity {
+    // Class: exa.user_analytics_pb.QueryResultPercentCodeWritten
+}
+
+message QueryRequestChatStats {
+    // Class: exa.user_analytics_pb.QueryResultCharsPerOpportunity
+}
+
+message QueryRequestCommandStats {
+    // Class: exa.user_analytics_pb.QueryResultChatStats
+}
+
+message QueryRequestActiveDaysByApiKey {
+    // Class: exa.user_analytics_pb.QueryResultCommandStats
+}
+
+message QueryResultError {
+    // Class: exa.user_analytics_pb.QueryResultActiveDaysByApiKey
+}
+
+message GetPreferredTimeZoneResponse {
+    // Class: exa.user_analytics_pb.GetPreferredTimeZoneRequest
+}
+

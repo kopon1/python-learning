@@ -1,0 +1,113 @@
+syntax = "proto3";
+package exa.codeium_common_pb;
+
+import "google/protobuf/timestamp.proto";
+
+// Auto-generated from chat.js - Critical messages only
+// DO NOT EDIT MANUALLY - Reverse-engineered structure
+
+
+message ProviderSource {
+}
+
+message Repository {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+  string     no: 4, = 4;
+  string     no: 5, = 5;
+  string     no: 6, = 6;
+  string     no: 7, = 7;
+}
+
+message ContextSubrange {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+}
+
+message FileLineRange {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+}
+
+message RepositoryScopeItem {
+  string     no: 1, = 1;
+}
+
+message RepositoryPathScopeItem {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+}
+
+message KnowledgeBaseScopeItem {
+  string     no: 1, = 1;
+  string     no: 7, = 7;
+  string     no: 8, = 8;
+  string     no: 3, = 3;
+  string     no: 4, = 4;
+  string     no: 5, = 5;
+  string     no: 6, = 6;
+}
+
+message ContextScopeItem {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+  string     no: 4, = 4;
+  string     no: 6, = 6;
+  string     no: 7, = 7;
+  string     no: 8, = 8;
+  string     no: 9, = 9;
+  string     no: 10, = 10;
+  string     no: 11, = 11;
+  string     no: 12, = 12;
+  string     no: 13, = 13;
+  string     no: 14, = 14;
+  string     no: 15, = 15;
+  string     no: 16, = 16;
+}
+
+message ContextScope {
+  string     no: 1, = 1;
+}
+
+message RepositoryPath {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+}
+
+message KnowledgeBaseChunk {
+  string     no: 1, = 1;
+  string     no: 3, = 3;
+  string     no: 2, = 2;
+}
+
+message KnowledgeBaseItem {
+  string     no: 1, = 1;
+  string     no: 3, = 3;
+  string     no: 4, = 4;
+  string     no: 5, = 5;
+  string     no: 6, = 6;
+  string     no: 7, = 7;
+  string     no: 2, = 2;
+}
+
+message KnowledgeBaseItemWithMetadata {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+  string     no: 4, = 4;
+}
+
+message KnowledgeBaseGroup {
+  string     no: 1, = 1;
+  string     no: 2, = 2;
+  string     no: 3, = 3;
+}
+
+// Reverse-engineering complete! (~400-600 lines expected)
+// Compile with: protoc --python_out=. codeium_common.proto
