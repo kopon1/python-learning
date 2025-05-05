@@ -4,14 +4,14 @@ import csv
 import datetime
 
 # List that saves user inputs
-inputs = []
+inputs = {}
 f = "inputs.csv"
 headers = []
 
 # function that gets the current time and formats it
 def get_current_time():
     now = datetime.datetime.now()
-    return now.strftime("%D-%M-%Y, %H:%M:%S")
+    return now.strftime("%D-%M-%Y, %H:%M")
 
 # function that handles user's choice to add, divide, multiply or substract
 def calc():
@@ -53,15 +53,15 @@ def calc():
                 
 # compress code into printing final result and append to inputs list
             total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
-            inputs.append(f"{total}, {get_current_time()}")
             print(total)
+            inputs = [{"Time": get_current_time(), "Operations": [total]}]
+            
             
 # append inputs list to file
-            with open("inputs.csv", "a") as csv_file:
-                fieldnames = ["Operations", "Time"]
+            with open("inputs.csv", "a", newline="") as csv_file:
+                fieldnames = ["Time", "Operations"]
                 csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter="\t")
                 csv_writer.writeheader()
-            
                 for line in inputs:
                     csv_writer.writerow(line)
                     
@@ -106,7 +106,10 @@ def delete_input():
         if opt is None:
             return
         remove_lines("inputs.csv", [opt])
-        
+
+
+
+       
 user_choice()
 
 
