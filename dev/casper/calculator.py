@@ -3,10 +3,8 @@ from funcs import input_to_int, appropiate_input_num, remove_lines
 import csv
 import datetime
 
-# List that saves user inputs
+# Dict that saves user inputs
 inputs = {}
-f = "inputs.csv"
-headers = []
 
 # function that gets the current time and formats it
 def get_current_time():
@@ -51,19 +49,29 @@ def calc():
             else:
                 print("Invalid choice, please try again")
                 
-# compress code into printing final result and append to inputs list
+# compress code into printing final result and append to inputs dict
             total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
             print(total)
-            inputs = [{"Time": get_current_time(), "Operations": [total]}]
+            # key = get_current_time()
+            # inputs = {}
+            # if key in inputs:
+            #     inputs[key].append(total)
+            # else:
+            #     inputs = [{"Time": key, "Operations": [total]}]
             
             
-# append inputs list to file
+# append inputs dict to csv file
             with open("inputs.csv", "a", newline="") as csv_file:
-                fieldnames = ["Time", "Operations"]
-                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter="\t")
-                csv_writer.writeheader()
-                for line in inputs:
-                    csv_writer.writerow(line)
+                key = get_current_time()
+                inputs = {}
+                if key in inputs:
+                    inputs[key].append(total)
+                else:
+                    inputs = [{"Time": key, "Operations": [total]}]
+                    fieldnames = ["Time", "Operations"]
+                    csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter="\t")
+                    for line in inputs:
+                        csv_writer.writerow(line)
                     
            
             
@@ -77,8 +85,9 @@ def user_choice():
                 calc()
             elif choice == 2:
                 with open("inputs.csv", "r") as csv_file:
-                    csv_reader = csv.DictReader(csv_file, delimiter="\t")
-                    
+                    fieldnames = ["Time", "Operations"]
+                    csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter="\t")
+                    next(csv_file)
                     for line in csv_reader:
                         print(line)
             
