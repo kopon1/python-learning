@@ -67,9 +67,9 @@ def calc():
                 if key in inputs:
                     inputs[key].append(total)
                 else:
-                    inputs = [{"Time": key, "Operations": [total]}]
+                    inputs = [{key : [total]}]
                     fieldnames = ["Time", "Operations"]
-                    csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter="\t")
+                    csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction='ignore', delimiter="\t")
                     for line in inputs:
                         csv_writer.writerow(line)
                     
