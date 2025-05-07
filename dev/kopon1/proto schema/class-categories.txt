@@ -1,0 +1,1736 @@
+Other:  → chat_pb.CodeBlockInfo
+Other:  → chat_pb.ChatMetrics
+Other:  → chat_pb.IntentGeneric
+Other:  → chat_pb.IntentFunctionExplain
+Other:  → chat_pb.IntentFunctionRefactor
+Other:  → chat_pb.IntentFunctionUnitTests
+Other:  → chat_pb.IntentFunctionDocstring
+Other:  → chat_pb.IntentClassExplain
+Other:  → chat_pb.IntentCodeBlockExplain
+Other:  → chat_pb.IntentCodeBlockRefactor
+Other:  → chat_pb.IntentProblemExplain
+Other:  → chat_pb.IntentGenerateCode
+Other:  → chat_pb.IntentSearch
+Other:  → chat_pb.IntentFastApply
+Other:  → chat_pb.ChatMessageIntent
+Other:  → chat_pb.ChatMessageActionSearch
+Other:  → chat_pb.ChatMessageActionEdit
+Other:  → chat_pb.ChatMessageActionGeneric
+Core Context:  → chat_pb.ChatMessageStatusContextRelevancy
+Other:  → chat_pb.ChatMessageStatus
+Other:  → chat_pb.ChatMessageError
+Other:  → chat_pb.ChatMessageAction
+Other:  → chat_pb.ChatMessage
+Other:  → chat_pb.Conversation
+Other:  → chat_pb.ChatMessagePrompt
+Other:  → chat_pb.PromptCacheOptions
+Other:  → chat_pb.ChatToolDefinition
+Other:  → chat_pb.ChatToolChoice
+Other:  → chat_pb.ChatMentionsSearchRequest
+Other:  → chat_pb.ChatMentionsSearchResponse
+Other:  → chat_pb.GetChatMessageRequest
+Other:  → chat_pb.GetChatMessageRequest.EnterpriseExternalModelConfig
+Other:  → chat_pb.ChatExperimentStatus
+Other:  → chat_pb.FormattedChatMessage
+Other:  → codeium_common_pb.CompletionsRequest
+Other:  → codeium_common_pb.CompletionConfiguration
+Other:  → codeium_common_pb.PromptElementRange
+Other:  → codeium_common_pb.ActionPointer
+Other:  → codeium_common_pb.PromptAnnotationRange
+Other:  → codeium_common_pb.ExperimentWithVariant
+Other:  → codeium_common_pb.ExperimentConfig
+Other:  → codeium_common_pb.ExperimentLanguageServerVersionPayload
+Other:  → codeium_common_pb.ExperimentModelConfigPayload
+Other:  → codeium_common_pb.ExperimentMiddleModeTokenPayload
+Other:  → codeium_common_pb.ExperimentMultilineModelThresholdPayload
+Other:  → codeium_common_pb.ExperimentSentryPayload
+Other:  → codeium_common_pb.TeamOrganizationalControls
+Other:  → codeium_common_pb.ExperimentProfilingTelemetrySampleRatePayload
+Other:  → codeium_common_pb.ModelOrAlias
+Other:  → codeium_common_pb.PromptElementKindInfo
+Other:  → codeium_common_pb.PromptElementInclusionMetadata
+Other:  → codeium_common_pb.PromptStageLatency
+Other:  → codeium_common_pb.CompletionResponse
+Other:  → codeium_common_pb.Completion
+Other:  → codeium_common_pb.StreamingCompletionInfo
+Other:  → codeium_common_pb.SingleModelCompletionProfile
+Other:  → codeium_common_pb.CompletionProfile
+Other:  → codeium_common_pb.StreamingCompletion
+Other:  → codeium_common_pb.StreamingCompletionMap
+Other:  → codeium_common_pb.PackedStreamingCompletionMaps
+Other:  → codeium_common_pb.StreamingEvalSuffixInfo
+Other:  → codeium_common_pb.StreamingCompletionResponse
+Other:  → codeium_common_pb.CompletionLatencyInfo
+Other:  → codeium_common_pb.CompletionWithLatencyInfo
+Other:  → codeium_common_pb.EmbeddingsRequest
+Other:  → codeium_common_pb.Embedding
+Other:  → codeium_common_pb.EmbeddingResponse
+Other:  → codeium_common_pb.RewardsRequest
+Other:  → codeium_common_pb.RewardsResponse
+Other:  → codeium_common_pb.Metadata
+Other:  → codeium_common_pb.EditorOptions
+Other:  → codeium_common_pb.ErrorTrace
+Other:  → codeium_common_pb.Event
+Other:  → codeium_common_pb.SearchResultRecord
+Other:  → codeium_common_pb.WorkspacePath
+Other:  → codeium_common_pb.EmbeddingMetadata
+Other:  → codeium_common_pb.MockResponseData
+Other:  → codeium_common_pb.WorkspaceIndexData
+Other:  → codeium_common_pb.WorkspaceStats
+Other:  → codeium_common_pb.PartialIndexMetadata
+Other:  → codeium_common_pb.FunctionInfo
+Other:  → codeium_common_pb.ClassInfo
+Other:  → codeium_common_pb.ClientModelConfig
+Other:  → codeium_common_pb.AllowedModelConfig
+Other:  → codeium_common_pb.PlanInfo
+Other:  → codeium_common_pb.TopUpStatus
+Other:  → codeium_common_pb.PlanStatus
+Other:  → codeium_common_pb.UserStatus
+Other:  → codeium_common_pb.ScmWorkspaceInfo
+Other:  → codeium_common_pb.PerforceDepotInfo
+File/Repo:  → codeium_common_pb.GitRepoInfo
+Core Context:  → codeium_common_pb.CodeContextItem
+Other:  → codeium_common_pb.SnippetWithWordCount
+Other:  → codeium_common_pb.WordCount
+File/Repo:  → codeium_common_pb.Repository
+File/Repo:  → codeium_common_pb.CaptureFileRequestData
+Other:  → codeium_common_pb.CompletionStatistics
+Other:  → codeium_common_pb.CompletionByDateEntry
+Other:  → codeium_common_pb.CompletionByLanguageEntry
+Other:  → codeium_common_pb.ChatStats
+Other:  → codeium_common_pb.ChatStatsByDateEntry
+Other:  → codeium_common_pb.ChatStatsByModelEntry
+Other:  → codeium_common_pb.CommandStats
+Other:  → codeium_common_pb.CommandStatsByDateEntry
+Other:  → codeium_common_pb.UserTableStats
+Other:  → codeium_common_pb.CascadeNUXState
+Other:  → codeium_common_pb.UserNUXState
+Other:  → codeium_common_pb.UserSettings
+Other:  → codeium_common_pb.ModelFeatures
+Other:  → codeium_common_pb.ExternalModel
+Other:  → codeium_common_pb.ModelInfo
+Other:  → codeium_common_pb.ApiProviderRoutingConfig
+Other:  → codeium_common_pb.ApiProviderConfigMap
+Other:  → codeium_common_pb.ApiProviderConfig
+Other:  → codeium_common_pb.ModelConfig
+Other:  → codeium_common_pb.CompletionExample
+Other:  → codeium_common_pb.CompletionExampleWithMetadata
+Other:  → codeium_common_pb.CciWithSubrange
+Core Context:  → codeium_common_pb.ContextSubrange
+Other:  → codeium_common_pb.PathScopeItem
+File/Repo:  → codeium_common_pb.FileLineRange
+Other:  → codeium_common_pb.TextBlock
+File/Repo:  → codeium_common_pb.RepositoryScopeItem
+File/Repo:  → codeium_common_pb.RepositoryPathScopeItem
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseScopeItem
+Other:  → codeium_common_pb.ConsoleLogLine
+Other:  → codeium_common_pb.ConsoleLogScopeItem
+Other:  → codeium_common_pb.DOMElementScopeItem
+Other:  → codeium_common_pb.RecipeScopeItem
+Core Context:  → codeium_common_pb.ContextScopeItem
+Core Context:  → codeium_common_pb.ContextScope
+Other:  → codeium_common_pb.NodeExecutionRecord
+Other:  → codeium_common_pb.GraphExecutionState
+Other:  → codeium_common_pb.Guideline
+Other:  → codeium_common_pb.GuidelineItem
+Other:  → codeium_common_pb.ChatNodeConfig
+Other:  → codeium_common_pb.MQueryConfig
+Other:  → codeium_common_pb.CompletionDelta
+Other:  → codeium_common_pb.CompletionDeltaMap
+Other:  → codeium_common_pb.ChatCompletionInfo
+Other:  → codeium_common_pb.ChatToolCall
+Other:  → codeium_common_pb.Status
+Knowledge Base:  → codeium_common_pb.DocumentPosition
+Other:  → codeium_common_pb.Range
+Knowledge Base:  → codeium_common_pb.Document
+Other:  → codeium_common_pb.PromptComponents
+Other:  → codeium_common_pb.TextOrScopeItem
+Core Context:  → codeium_common_pb.PinnedContextConfig
+Core Context:  → codeium_common_pb.PinnedContext
+File/Repo:  → codeium_common_pb.RepositoryPath
+Core Context:  → codeium_common_pb.DefaultPinnedContextConfig
+Other:  → codeium_common_pb.Rule
+Other:  → codeium_common_pb.RuleViolation
+Other:  → codeium_common_pb.LanguageServerDiagnostics
+Other:  → codeium_common_pb.IndexerStats
+Other:  → codeium_common_pb.IndexerDbStats
+Other:  → codeium_common_pb.LocalSqliteFaissDbStats
+Other:  → codeium_common_pb.FaissStateStats
+Other:  → codeium_common_pb.PostgresDbStats
+Other:  → codeium_common_pb.LastUpdateRecord
+Other:  → codeium_common_pb.ModelUsageStats
+Other:  → codeium_common_pb.SuperCompleteFilterReason
+Other:  → codeium_common_pb.CodeDiagnostic
+Other:  → codeium_common_pb.IntellisenseSuggestion
+Knowledge Base:  → codeium_common_pb.DocumentLinesElement
+Knowledge Base:  → codeium_common_pb.DocumentQuery
+Knowledge Base:  → codeium_common_pb.DocumentOutlineElement
+Knowledge Base:  → codeium_common_pb.DocumentOutline
+Other:  → codeium_common_pb.ProductEvent
+Other:  → codeium_common_pb.CodebaseCluster
+Other:  → codeium_common_pb.CodebaseClusterList
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseChunk
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseItem
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseItemWithMetadata
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseGroup
+Other:  → codeium_common_pb.ImageData
+Other:  → codeium_common_pb.MarkdownChunk
+Other:  → codeium_common_pb.MarkdownChunk.MarkdownHeader
+Other:  → codeium_common_pb.TerminalShellCommandHeader
+Other:  → codeium_common_pb.TerminalShellCommandData
+Other:  → codeium_common_pb.TerminalShellCommandTrailer
+Other:  → codeium_common_pb.TerminalShellCommandStreamChunk
+Other:  → codeium_common_pb.TerminalShellCommand
+Other:  → codeium_common_pb.TerminalCommandData
+Other:  → codeium_common_pb.WindsurfProject
+Other:  → codeium_common_pb.WindsurfDeployment
+Other:  → codeium_common_pb.WebDocsOption
+Other:  → codeium_common_pb.TeamConfig
+Other:  → codeium_common_pb.WebAppDeploymentConfig
+Other:  → codeium_common_pb.McpServerTemplate
+Other:  → codeium_common_pb.McpServerCommand
+Other:  → codeium_common_pb.McpCommandTemplate
+Other:  → codeium_common_pb.McpCommandVariable
+Core Context:  → codeium_common_pb.UnleashContext
+Other:  → codeium_common_pb.MetricsRecord
+Other:  → codeium_common_pb.ModelNotification
+Other:  → codeium_common_pb.ModelNotificationExperimentPayload
+Other:  → diff_action_pb.UnifiedDiff
+Other:  → diff_action_pb.UnifiedDiff.UnifiedDiffLine
+Other:  → diff_action_pb.DiffBlock
+Other:  → diff_action_pb.CharacterDiffChange
+Other:  → diff_action_pb.CharacterDiff
+Other:  → diff_action_pb.ComboDiffLine
+Other:  → diff_action_pb.ComboDiff
+Other:  → diff_action_pb.DiffSet
+Other:  → diff_action_pb.DiffList
+Other:  → index_pb.IndexDbVersion
+Other:  → index_pb.IndexBuildConfig
+File/Repo:  → index_pb.RepositoryConfig
+File/Repo:  → index_pb.RepositoryConfig.AutoIndexConfig
+Other:  → index_pb.IndexConfig
+Other:  → index_pb.VectorIndexStats
+Other:  → index_pb.ProgressBar
+Other:  → index_pb.Index
+File/Repo:  → index_pb.Index.RepoStats
+File/Repo:  → index_pb.Repository
+Other:  → index_pb.RequestIndexVersion
+Other:  → index_pb.ManagementMetadata
+File/Repo:  → index_pb.AddRepositoryRequest
+File/Repo:  → index_pb.AddRepositoryResponse
+Other:  → index_pb.EnableIndexingRequest
+Other:  → index_pb.EnableIndexingResponse
+Other:  → index_pb.DisableIndexingRequest
+Other:  → index_pb.DisableIndexingResponse
+File/Repo:  → index_pb.EditRepositoryRequest
+File/Repo:  → index_pb.EditRepositoryResponse
+File/Repo:  → index_pb.DeleteRepositoryRequest
+File/Repo:  → index_pb.DeleteRepositoryResponse
+File/Repo:  → index_pb.GetRepositoriesFilter
+File/Repo:  → index_pb.GetRepositoriesRequest
+File/Repo:  → index_pb.GetRepositoriesResponse
+Other:  → index_pb.GetIndexesRequest
+Other:  → index_pb.GetIndexesResponse
+Other:  → index_pb.GetIndexRequest
+Other:  → index_pb.GetIndexResponse
+Other:  → index_pb.RemoteIndexStats
+Other:  → index_pb.GetRemoteIndexStatsRequest
+Other:  → index_pb.GetRemoteIndexStatsResponse
+Other:  → index_pb.AddIndexRequest
+Other:  → index_pb.AddIndexResponse
+Other:  → index_pb.CancelIndexingRequest
+Other:  → index_pb.CancelIndexingResponse
+Other:  → index_pb.RetryIndexingRequest
+Other:  → index_pb.RetryIndexingResponse
+Other:  → index_pb.DeleteIndexRequest
+Other:  → index_pb.DeleteIndexResponse
+Other:  → index_pb.PruneDatabaseRequest
+Other:  → index_pb.PruneDatabaseResponse
+Other:  → index_pb.GetDatabaseStatsRequest
+Other:  → index_pb.GetDatabaseStatsResponse
+Other:  → index_pb.SetIndexConfigRequest
+Other:  → index_pb.SetIndexConfigResponse
+Other:  → index_pb.GetIndexConfigRequest
+Other:  → index_pb.GetIndexConfigResponse
+Other:  → index_pb.GetNumberConnectionsRequest
+Other:  → index_pb.GetNumberConnectionsResponse
+Other:  → index_pb.GetConnectionsDebugInfoRequest
+Other:  → index_pb.GetConnectionsDebugInfoResponse
+File/Repo:  → index_pb.GetIndexedRepositoriesRequest
+File/Repo:  → index_pb.GetIndexedRepositoriesResponse
+File/Repo:  → index_pb.RepositoryFilter
+File/Repo:  → index_pb.GetMatchingFilePathsRequest
+File/Repo:  → index_pb.GetMatchingFilePathsResponse
+Other:  → index_pb.GetNearestCCIsFromEmbeddingRequest
+Core Context:  → index_pb.ScoredContextItem
+Other:  → index_pb.GetNearestCCIsFromEmbeddingResponse
+Core Context:  → index_pb.GetEmbeddingsForCodeContextItemsRequest
+Core Context:  → index_pb.GetEmbeddingsForCodeContextItemsResponse
+Other:  → index_pb.IndexStats
+Other:  → index_pb.IndexerEvent
+Other:  → index_pb.IndexerEvent.Deletion
+Other:  → index_pb.IndexerEvent.Untrack
+Other:  → index_pb.IndexerEvent.Update
+Other:  → index_pb.IndexerEvent.Update.AddWorkspaceInfo
+Other:  → index_pb.IndexerEvent.AddWorkspace
+Other:  → index_pb.IndexerEvent.RemoveWorkspace
+Other:  → index_pb.IndexerEvent.IgnoreWorkspace
+Other:  → index_pb.IndexerEvent.AddCommit
+Other:  → opensearch_clients_pb.TimeRange
+Other:  → opensearch_clients_pb.GithubUser
+Other:  → opensearch_clients_pb.AddGithubUsersRequest
+Other:  → opensearch_clients_pb.AddGithubUsersResponse
+Other:  → opensearch_clients_pb.UserInfo
+Other:  → opensearch_clients_pb.AddUsersRequest
+Other:  → opensearch_clients_pb.AddUsersResponse
+Knowledge Base:  → opensearch_clients_pb.KnowledgeBaseSearchRequest
+Knowledge Base:  → opensearch_clients_pb.KnowledgeBaseSearchResponse
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseScopeItemsRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseScopeItemsResponse
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseItemsFromScopeItemsRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseItemsFromScopeItemsResponse
+Knowledge Base:  → opensearch_clients_pb.IngestSlackDataRequest
+Knowledge Base:  → opensearch_clients_pb.IngestSlackDataResponse
+Other:  → opensearch_clients_pb.IngestGithubDataRequest
+Other:  → opensearch_clients_pb.IngestGithubDataResponse
+Other:  → opensearch_clients_pb.IngestGoogleDriveDataRequest
+Other:  → opensearch_clients_pb.IngestGoogleDriveDataResponse
+Knowledge Base:  → opensearch_clients_pb.IngestJiraDataRequest
+Knowledge Base:  → opensearch_clients_pb.IngestJiraDataResponse
+Knowledge Base:  → opensearch_clients_pb.IngestJiraPayloadRequest
+Knowledge Base:  → opensearch_clients_pb.IngestJiraPayloadResponse
+Other:  → opensearch_clients_pb.ForwardResult
+Knowledge Base:  → opensearch_clients_pb.ForwardSlackPayloadRequest
+Knowledge Base:  → opensearch_clients_pb.ForwardSlackPayloadResponse
+Knowledge Base:  → opensearch_clients_pb.IngestSlackPayloadRequest
+Knowledge Base:  → opensearch_clients_pb.IngestSlackPayloadResponse
+Knowledge Base:  → opensearch_clients_pb.CommonDocument
+Knowledge Base:  → opensearch_clients_pb.CommonDocumentWithScore
+Other:  → opensearch_clients_pb.SearchResult
+Other:  → opensearch_clients_pb.QuerySearchResponse
+File/Repo:  → opensearch_clients_pb.OpenSearchAddRepositoryRequest
+File/Repo:  → opensearch_clients_pb.OpenSearchAddRepositoryResponse
+Other:  → opensearch_clients_pb.OpenSearchGetIndexRequest
+Other:  → opensearch_clients_pb.OpenSearchGetIndexResponse
+Other:  → opensearch_clients_pb.HybridSearchRequest
+Other:  → opensearch_clients_pb.HybridSearchResponse
+Other:  → opensearch_clients_pb.GraphSearchRequest
+Other:  → opensearch_clients_pb.GraphSearchResponse
+Other:  → opensearch_clients_pb.ConnectorConfig
+Knowledge Base:  → opensearch_clients_pb.ConnectorConfigSlack
+Other:  → opensearch_clients_pb.ConnectorConfigGithub
+Other:  → opensearch_clients_pb.ConnectorConfigGoogleDrive
+Knowledge Base:  → opensearch_clients_pb.ConnectorConfigJira
+Other:  → opensearch_clients_pb.ConnectorInternalConfig
+Knowledge Base:  → opensearch_clients_pb.ConnectorInternalConfigSlack
+File/Repo:  → opensearch_clients_pb.GithubRepoConfig
+Other:  → opensearch_clients_pb.ConnectorInternalConfigGithub
+Other:  → opensearch_clients_pb.ConnectorInternalConfigGoogleDrive
+Knowledge Base:  → opensearch_clients_pb.ConnectorInternalConfigJira
+Knowledge Base:  → opensearch_clients_pb.ConnectKnowledgeBaseAccountRequest
+Knowledge Base:  → opensearch_clients_pb.DeleteKnowledgeBaseConnectionRequest
+Knowledge Base:  → opensearch_clients_pb.DeleteKnowledgeBaseConnectionResponse
+Other:  → opensearch_clients_pb.UpdateConnectorConfigRequest
+Other:  → opensearch_clients_pb.UpdateConnectorConfigResponse
+Other:  → opensearch_clients_pb.ConnectorAdditionalParams
+Knowledge Base:  → opensearch_clients_pb.ConnectorAdditionalParamsSlack
+Other:  → opensearch_clients_pb.ConnectorAdditionalParamsGithub
+Knowledge Base:  → opensearch_clients_pb.ConnectKnowledgeBaseAccountResponse
+Knowledge Base:  → opensearch_clients_pb.CancelKnowledgeBaseJobsRequest
+Knowledge Base:  → opensearch_clients_pb.CancelKnowledgeBaseJobsResponse
+Knowledge Base:  → opensearch_clients_pb.DocumentTypeCount
+Other:  → opensearch_clients_pb.ConnectorState
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseConnectorStateRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseConnectorStateResponse
+Other:  → opensearch_clients_pb.JobState
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseJobStatesRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseJobStatesResponse
+Knowledge Base:  → opensearch_clients_pb.SlackMessagePayload
+Knowledge Base:  → opensearch_clients_pb.SlackChannelPayload
+Knowledge Base:  → opensearch_clients_pb.SlackPayload
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseWebhookUrlRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseWebhookUrlResponse
+Other:  → opensearch_clients_pb.GetConnectorInternalConfigRequest
+Other:  → opensearch_clients_pb.GetConnectorInternalConfigResponse
+Other:  → product_analytics_pb.RecordAnalyticsEventRequest
+Other:  → product_analytics_pb.RecordAnalyticsEventResponse
+Other:  → seat_management_pb.User
+Other:  → seat_management_pb.Team
+Other:  → seat_management_pb.PreapprovedUser
+Other:  → seat_management_pb.UserSettings
+Other:  → seat_management_pb.UserRole
+Other:  → seat_management_pb.GetUserStatusRequest
+Other:  → seat_management_pb.GetUserStatusResponse
+Other:  → seat_management_pb.GetCurrentUserRequest
+Other:  → seat_management_pb.ReferralInfo
+Other:  → seat_management_pb.GetCurrentUserResponse
+Other:  → seat_management_pb.GetUsersRequest
+Other:  → seat_management_pb.GetUsersResponse
+Other:  → seat_management_pb.GetRolesForUserRequest
+Other:  → seat_management_pb.GetRolesForUserResponse
+Other:  → seat_management_pb.AddUserRoleRequest
+Other:  → seat_management_pb.AddUserRoleResponse
+Other:  → seat_management_pb.RemoveUserRoleRequest
+Other:  → seat_management_pb.RemoveUserRoleResponse
+Other:  → seat_management_pb.RegisterUserRequest
+Other:  → seat_management_pb.RegisterUserResponse
+Other:  → seat_management_pb.CreateFbUserRequest
+Other:  → seat_management_pb.CreateFbUserResponse
+Other:  → seat_management_pb.UpdateNameRequest
+Other:  → seat_management_pb.UpdateNameResponse
+Other:  → seat_management_pb.GetProfilePicturePresignedUploadUrlRequest
+Other:  → seat_management_pb.GetProfilePicturePresignedUploadUrlResponse
+Other:  → seat_management_pb.ProfilePictureUploadCompleteRequest
+Other:  → seat_management_pb.ProfilePictureUploadCompleteResponse
+Other:  → seat_management_pb.GetProfileDataRequest
+Other:  → seat_management_pb.GetProfileDataResponse
+Other:  → seat_management_pb.DeleteProfilePictureRequest
+Other:  → seat_management_pb.DeleteProfilePictureResponse
+Other:  → seat_management_pb.UpdateInboundSourceRequest
+Other:  → seat_management_pb.UpdateInboundSourceResponse
+Other:  → seat_management_pb.DeleteUserRequest
+Other:  → seat_management_pb.DeleteUserResponse
+Other:  → seat_management_pb.GetLicenseRequest
+Other:  → seat_management_pb.GetLicenseResponse
+Other:  → seat_management_pb.RequestTeamAccessRequest
+Other:  → seat_management_pb.RequestTeamAccessResponse
+Other:  → seat_management_pb.UpdateUserTeamStatusRequest
+Other:  → seat_management_pb.UpdateUserTeamStatusRequest.UserTeamStatusUpdateItem
+Other:  → seat_management_pb.UpdateUserTeamStatusResponse
+Other:  → seat_management_pb.GetTeamMetadataRequest
+Other:  → seat_management_pb.GetTeamMetadataResponse
+Other:  → seat_management_pb.RemoveUserFromTeamRequest
+Other:  → seat_management_pb.RemoveUserFromTeamResponse
+Other:  → seat_management_pb.RefreshTeamInviteIdRequest
+Other:  → seat_management_pb.RefreshTeamInviteIdResponse
+Other:  → seat_management_pb.GrantPreapprovalRequest
+Other:  → seat_management_pb.GrantPreapprovalRequest.PreapprovalUserItem
+Other:  → seat_management_pb.GrantPreapprovalResponse
+Other:  → seat_management_pb.GetPreapprovalsRequest
+Other:  → seat_management_pb.GetPreapprovalsResponse
+Other:  → seat_management_pb.GetPreapprovalMetadataRequest
+Other:  → seat_management_pb.GetPreapprovalMetadataResponse
+Other:  → seat_management_pb.AcceptPreapprovalRequest
+Other:  → seat_management_pb.AcceptPreapprovalResponse
+Other:  → seat_management_pb.RejectPreapprovalRequest
+Other:  → seat_management_pb.RejectPreapprovalResponse
+Other:  → seat_management_pb.GetPreapprovalForUserRequest
+Other:  → seat_management_pb.GetPreapprovalForUserResponse
+Other:  → seat_management_pb.RevokePreapprovalRequest
+Other:  → seat_management_pb.RevokePreapprovalResponse
+Other:  → seat_management_pb.SubscribeToPlanRequest
+Other:  → seat_management_pb.SubscribeToPlanResponse
+Other:  → seat_management_pb.PurchaseCascadeCreditsRequest
+Other:  → seat_management_pb.PurchaseCascadeCreditsResponse
+Other:  → seat_management_pb.UpdateCreditTopUpSettingsRequest
+Other:  → seat_management_pb.UpdateCreditTopUpSettingsResponse
+Other:  → seat_management_pb.GetTeamBillingRequest
+Other:  → seat_management_pb.GetTeamBillingResponse
+Other:  → seat_management_pb.GetTeamBillingResponse.Invoice
+Other:  → seat_management_pb.GetTeamBillingResponse.PaymentMethod
+Other:  → seat_management_pb.GetTeamBillingResponse.PaymentMethod.CardType
+Other:  → seat_management_pb.GetTeamBillingResponse.FailedSubscriptionPayment
+Other:  → seat_management_pb.UpdateSeatsRequest
+Other:  → seat_management_pb.UpdateSeatsResponse
+Other:  → seat_management_pb.UpdatePlanRequest
+Other:  → seat_management_pb.UpdatePlanResponse
+Other:  → seat_management_pb.BillingUpdate
+Other:  → seat_management_pb.CancelPlanRequest
+Other:  → seat_management_pb.CancelPlanResponse
+Other:  → seat_management_pb.UpdateBillingRequest
+Other:  → seat_management_pb.UpdateBillingResponse
+Other:  → seat_management_pb.GetUserSubscriptionRequest
+Other:  → seat_management_pb.GetUserSubscriptionResponse
+Other:  → seat_management_pb.IsUsernameAvailableRequest
+Other:  → seat_management_pb.IsUsernameAvailableResponse
+Other:  → seat_management_pb.UpdateUsernameRequest
+Other:  → seat_management_pb.UpdateUsernameResponse
+Other:  → seat_management_pb.ProvisionTeamRequest
+Other:  → seat_management_pb.ProvisionTeamResponse
+Other:  → seat_management_pb.ProvisionCascadeSeatsRequest
+Other:  → seat_management_pb.ProvisionCascadeSeatsResponse
+Other:  → seat_management_pb.UpdateOccupationRequest
+Other:  → seat_management_pb.UpdateOccupationResponse
+Other:  → seat_management_pb.UpdateProfileRequest
+Other:  → seat_management_pb.UpdateProfileResponse
+Other:  → seat_management_pb.UpdateProfileVisibilityRequest
+Other:  → seat_management_pb.UpdateProfileVisibilityResponse
+Other:  → seat_management_pb.AddUsersToTeamRequest
+Other:  → seat_management_pb.AddUsersToTeamResponse
+Other:  → seat_management_pb.GetPublicProfileRequest
+Other:  → seat_management_pb.GetPublicProfileResponse
+Other:  → seat_management_pb.UpdateUserRolesRequest
+Other:  → seat_management_pb.UpdateUserRolesResponse
+Other:  → seat_management_pb.BulkUpdateUserRolesRequest
+Other:  → seat_management_pb.BulkUpdateUserRolesResponse
+Other:  → seat_management_pb.GetTeamActivityRequest
+Other:  → seat_management_pb.GetTeamActivityResponse
+Other:  → seat_management_pb.GetTeamActivityResponse.UserActivity
+Other:  → seat_management_pb.GetSSOProviderRequest
+Other:  → seat_management_pb.GetSSOProviderResponse
+Other:  → seat_management_pb.SaveSSOProviderRequest
+Other:  → seat_management_pb.SaveSSOProviderResponse
+Other:  → seat_management_pb.SAMLAuthProvider
+Other:  → seat_management_pb.JoinTeamWithSSOLoginRequest
+Other:  → seat_management_pb.JoinTeamWithSSOLoginResponse
+Other:  → seat_management_pb.UserSSOLoginRedirectRequest
+Other:  → seat_management_pb.UserSSOLoginRedirectResponse
+Other:  → seat_management_pb.EnterpriseLicenseConfig
+Other:  → seat_management_pb.DeleteTeamRequest
+Other:  → seat_management_pb.DeleteTeamResponse
+Other:  → seat_management_pb.ProvisionFreeProTierRequest
+Other:  → seat_management_pb.ProvisionFreeProTierResponse
+Other:  → seat_management_pb.GetTeamsFeaturesRequest
+Other:  → seat_management_pb.GetTeamsFeaturesResponse
+Other:  → seat_management_pb.GetTeamsFeaturesInternalRequest
+Other:  → seat_management_pb.GetTeamsFeaturesInternalResponse
+Other:  → seat_management_pb.UpdateTeamsFeaturesInternalRequest
+Other:  → seat_management_pb.SetTeamsFeaturesRequest
+Other:  → seat_management_pb.UpdateTeamsFeaturesInternalResponse
+Other:  → seat_management_pb.SetTeamsFeaturesResponse
+Other:  → seat_management_pb.UpdateUserFeaturesInternalRequest
+Other:  → seat_management_pb.UpdateUserFeaturesInternalResponse
+Other:  → seat_management_pb.BulkEditUserApprovalsRequest
+Other:  → seat_management_pb.UserTeamDetails
+Other:  → seat_management_pb.BulkEditUserApprovalsResponse
+Other:  → seat_management_pb.BulkEditUserApprovalsInternalRequest
+Other:  → seat_management_pb.BulkEditUserApprovalsInternalResponse
+Other:  → seat_management_pb.GetTeamSettingsRequest
+Other:  → seat_management_pb.GetTeamSettingsResponse
+Other:  → seat_management_pb.UpdateCascadeWebSearchEnabledRequest
+Other:  → seat_management_pb.UpdateCascadeWebSearchEnabledResponse
+Other:  → seat_management_pb.GetGroupsRequest
+Other:  → seat_management_pb.Group
+Other:  → seat_management_pb.GetGroupsResponse
+Other:  → seat_management_pb.CreateTeamApiSecretRequest
+Other:  → seat_management_pb.CreateTeamApiSecretResponse
+Other:  → seat_management_pb.UpdateTeamApiSecretRequest
+Other:  → seat_management_pb.UpdateTeamApiSecretResponse
+Other:  → seat_management_pb.GetAllTeamApiSecretsRequest
+Other:  → seat_management_pb.TeamApiSecret
+Other:  → seat_management_pb.GetAllTeamApiSecretsResponse
+Other:  → seat_management_pb.DeleteTeamApiSecretRequest
+Other:  → seat_management_pb.DeleteTeamApiSecretResponse
+Other:  → seat_management_pb.GetUserNotificationsRequest
+Other:  → seat_management_pb.GetUserNotificationsResponse
+Other:  → seat_management_pb.GetUserNotificationsResponse.TeamPreapprovalMetadata
+Other:  → seat_management_pb.ConnectGithubAccountRequest
+Other:  → seat_management_pb.ConnectGithubAccountResponse
+Other:  → seat_management_pb.DisconnectGithubAccountRequest
+Other:  → seat_management_pb.DisconnectGithubAccountResponse
+Other:  → seat_management_pb.GetGitHubAccountStatusRequest
+Other:  → seat_management_pb.GetGitHubAccountStatusResponse
+Other:  → seat_management_pb.GetGitHubAccessTokenRequest
+Other:  → seat_management_pb.GetGitHubAccessTokenResponse
+Other:  → seat_management_pb.UpdateCodeiumAccessRequest
+Other:  → seat_management_pb.UpdateCodeiumAccessResponse
+Other:  → seat_management_pb.CreateRoleRequest
+Other:  → seat_management_pb.CreateRoleResponse
+Other:  → seat_management_pb.DeleteRoleRequest
+Other:  → seat_management_pb.DeleteRoleResponse
+Other:  → seat_management_pb.UpdateRoleRequest
+Other:  → seat_management_pb.UpdateRoleResponse
+Other:  → seat_management_pb.GetRolesRequest
+Other:  → seat_management_pb.Role
+Other:  → seat_management_pb.GetRolesResponse
+Other:  → seat_management_pb.GetMucsInfoRequest
+Other:  → seat_management_pb.MonthlyMucsMessage
+Other:  → seat_management_pb.GetMucsInfoResponse
+Other:  → seat_management_pb.GetCascadeAnalyticsRequest
+Other:  → seat_management_pb.GetCascadeAnalyticsResponse
+Other:  → seat_management_pb.GetPlanStatusRequest
+Other:  → seat_management_pb.GetPlanStatusResponse
+Other:  → seat_management_pb.Wrapped2024
+Other:  → seat_management_pb.GetWrapped2024Request
+Other:  → seat_management_pb.GetWrapped2024Response
+Other:  → seat_management_pb.FlexCreditChronicleEntry
+Other:  → seat_management_pb.ReferrerReason
+Other:  → seat_management_pb.AveryReason
+Other:  → seat_management_pb.PurchaseReason
+Other:  → seat_management_pb.GetTeamCreditEntriesRequest
+Other:  → seat_management_pb.GetTeamCreditEntriesResponse
+Other:  → seat_management_pb.SendPhoneVerificationRequest
+Other:  → seat_management_pb.SendPhoneVerificationResponse
+Other:  → seat_management_pb.SendEmailVerificationRequest
+Other:  → seat_management_pb.SendEmailVerificationResponse
+Other:  → seat_management_pb.CreateEnterpriseRequest
+Other:  → seat_management_pb.CreateEnterpriseResponse
+Other:  → seat_management_pb.UpdateEnterpriseRequest
+Other:  → seat_management_pb.UpdateEnterpriseResponse
+Other:  → seat_management_pb.UpdateTeamConfigRequest
+Other:  → seat_management_pb.UpdateTeamConfigResponse
+Other:  → seat_management_pb.UpdateTeamConfigExternalRequest
+Other:  → seat_management_pb.UpdateTeamConfigExternalResponse
+Other:  → seat_management_pb.GetTeamConfigRecordRequest
+Other:  → seat_management_pb.GetTeamConfigRecordResponse
+Other:  → seat_management_pb.GetTeamInfoRequest
+Other:  → seat_management_pb.UserInfo
+Other:  → seat_management_pb.GetTeamInfoResponse
+Other:  → seat_management_pb.IsValidReferralCodeRequest
+Other:  → seat_management_pb.IsValidReferralCodeResponse
+Other:  → seat_management_pb.ProcessReferralCodeRequest
+Other:  → seat_management_pb.ProcessReferralCodeResponse
+Other:  → seat_management_pb.UpdatePlanDetailsInternalRequest
+Other:  → seat_management_pb.UpdatePlanDetailsInternalResponse
+Other:  → seat_management_pb.RemoveUsersFromTeamInternalRequest
+Other:  → seat_management_pb.RemoveUsersFromTeamInternalResponse
+Other:  → seat_management_pb.InitiateTopUpRequest
+Other:  → seat_management_pb.InitiateTopUpResponse
+Other:  → seat_management_pb.UserCascadeDetails
+Other:  → seat_management_pb.AddExtraFlexCreditsInternalRequest
+Other:  → seat_management_pb.AddExtraFlexCreditsInternalResponse
+Other:  → user_analytics_pb.QuerySelectionField
+Other:  → user_analytics_pb.QueryFilterField
+Other:  → user_analytics_pb.QueryAggregationField
+Other:  → user_analytics_pb.QueryOrderField
+Other:  → user_analytics_pb.CustomQueryRequest
+Other:  → user_analytics_pb.QueryResponseItem
+Other:  → user_analytics_pb.CustomQueryResponse
+Other:  → user_analytics_pb.GetAnalyticsRequest
+Other:  → user_analytics_pb.GetAnalyticsResponse
+Other:  → user_analytics_pb.AnalyticsRequest
+Other:  → user_analytics_pb.AnalyticsResponse
+Other:  → user_analytics_pb.UserPageAnalyticsRequest
+Other:  → user_analytics_pb.UserPageAnalyticsResponse
+Other:  → user_analytics_pb.GetPublicAnalyticsRequest
+Other:  → user_analytics_pb.GetPublicAnalyticsResponse
+Other:  → user_analytics_pb.QueryRequest
+Other:  → user_analytics_pb.QueryResult
+Other:  → user_analytics_pb.QueryRequestCompletionStats
+Other:  → user_analytics_pb.QueryResultCompletionStats
+Other:  → user_analytics_pb.QueryRequestCompletionsByDay
+Other:  → user_analytics_pb.QueryResultCompletionsByDay
+Other:  → user_analytics_pb.QueryRequestCompletionsByLanguage
+Other:  → user_analytics_pb.QueryResultCompletionsByLanguage
+Other:  → user_analytics_pb.QueryRequestCompletionsByIde
+Other:  → user_analytics_pb.QueryResultCompletionsByIde
+File/Repo:  → user_analytics_pb.QueryRequestCompletionsByRepository
+File/Repo:  → user_analytics_pb.QueryResultCompletionsByRepository
+Other:  → user_analytics_pb.QueryRequestChatsByDay
+Other:  → user_analytics_pb.QueryResultChatsByDay
+Other:  → user_analytics_pb.QueryRequestAllChatsByDay
+Other:  → user_analytics_pb.QueryRequestActiveUserCount
+Other:  → user_analytics_pb.QueryRequestChatStatsByModel
+Other:  → user_analytics_pb.QueryRequestAllChatStatsByModel
+Other:  → user_analytics_pb.QueryResultChatStatsByModel
+Other:  → user_analytics_pb.QueryRequestAllUsersCompletionsByDay
+Other:  → user_analytics_pb.QueryRequestAllUsersCompletionsByLanguage
+Other:  → user_analytics_pb.QueryRequestAllUsersCompletionStats
+Other:  → user_analytics_pb.QueryRequestCompletionsByApiKey
+Other:  → user_analytics_pb.QueryResultCompletionsByApiKey
+Other:  → user_analytics_pb.QueryResultActiveUserCount
+Other:  → user_analytics_pb.QueryRequestPercentCodeWritten
+Other:  → user_analytics_pb.QueryResultPercentCodeWritten
+Other:  → user_analytics_pb.QueryRequestCharsPerOpportunity
+Other:  → user_analytics_pb.QueryResultCharsPerOpportunity
+Other:  → user_analytics_pb.QueryRequestChatStats
+Other:  → user_analytics_pb.QueryResultChatStats
+Other:  → user_analytics_pb.QueryRequestCommandStats
+Other:  → user_analytics_pb.QueryResultCommandStats
+Other:  → user_analytics_pb.QueryRequestActiveDaysByApiKey
+Other:  → user_analytics_pb.QueryResultActiveDaysByApiKey
+Other:  → user_analytics_pb.QueryResultError
+Other:  → user_analytics_pb.GetPreferredTimeZoneRequest
+Other:  → user_analytics_pb.GetPreferredTimeZoneResponse
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → 
+Other:  → codeium_common_pb.CompletionsRequest
+Other:  → codeium_common_pb.CompletionConfiguration
+Other:  → codeium_common_pb.PromptElementRange
+Other:  → codeium_common_pb.ActionPointer
+Other:  → codeium_common_pb.PromptAnnotationRange
+Other:  → codeium_common_pb.ExperimentWithVariant
+Other:  → codeium_common_pb.ExperimentConfig
+Other:  → codeium_common_pb.ExperimentLanguageServerVersionPayload
+Other:  → codeium_common_pb.ExperimentModelConfigPayload
+Other:  → codeium_common_pb.ExperimentMiddleModeTokenPayload
+Other:  → codeium_common_pb.ExperimentMultilineModelThresholdPayload
+Other:  → codeium_common_pb.ExperimentSentryPayload
+Other:  → codeium_common_pb.TeamOrganizationalControls
+Other:  → codeium_common_pb.ExperimentProfilingTelemetrySampleRatePayload
+Other:  → codeium_common_pb.ModelOrAlias
+Other:  → codeium_common_pb.PromptElementKindInfo
+Other:  → codeium_common_pb.PromptElementInclusionMetadata
+Other:  → codeium_common_pb.PromptStageLatency
+Other:  → codeium_common_pb.CompletionResponse
+Other:  → codeium_common_pb.Completion
+Other:  → codeium_common_pb.StreamingCompletionInfo
+Other:  → codeium_common_pb.SingleModelCompletionProfile
+Other:  → codeium_common_pb.CompletionProfile
+Other:  → codeium_common_pb.StreamingCompletion
+Other:  → codeium_common_pb.StreamingCompletionMap
+Other:  → codeium_common_pb.PackedStreamingCompletionMaps
+Other:  → codeium_common_pb.StreamingEvalSuffixInfo
+Other:  → codeium_common_pb.StreamingCompletionResponse
+Other:  → codeium_common_pb.CompletionLatencyInfo
+Other:  → codeium_common_pb.CompletionWithLatencyInfo
+Other:  → codeium_common_pb.EmbeddingsRequest
+Other:  → codeium_common_pb.Embedding
+Other:  → codeium_common_pb.EmbeddingResponse
+Other:  → codeium_common_pb.RewardsRequest
+Other:  → codeium_common_pb.RewardsResponse
+Other:  → codeium_common_pb.Metadata
+Other:  → codeium_common_pb.EditorOptions
+Other:  → codeium_common_pb.ErrorTrace
+Other:  → codeium_common_pb.Event
+Other:  → codeium_common_pb.SearchResultRecord
+Other:  → codeium_common_pb.WorkspacePath
+Other:  → codeium_common_pb.EmbeddingMetadata
+Other:  → codeium_common_pb.MockResponseData
+Other:  → codeium_common_pb.WorkspaceIndexData
+Other:  → codeium_common_pb.WorkspaceStats
+Other:  → codeium_common_pb.PartialIndexMetadata
+Other:  → codeium_common_pb.FunctionInfo
+Other:  → codeium_common_pb.ClassInfo
+Other:  → codeium_common_pb.ClientModelConfig
+Other:  → codeium_common_pb.AllowedModelConfig
+Other:  → codeium_common_pb.PlanInfo
+Other:  → codeium_common_pb.TopUpStatus
+Other:  → codeium_common_pb.PlanStatus
+Other:  → codeium_common_pb.UserStatus
+Other:  → codeium_common_pb.ScmWorkspaceInfo
+Other:  → codeium_common_pb.PerforceDepotInfo
+File/Repo:  → codeium_common_pb.GitRepoInfo
+Core Context:  → codeium_common_pb.CodeContextItem
+Other:  → codeium_common_pb.SnippetWithWordCount
+Other:  → codeium_common_pb.WordCount
+File/Repo:  → codeium_common_pb.Repository
+File/Repo:  → codeium_common_pb.CaptureFileRequestData
+Other:  → codeium_common_pb.CompletionStatistics
+Other:  → codeium_common_pb.CompletionByDateEntry
+Other:  → codeium_common_pb.CompletionByLanguageEntry
+Other:  → codeium_common_pb.ChatStats
+Other:  → codeium_common_pb.ChatStatsByDateEntry
+Other:  → codeium_common_pb.ChatStatsByModelEntry
+Other:  → codeium_common_pb.CommandStats
+Other:  → codeium_common_pb.CommandStatsByDateEntry
+Other:  → codeium_common_pb.UserTableStats
+Other:  → codeium_common_pb.CascadeNUXState
+Other:  → codeium_common_pb.UserNUXState
+Other:  → codeium_common_pb.UserSettings
+Other:  → codeium_common_pb.ModelFeatures
+Other:  → codeium_common_pb.ExternalModel
+Other:  → codeium_common_pb.ModelInfo
+Other:  → codeium_common_pb.ApiProviderRoutingConfig
+Other:  → codeium_common_pb.ApiProviderConfigMap
+Other:  → codeium_common_pb.ApiProviderConfig
+Other:  → codeium_common_pb.ModelConfig
+Other:  → codeium_common_pb.CompletionExample
+Other:  → codeium_common_pb.CompletionExampleWithMetadata
+Other:  → codeium_common_pb.CciWithSubrange
+Core Context:  → codeium_common_pb.ContextSubrange
+Other:  → codeium_common_pb.PathScopeItem
+File/Repo:  → codeium_common_pb.FileLineRange
+Other:  → codeium_common_pb.TextBlock
+File/Repo:  → codeium_common_pb.RepositoryScopeItem
+File/Repo:  → codeium_common_pb.RepositoryPathScopeItem
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseScopeItem
+Other:  → codeium_common_pb.ConsoleLogLine
+Other:  → codeium_common_pb.ConsoleLogScopeItem
+Other:  → codeium_common_pb.DOMElementScopeItem
+Other:  → codeium_common_pb.RecipeScopeItem
+Core Context:  → codeium_common_pb.ContextScopeItem
+Core Context:  → codeium_common_pb.ContextScope
+Other:  → codeium_common_pb.NodeExecutionRecord
+Other:  → codeium_common_pb.GraphExecutionState
+Other:  → codeium_common_pb.Guideline
+Other:  → codeium_common_pb.GuidelineItem
+Other:  → codeium_common_pb.ChatNodeConfig
+Other:  → codeium_common_pb.MQueryConfig
+Other:  → codeium_common_pb.CompletionDelta
+Other:  → codeium_common_pb.CompletionDeltaMap
+Other:  → codeium_common_pb.ChatCompletionInfo
+Other:  → codeium_common_pb.ChatToolCall
+Other:  → codeium_common_pb.Status
+Knowledge Base:  → codeium_common_pb.DocumentPosition
+Other:  → codeium_common_pb.Range
+Knowledge Base:  → codeium_common_pb.Document
+Other:  → codeium_common_pb.PromptComponents
+Other:  → codeium_common_pb.TextOrScopeItem
+Core Context:  → codeium_common_pb.PinnedContextConfig
+Core Context:  → codeium_common_pb.PinnedContext
+File/Repo:  → codeium_common_pb.RepositoryPath
+Core Context:  → codeium_common_pb.DefaultPinnedContextConfig
+Other:  → codeium_common_pb.Rule
+Other:  → codeium_common_pb.RuleViolation
+Other:  → codeium_common_pb.LanguageServerDiagnostics
+Other:  → codeium_common_pb.IndexerStats
+Other:  → codeium_common_pb.IndexerDbStats
+Other:  → codeium_common_pb.LocalSqliteFaissDbStats
+Other:  → codeium_common_pb.FaissStateStats
+Other:  → codeium_common_pb.PostgresDbStats
+Other:  → codeium_common_pb.LastUpdateRecord
+Other:  → codeium_common_pb.ModelUsageStats
+Other:  → codeium_common_pb.SuperCompleteFilterReason
+Other:  → codeium_common_pb.CodeDiagnostic
+Other:  → codeium_common_pb.IntellisenseSuggestion
+Knowledge Base:  → codeium_common_pb.DocumentLinesElement
+Knowledge Base:  → codeium_common_pb.DocumentQuery
+Knowledge Base:  → codeium_common_pb.DocumentOutlineElement
+Knowledge Base:  → codeium_common_pb.DocumentOutline
+Other:  → codeium_common_pb.ProductEvent
+Other:  → codeium_common_pb.CodebaseCluster
+Other:  → codeium_common_pb.CodebaseClusterList
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseChunk
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseItem
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseItemWithMetadata
+Knowledge Base:  → codeium_common_pb.KnowledgeBaseGroup
+Other:  → codeium_common_pb.ImageData
+Other:  → codeium_common_pb.MarkdownChunk
+Other:  → codeium_common_pb.MarkdownChunk.MarkdownHeader
+Other:  → codeium_common_pb.TerminalShellCommandHeader
+Other:  → codeium_common_pb.TerminalShellCommandData
+Other:  → codeium_common_pb.TerminalShellCommandTrailer
+Other:  → codeium_common_pb.TerminalShellCommandStreamChunk
+Other:  → codeium_common_pb.TerminalShellCommand
+Other:  → codeium_common_pb.TerminalCommandData
+Other:  → codeium_common_pb.WindsurfProject
+Other:  → codeium_common_pb.WindsurfDeployment
+Other:  → codeium_common_pb.WebDocsOption
+Other:  → codeium_common_pb.TeamConfig
+Other:  → codeium_common_pb.WebAppDeploymentConfig
+Other:  → codeium_common_pb.McpServerTemplate
+Other:  → codeium_common_pb.McpServerCommand
+Other:  → codeium_common_pb.McpCommandTemplate
+Other:  → codeium_common_pb.McpCommandVariable
+Core Context:  → codeium_common_pb.UnleashContext
+Other:  → codeium_common_pb.MetricsRecord
+Other:  → codeium_common_pb.ModelNotification
+Other:  → codeium_common_pb.ModelNotificationExperimentPayload
+Other:  → chat_client_server_pb.StartChatClientRequestStreamRequest
+Other:  → chat_client_server_pb.ChatClientRequest
+Other:  → chat_client_server_pb.AddCascadeInputRequest
+Other:  → chat_client_server_pb.SendActionToChatPanelRequest
+Other:  → diff_action_pb.UnifiedDiff
+Other:  → diff_action_pb.UnifiedDiff.UnifiedDiffLine
+Other:  → diff_action_pb.DiffBlock
+Other:  → diff_action_pb.CharacterDiffChange
+Other:  → diff_action_pb.CharacterDiff
+Other:  → diff_action_pb.ComboDiffLine
+Other:  → diff_action_pb.ComboDiff
+Other:  → diff_action_pb.DiffSet
+Other:  → diff_action_pb.DiffList
+Other:  → chat_pb.CodeBlockInfo
+Other:  → chat_pb.ChatMetrics
+Other:  → chat_pb.IntentGeneric
+Other:  → chat_pb.IntentFunctionExplain
+Other:  → chat_pb.IntentFunctionRefactor
+Other:  → chat_pb.IntentFunctionUnitTests
+Other:  → chat_pb.IntentFunctionDocstring
+Other:  → chat_pb.IntentClassExplain
+Other:  → chat_pb.IntentCodeBlockExplain
+Other:  → chat_pb.IntentCodeBlockRefactor
+Other:  → chat_pb.IntentProblemExplain
+Other:  → chat_pb.IntentGenerateCode
+Other:  → chat_pb.IntentSearch
+Other:  → chat_pb.IntentFastApply
+Other:  → chat_pb.ChatMessageIntent
+Other:  → chat_pb.ChatMessageActionSearch
+Other:  → chat_pb.ChatMessageActionEdit
+Other:  → chat_pb.ChatMessageActionGeneric
+Core Context:  → chat_pb.ChatMessageStatusContextRelevancy
+Other:  → chat_pb.ChatMessageStatus
+Other:  → chat_pb.ChatMessageError
+Other:  → chat_pb.ChatMessageAction
+Other:  → chat_pb.ChatMessage
+Other:  → chat_pb.Conversation
+Other:  → chat_pb.ChatMessagePrompt
+Other:  → chat_pb.PromptCacheOptions
+Other:  → chat_pb.ChatToolDefinition
+Other:  → chat_pb.ChatToolChoice
+Other:  → chat_pb.ChatMentionsSearchRequest
+Other:  → chat_pb.ChatMentionsSearchResponse
+Other:  → chat_pb.GetChatMessageRequest
+Other:  → chat_pb.GetChatMessageRequest.EnterpriseExternalModelConfig
+Other:  → chat_pb.ChatExperimentStatus
+Other:  → chat_pb.FormattedChatMessage
+Core Context:  → context_module_pb.ContextChangeEvent
+Core Context:  → context_module_pb.ContextChangeActiveDocument
+Core Context:  → context_module_pb.ContextChangeCursorPosition
+Core Context:  → context_module_pb.ContextChangeChatMessageReceived
+Core Context:  → context_module_pb.ContextChangeOpenDocuments
+Core Context:  → context_module_pb.ContextChangeOracleItems
+Core Context:  → context_module_pb.ContextChangePinnedContext
+Core Context:  → context_module_pb.ContextChangePinnedGuideline
+Core Context:  → context_module_pb.ContextChangeActiveNode
+Core Context:  → context_module_pb.RetrievedCodeContextItemMetadata
+Other:  → context_module_pb.CciWithSubrangeWithRetrievalMetadata
+Core Context:  → context_module_pb.CodeContextItemWithRetrievalMetadata
+File/Repo:  → context_module_pb.FileNameWithRetrievalMetadata
+Core Context:  → context_module_pb.CodeContextProviderMetadata
+Core Context:  → context_module_pb.ContextModuleStats
+Core Context:  → context_module_pb.ContextModuleStateStats
+Core Context:  → context_module_pb.CodeContextItemIndexStats
+Core Context:  → context_module_pb.PersistentContextModuleState
+Core Context:  → context_module_pb.ContextModuleResult
+Other:  → context_module_pb.LocalNodeState
+Other:  → index_pb.IndexDbVersion
+Other:  → index_pb.IndexBuildConfig
+File/Repo:  → index_pb.RepositoryConfig
+File/Repo:  → index_pb.RepositoryConfig.AutoIndexConfig
+Other:  → index_pb.IndexConfig
+Other:  → index_pb.VectorIndexStats
+Other:  → index_pb.ProgressBar
+Other:  → index_pb.Index
+File/Repo:  → index_pb.Index.RepoStats
+File/Repo:  → index_pb.Repository
+Other:  → index_pb.RequestIndexVersion
+Other:  → index_pb.ManagementMetadata
+File/Repo:  → index_pb.AddRepositoryRequest
+File/Repo:  → index_pb.AddRepositoryResponse
+Other:  → index_pb.EnableIndexingRequest
+Other:  → index_pb.EnableIndexingResponse
+Other:  → index_pb.DisableIndexingRequest
+Other:  → index_pb.DisableIndexingResponse
+File/Repo:  → index_pb.EditRepositoryRequest
+File/Repo:  → index_pb.EditRepositoryResponse
+File/Repo:  → index_pb.DeleteRepositoryRequest
+File/Repo:  → index_pb.DeleteRepositoryResponse
+File/Repo:  → index_pb.GetRepositoriesFilter
+File/Repo:  → index_pb.GetRepositoriesRequest
+File/Repo:  → index_pb.GetRepositoriesResponse
+Other:  → index_pb.GetIndexesRequest
+Other:  → index_pb.GetIndexesResponse
+Other:  → index_pb.GetIndexRequest
+Other:  → index_pb.GetIndexResponse
+Other:  → index_pb.RemoteIndexStats
+Other:  → index_pb.GetRemoteIndexStatsRequest
+Other:  → index_pb.GetRemoteIndexStatsResponse
+Other:  → index_pb.AddIndexRequest
+Other:  → index_pb.AddIndexResponse
+Other:  → index_pb.CancelIndexingRequest
+Other:  → index_pb.CancelIndexingResponse
+Other:  → index_pb.RetryIndexingRequest
+Other:  → index_pb.RetryIndexingResponse
+Other:  → index_pb.DeleteIndexRequest
+Other:  → index_pb.DeleteIndexResponse
+Other:  → index_pb.PruneDatabaseRequest
+Other:  → index_pb.PruneDatabaseResponse
+Other:  → index_pb.GetDatabaseStatsRequest
+Other:  → index_pb.GetDatabaseStatsResponse
+Other:  → index_pb.SetIndexConfigRequest
+Other:  → index_pb.SetIndexConfigResponse
+Other:  → index_pb.GetIndexConfigRequest
+Other:  → index_pb.GetIndexConfigResponse
+Other:  → index_pb.GetNumberConnectionsRequest
+Other:  → index_pb.GetNumberConnectionsResponse
+Other:  → index_pb.GetConnectionsDebugInfoRequest
+Other:  → index_pb.GetConnectionsDebugInfoResponse
+File/Repo:  → index_pb.GetIndexedRepositoriesRequest
+File/Repo:  → index_pb.GetIndexedRepositoriesResponse
+File/Repo:  → index_pb.RepositoryFilter
+File/Repo:  → index_pb.GetMatchingFilePathsRequest
+File/Repo:  → index_pb.GetMatchingFilePathsResponse
+Other:  → index_pb.GetNearestCCIsFromEmbeddingRequest
+Core Context:  → index_pb.ScoredContextItem
+Other:  → index_pb.GetNearestCCIsFromEmbeddingResponse
+Core Context:  → index_pb.GetEmbeddingsForCodeContextItemsRequest
+Core Context:  → index_pb.GetEmbeddingsForCodeContextItemsResponse
+Other:  → index_pb.IndexStats
+Other:  → index_pb.IndexerEvent
+Other:  → index_pb.IndexerEvent.Deletion
+Other:  → index_pb.IndexerEvent.Untrack
+Other:  → index_pb.IndexerEvent.Update
+Other:  → index_pb.IndexerEvent.Update.AddWorkspaceInfo
+Other:  → index_pb.IndexerEvent.AddWorkspace
+Other:  → index_pb.IndexerEvent.RemoveWorkspace
+Other:  → index_pb.IndexerEvent.IgnoreWorkspace
+Other:  → index_pb.IndexerEvent.AddCommit
+Core Context:  → code_edit.code_edit_pb.RelevantCodeContext
+Other:  → code_edit.code_edit_pb.IntentRelevance
+Core Context:  → code_edit.code_edit_pb.CodeContextItemChange
+File/Repo:  → code_edit.code_edit_pb.FileChange
+Other:  → code_edit.code_edit_pb.Intent
+Core Context:  → code_edit.code_edit_pb.CodeChangeWithContext
+Other:  → code_edit.code_edit_pb.GitCommit
+File/Repo:  → code_edit.code_edit_pb.CommitToFileChangeRequest
+File/Repo:  → code_edit.code_edit_pb.GitFilePatch
+File/Repo:  → code_edit.code_edit_pb.CommitToFileChangeResponse
+Other:  → code_edit.code_edit_pb.CodeRetrievalEvalTask
+Other:  → code_edit.code_edit_pb.CodeRetrievalResult
+Other:  → code_edit.code_edit_pb.RetrieverClassification
+Core Context:  → code_edit.code_edit_pb.CodeContextItemWithClassification
+Other:  → code_edit.code_edit_pb.RetrieverInfo
+Other:  → code_edit.code_edit_pb.RetrievalMetrics
+Other:  → code_edit.code_edit_pb.CodeRetrievalEvalResult
+Other:  → code_edit.code_edit_pb.InstructionWithId
+Other:  → code_edit.code_edit_pb.InstructionWithIdList
+Other:  → opensearch_clients_pb.TimeRange
+Other:  → opensearch_clients_pb.GithubUser
+Other:  → opensearch_clients_pb.AddGithubUsersRequest
+Other:  → opensearch_clients_pb.AddGithubUsersResponse
+Other:  → opensearch_clients_pb.UserInfo
+Other:  → opensearch_clients_pb.AddUsersRequest
+Other:  → opensearch_clients_pb.AddUsersResponse
+Knowledge Base:  → opensearch_clients_pb.KnowledgeBaseSearchRequest
+Knowledge Base:  → opensearch_clients_pb.KnowledgeBaseSearchResponse
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseScopeItemsRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseScopeItemsResponse
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseItemsFromScopeItemsRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseItemsFromScopeItemsResponse
+Knowledge Base:  → opensearch_clients_pb.IngestSlackDataRequest
+Knowledge Base:  → opensearch_clients_pb.IngestSlackDataResponse
+Other:  → opensearch_clients_pb.IngestGithubDataRequest
+Other:  → opensearch_clients_pb.IngestGithubDataResponse
+Other:  → opensearch_clients_pb.IngestGoogleDriveDataRequest
+Other:  → opensearch_clients_pb.IngestGoogleDriveDataResponse
+Knowledge Base:  → opensearch_clients_pb.IngestJiraDataRequest
+Knowledge Base:  → opensearch_clients_pb.IngestJiraDataResponse
+Knowledge Base:  → opensearch_clients_pb.IngestJiraPayloadRequest
+Knowledge Base:  → opensearch_clients_pb.IngestJiraPayloadResponse
+Other:  → opensearch_clients_pb.ForwardResult
+Knowledge Base:  → opensearch_clients_pb.ForwardSlackPayloadRequest
+Knowledge Base:  → opensearch_clients_pb.ForwardSlackPayloadResponse
+Knowledge Base:  → opensearch_clients_pb.IngestSlackPayloadRequest
+Knowledge Base:  → opensearch_clients_pb.IngestSlackPayloadResponse
+Knowledge Base:  → opensearch_clients_pb.CommonDocument
+Knowledge Base:  → opensearch_clients_pb.CommonDocumentWithScore
+Other:  → opensearch_clients_pb.SearchResult
+Other:  → opensearch_clients_pb.QuerySearchResponse
+File/Repo:  → opensearch_clients_pb.OpenSearchAddRepositoryRequest
+File/Repo:  → opensearch_clients_pb.OpenSearchAddRepositoryResponse
+Other:  → opensearch_clients_pb.OpenSearchGetIndexRequest
+Other:  → opensearch_clients_pb.OpenSearchGetIndexResponse
+Other:  → opensearch_clients_pb.HybridSearchRequest
+Other:  → opensearch_clients_pb.HybridSearchResponse
+Other:  → opensearch_clients_pb.GraphSearchRequest
+Other:  → opensearch_clients_pb.GraphSearchResponse
+Other:  → opensearch_clients_pb.ConnectorConfig
+Knowledge Base:  → opensearch_clients_pb.ConnectorConfigSlack
+Other:  → opensearch_clients_pb.ConnectorConfigGithub
+Other:  → opensearch_clients_pb.ConnectorConfigGoogleDrive
+Knowledge Base:  → opensearch_clients_pb.ConnectorConfigJira
+Other:  → opensearch_clients_pb.ConnectorInternalConfig
+Knowledge Base:  → opensearch_clients_pb.ConnectorInternalConfigSlack
+File/Repo:  → opensearch_clients_pb.GithubRepoConfig
+Other:  → opensearch_clients_pb.ConnectorInternalConfigGithub
+Other:  → opensearch_clients_pb.ConnectorInternalConfigGoogleDrive
+Knowledge Base:  → opensearch_clients_pb.ConnectorInternalConfigJira
+Knowledge Base:  → opensearch_clients_pb.ConnectKnowledgeBaseAccountRequest
+Knowledge Base:  → opensearch_clients_pb.DeleteKnowledgeBaseConnectionRequest
+Knowledge Base:  → opensearch_clients_pb.DeleteKnowledgeBaseConnectionResponse
+Other:  → opensearch_clients_pb.UpdateConnectorConfigRequest
+Other:  → opensearch_clients_pb.UpdateConnectorConfigResponse
+Other:  → opensearch_clients_pb.ConnectorAdditionalParams
+Knowledge Base:  → opensearch_clients_pb.ConnectorAdditionalParamsSlack
+Other:  → opensearch_clients_pb.ConnectorAdditionalParamsGithub
+Knowledge Base:  → opensearch_clients_pb.ConnectKnowledgeBaseAccountResponse
+Knowledge Base:  → opensearch_clients_pb.CancelKnowledgeBaseJobsRequest
+Knowledge Base:  → opensearch_clients_pb.CancelKnowledgeBaseJobsResponse
+Knowledge Base:  → opensearch_clients_pb.DocumentTypeCount
+Other:  → opensearch_clients_pb.ConnectorState
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseConnectorStateRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseConnectorStateResponse
+Other:  → opensearch_clients_pb.JobState
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseJobStatesRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseJobStatesResponse
+Knowledge Base:  → opensearch_clients_pb.SlackMessagePayload
+Knowledge Base:  → opensearch_clients_pb.SlackChannelPayload
+Knowledge Base:  → opensearch_clients_pb.SlackPayload
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseWebhookUrlRequest
+Knowledge Base:  → opensearch_clients_pb.GetKnowledgeBaseWebhookUrlResponse
+Other:  → opensearch_clients_pb.GetConnectorInternalConfigRequest
+Other:  → opensearch_clients_pb.GetConnectorInternalConfigResponse
+Other:  → cortex_pb.WorkflowSpec
+Other:  → cortex_pb.CortexPlanSummaryComponent
+Other:  → cortex_pb.CodingStepState
+Other:  → cortex_pb.CortexPlanState
+Other:  → cortex_pb.CortexStepOutline
+Other:  → cortex_pb.CortexStepState
+Other:  → cortex_pb.CortexResearchState
+Other:  → cortex_pb.ResearchDebugInfo
+Other:  → cortex_pb.CortexWorkflowState
+Other:  → cortex_pb.CortexRunState
+Other:  → cortex_pb.PlanInput
+Other:  → cortex_pb.ActionSpec
+File/Repo:  → cortex_pb.ActionSpecCreateFile
+File/Repo:  → cortex_pb.ActionSpecDeleteFile
+Other:  → cortex_pb.LineRangeTarget
+Other:  → cortex_pb.CommandContentTarget
+Other:  → cortex_pb.ReplacementChunk
+Other:  → cortex_pb.ActionSpecCommand
+Other:  → cortex_pb.ActionState
+Other:  → cortex_pb.ActionResult
+Other:  → cortex_pb.ActionDebugInfo
+Other:  → cortex_pb.ActionDebugInfo.DebugInfoEntry
+Other:  → cortex_pb.ActionResultEdit
+Other:  → cortex_pb.RetrievalStatus
+Other:  → cortex_pb.PlanState
+Other:  → cortex_pb.PlanDebugInfo
+Other:  → cortex_pb.CortexPlanConfig
+Other:  → cortex_pb.CortexConfig
+Other:  → cortex_pb.PlanConfig
+Other:  → cortex_pb.CortexPlanSummary
+Other:  → cortex_pb.WorkspaceInitializationData
+Other:  → cortex_pb.StateInitializationData
+Other:  → cortex_pb.CortexWorkspaceMetadata
+Other:  → cortex_pb.CortexTrajectoryMetadata
+Other:  → cortex_pb.CortexTrajectory
+Other:  → cortex_pb.CascadeTrajectorySummary
+Other:  → cortex_pb.CascadeTrajectorySummaries
+Other:  → cortex_pb.CortexTrajectoryReference
+Other:  → cortex_pb.ImplicitTrajectory
+Other:  → cortex_pb.CortexStepGeneratorMetadata
+Other:  → cortex_pb.MessagePromptMetadata
+Other:  → cortex_pb.ChatModelMetadata
+Other:  → cortex_pb.CacheBreakpointMetadata
+Other:  → cortex_pb.ChatStartMetadata
+Other:  → cortex_pb.CortexStepMetadata
+Other:  → cortex_pb.CortexStepUpdate
+Other:  → cortex_pb.CortexErrorDetails
+Other:  → cortex_pb.CortexTrajectoryStep
+Other:  → cortex_pb.TrajectoryScope
+Other:  → cortex_pb.CascadeExecutorConfig
+Other:  → cortex_pb.CascadeConfig
+Other:  → cortex_pb.TrajectoryConversionConfig
+Other:  → cortex_pb.CascadeConversationalPlannerConfig
+Other:  → cortex_pb.SectionOverrideConfig
+Other:  → cortex_pb.CascadeAgenticPlannerManagerConfig
+Other:  → cortex_pb.CascadeAgenticPlannerApplierConfig
+Other:  → cortex_pb.CascadeAgenticPlannerConfig
+Other:  → cortex_pb.CascadeResearchPlannerConfig
+Other:  → cortex_pb.MqueryToolConfig
+Other:  → cortex_pb.GrepToolConfig
+Other:  → cortex_pb.FindToolConfig
+Other:  → cortex_pb.ClusterQueryToolConfig
+Other:  → cortex_pb.InspectClusterToolConfig
+Other:  → cortex_pb.AutoCommandConfig
+Other:  → cortex_pb.ListDirToolConfig
+Other:  → cortex_pb.RunCommandToolConfig
+Knowledge Base:  → cortex_pb.KnowledgeBaseSearchToolConfig
+Other:  → cortex_pb.FastApplyFallbackConfig
+Other:  → cortex_pb.ReplaceContentToolConfig
+Other:  → cortex_pb.CodeToolConfig
+Other:  → cortex_pb.IntentToolConfig
+File/Repo:  → cortex_pb.ViewFileToolConfig
+Other:  → cortex_pb.SuggestedResponseConfig
+Other:  → cortex_pb.SearchWebToolConfig
+Other:  → cortex_pb.MemoryToolConfig
+Other:  → cortex_pb.McpToolConfig
+Other:  → cortex_pb.CustomRecipeConfig
+Other:  → cortex_pb.AutoFixLintsConfig
+Other:  → cortex_pb.ProxyWebServerToolConfig
+Other:  → cortex_pb.DeployWebAppToolConfig
+Other:  → cortex_pb.EnterpriseToolConfig
+Other:  → cortex_pb.ViewCodeItemToolConfig
+Other:  → cortex_pb.CascadeToolConfig
+Other:  → cortex_pb.CascadePassivePlannerConfig
+Knowledge Base:  → cortex_pb.ReadKnowledgeBaseItemToolConfig
+Other:  → cortex_pb.CascadePlannerConfig
+Other:  → cortex_pb.BaseTrajectoryIdentifier
+Other:  → cortex_pb.CascadeUserBinaryConfirmation
+Other:  → cortex_pb.DeploymentInteractionPayload
+Other:  → cortex_pb.CascadeDeployInteraction
+Other:  → cortex_pb.CascadeDeployInteractionSpec
+Other:  → cortex_pb.RequestedInteraction
+Other:  → cortex_pb.CascadeUserInteraction
+Other:  → cortex_pb.CortexStepDummy
+Other:  → cortex_pb.CortexStepFinish
+Other:  → cortex_pb.CortexStepPlanInput
+Other:  → cortex_pb.CortexStepCheckpoint
+Other:  → cortex_pb.CheckpointConfig
+Other:  → cortex_pb.CortexStepMquery
+Other:  → cortex_pb.ReplacementChunkInfo
+Other:  → cortex_pb.FastApplyFallbackInfo
+Other:  → cortex_pb.CortexStepCodeAction
+Other:  → cortex_pb.CortexStepProposeCode
+Other:  → cortex_pb.CortexStepGitCommit
+Other:  → cortex_pb.GrepSearchResult
+Other:  → cortex_pb.CortexStepInformPlanner
+Other:  → cortex_pb.InformPlannerConfig
+Other:  → cortex_pb.DiffBasedCommandEvalConfig
+Other:  → cortex_pb.CortexStepGrepSearch
+Other:  → cortex_pb.CortexStepFind
+File/Repo:  → cortex_pb.CortexStepViewFile
+File/Repo:  → cortex_pb.ListDirectoryResult
+File/Repo:  → cortex_pb.CortexStepListDirectory
+Other:  → cortex_pb.CortexStepCompileDiagnostic
+Other:  → cortex_pb.CortexStepClusterQuery
+Other:  → cortex_pb.CortexStepListClusters
+Other:  → cortex_pb.CortexStepCompile
+Other:  → cortex_pb.CortexTrajectoryToPromptConfig
+Other:  → cortex_pb.CortexStepUserInput
+Other:  → cortex_pb.ActiveUserState
+Other:  → cortex_pb.CortexStepPlannerResponse
+File/Repo:  → cortex_pb.CortexStepFileBreakdown
+Other:  → cortex_pb.CortexStepViewCodeItem
+File/Repo:  → cortex_pb.CortexStepWriteToFile
+Knowledge Base:  → cortex_pb.CortexStepSearchKnowledgeBase
+Knowledge Base:  → cortex_pb.CortexStepLookupKnowledgeBase
+Other:  → cortex_pb.CortexStepSuggestedResponses
+Other:  → cortex_pb.CortexStepErrorMessage
+Other:  → cortex_pb.CortexStepInspectCluster
+Other:  → cortex_pb.RunCommandOutput
+Other:  → cortex_pb.CortexStepRunCommand
+File/Repo:  → cortex_pb.CortexStepRelatedFiles
+Other:  → cortex_pb.CortexStepReadUrlContent
+Knowledge Base:  → cortex_pb.CortexStepReadKnowledgeBaseItem
+Other:  → cortex_pb.CortexStepViewContentChunk
+Other:  → cortex_pb.CortexStepSearchWeb
+Other:  → cortex_pb.CortexStepReadDeploymentConfig
+Other:  → cortex_pb.CortexStepDeployWebApp
+Other:  → cortex_pb.CortexStepCheckDeployStatus
+Other:  → cortex_pb.CortexStepClipboard
+Other:  → cortex_pb.CascadeState
+Other:  → cortex_pb.CascadePanelState
+Other:  → cortex_pb.CortexStepCommandStatus
+Other:  → cortex_pb.CortexMemory
+Other:  → cortex_pb.CortexMemoryMetadata
+Other:  → cortex_pb.CortexMemoryText
+Other:  → cortex_pb.CortexMemoryScope
+Other:  → cortex_pb.CortexMemoryGlobalScope
+Other:  → cortex_pb.CortexMemoryLocalScope
+Other:  → cortex_pb.CortexMemoryAllScope
+Other:  → cortex_pb.CortexStepMemory
+Other:  → cortex_pb.CortexStepRetrieveMemory
+Other:  → cortex_pb.MemoryConfig
+File/Repo:  → cortex_pb.ViewedFileTrackerConfig
+Other:  → cortex_pb.CodeStepCreationOptions
+File/Repo:  → cortex_pb.ViewFileStepCreationOptions
+Other:  → cortex_pb.UserGrepStepCreationOptions
+Other:  → cortex_pb.SnapshotToStepsOptions
+Other:  → cortex_pb.CustomToolSpec
+Other:  → cortex_pb.CortexStepCustomTool
+Other:  → cortex_pb.CortexStepAutoCascadeBroadcast
+Other:  → cortex_pb.CortexStepPostPrReview
+Other:  → cortex_pb.McpServerSpec
+Other:  → cortex_pb.McpServerInfo
+Other:  → cortex_pb.CortexStepMcpTool
+Other:  → cortex_pb.CortexStepManagerFeedback
+Other:  → cortex_pb.CortexStepToolCallProposal
+Other:  → cortex_pb.CortexStepToolCallChoice
+Other:  → cortex_pb.CortexStepTrajectoryChoice
+Other:  → cortex_pb.CortexStepCreateRecipe
+Other:  → cortex_pb.CortexStepProxyWebServer
+Other:  → cortex_pb.McpServerState
+Other:  → cortex_pb.TrajectoryJudgeConfig
+File/Repo:  → cortex_pb.CortexStepViewFileOutline
+Other:  → cortex_pb.EphemeralMessagesConfig
+Other:  → cortex_pb.HeuristicPrompt
+Other:  → cortex_pb.RevertMetadata
+Other:  → cortex_pb.TrajectoryPrefixMetadata
+File/Repo:  → auto_cascade_common_pb.GitRepoInfo
+Other:  → auto_cascade_common_pb.SessionInfo
+Other:  → auto_cascade_common_pb.GithubPullRequestInfo
+Other:  → cascade_plugins_pb.CascadePluginTemplate
+Other:  → cascade_plugins_pb.CascadePluginCommand
+Other:  → cascade_plugins_pb.CascadePluginCommandTemplate
+Other:  → cascade_plugins_pb.CascadePluginCommandVariable
+Other:  → cascade_plugins_pb.GetAvailableCascadePluginsRequest
+Other:  → cascade_plugins_pb.GetAvailableCascadePluginsResponse
+Other:  → cascade_plugins_pb.InstallCascadePluginRequest
+Other:  → cascade_plugins_pb.InstallCascadePluginResponse
+Other:  → language_server_pb.GetGithubPullRequestInfoRequest
+Other:  → language_server_pb.GetGithubPullRequestInfoResponse
+Other:  → language_server_pb.UpdateAutoCascadeGithubCredentialsRequest
+Other:  → language_server_pb.UpdateAutoCascadeGithubCredentialsResponse
+Other:  → language_server_pb.SendUserAutoCascadeMessageRequest
+Other:  → language_server_pb.SendUserAutoCascadeMessageResponse
+Other:  → language_server_pb.DeleteAutoCascadeSessionRequest
+Other:  → language_server_pb.DeleteAutoCascadeSessionResponse
+Other:  → language_server_pb.CheckoutAutoCascadeSessionBranchRequest
+Other:  → language_server_pb.CheckoutAutoCascadeSessionBranchResponse
+Other:  → language_server_pb.DiffAutoCascadeSessionBranchRequest
+Other:  → language_server_pb.DiffAutoCascadeSessionBranchResponse
+Other:  → language_server_pb.MergeAutoCascadeSessionBranchRequest
+Other:  → language_server_pb.MergeAutoCascadeSessionBranchResponse
+Other:  → language_server_pb.SubmitCodingPlanSummaryRequest
+Other:  → language_server_pb.SubmitCodingPlanSummaryResponse
+Other:  → language_server_pb.GetAllCortexPlansRequest
+Other:  → language_server_pb.GetAllCortexPlansResponse
+Other:  → language_server_pb.RecordCortexFeedbackRequest
+Other:  → language_server_pb.RecordCortexFeedbackResponse
+Other:  → language_server_pb.NewCortexPlanRequest
+Other:  → language_server_pb.NewCortexPlanResponse
+Other:  → language_server_pb.GetCortexPlanRequest
+Other:  → language_server_pb.GetCortexPlanResponse
+Other:  → language_server_pb.CommitCodingPlanRequest
+Other:  → language_server_pb.CommitCodingPlanResponse
+Other:  → language_server_pb.ReplanCodingPlanRequest
+Other:  → language_server_pb.ReplanCodingPlanResponse
+Other:  → language_server_pb.PrepareActionRequest
+Other:  → language_server_pb.PrepareActionResponse
+Other:  → language_server_pb.ApplyActionRequest
+Other:  → language_server_pb.ApplyActionResponse
+Other:  → language_server_pb.EditActionRequest
+Other:  → language_server_pb.EditActionResponse
+Other:  → language_server_pb.HandleStreamingCommandRequest
+Other:  → language_server_pb.HandleStreamingCommandResponse
+Other:  → language_server_pb.MultilineConfig
+Other:  → language_server_pb.GetCompletionsRequest
+Other:  → language_server_pb.GetCompletionsResponse
+Other:  → language_server_pb.AcceptCompletionRequest
+Other:  → language_server_pb.AcceptCompletionResponse
+Other:  → language_server_pb.ProvideCompletionFeedbackRequest
+Other:  → language_server_pb.ProvideCompletionFeedbackResponse
+Other:  → language_server_pb.HeartbeatRequest
+Other:  → language_server_pb.HeartbeatResponse
+Other:  → language_server_pb.GetStatusRequest
+Other:  → language_server_pb.GetStatusResponse
+Other:  → language_server_pb.GetCascadeModelConfigsRequest
+Other:  → language_server_pb.GetCascadeModelConfigsResponse
+Other:  → language_server_pb.TeamOrganizationalControls
+Other:  → language_server_pb.GetTeamOrganizationalControlsRequest
+Other:  → language_server_pb.GetTeamOrganizationalControlsResponse
+Other:  → language_server_pb.GetMcpServerTemplatesRequest
+Other:  → language_server_pb.GetMcpServerTemplatesResponse
+Other:  → language_server_pb.GetCommandModelConfigsRequest
+Other:  → language_server_pb.GetCommandModelConfigsResponse
+Other:  → language_server_pb.GetProcessesRequest
+Other:  → language_server_pb.GetExternalModelResponse
+Other:  → language_server_pb.GetExternalModelRequest
+Other:  → language_server_pb.GetProcessesResponse
+Other:  → language_server_pb.GetAuthTokenRequest
+Other:  → language_server_pb.GetAuthTokenResponse
+Other:  → language_server_pb.RecordEventRequest
+Other:  → language_server_pb.RecordEventResponse
+Other:  → language_server_pb.CancelRequestRequest
+Other:  → language_server_pb.CancelRequestResponse
+Other:  → language_server_pb.EditConfigurationRequest
+Other:  → language_server_pb.EditConfigurationResponse
+Other:  → language_server_pb.ValidateWindsurfJSAppProjectNameRequest
+Other:  → language_server_pb.ValidateWindsurfJSAppProjectNameResponse
+Other:  → language_server_pb.SaveWindsurfJSAppProjectNameRequest
+Other:  → language_server_pb.SaveWindsurfJSAppProjectNameResponse
+Other:  → language_server_pb.RegisterUserRequest
+Other:  → language_server_pb.RegisterUserResponse
+Other:  → language_server_pb.ClusteredSearchRequest
+Other:  → language_server_pb.ClusteredSearchResponse
+Other:  → language_server_pb.WellSupportedLanguagesRequest
+Other:  → language_server_pb.WellSupportedLanguagesResponse
+Other:  → language_server_pb.ProgressBarsRequest
+Other:  → language_server_pb.ProgressBarsResponse
+Other:  → language_server_pb.RecordSearchDocOpenRequest
+Other:  → language_server_pb.RecordSearchDocOpenResponse
+Other:  → language_server_pb.RecordSearchResultsViewRequest
+Other:  → language_server_pb.RecordSearchResultsViewResponse
+Core Context:  → language_server_pb.ContextInfoRequest
+Core Context:  → language_server_pb.ContextInfoResponse
+Core Context:  → language_server_pb.RefreshContextForIdeActionRequest
+Core Context:  → language_server_pb.RefreshContextForIdeActionResponse
+Core Context:  → language_server_pb.GetMatchingCodeContextRequest
+Core Context:  → language_server_pb.GetMatchingCodeContextResponse
+File/Repo:  → language_server_pb.GetMatchingIndexedReposRequest
+File/Repo:  → language_server_pb.GetMatchingIndexedReposResponse
+Other:  → language_server_pb.GetChatMessageResponse
+Other:  → language_server_pb.GetMessageTokenCountRequest
+Other:  → language_server_pb.GetMessageTokenCountResponse
+Other:  → language_server_pb.RecordChatFeedbackRequest
+Other:  → language_server_pb.RecordChatFeedbackResponse
+Other:  → language_server_pb.RecordChatPanelSessionRequest
+Other:  → language_server_pb.RecordChatPanelSessionResponse
+Other:  → language_server_pb.GetChatExperimentsRequest
+Other:  → language_server_pb.GetChatExperimentsResponse
+Other:  → language_server_pb.GetUserAnalyticsSummaryRequest
+Other:  → language_server_pb.GetUserAnalyticsSummaryResponse
+Other:  → language_server_pb.GetUserStatusRequest
+Other:  → language_server_pb.GetUserStatusResponse
+Other:  → language_server_pb.GetProfileDataRequest
+Other:  → language_server_pb.GetProfileDataResponse
+Other:  → language_server_pb.CaptureCodeRequest
+Other:  → language_server_pb.CaptureCodeResponse
+File/Repo:  → language_server_pb.CaptureFileRequest
+File/Repo:  → language_server_pb.CaptureFileResponse
+Other:  → language_server_pb.GetChangelogRequest
+Other:  → language_server_pb.GetChangelogResponse
+Other:  → language_server_pb.GetFunctionsRequest
+Other:  → language_server_pb.GetFunctionsResponse
+Other:  → language_server_pb.GetClassInfosRequest
+Other:  → language_server_pb.GetClassInfosResponse
+Other:  → language_server_pb.ExitRequest
+Other:  → language_server_pb.ExitResponse
+Other:  → language_server_pb.State
+Other:  → language_server_pb.RequestInfo
+Other:  → language_server_pb.LatencyInfo
+Other:  → language_server_pb.Suffix
+Other:  → language_server_pb.CompletionPart
+Other:  → language_server_pb.CompletionItem
+Other:  → language_server_pb.SearchResult
+Other:  → language_server_pb.SearchResultCluster
+Other:  → language_server_pb.ProgressBar
+Other:  → language_server_pb.ExactSearchQuery
+Other:  → language_server_pb.ExactSearchOptions
+Other:  → language_server_pb.ExactSearchPreviewOptions
+Other:  → language_server_pb.ExactSearchResult
+Other:  → language_server_pb.ExactSearchMatchPreview
+Other:  → language_server_pb.AddTrackedWorkspaceRequest
+Other:  → language_server_pb.AddTrackedWorkspaceResponse
+Other:  → language_server_pb.RemoveTrackedWorkspaceRequest
+Other:  → language_server_pb.RemoveTrackedWorkspaceResponse
+Other:  → language_server_pb.GetWorkspaceEditStateRequest
+Other:  → language_server_pb.WorkspaceEditState
+Other:  → language_server_pb.GetWorkspaceEditStateResponse
+Other:  → language_server_pb.GetWorkspaceInfosRequest
+Other:  → language_server_pb.WorkspaceInfo
+Other:  → language_server_pb.GetWorkspaceInfosResponse
+Other:  → language_server_pb.GenerateCommitMessageRequest
+Other:  → language_server_pb.CommitMessageData
+Other:  → language_server_pb.GenerateCommitMessageResponse
+Other:  → language_server_pb.RecordCommitMessageSaveRequest
+Other:  → language_server_pb.RecordCommitMessageSaveResponse
+Other:  → language_server_pb.GetUserSettingsRequest
+Other:  → language_server_pb.GetUserSettingsResponse
+Other:  → language_server_pb.SetUserSettingsRequest
+Other:  → language_server_pb.SetUserSettingsResponse
+Other:  → language_server_pb.GetDebugDiagnosticsRequest
+Other:  → language_server_pb.GetDebugDiagnosticsResponse
+Other:  → language_server_pb.CodeRange
+Other:  → language_server_pb.CodeTrackerState
+Core Context:  → language_server_pb.GetSuggestedContextScopeItemsRequest
+Core Context:  → language_server_pb.GetSuggestedContextScopeItemsResponse
+Core Context:  → language_server_pb.GetMatchingContextScopeItemsRequest
+Core Context:  → language_server_pb.GetMatchingContextScopeItemsResponse
+Core Context:  → language_server_pb.ContextStatus
+Other:  → language_server_pb.LocalIndexStatus
+Other:  → language_server_pb.IndexStatus
+Other:  → language_server_pb.BrainStatus
+Other:  → language_server_pb.GetBrainStatusRequest
+Other:  → language_server_pb.GetBrainStatusResponse
+Other:  → language_server_pb.GetAutoCascadeSessionsRequest
+Other:  → language_server_pb.GetAutoCascadeSessionsResponse
+Other:  → language_server_pb.SetPinnedGuidelineRequest
+Core Context:  → language_server_pb.SetPinnedContextRequest
+Other:  → language_server_pb.SetPinnedGuidelineResponse
+Core Context:  → language_server_pb.SetPinnedContextResponse
+Other:  → language_server_pb.SetupUniversitySandboxRequest
+Other:  → language_server_pb.SetupUniversitySandboxResponse
+Other:  → language_server_pb.UnifiedDiffChange
+Other:  → language_server_pb.UnifiedDiff
+Other:  → language_server_pb.RenderInsertionSideHintRequest
+Other:  → language_server_pb.RenderInsertionSideHintResponse
+Other:  → language_server_pb.RenderConfig
+Other:  → language_server_pb.RenderRequestMetadata
+Other:  → language_server_pb.RenderedSideHintDisplayOptions
+Other:  → language_server_pb.CodeTheme
+Other:  → language_server_pb.OnboardingItemState
+Other:  → language_server_pb.OnboardingState
+Other:  → language_server_pb.ResetOnboardingRequest
+Other:  → language_server_pb.ResetOnboardingResponse
+Other:  → language_server_pb.SkipOnboardingRequest
+Other:  → language_server_pb.SkipOnboardingResponse
+Other:  → language_server_pb.GetUserTrajectoryDebugRequest
+Other:  → language_server_pb.GetUserTrajectoryDebugResponse
+Other:  → language_server_pb.ForceBackgroundResearchRefreshRequest
+Other:  → language_server_pb.ForceBackgroundResearchRefreshResponse
+Other:  → language_server_pb.InitializeCascadePanelStateRequest
+Other:  → language_server_pb.InitializeCascadePanelStateResponse
+Other:  → language_server_pb.StartCascadeRequest
+Other:  → language_server_pb.StartCascadeResponse
+Other:  → language_server_pb.GetCascadeTrajectoryRequest
+Other:  → language_server_pb.GetCascadeTrajectoryResponse
+Other:  → language_server_pb.GetCascadeTrajectoryStepsRequest
+Other:  → language_server_pb.GetCascadeTrajectoryStepsResponse
+Other:  → language_server_pb.GetAllCascadeTrajectoriesRequest
+Other:  → language_server_pb.GetAllCascadeTrajectoriesResponse
+Other:  → language_server_pb.CancelCascadeInvocationRequest
+Other:  → language_server_pb.CancelCascadeInvocationResponse
+Other:  → language_server_pb.CancelCascadeStepsRequest
+Other:  → language_server_pb.CancelCascadeStepsResponse
+Other:  → language_server_pb.SendUserCascadeMessageRequest
+Other:  → language_server_pb.SendUserCascadeMessageResponse
+Other:  → language_server_pb.RevertToCascadeStepRequest
+Other:  → language_server_pb.RevertToCascadeStepResponse
+Other:  → language_server_pb.HandleCascadeUserInteractionRequest
+Other:  → language_server_pb.HandleCascadeUserInteractionResponse
+Other:  → language_server_pb.AcknowledgeCascadeCodeEditRequest
+Other:  → language_server_pb.AcknowledgeCascadeCodeEditResponse
+Other:  → language_server_pb.GetCodeValidationStatesRequest
+Other:  → language_server_pb.GetCodeValidationStatesResponse
+Other:  → language_server_pb.ValidationState
+Other:  → language_server_pb.DeleteCascadeTrajectoryRequest
+Other:  → language_server_pb.DeleteCascadeTrajectoryResponse
+Other:  → language_server_pb.ResolveOutstandingStepsRequest
+Other:  → language_server_pb.ResolveOutstandingStepsResponse
+Other:  → language_server_pb.StreamTerminalShellCommandResponse
+Other:  → language_server_pb.GetWebDocsOptionsRequest
+Other:  → language_server_pb.GetWebDocsOptionsResponse
+Other:  → language_server_pb.UpdateDevExperimentsRequest
+Other:  → language_server_pb.UpdateDevExperimentsResponse
+Other:  → language_server_pb.GetActiveAppDeploymentForWorkspaceRequest
+Other:  → language_server_pb.GetActiveAppDeploymentForWorkspaceResponse
+Other:  → language_server_pb.GetWindsurfJSAppDeploymentRequest
+Other:  → language_server_pb.GetWindsurfJSAppDeploymentResponse
+Other:  → language_server_pb.GetCascadeMemoriesRequest
+Other:  → language_server_pb.GetCascadeMemoriesResponse
+Other:  → language_server_pb.DeleteCascadeMemoryRequest
+Other:  → language_server_pb.DeleteCascadeMemoryResponse
+Other:  → language_server_pb.UpdateCascadeMemoryRequest
+Other:  → language_server_pb.UpdateCascadeMemoryResponse
+Other:  → language_server_pb.GetUserMemoriesRequest
+Other:  → language_server_pb.GetUserMemoriesResponse
+Other:  → language_server_pb.RefreshMcpServersRequest
+Other:  → language_server_pb.RefreshMcpServersResponse
+Other:  → language_server_pb.GetMcpServerStatesRequest
+Other:  → language_server_pb.GetMcpServerStatesResponse
+Other:  → language_server_pb.GetAllWorkflowsRequest
+Other:  → language_server_pb.GetAllWorkflowsResponse
+Other:  → language_server_pb.SendActionToChatPanelRequest
+Other:  → language_server_pb.SendActionToChatPanelResponse
+Other:  → language_server_pb.RecordUserGrepRequest
+Other:  → language_server_pb.RecordUserGrepResponse
+Other:  → language_server_pb.GetUnleashDataRequest
+Other:  → language_server_pb.GetUnleashDataResponse
+Other:  → language_server_pb.ShouldEnableUnleashRequest
+Other:  → language_server_pb.ShouldEnableUnleashResponse
+Other:  → language_server_pb.GetPatchAndCodeChangeRequest
+Other:  → language_server_pb.GetPatchAndCodeChangeResponse
+Other:  → language_server_pb.CreateTrajectoryShareRequest
+Other:  → language_server_pb.CreateTrajectoryShareResponse
+Other:  → language_server_pb.GetAvailableCascadePluginsRequest
+Other:  → language_server_pb.GetAvailableCascadePluginsResponse
+Other:  → language_server_pb.InstallCascadePluginRequest
+Other:  → language_server_pb.InstallCascadePluginResponse
+Other:  → extension_server_pb.LanguageServerStartedRequest
+Other:  → extension_server_pb.LanguageServerStartedResponse
+Other:  → extension_server_pb.OpenSettingRequest
+Other:  → extension_server_pb.OpenSettingResponse
+File/Repo:  → extension_server_pb.OpenFilePointerRequest
+File/Repo:  → extension_server_pb.OpenFilePointerResponse
+Other:  → extension_server_pb.InsertCodeAtCursorRequest
+Other:  → extension_server_pb.InsertCodeAtCursorResponse
+Other:  → extension_server_pb.EventMetadataRecord
+Other:  → extension_server_pb.LogEventRequest
+Other:  → extension_server_pb.LogEventResponse
+Other:  → extension_server_pb.CheckTerminalShellSupportRequest
+Other:  → extension_server_pb.CheckTerminalShellSupportResponse
+Other:  → extension_server_pb.ExecuteCommandRequest
+Other:  → extension_server_pb.ShowTerminalRequest
+Other:  → extension_server_pb.ShowTerminalResponse
+File/Repo:  → extension_server_pb.OpenVirtualFileRequest
+File/Repo:  → extension_server_pb.OpenVirtualFileResponse
+Knowledge Base:  → extension_server_pb.SaveDocumentRequest
+Knowledge Base:  → extension_server_pb.SaveDocumentResponse
+Other:  → extension_server_pb.GetLintErrorsRequest
+Other:  → extension_server_pb.GetLintErrorsRequest.AwaitNewLintsConfig
+Other:  → extension_server_pb.GetLintErrorsResponse
+Other:  → extension_server_pb.OpenDiffZonesRequest
+Other:  → extension_server_pb.OpenDiffZonesResponse
+Other:  → extension_server_pb.OpenExternalUrlRequest
+Other:  → extension_server_pb.OpenExternalUrlResponse
+Other:  → extension_server_pb.HandleAsyncPostMessageRequest
+Other:  → extension_server_pb.HandleAsyncPostMessageResponse
+Other:  → extension_server_pb.PlaySoundRequest
+Other:  → extension_server_pb.PlaySoundResponse
+File/Repo:  → extension_server_pb.OpenWindsurfRulesFileRequest
+File/Repo:  → extension_server_pb.OpenWindsurfRulesFileResponse
+Other:  → extension_server_pb.RefreshURIsRequest
+Other:  → extension_server_pb.RefreshURIsResponse
+Other:  → extension_server_pb.OpenPluginPageRequest
+Other:  → extension_server_pb.OpenPluginPageResponse
+Other:  → extension_server_pb.OpenPluginConfigModalRequest
+Other:  → extension_server_pb.OpenPluginConfigModalResponse
+Other:  → reactive_component_pb.StreamReactiveUpdatesRequest
+Other:  → reactive_component_pb.StreamReactiveUpdatesResponse
+Other:  → reactive_component_pb.TestProto
+Other:  → reactive_component_pb.MessageDiff
+Other:  → reactive_component_pb.FieldDiff
+Other:  → reactive_component_pb.RepeatedDiff
+Other:  → reactive_component_pb.MapDiff
+Other:  → reactive_component_pb.MapKeyDiff
+Other:  → reactive_component_pb.SingularValue
+Other:  → reactive_component_pb.TestDiffProto
+Other:  → chat_web_server_pb.ChatMessageWithFeedback
+Other:  → chat_web_server_pb.FastApply
+Other:  → chat_web_server_pb.PinnedSystemErrorFeedback
+Other:  → chat_web_server_pb.PinnedSystemFeedback
+Other:  → chat_web_server_pb.ChatMessageState
+Other:  → chat_web_server_pb.ClearConversation
+File/Repo:  → chat_web_server_pb.OpenFilePointer
+Other:  → chat_web_server_pb.InsertCodeAtCursor
+Other:  → chat_web_server_pb.ApplyDiff
+Other:  → chat_web_server_pb.HideDiff
+Other:  → chat_web_server_pb.HandshakeRequest
+Other:  → chat_web_server_pb.ErrorResponse
+Other:  → chat_web_server_pb.ChatExperimentStatus
+Other:  → chat_web_server_pb.HandshakeResponse
+Other:  → chat_web_server_pb.StateUpdate
+Other:  → chat_web_server_pb.CancelInfightMessage
+Other:  → chat_web_server_pb.Heartbeat
+Other:  → chat_web_server_pb.UpdateUserSettingsRequest
+Other:  → chat_web_server_pb.SetDraftQueryRequest
+Other:  → chat_web_server_pb.RetryLastMessage
+Other:  → chat_web_server_pb.DismissPinnedSystemFeedback
+Other:  → chat_web_server_pb.WebServerRequest
+Other:  → chat_web_server_pb.WebServerResponse
+Other:  → chat_web_server_pb.OnboardingState
+File/Repo:  → chat_web_server_pb.GetMatchingIndexedReposRequest
+File/Repo:  → chat_web_server_pb.GetMatchingIndexedReposResponse
+Core Context:  → chat_web_server_pb.GetMatchingCodeContextRequest
+Core Context:  → chat_web_server_pb.GetMatchingCodeContextResponse
+Other:  → user_analytics_pb.QuerySelectionField
+Other:  → user_analytics_pb.QueryFilterField
+Other:  → user_analytics_pb.QueryAggregationField
+Other:  → user_analytics_pb.QueryOrderField
+Other:  → user_analytics_pb.CustomQueryRequest
+Other:  → user_analytics_pb.QueryResponseItem
+Other:  → user_analytics_pb.CustomQueryResponse
+Other:  → user_analytics_pb.GetAnalyticsRequest
+Other:  → user_analytics_pb.GetAnalyticsResponse
+Other:  → user_analytics_pb.AnalyticsRequest
+Other:  → user_analytics_pb.AnalyticsResponse
+Other:  → user_analytics_pb.UserPageAnalyticsRequest
+Other:  → user_analytics_pb.UserPageAnalyticsResponse
+Other:  → user_analytics_pb.GetPublicAnalyticsRequest
+Other:  → user_analytics_pb.GetPublicAnalyticsResponse
+Other:  → user_analytics_pb.QueryRequest
+Other:  → user_analytics_pb.QueryResult
+Other:  → user_analytics_pb.QueryRequestCompletionStats
+Other:  → user_analytics_pb.QueryResultCompletionStats
+Other:  → user_analytics_pb.QueryRequestCompletionsByDay
+Other:  → user_analytics_pb.QueryResultCompletionsByDay
+Other:  → user_analytics_pb.QueryRequestCompletionsByLanguage
+Other:  → user_analytics_pb.QueryResultCompletionsByLanguage
+Other:  → user_analytics_pb.QueryRequestCompletionsByIde
+Other:  → user_analytics_pb.QueryResultCompletionsByIde
+File/Repo:  → user_analytics_pb.QueryRequestCompletionsByRepository
+File/Repo:  → user_analytics_pb.QueryResultCompletionsByRepository
+Other:  → user_analytics_pb.QueryRequestChatsByDay
+Other:  → user_analytics_pb.QueryResultChatsByDay
+Other:  → user_analytics_pb.QueryRequestAllChatsByDay
+Other:  → user_analytics_pb.QueryRequestActiveUserCount
+Other:  → user_analytics_pb.QueryRequestChatStatsByModel
+Other:  → user_analytics_pb.QueryRequestAllChatStatsByModel
+Other:  → user_analytics_pb.QueryResultChatStatsByModel
+Other:  → user_analytics_pb.QueryRequestAllUsersCompletionsByDay
+Other:  → user_analytics_pb.QueryRequestAllUsersCompletionsByLanguage
+Other:  → user_analytics_pb.QueryRequestAllUsersCompletionStats
+Other:  → user_analytics_pb.QueryRequestCompletionsByApiKey
+Other:  → user_analytics_pb.QueryResultCompletionsByApiKey
+Other:  → user_analytics_pb.QueryResultActiveUserCount
+Other:  → user_analytics_pb.QueryRequestPercentCodeWritten
+Other:  → user_analytics_pb.QueryResultPercentCodeWritten
+Other:  → user_analytics_pb.QueryRequestCharsPerOpportunity
+Other:  → user_analytics_pb.QueryResultCharsPerOpportunity
+Other:  → user_analytics_pb.QueryRequestChatStats
+Other:  → user_analytics_pb.QueryResultChatStats
+Other:  → user_analytics_pb.QueryRequestCommandStats
+Other:  → user_analytics_pb.QueryResultCommandStats
+Other:  → user_analytics_pb.QueryRequestActiveDaysByApiKey
+Other:  → user_analytics_pb.QueryResultActiveDaysByApiKey
+Other:  → user_analytics_pb.QueryResultError
+Other:  → user_analytics_pb.GetPreferredTimeZoneRequest
+Other:  → user_analytics_pb.GetPreferredTimeZoneResponse

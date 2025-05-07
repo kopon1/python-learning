@@ -3,15 +3,13 @@ from funcs import input_to_int, appropiate_input_num, remove_lines
 import csv
 import datetime
 
-# List that saves user inputs
-inputs = []
-f = "inputs.csv"
-headers = []
+# Dict that saves user inputs
+inputs = {}
 
 # function that gets the current time and formats it
 def get_current_time():
     now = datetime.datetime.now()
-    return now.strftime("%D-%M-%Y, %H:%M:%S")
+    return now.strftime("%D-%M-%Y, %H:%M")
 
 # function that handles user's choice to add, divide, multiply or substract
 def calc():
@@ -51,23 +49,27 @@ def calc():
             else:
                 print("Invalid choice, please try again")
                 
-# compress code into printing final result and append to inputs list
+# compress code into printing final result and append to inputs dict
             total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
-            inputs.append(f"{total}, {get_current_time()}")
             print(total)
-            
-# append inputs list to file
-            with open("inputs.csv", "a") as csv_file:
-                fieldnames = ["Operations", "Time"]
-                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter="\t")
-                csv_writer.writeheader()
-            
+            key = get_current_time()
+            if key in inputs:
+                inputs[key].append(total)
+            else:
+                inputs[key] = [total]
+                  
+# append inputs dict to csv file
+            with open("inputs.csv", "a", newline="") as csv_file:
+                # key = get_current_time()
+                # if key in inputs:
+                #     inputs[key].append(total)
+                # else:
+                #     inputs = {key : [total]}
+                fieldnames = ["Time", "Operations"]
+                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction='ignore', delimiter="\t")
                 for line in inputs:
-                    csv_writer.writerow(line + "\n")
-                    
-           
-            
-            
+                    csv_writer.writerow(line)
+    
 # function that prompts user to access calculator or exit 
 def user_choice():
     while True:
@@ -77,14 +79,11 @@ def user_choice():
                 calc()
             elif choice == 2:
                 with open("inputs.csv", "r") as csv_file:
-                    csv_reader = csv.DictReader(csv_file, delimiter="\t")
-                    
+                    fieldnames = ["Time", "Operations"]
+                    csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter="\t")
+                    next(csv_file)
                     for line in csv_reader:
                         print(line)
-            
-                # f = open("inputs.csv", "r")
-                # for x, line in enumerate(f):
-                #     print(f"{x}: {line}")
             elif choice == 3:
                 delete_input()
             elif choice is None:

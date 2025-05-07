@@ -1,0 +1,6951 @@
+syntax = "proto3";
+package exa.codeium_common2_pb;
+
+// Reverse-engineered from JS structure
+// NOT from original .proto files
+
+
+// JS Class: c
+message  {
+}
+
+// JS Class: u
+message  {
+}
+
+// JS Class: d
+message  {
+}
+
+// JS Class: m
+message  {
+}
+
+// JS Class: p
+message  {
+}
+
+// JS Class: f
+message  {
+}
+
+// JS Class: h
+message  {
+}
+
+// JS Class: _
+message  {
+}
+
+// JS Class: g
+message  {
+}
+
+// JS Class: y
+message  {
+}
+
+// JS Class: A
+message  {
+}
+
+// JS Class: E
+message  {
+}
+
+// JS Class: b
+message  {
+}
+
+// JS Class: v
+message  {
+}
+
+// JS Class: w
+message ChatMessageIntent {
+}
+
+// JS Class: S
+message ChatMessageActionSearch {
+}
+
+// JS Class: T
+message  {
+}
+
+// JS Class: x
+message  {
+}
+
+// JS Class: C
+message ChatMessageStatusContextRelevancy {
+}
+
+// JS Class: k
+message ChatMessageStatus {
+}
+
+// JS Class: M
+message  {
+}
+
+// JS Class: L
+message ChatMessageAction {
+}
+
+// JS Class: I
+message  {
+}
+
+// JS Class: N
+message Conversation {
+}
+
+// JS Class: O
+message  {
+}
+
+// JS Class: R
+message PromptCacheOptions {
+}
+
+// JS Class: D
+message  {
+}
+
+// JS Class: P
+message ChatToolChoice {
+}
+
+// JS Class: B
+message  {
+}
+
+// JS Class: F
+message ChatMentionsSearchResponse {
+}
+
+// JS Class: j
+message  {
+}
+
+// JS Class: U
+message EnterpriseExternalModelConfig {
+}
+
+// JS Class: Y
+message ChatExperimentStatus {
+}
+
+// JS Class: H
+message  {
+}
+
+// JS Class: ye
+message  {
+}
+
+// JS Class: Ae
+message CompletionConfiguration {
+}
+
+// JS Class: Ee
+message PromptElementRange {
+}
+
+// JS Class: be
+message  {
+}
+
+// JS Class: ve
+message  {
+}
+
+// JS Class: we
+message  {
+}
+
+// JS Class: Se
+message ExperimentConfig {
+}
+
+// JS Class: Te
+message  {
+}
+
+// JS Class: xe
+message  {
+}
+
+// JS Class: Ce
+message  {
+}
+
+// JS Class: ke
+message ExperimentMultilineModelThresholdPayload {
+}
+
+// JS Class: Me
+message ExperimentSentryPayload {
+}
+
+// JS Class: Le
+message  {
+}
+
+// JS Class: Ie
+message ExperimentProfilingTelemetrySampleRatePayload {
+}
+
+// JS Class: Ne
+message ModelOrAlias {
+}
+
+// JS Class: Oe
+message PromptElementKindInfo {
+}
+
+// JS Class: Re
+message PromptElementInclusionMetadata {
+}
+
+// JS Class: De
+message  {
+}
+
+// JS Class: Pe
+message  {
+}
+
+// JS Class: Be
+message  {
+}
+
+// JS Class: Fe
+message  {
+}
+
+// JS Class: je
+message SingleModelCompletionProfile {
+}
+
+// JS Class: Ue
+message CompletionProfile {
+}
+
+// JS Class: Ye
+message  {
+}
+
+// JS Class: He
+message StreamingCompletionMap {
+}
+
+// JS Class: qe
+message PackedStreamingCompletionMaps {
+}
+
+// JS Class: Ge
+message StreamingEvalSuffixInfo {
+}
+
+// JS Class: Je
+message StreamingCompletionResponse {
+}
+
+// JS Class: Ve
+message CompletionLatencyInfo {
+}
+
+// JS Class: ze
+message CompletionWithLatencyInfo {
+}
+
+// JS Class: We
+message EmbeddingsRequest {
+}
+
+// JS Class: Ze
+message Embedding {
+}
+
+// JS Class: Ke
+message EmbeddingResponse {
+}
+
+// JS Class: $e
+message  {
+}
+
+// JS Class: Xe
+message RewardsResponse {
+}
+
+// JS Class: Qe
+message  {
+}
+
+// JS Class: et
+message EditorOptions {
+}
+
+// JS Class: tt
+message  {
+}
+
+// JS Class: nt
+message  {
+}
+
+// JS Class: rt
+message  {
+}
+
+// JS Class: at
+message  {
+}
+
+// JS Class: ot
+message  {
+}
+
+// JS Class: it
+message MockResponseData {
+}
+
+// JS Class: st
+message  {
+}
+
+// JS Class: lt
+message  {
+}
+
+// JS Class: ct
+message PartialIndexMetadata {
+}
+
+// JS Class: ut
+message  {
+}
+
+// JS Class: dt
+message  {
+}
+
+// JS Class: mt
+message  {
+}
+
+// JS Class: pt
+message AllowedModelConfig {
+}
+
+// JS Class: ft
+message  {
+}
+
+// JS Class: ht
+message TopUpStatus {
+}
+
+// JS Class: _t
+message PlanStatus {
+}
+
+// JS Class: gt
+message  {
+}
+
+// JS Class: yt
+message ScmWorkspaceInfo {
+}
+
+// JS Class: At
+message  {
+}
+
+// JS Class: Et
+message  {
+}
+
+// JS Class: bt
+message  {
+}
+
+// JS Class: vt
+message  {
+}
+
+// JS Class: wt
+message WordCount {
+}
+
+// JS Class: St
+message  {
+}
+
+// JS Class: Tt
+message  {
+}
+
+// JS Class: xt
+message CompletionStatistics {
+}
+
+// JS Class: Ct
+message CompletionByDateEntry {
+}
+
+// JS Class: kt
+message CompletionByLanguageEntry {
+}
+
+// JS Class: Mt
+message ChatStats {
+}
+
+// JS Class: Lt
+message ChatStatsByDateEntry {
+}
+
+// JS Class: It
+message ChatStatsByModelEntry {
+}
+
+// JS Class: Nt
+message CommandStats {
+}
+
+// JS Class: Ot
+message CommandStatsByDateEntry {
+}
+
+// JS Class: Rt
+message  {
+}
+
+// JS Class: Dt
+message CascadeNUXState {
+}
+
+// JS Class: Pt
+message UserNUXState {
+}
+
+// JS Class: Bt
+message  {
+}
+
+// JS Class: Ft
+message ModelFeatures {
+}
+
+// JS Class: jt
+message  {
+}
+
+// JS Class: Ut
+message  {
+}
+
+// JS Class: Yt
+message ApiProviderRoutingConfig {
+}
+
+// JS Class: Ht
+message ApiProviderConfigMap {
+}
+
+// JS Class: qt
+message ApiProviderConfig {
+}
+
+// JS Class: Gt
+message ModelConfig {
+}
+
+// JS Class: Jt
+message  {
+}
+
+// JS Class: Vt
+message  {
+}
+
+// JS Class: zt
+message CciWithSubrange {
+}
+
+// JS Class: Wt
+message ContextSubrange {
+}
+
+// JS Class: Zt
+message  {
+}
+
+// JS Class: Kt
+message  {
+}
+
+// JS Class: $t
+message  {
+}
+
+// JS Class: Xt
+message RepositoryScopeItem {
+}
+
+// JS Class: Qt
+message  {
+}
+
+// JS Class: en
+message  {
+}
+
+// JS Class: tn
+message  {
+}
+
+// JS Class: nn
+message  {
+}
+
+// JS Class: rn
+message  {
+}
+
+// JS Class: an
+message  {
+}
+
+// JS Class: on
+message ContextScopeItem {
+}
+
+// JS Class: sn
+message ContextScope {
+}
+
+// JS Class: ln
+message  {
+}
+
+// JS Class: cn
+message GraphExecutionState {
+}
+
+// JS Class: un
+message Guideline {
+}
+
+// JS Class: dn
+message  {
+}
+
+// JS Class: mn
+message ChatNodeConfig {
+}
+
+// JS Class: pn
+message MQueryConfig {
+}
+
+// JS Class: fn
+message  {
+}
+
+// JS Class: hn
+message  {
+}
+
+// JS Class: _n
+message  {
+}
+
+// JS Class: gn
+message  {
+}
+
+// JS Class: yn
+message  {
+}
+
+// JS Class: An
+message DocumentPosition {
+}
+
+// JS Class: En
+message Range {
+}
+
+// JS Class: bn
+message  {
+}
+
+// JS Class: vn
+message PromptComponents {
+}
+
+// JS Class: wn
+message TextOrScopeItem {
+}
+
+// JS Class: Sn
+message  {
+}
+
+// JS Class: Tn
+message PinnedContext {
+}
+
+// JS Class: xn
+message  {
+}
+
+// JS Class: Cn
+message DefaultPinnedContextConfig {
+}
+
+// JS Class: kn
+message  {
+}
+
+// JS Class: Mn
+message  {
+}
+
+// JS Class: Ln
+message LanguageServerDiagnostics {
+}
+
+// JS Class: In
+message IndexerStats {
+}
+
+// JS Class: Nn
+message IndexerDbStats {
+}
+
+// JS Class: On
+message LocalSqliteFaissDbStats {
+}
+
+// JS Class: Rn
+message  {
+}
+
+// JS Class: Dn
+message PostgresDbStats {
+}
+
+// JS Class: Pn
+message LastUpdateRecord {
+}
+
+// JS Class: Bn
+message  {
+}
+
+// JS Class: Fn
+message  {
+}
+
+// JS Class: jn
+message  {
+}
+
+// JS Class: Un
+message  {
+}
+
+// JS Class: Yn
+message DocumentLinesElement {
+}
+
+// JS Class: Hn
+message  {
+}
+
+// JS Class: qn
+message DocumentOutlineElement {
+}
+
+// JS Class: Gn
+message DocumentOutline {
+}
+
+// JS Class: Jn
+message  {
+}
+
+// JS Class: Vn
+message  {
+}
+
+// JS Class: zn
+message CodebaseClusterList {
+}
+
+// JS Class: Wn
+message KnowledgeBaseChunk {
+}
+
+// JS Class: Zn
+message  {
+}
+
+// JS Class: Kn
+message  {
+}
+
+// JS Class: $n
+message  {
+}
+
+// JS Class: Xn
+message  {
+}
+
+// JS Class: Qn
+message  {
+}
+
+// JS Class: er
+message  {
+}
+
+// JS Class: tr
+message  {
+}
+
+// JS Class: nr
+message TerminalShellCommandData {
+}
+
+// JS Class: rr
+message TerminalShellCommandTrailer {
+}
+
+// JS Class: ar
+message TerminalShellCommandStreamChunk {
+}
+
+// JS Class: or
+message  {
+}
+
+// JS Class: ir
+message  {
+}
+
+// JS Class: sr
+message  {
+}
+
+// JS Class: lr
+message  {
+}
+
+// JS Class: cr
+message  {
+}
+
+// JS Class: ur
+message  {
+}
+
+// JS Class: dr
+message  {
+}
+
+// JS Class: mr
+message  {
+}
+
+// JS Class: pr
+message McpServerCommand {
+}
+
+// JS Class: fr
+message  {
+}
+
+// JS Class: hr
+message  {
+}
+
+// JS Class: _r
+message  {
+}
+
+// JS Class: gr
+message  {
+}
+
+// JS Class: yr
+message  {
+}
+
+// JS Class: Ar
+message ModelNotificationExperimentPayload {
+}
+
+// JS Class: l
+message UnifiedDiff {
+}
+
+// JS Class: c
+message  {
+}
+
+// JS Class: u
+message DiffBlock {
+}
+
+// JS Class: d
+message  {
+}
+
+// JS Class: m
+message CharacterDiff {
+}
+
+// JS Class: p
+message  {
+}
+
+// JS Class: f
+message ComboDiff {
+}
+
+// JS Class: h
+message DiffSet {
+}
+
+// JS Class: _
+message DiffList {
+}
+
+// JS Class: s
+message IndexDbVersion {
+}
+
+// JS Class: l
+message IndexBuildConfig {
+}
+
+// JS Class: c
+message  {
+}
+
+// JS Class: u
+message  {
+}
+
+// JS Class: d
+message IndexConfig {
+}
+
+// JS Class: m
+message VectorIndexStats {
+}
+
+// JS Class: p
+message  {
+}
+
+// JS Class: f
+message  {
+}
+
+// JS Class: h
+message RepoStats {
+}
+
+// JS Class: _
+message  {
+}
+
+// JS Class: g
+message  {
+}
+
+// JS Class: y
+message  {
+}
+
+// JS Class: A
+message AddRepositoryRequest {
+}
+
+// JS Class: E
+message  {
+}
+
+// JS Class: b
+message EnableIndexingRequest {
+}
+
+// JS Class: v
+message EnableIndexingResponse {
+}
+
+// JS Class: w
+message DisableIndexingRequest {
+}
+
+// JS Class: S
+message DisableIndexingResponse {
+}
+
+// JS Class: T
+message  {
+}
+
+// JS Class: x
+message EditRepositoryResponse {
+}
+
+// JS Class: C
+message  {
+}
+
+// JS Class: k
+message DeleteRepositoryResponse {
+}
+
+// JS Class: M
+message  {
+}
+
+// JS Class: L
+message GetRepositoriesRequest {
+}
+
+// JS Class: I
+message GetRepositoriesResponse {
+}
+
+// JS Class: N
+message  {
+}
+
+// JS Class: O
+message GetIndexesResponse {
+}
+
+// JS Class: R
+message  {
+}
+
+// JS Class: D
+message GetIndexResponse {
+}
+
+// JS Class: P
+message  {
+}
+
+// JS Class: B
+message GetRemoteIndexStatsRequest {
+}
+
+// JS Class: F
+message GetRemoteIndexStatsResponse {
+}
+
+// JS Class: j
+message  {
+}
+
+// JS Class: U
+message  {
+}
+
+// JS Class: Y
+message  {
+}
+
+// JS Class: H
+message CancelIndexingResponse {
+}
+
+// JS Class: q
+message  {
+}
+
+// JS Class: G
+message RetryIndexingResponse {
+}
+
+// JS Class: J
+message  {
+}
+
+// JS Class: V
+message DeleteIndexResponse {
+}
+
+// JS Class: z
+message PruneDatabaseRequest {
+}
+
+// JS Class: W
+message PruneDatabaseResponse {
+}
+
+// JS Class: Z
+message GetDatabaseStatsRequest {
+}
+
+// JS Class: K
+message  {
+}
+
+// JS Class: $
+message SetIndexConfigRequest {
+}
+
+// JS Class: X
+message SetIndexConfigResponse {
+}
+
+// JS Class: Q
+message GetIndexConfigRequest {
+}
+
+// JS Class: ee
+message GetIndexConfigResponse {
+}
+
+// JS Class: te
+message GetNumberConnectionsRequest {
+}
+
+// JS Class: ne
+message GetNumberConnectionsResponse {
+}
+
+// JS Class: re
+message GetConnectionsDebugInfoRequest {
+}
+
+// JS Class: ae
+message  {
+}
+
+// JS Class: oe
+message GetIndexedRepositoriesRequest {
+}
+
+// JS Class: ie
+message GetIndexedRepositoriesResponse {
+}
+
+// JS Class: se
+message RepositoryFilter {
+}
+
+// JS Class: le
+message  {
+}
+
+// JS Class: ce
+message GetMatchingFilePathsResponse {
+}
+
+// JS Class: ue
+message GetNearestCCIsFromEmbeddingRequest {
+}
+
+// JS Class: de
+message ScoredContextItem {
+}
+
+// JS Class: me
+message GetNearestCCIsFromEmbeddingResponse {
+}
+
+// JS Class: pe
+message GetEmbeddingsForCodeContextItemsRequest {
+}
+
+// JS Class: fe
+message GetEmbeddingsForCodeContextItemsResponse {
+}
+
+// JS Class: he
+message  {
+}
+
+// JS Class: _e
+message IndexerEvent {
+}
+
+// JS Class: ge
+message  {
+}
+
+// JS Class: ye
+message  {
+}
+
+// JS Class: Ae
+message  {
+}
+
+// JS Class: Ee
+message AddWorkspaceInfo {
+}
+
+// JS Class: be
+message  {
+}
+
+// JS Class: ve
+message  {
+}
+
+// JS Class: we
+message  {
+}
+
+// JS Class: Se
+message  {
+}
+
+// JS Class: d
+message TimeRange {
+}
+
+// JS Class: m
+message  {
+}
+
+// JS Class: p
+message AddGithubUsersRequest {
+}
+
+// JS Class: f
+message AddGithubUsersResponse {
+}
+
+// JS Class: h
+message  {
+}
+
+// JS Class: _
+message AddUsersRequest {
+}
+
+// JS Class: g
+message AddUsersResponse {
+}
+
+// JS Class: y
+message  {
+}
+
+// JS Class: A
+message KnowledgeBaseSearchResponse {
+}
+
+// JS Class: E
+message  {
+}
+
+// JS Class: b
+message GetKnowledgeBaseScopeItemsResponse {
+}
+
+// JS Class: v
+message GetKnowledgeBaseItemsFromScopeItemsRequest {
+}
+
+// JS Class: w
+message GetKnowledgeBaseItemsFromScopeItemsResponse {
+}
+
+// JS Class: S
+message IngestSlackDataRequest {
+}
+
+// JS Class: T
+message IngestSlackDataResponse {
+}
+
+// JS Class: x
+message  {
+}
+
+// JS Class: C
+message IngestGithubDataResponse {
+}
+
+// JS Class: k
+message IngestGoogleDriveDataRequest {
+}
+
+// JS Class: M
+message IngestGoogleDriveDataResponse {
+}
+
+// JS Class: L
+message IngestJiraDataRequest {
+}
+
+// JS Class: I
+message IngestJiraDataResponse {
+}
+
+// JS Class: N
+message  {
+}
+
+// JS Class: O
+message IngestJiraPayloadResponse {
+}
+
+// JS Class: R
+message ForwardResult {
+}
+
+// JS Class: D
+message ForwardSlackPayloadRequest {
+}
+
+// JS Class: P
+message ForwardSlackPayloadResponse {
+}
+
+// JS Class: B
+message IngestSlackPayloadRequest {
+}
+
+// JS Class: F
+message IngestSlackPayloadResponse {
+}
+
+// JS Class: j
+message  {
+}
+
+// JS Class: U
+message CommonDocumentWithScore {
+}
+
+// JS Class: Y
+message  {
+}
+
+// JS Class: H
+message QuerySearchResponse {
+}
+
+// JS Class: q
+message OpenSearchAddRepositoryRequest {
+}
+
+// JS Class: G
+message  {
+}
+
+// JS Class: J
+message  {
+}
+
+// JS Class: V
+message OpenSearchGetIndexResponse {
+}
+
+// JS Class: z
+message  {
+}
+
+// JS Class: W
+message HybridSearchResponse {
+}
+
+// JS Class: Z
+message  {
+}
+
+// JS Class: K
+message GraphSearchResponse {
+}
+
+// JS Class: $
+message ConnectorConfig {
+}
+
+// JS Class: X
+message ConnectorConfigSlack {
+}
+
+// JS Class: Q
+message ConnectorConfigGithub {
+}
+
+// JS Class: ee
+message ConnectorConfigGoogleDrive {
+}
+
+// JS Class: te
+message ConnectorConfigJira {
+}
+
+// JS Class: ne
+message ConnectorInternalConfig {
+}
+
+// JS Class: re
+message  {
+}
+
+// JS Class: ae
+message  {
+}
+
+// JS Class: oe
+message ConnectorInternalConfigGithub {
+}
+
+// JS Class: ie
+message ConnectorInternalConfigGoogleDrive {
+}
+
+// JS Class: se
+message ConnectorInternalConfigJira {
+}
+
+// JS Class: le
+message  {
+}
+
+// JS Class: ce
+message DeleteKnowledgeBaseConnectionRequest {
+}
+
+// JS Class: ue
+message DeleteKnowledgeBaseConnectionResponse {
+}
+
+// JS Class: de
+message UpdateConnectorConfigRequest {
+}
+
+// JS Class: me
+message UpdateConnectorConfigResponse {
+}
+
+// JS Class: pe
+message ConnectorAdditionalParams {
+}
+
+// JS Class: fe
+message  {
+}
+
+// JS Class: he
+message ConnectorAdditionalParamsGithub {
+}
+
+// JS Class: _e
+message ConnectKnowledgeBaseAccountResponse {
+}
+
+// JS Class: ge
+message CancelKnowledgeBaseJobsRequest {
+}
+
+// JS Class: ye
+message CancelKnowledgeBaseJobsResponse {
+}
+
+// JS Class: Ae
+message DocumentTypeCount {
+}
+
+// JS Class: Ee
+message ConnectorState {
+}
+
+// JS Class: be
+message GetKnowledgeBaseConnectorStateRequest {
+}
+
+// JS Class: ve
+message GetKnowledgeBaseConnectorStateResponse {
+}
+
+// JS Class: we
+message JobState {
+}
+
+// JS Class: Se
+message GetKnowledgeBaseJobStatesRequest {
+}
+
+// JS Class: Te
+message GetKnowledgeBaseJobStatesResponse {
+}
+
+// JS Class: xe
+message  {
+}
+
+// JS Class: Ce
+message  {
+}
+
+// JS Class: ke
+message SlackPayload {
+}
+
+// JS Class: Me
+message GetKnowledgeBaseWebhookUrlRequest {
+}
+
+// JS Class: Le
+message  {
+}
+
+// JS Class: Ie
+message GetConnectorInternalConfigRequest {
+}
+
+// JS Class: Ne
+message GetConnectorInternalConfigResponse {
+}
+
+// JS Class: a
+message  {
+}
+
+// JS Class: o
+message RecordAnalyticsEventResponse {
+}
+
+// JS Class: p
+message  {
+}
+
+// JS Class: f
+message  {
+}
+
+// JS Class: h
+message  {
+}
+
+// JS Class: _
+message  {
+}
+
+// JS Class: g
+message  {
+}
+
+// JS Class: y
+message GetUserStatusRequest {
+}
+
+// JS Class: A
+message GetUserStatusResponse {
+}
+
+// JS Class: E
+message  {
+}
+
+// JS Class: b
+message  {
+}
+
+// JS Class: v
+message GetCurrentUserResponse {
+}
+
+// JS Class: w
+message  {
+}
+
+// JS Class: S
+message GetUsersResponse {
+}
+
+// JS Class: T
+message  {
+}
+
+// JS Class: x
+message GetRolesForUserResponse {
+}
+
+// JS Class: C
+message  {
+}
+
+// JS Class: k
+message AddUserRoleResponse {
+}
+
+// JS Class: M
+message  {
+}
+
+// JS Class: L
+message RemoveUserRoleResponse {
+}
+
+// JS Class: I
+message  {
+}
+
+// JS Class: N
+message  {
+}
+
+// JS Class: O
+message  {
+}
+
+// JS Class: R
+message  {
+}
+
+// JS Class: D
+message  {
+}
+
+// JS Class: P
+message UpdateNameResponse {
+}
+
+// JS Class: B
+message  {
+}
+
+// JS Class: F
+message  {
+}
+
+// JS Class: j
+message  {
+}
+
+// JS Class: U
+message ProfilePictureUploadCompleteResponse {
+}
+
+// JS Class: Y
+message  {
+}
+
+// JS Class: H
+message  {
+}
+
+// JS Class: q
+message  {
+}
+
+// JS Class: G
+message DeleteProfilePictureResponse {
+}
+
+// JS Class: J
+message  {
+}
+
+// JS Class: V
+message UpdateInboundSourceResponse {
+}
+
+// JS Class: z
+message  {
+}
+
+// JS Class: W
+message DeleteUserResponse {
+}
+
+// JS Class: Z
+message GetLicenseRequest {
+}
+
+// JS Class: K
+message GetLicenseResponse {
+}
+
+// JS Class: $
+message  {
+}
+
+// JS Class: X
+message RequestTeamAccessResponse {
+}
+
+// JS Class: Q
+message  {
+}
+
+// JS Class: ee
+message  {
+}
+
+// JS Class: te
+message UpdateUserTeamStatusResponse {
+}
+
+// JS Class: ne
+message  {
+}
+
+// JS Class: re
+message GetTeamMetadataResponse {
+}
+
+// JS Class: ae
+message  {
+}
+
+// JS Class: oe
+message RemoveUserFromTeamResponse {
+}
+
+// JS Class: ie
+message  {
+}
+
+// JS Class: se
+message RefreshTeamInviteIdResponse {
+}
+
+// JS Class: le
+message  {
+}
+
+// JS Class: ce
+message  {
+}
+
+// JS Class: ue
+message GrantPreapprovalResponse {
+}
+
+// JS Class: de
+message  {
+}
+
+// JS Class: me
+message GetPreapprovalsResponse {
+}
+
+// JS Class: pe
+message  {
+}
+
+// JS Class: fe
+message  {
+}
+
+// JS Class: he
+message  {
+}
+
+// JS Class: _e
+message AcceptPreapprovalResponse {
+}
+
+// JS Class: ge
+message  {
+}
+
+// JS Class: ye
+message RejectPreapprovalResponse {
+}
+
+// JS Class: Ae
+message  {
+}
+
+// JS Class: Ee
+message  {
+}
+
+// JS Class: be
+message  {
+}
+
+// JS Class: ve
+message RevokePreapprovalResponse {
+}
+
+// JS Class: we
+message  {
+}
+
+// JS Class: Se
+message  {
+}
+
+// JS Class: Te
+message  {
+}
+
+// JS Class: xe
+message  {
+}
+
+// JS Class: Ce
+message  {
+}
+
+// JS Class: ke
+message UpdateCreditTopUpSettingsResponse {
+}
+
+// JS Class: Me
+message  {
+}
+
+// JS Class: Le
+message  {
+}
+
+// JS Class: Ie
+message  {
+}
+
+// JS Class: Ne
+message  {
+}
+
+// JS Class: Oe
+message  {
+}
+
+// JS Class: Re
+message  {
+}
+
+// JS Class: De
+message  {
+}
+
+// JS Class: Pe
+message UpdateSeatsResponse {
+}
+
+// JS Class: Be
+message  {
+}
+
+// JS Class: Fe
+message  {
+}
+
+// JS Class: je
+message BillingUpdate {
+}
+
+// JS Class: Ue
+message  {
+}
+
+// JS Class: Ye
+message CancelPlanResponse {
+}
+
+// JS Class: He
+message  {
+}
+
+// JS Class: qe
+message  {
+}
+
+// JS Class: Ge
+message  {
+}
+
+// JS Class: Je
+message  {
+}
+
+// JS Class: Ve
+message  {
+}
+
+// JS Class: ze
+message IsUsernameAvailableResponse {
+}
+
+// JS Class: We
+message  {
+}
+
+// JS Class: Ze
+message UpdateUsernameResponse {
+}
+
+// JS Class: Ke
+message  {
+}
+
+// JS Class: $e
+message  {
+}
+
+// JS Class: Xe
+message  {
+}
+
+// JS Class: Qe
+message ProvisionCascadeSeatsResponse {
+}
+
+// JS Class: et
+message  {
+}
+
+// JS Class: tt
+message UpdateOccupationResponse {
+}
+
+// JS Class: nt
+message  {
+}
+
+// JS Class: rt
+message UpdateProfileResponse {
+}
+
+// JS Class: at
+message  {
+}
+
+// JS Class: ot
+message UpdateProfileVisibilityResponse {
+}
+
+// JS Class: it
+message  {
+}
+
+// JS Class: st
+message AddUsersToTeamResponse {
+}
+
+// JS Class: lt
+message  {
+}
+
+// JS Class: ct
+message  {
+}
+
+// JS Class: ut
+message  {
+}
+
+// JS Class: dt
+message UpdateUserRolesResponse {
+}
+
+// JS Class: mt
+message  {
+}
+
+// JS Class: pt
+message BulkUpdateUserRolesResponse {
+}
+
+// JS Class: ft
+message  {
+}
+
+// JS Class: ht
+message GetTeamActivityResponse {
+}
+
+// JS Class: _t
+message UserActivity {
+}
+
+// JS Class: gt
+message  {
+}
+
+// JS Class: yt
+message GetSSOProviderResponse {
+}
+
+// JS Class: At
+message  {
+}
+
+// JS Class: Et
+message SaveSSOProviderResponse {
+}
+
+// JS Class: bt
+message  {
+}
+
+// JS Class: vt
+message  {
+}
+
+// JS Class: wt
+message JoinTeamWithSSOLoginResponse {
+}
+
+// JS Class: St
+message  {
+}
+
+// JS Class: Tt
+message  {
+}
+
+// JS Class: xt
+message EnterpriseLicenseConfig {
+}
+
+// JS Class: Ct
+message  {
+}
+
+// JS Class: kt
+message DeleteTeamResponse {
+}
+
+// JS Class: Mt
+message  {
+}
+
+// JS Class: Lt
+message ProvisionFreeProTierResponse {
+}
+
+// JS Class: It
+message  {
+}
+
+// JS Class: Nt
+message GetTeamsFeaturesResponse {
+}
+
+// JS Class: Ot
+message  {
+}
+
+// JS Class: Rt
+message GetTeamsFeaturesInternalResponse {
+}
+
+// JS Class: Dt
+message  {
+}
+
+// JS Class: Pt
+message  {
+}
+
+// JS Class: Bt
+message UpdateTeamsFeaturesInternalResponse {
+}
+
+// JS Class: Ft
+message SetTeamsFeaturesResponse {
+}
+
+// JS Class: jt
+message  {
+}
+
+// JS Class: Ut
+message UpdateUserFeaturesInternalResponse {
+}
+
+// JS Class: Yt
+message  {
+}
+
+// JS Class: Ht
+message  {
+}
+
+// JS Class: qt
+message BulkEditUserApprovalsResponse {
+}
+
+// JS Class: Gt
+message  {
+}
+
+// JS Class: Jt
+message BulkEditUserApprovalsInternalResponse {
+}
+
+// JS Class: Vt
+message  {
+}
+
+// JS Class: zt
+message GetTeamSettingsResponse {
+}
+
+// JS Class: Wt
+message  {
+}
+
+// JS Class: Zt
+message UpdateCascadeWebSearchEnabledResponse {
+}
+
+// JS Class: Kt
+message  {
+}
+
+// JS Class: $t
+message  {
+}
+
+// JS Class: Xt
+message GetGroupsResponse {
+}
+
+// JS Class: Qt
+message  {
+}
+
+// JS Class: en
+message  {
+}
+
+// JS Class: tn
+message  {
+}
+
+// JS Class: nn
+message UpdateTeamApiSecretResponse {
+}
+
+// JS Class: rn
+message  {
+}
+
+// JS Class: an
+message  {
+}
+
+// JS Class: on
+message GetAllTeamApiSecretsResponse {
+}
+
+// JS Class: sn
+message  {
+}
+
+// JS Class: ln
+message DeleteTeamApiSecretResponse {
+}
+
+// JS Class: cn
+message  {
+}
+
+// JS Class: un
+message GetUserNotificationsResponse {
+}
+
+// JS Class: dn
+message  {
+}
+
+// JS Class: mn
+message  {
+}
+
+// JS Class: pn
+message  {
+}
+
+// JS Class: fn
+message  {
+}
+
+// JS Class: hn
+message DisconnectGithubAccountResponse {
+}
+
+// JS Class: _n
+message  {
+}
+
+// JS Class: gn
+message  {
+}
+
+// JS Class: yn
+message  {
+}
+
+// JS Class: An
+message  {
+}
+
+// JS Class: En
+message  {
+}
+
+// JS Class: bn
+message UpdateCodeiumAccessResponse {
+}
+
+// JS Class: vn
+message  {
+}
+
+// JS Class: wn
+message CreateRoleResponse {
+}
+
+// JS Class: Sn
+message  {
+}
+
+// JS Class: Tn
+message DeleteRoleResponse {
+}
+
+// JS Class: xn
+message  {
+}
+
+// JS Class: Cn
+message UpdateRoleResponse {
+}
+
+// JS Class: kn
+message  {
+}
+
+// JS Class: Mn
+message  {
+}
+
+// JS Class: Ln
+message GetRolesResponse {
+}
+
+// JS Class: In
+message GetMucsInfoRequest {
+}
+
+// JS Class: Nn
+message MonthlyMucsMessage {
+}
+
+// JS Class: On
+message GetMucsInfoResponse {
+}
+
+// JS Class: Rn
+message  {
+}
+
+// JS Class: Dn
+message GetCascadeAnalyticsResponse {
+}
+
+// JS Class: Pn
+message  {
+}
+
+// JS Class: Bn
+message GetPlanStatusResponse {
+}
+
+// JS Class: Fn
+message  {
+}
+
+// JS Class: jn
+message  {
+}
+
+// JS Class: Un
+message GetWrapped2024Response {
+}
+
+// JS Class: Yn
+message  {
+}
+
+// JS Class: Hn
+message  {
+}
+
+// JS Class: qn
+message  {
+}
+
+// JS Class: Gn
+message PurchaseReason {
+}
+
+// JS Class: Jn
+message  {
+}
+
+// JS Class: Vn
+message GetTeamCreditEntriesResponse {
+}
+
+// JS Class: zn
+message  {
+}
+
+// JS Class: Wn
+message SendPhoneVerificationResponse {
+}
+
+// JS Class: Zn
+message  {
+}
+
+// JS Class: Kn
+message SendEmailVerificationResponse {
+}
+
+// JS Class: $n
+message  {
+}
+
+// JS Class: Xn
+message CreateEnterpriseResponse {
+}
+
+// JS Class: Qn
+message  {
+}
+
+// JS Class: er
+message UpdateEnterpriseResponse {
+}
+
+// JS Class: tr
+message  {
+}
+
+// JS Class: nr
+message UpdateTeamConfigResponse {
+}
+
+// JS Class: rr
+message  {
+}
+
+// JS Class: ar
+message UpdateTeamConfigExternalResponse {
+}
+
+// JS Class: or
+message  {
+}
+
+// JS Class: ir
+message GetTeamConfigRecordResponse {
+}
+
+// JS Class: sr
+message  {
+}
+
+// JS Class: lr
+message  {
+}
+
+// JS Class: cr
+message GetTeamInfoResponse {
+}
+
+// JS Class: ur
+message  {
+}
+
+// JS Class: dr
+message  {
+}
+
+// JS Class: mr
+message  {
+}
+
+// JS Class: pr
+message ProcessReferralCodeResponse {
+}
+
+// JS Class: fr
+message  {
+}
+
+// JS Class: hr
+message UpdatePlanDetailsInternalResponse {
+}
+
+// JS Class: _r
+message  {
+}
+
+// JS Class: gr
+message RemoveUsersFromTeamInternalResponse {
+}
+
+// JS Class: yr
+message  {
+}
+
+// JS Class: Ar
+message InitiateTopUpResponse {
+}
+
+// JS Class: Er
+message  {
+}
+
+// JS Class: br
+message  {
+}
+
+// JS Class: vr
+message AddExtraFlexCreditsInternalResponse {
+}
+
+// JS Class: l
+message  {
+}
+
+// JS Class: c
+message  {
+}
+
+// JS Class: u
+message  {
+}
+
+// JS Class: d
+message  {
+}
+
+// JS Class: m
+message CustomQueryRequest {
+}
+
+// JS Class: p
+message QueryResponseItem {
+}
+
+// JS Class: f
+message CustomQueryResponse {
+}
+
+// JS Class: h
+message  {
+}
+
+// JS Class: _
+message GetAnalyticsResponse {
+}
+
+// JS Class: g
+message  {
+}
+
+// JS Class: y
+message AnalyticsResponse {
+}
+
+// JS Class: A
+message  {
+}
+
+// JS Class: E
+message UserPageAnalyticsResponse {
+}
+
+// JS Class: b
+message  {
+}
+
+// JS Class: v
+message GetPublicAnalyticsResponse {
+}
+
+// JS Class: w
+message QueryRequest {
+}
+
+// JS Class: S
+message QueryResult {
+}
+
+// JS Class: T
+message QueryRequestCompletionStats {
+}
+
+// JS Class: x
+message QueryResultCompletionStats {
+}
+
+// JS Class: C
+message  {
+}
+
+// JS Class: k
+message QueryResultCompletionsByDay {
+}
+
+// JS Class: M
+message QueryRequestCompletionsByLanguage {
+}
+
+// JS Class: L
+message QueryResultCompletionsByLanguage {
+}
+
+// JS Class: I
+message QueryRequestCompletionsByIde {
+}
+
+// JS Class: N
+message QueryResultCompletionsByIde {
+}
+
+// JS Class: O
+message QueryRequestCompletionsByRepository {
+}
+
+// JS Class: R
+message QueryResultCompletionsByRepository {
+}
+
+// JS Class: D
+message  {
+}
+
+// JS Class: P
+message QueryResultChatsByDay {
+}
+
+// JS Class: B
+message  {
+}
+
+// JS Class: F
+message  {
+}
+
+// JS Class: j
+message QueryRequestChatStatsByModel {
+}
+
+// JS Class: U
+message QueryRequestAllChatStatsByModel {
+}
+
+// JS Class: Y
+message QueryResultChatStatsByModel {
+}
+
+// JS Class: H
+message  {
+}
+
+// JS Class: q
+message QueryRequestAllUsersCompletionsByLanguage {
+}
+
+// JS Class: G
+message QueryRequestAllUsersCompletionStats {
+}
+
+// JS Class: J
+message QueryRequestCompletionsByApiKey {
+}
+
+// JS Class: V
+message QueryResultCompletionsByApiKey {
+}
+
+// JS Class: z
+message QueryResultActiveUserCount {
+}
+
+// JS Class: W
+message QueryRequestPercentCodeWritten {
+}
+
+// JS Class: Z
+message QueryResultPercentCodeWritten {
+}
+
+// JS Class: K
+message QueryRequestCharsPerOpportunity {
+}
+
+// JS Class: $
+message QueryResultCharsPerOpportunity {
+}
+
+// JS Class: X
+message QueryRequestChatStats {
+}
+
+// JS Class: Q
+message QueryResultChatStats {
+}
+
+// JS Class: ee
+message QueryRequestCommandStats {
+}
+
+// JS Class: te
+message QueryResultCommandStats {
+}
+
+// JS Class: ne
+message QueryRequestActiveDaysByApiKey {
+}
+
+// JS Class: re
+message QueryResultActiveDaysByApiKey {
+}
+
+// JS Class: ae
+message  {
+}
+
+// JS Class: oe
+message  {
+}
+
+// JS Class: ie
+message  {
+}
+
+// JS Class: o
+message  {
+}
+
+// JS Class: s
+message  {
+}
+
+// JS Class: l
+message  {
+}
+
+// JS Class: c
+message  {
+}
+
+// JS Class: i
+message Version {
+}
+
+// JS Class: s
+message CodeGeneratorRequest {
+}
+
+// JS Class: l
+message CodeGeneratorResponse {
+}
+
+// JS Class: u
+message File {
+}
+
+// JS Class: v
+message FileDescriptorSet {
+}
+
+// JS Class: w
+message FileDescriptorProto {
+}
+
+// JS Class: S
+message DescriptorProto {
+}
+
+// JS Class: T
+message ExtensionRange {
+}
+
+// JS Class: x
+message ReservedRange {
+}
+
+// JS Class: C
+message ExtensionRangeOptions {
+}
+
+// JS Class: k
+message Declaration {
+}
+
+// JS Class: M
+message FieldDescriptorProto {
+}
+
+// JS Class: L
+message OneofDescriptorProto {
+}
+
+// JS Class: I
+message EnumDescriptorProto {
+}
+
+// JS Class: N
+message EnumReservedRange {
+}
+
+// JS Class: O
+message EnumValueDescriptorProto {
+}
+
+// JS Class: R
+message ServiceDescriptorProto {
+}
+
+// JS Class: D
+message MethodDescriptorProto {
+}
+
+// JS Class: P
+message FileOptions {
+}
+
+// JS Class: B
+message MessageOptions {
+}
+
+// JS Class: F
+message FieldOptions {
+}
+
+// JS Class: j
+message EditionDefault {
+}
+
+// JS Class: U
+message OneofOptions {
+}
+
+// JS Class: Y
+message EnumOptions {
+}
+
+// JS Class: H
+message EnumValueOptions {
+}
+
+// JS Class: q
+message ServiceOptions {
+}
+
+// JS Class: G
+message MethodOptions {
+}
+
+// JS Class: J
+message UninterpretedOption {
+}
+
+// JS Class: V
+message NamePart {
+}
+
+// JS Class: z
+message FeatureSet {
+}
+
+// JS Class: W
+message FeatureSetDefaults {
+}
+
+// JS Class: Z
+message FeatureSetEditionDefault {
+}
+
+// JS Class: K
+message SourceCodeInfo {
+}
+
+// JS Class: $
+message Location {
+}
+
+// JS Class: X
+message GeneratedCodeInfo {
+}
+
+// JS Class: Q
+message Annotation {
+}
+
+// JS Class: i
+message string {
+}
+
+// JS Class: o
+message Empty {
+}
+
+// JS Class: o
+message ' + e + ' {
+}
+
+// JS Class: o
+message  {
+}
+
+// JS Class: i
+message object {
+}
+
+// JS Class: s
+message nullValue {
+}
+
+// JS Class: l
+message ListValue from JSON  {
+}
+
+// JS Class: i
+message string {
+}
+
+// JS Class: u
+message  {
+}
+
+// JS Class: d
+message  {
+}
+
+// JS Class: m
+message  {
+}
+
+// JS Class: p
+message  {
+}
+
+// JS Class: f
+message  {
+}
+
+// JS Class: s
+message typeName =  {
+}
+
+// JS Class: l
+message typeName =  {
+}
+
+// JS Class: c
+message typeName =  {
+}
+
+// JS Class: u
+message typeName =  {
+}
+
+// JS Class: d
+message typeName =  {
+}
+
+// JS Class: m
+message typeName =  {
+}
+
+// JS Class: p
+message typeName =  {
+}
+
+// JS Class: f
+message  {
+}
+
+// JS Class: h
+message typeName =  {
+}
+
+// JS Class: a
+message  {
+}
+
+// JS Class: _t
+message FileDescriptorSet {
+}
+
+// JS Class: gt
+message FileDescriptorProto {
+}
+
+// JS Class: yt
+message DescriptorProto {
+}
+
+// JS Class: At
+message ExtensionRange {
+}
+
+// JS Class: Et
+message ReservedRange {
+}
+
+// JS Class: bt
+message ExtensionRangeOptions {
+}
+
+// JS Class: vt
+message Declaration {
+}
+
+// JS Class: wt
+message FieldDescriptorProto {
+}
+
+// JS Class: St
+message OneofDescriptorProto {
+}
+
+// JS Class: Tt
+message EnumDescriptorProto {
+}
+
+// JS Class: xt
+message EnumReservedRange {
+}
+
+// JS Class: Ct
+message EnumValueDescriptorProto {
+}
+
+// JS Class: kt
+message ServiceDescriptorProto {
+}
+
+// JS Class: Mt
+message MethodDescriptorProto {
+}
+
+// JS Class: Lt
+message FileOptions {
+}
+
+// JS Class: It
+message MessageOptions {
+}
+
+// JS Class: Nt
+message FieldOptions {
+}
+
+// JS Class: Ot
+message EditionDefault {
+}
+
+// JS Class: Rt
+message OneofOptions {
+}
+
+// JS Class: Dt
+message EnumOptions {
+}
+
+// JS Class: Pt
+message EnumValueOptions {
+}
+
+// JS Class: Bt
+message ServiceOptions {
+}
+
+// JS Class: Ft
+message MethodOptions {
+}
+
+// JS Class: jt
+message UninterpretedOption {
+}
+
+// JS Class: Ut
+message NamePart {
+}
+
+// JS Class: Yt
+message FeatureSet {
+}
+
+// JS Class: Ht
+message FeatureSetDefaults {
+}
+
+// JS Class: qt
+message FeatureSetEditionDefault {
+}
+
+// JS Class: Gt
+message SourceCodeInfo {
+}
+
+// JS Class: Jt
+message Location {
+}
+
+// JS Class: Vt
+message GeneratedCodeInfo {
+}
+
+// JS Class: zt
+message Annotation {
+}
+
+// JS Class: Kt
+message string {
+}
+
+// JS Class: $t
+message string {
+}
+
+// JS Class: Xt
+message  {
+}
+
+// JS Class: Qt
+message Empty {
+}
+
+// JS Class: en
+message ' + e + ' {
+}
+
+// JS Class: tn
+message object {
+}
+
+// JS Class: nn
+message nullValue {
+}
+
+// JS Class: rn
+message ListValue from JSON  {
+}
+
+// JS Class: an
+message typeName =  {
+}
+
+// JS Class: on
+message typeName =  {
+}
+
+// JS Class: sn
+message typeName =  {
+}
+
+// JS Class: ln
+message typeName =  {
+}
+
+// JS Class: cn
+message typeName =  {
+}
+
+// JS Class: un
+message typeName =  {
+}
+
+// JS Class: dn
+message typeName =  {
+}
+
+// JS Class: mn
+message  {
+}
+
+// JS Class: pn
+message typeName =  {
+}
+
+// JS Class: fn
+message Version {
+}
+
+// JS Class: hn
+message CodeGeneratorRequest {
+}
+
+// JS Class: _n
+message CodeGeneratorResponse {
+}
+
+// JS Class: vn
+message File {
+}
+
+// JS Class: wn
+message  {
+}
+
+// JS Class: Sn
+message  {
+}
+
+// JS Class: Tn
+message  {
+}
+
+// JS Class: xn
+message  {
+}
+
+// JS Class: Cn
+message  {
+}
+
+// JS Class: kn
+message  {
+}
+
+// JS Class: Mn
+message  {
+}
+
+// JS Class: Ln
+message  {
+}
+
+// JS Class: In
+message  {
+}
+
+// JS Class: zn
+message  {
+}
+
+// JS Class: Ua
+message  {
+}
+
+// JS Class: Ya
+message CompletionConfiguration {
+}
+
+// JS Class: Ha
+message PromptElementRange {
+}
+
+// JS Class: qa
+message  {
+}
+
+// JS Class: Ga
+message  {
+}
+
+// JS Class: Ja
+message  {
+}
+
+// JS Class: Va
+message ExperimentConfig {
+}
+
+// JS Class: za
+message  {
+}
+
+// JS Class: Wa
+message  {
+}
+
+// JS Class: Za
+message  {
+}
+
+// JS Class: Ka
+message ExperimentMultilineModelThresholdPayload {
+}
+
+// JS Class: $a
+message ExperimentSentryPayload {
+}
+
+// JS Class: Xa
+message  {
+}
+
+// JS Class: Qa
+message ExperimentProfilingTelemetrySampleRatePayload {
+}
+
+// JS Class: eo
+message ModelOrAlias {
+}
+
+// JS Class: to
+message PromptElementKindInfo {
+}
+
+// JS Class: no
+message PromptElementInclusionMetadata {
+}
+
+// JS Class: ro
+message  {
+}
+
+// JS Class: ao
+message  {
+}
+
+// JS Class: oo
+message  {
+}
+
+// JS Class: io
+message  {
+}
+
+// JS Class: so
+message SingleModelCompletionProfile {
+}
+
+// JS Class: lo
+message CompletionProfile {
+}
+
+// JS Class: co
+message  {
+}
+
+// JS Class: uo
+message StreamingCompletionMap {
+}
+
+// JS Class: mo
+message PackedStreamingCompletionMaps {
+}
+
+// JS Class: po
+message StreamingEvalSuffixInfo {
+}
+
+// JS Class: fo
+message StreamingCompletionResponse {
+}
+
+// JS Class: ho
+message CompletionLatencyInfo {
+}
+
+// JS Class: _o
+message CompletionWithLatencyInfo {
+}
+
+// JS Class: go
+message EmbeddingsRequest {
+}
+
+// JS Class: yo
+message Embedding {
+}
+
+// JS Class: Ao
+message EmbeddingResponse {
+}
+
+// JS Class: Eo
+message  {
+}
+
+// JS Class: bo
+message RewardsResponse {
+}
+
+// JS Class: vo
+message  {
+}
+
+// JS Class: wo
+message EditorOptions {
+}
+
+// JS Class: So
+message  {
+}
+
+// JS Class: To
+message  {
+}
+
+// JS Class: xo
+message  {
+}
+
+// JS Class: Co
+message  {
+}
+
+// JS Class: ko
+message  {
+}
+
+// JS Class: Mo
+message MockResponseData {
+}
+
+// JS Class: Lo
+message  {
+}
+
+// JS Class: Io
+message  {
+}
+
+// JS Class: No
+message PartialIndexMetadata {
+}
+
+// JS Class: Oo
+message  {
+}
+
+// JS Class: Ro
+message  {
+}
+
+// JS Class: Do
+message  {
+}
+
+// JS Class: Po
+message AllowedModelConfig {
+}
+
+// JS Class: Bo
+message  {
+}
+
+// JS Class: Fo
+message TopUpStatus {
+}
+
+// JS Class: jo
+message PlanStatus {
+}
+
+// JS Class: Uo
+message  {
+}
+
+// JS Class: Yo
+message ScmWorkspaceInfo {
+}
+
+// JS Class: Ho
+message  {
+}
+
+// JS Class: qo
+message  {
+}
+
+// JS Class: Go
+message  {
+}
+
+// JS Class: Jo
+message  {
+}
+
+// JS Class: Vo
+message WordCount {
+}
+
+// JS Class: zo
+message  {
+}
+
+// JS Class: Wo
+message  {
+}
+
+// JS Class: Zo
+message CompletionStatistics {
+}
+
+// JS Class: Ko
+message CompletionByDateEntry {
+}
+
+// JS Class: $o
+message CompletionByLanguageEntry {
+}
+
+// JS Class: Xo
+message ChatStats {
+}
+
+// JS Class: Qo
+message ChatStatsByDateEntry {
+}
+
+// JS Class: ei
+message ChatStatsByModelEntry {
+}
+
+// JS Class: ti
+message CommandStats {
+}
+
+// JS Class: ni
+message CommandStatsByDateEntry {
+}
+
+// JS Class: ri
+message  {
+}
+
+// JS Class: ai
+message CascadeNUXState {
+}
+
+// JS Class: oi
+message UserNUXState {
+}
+
+// JS Class: ii
+message  {
+}
+
+// JS Class: si
+message ModelFeatures {
+}
+
+// JS Class: li
+message  {
+}
+
+// JS Class: ci
+message  {
+}
+
+// JS Class: ui
+message ApiProviderRoutingConfig {
+}
+
+// JS Class: di
+message ApiProviderConfigMap {
+}
+
+// JS Class: mi
+message ApiProviderConfig {
+}
+
+// JS Class: pi
+message ModelConfig {
+}
+
+// JS Class: fi
+message  {
+}
+
+// JS Class: hi
+message  {
+}
+
+// JS Class: _i
+message CciWithSubrange {
+}
+
+// JS Class: gi
+message ContextSubrange {
+}
+
+// JS Class: yi
+message  {
+}
+
+// JS Class: Ai
+message  {
+}
+
+// JS Class: Ei
+message  {
+}
+
+// JS Class: bi
+message RepositoryScopeItem {
+}
+
+// JS Class: vi
+message  {
+}
+
+// JS Class: wi
+message  {
+}
+
+// JS Class: Si
+message  {
+}
+
+// JS Class: Ti
+message  {
+}
+
+// JS Class: xi
+message  {
+}
+
+// JS Class: Ci
+message  {
+}
+
+// JS Class: ki
+message ContextScopeItem {
+}
+
+// JS Class: Mi
+message ContextScope {
+}
+
+// JS Class: Li
+message  {
+}
+
+// JS Class: Ii
+message GraphExecutionState {
+}
+
+// JS Class: Ni
+message Guideline {
+}
+
+// JS Class: Oi
+message  {
+}
+
+// JS Class: Ri
+message ChatNodeConfig {
+}
+
+// JS Class: Di
+message MQueryConfig {
+}
+
+// JS Class: Pi
+message  {
+}
+
+// JS Class: Bi
+message  {
+}
+
+// JS Class: Fi
+message  {
+}
+
+// JS Class: ji
+message  {
+}
+
+// JS Class: Ui
+message  {
+}
+
+// JS Class: Yi
+message DocumentPosition {
+}
+
+// JS Class: Hi
+message Range {
+}
+
+// JS Class: qi
+message  {
+}
+
+// JS Class: Gi
+message PromptComponents {
+}
+
+// JS Class: Ji
+message TextOrScopeItem {
+}
+
+// JS Class: Vi
+message  {
+}
+
+// JS Class: zi
+message PinnedContext {
+}
+
+// JS Class: Wi
+message  {
+}
+
+// JS Class: Zi
+message DefaultPinnedContextConfig {
+}
+
+// JS Class: Ki
+message  {
+}
+
+// JS Class: $i
+message  {
+}
+
+// JS Class: Xi
+message LanguageServerDiagnostics {
+}
+
+// JS Class: Qi
+message IndexerStats {
+}
+
+// JS Class: es
+message IndexerDbStats {
+}
+
+// JS Class: ts
+message LocalSqliteFaissDbStats {
+}
+
+// JS Class: ns
+message  {
+}
+
+// JS Class: rs
+message PostgresDbStats {
+}
+
+// JS Class: as
+message LastUpdateRecord {
+}
+
+// JS Class: os
+message  {
+}
+
+// JS Class: is
+message  {
+}
+
+// JS Class: ss
+message  {
+}
+
+// JS Class: ls
+message  {
+}
+
+// JS Class: cs
+message DocumentLinesElement {
+}
+
+// JS Class: us
+message  {
+}
+
+// JS Class: ds
+message DocumentOutlineElement {
+}
+
+// JS Class: ms
+message DocumentOutline {
+}
+
+// JS Class: ps
+message  {
+}
+
+// JS Class: fs
+message  {
+}
+
+// JS Class: hs
+message CodebaseClusterList {
+}
+
+// JS Class: _s
+message KnowledgeBaseChunk {
+}
+
+// JS Class: gs
+message  {
+}
+
+// JS Class: ys
+message  {
+}
+
+// JS Class: As
+message  {
+}
+
+// JS Class: Es
+message  {
+}
+
+// JS Class: bs
+message  {
+}
+
+// JS Class: vs
+message  {
+}
+
+// JS Class: ws
+message  {
+}
+
+// JS Class: Ss
+message TerminalShellCommandData {
+}
+
+// JS Class: Ts
+message TerminalShellCommandTrailer {
+}
+
+// JS Class: xs
+message TerminalShellCommandStreamChunk {
+}
+
+// JS Class: Cs
+message  {
+}
+
+// JS Class: ks
+message  {
+}
+
+// JS Class: Ms
+message  {
+}
+
+// JS Class: Ls
+message  {
+}
+
+// JS Class: Is
+message  {
+}
+
+// JS Class: Ns
+message  {
+}
+
+// JS Class: Os
+message  {
+}
+
+// JS Class: Rs
+message  {
+}
+
+// JS Class: Ds
+message McpServerCommand {
+}
+
+// JS Class: Ps
+message  {
+}
+
+// JS Class: Bs
+message  {
+}
+
+// JS Class: Fs
+message  {
+}
+
+// JS Class: js
+message  {
+}
+
+// JS Class: Us
+message  {
+}
+
+// JS Class: Ys
+message ModelNotificationExperimentPayload {
+}
+
+// JS Class: Hs
+message StartChatClientRequestStreamRequest {
+}
+
+// JS Class: qs
+message ChatClientRequest {
+}
+
+// JS Class: Gs
+message AddCascadeInputRequest {
+}
+
+// JS Class: Js
+message  {
+}
+
+// JS Class: tc
+message UnifiedDiff {
+}
+
+// JS Class: nc
+message  {
+}
+
+// JS Class: rc
+message DiffBlock {
+}
+
+// JS Class: ac
+message  {
+}
+
+// JS Class: oc
+message CharacterDiff {
+}
+
+// JS Class: ic
+message  {
+}
+
+// JS Class: sc
+message ComboDiff {
+}
+
+// JS Class: lc
+message DiffSet {
+}
+
+// JS Class: cc
+message DiffList {
+}
+
+// JS Class: uc
+message  {
+}
+
+// JS Class: dc
+message  {
+}
+
+// JS Class: mc
+message  {
+}
+
+// JS Class: pc
+message  {
+}
+
+// JS Class: fc
+message  {
+}
+
+// JS Class: hc
+message  {
+}
+
+// JS Class: _c
+message  {
+}
+
+// JS Class: gc
+message  {
+}
+
+// JS Class: yc
+message  {
+}
+
+// JS Class: Ac
+message  {
+}
+
+// JS Class: Ec
+message  {
+}
+
+// JS Class: bc
+message  {
+}
+
+// JS Class: vc
+message  {
+}
+
+// JS Class: wc
+message  {
+}
+
+// JS Class: Sc
+message ChatMessageIntent {
+}
+
+// JS Class: Tc
+message ChatMessageActionSearch {
+}
+
+// JS Class: xc
+message  {
+}
+
+// JS Class: Cc
+message  {
+}
+
+// JS Class: kc
+message ChatMessageStatusContextRelevancy {
+}
+
+// JS Class: Mc
+message ChatMessageStatus {
+}
+
+// JS Class: Lc
+message  {
+}
+
+// JS Class: Ic
+message ChatMessageAction {
+}
+
+// JS Class: Nc
+message  {
+}
+
+// JS Class: Oc
+message Conversation {
+}
+
+// JS Class: Rc
+message  {
+}
+
+// JS Class: Dc
+message PromptCacheOptions {
+}
+
+// JS Class: Pc
+message  {
+}
+
+// JS Class: Bc
+message ChatToolChoice {
+}
+
+// JS Class: Fc
+message  {
+}
+
+// JS Class: jc
+message ChatMentionsSearchResponse {
+}
+
+// JS Class: Uc
+message  {
+}
+
+// JS Class: Yc
+message EnterpriseExternalModelConfig {
+}
+
+// JS Class: Hc
+message ChatExperimentStatus {
+}
+
+// JS Class: qc
+message  {
+}
+
+// JS Class: Gc
+message ContextChangeEvent {
+}
+
+// JS Class: Jc
+message ContextChangeActiveDocument {
+}
+
+// JS Class: Vc
+message ContextChangeCursorPosition {
+}
+
+// JS Class: zc
+message ContextChangeChatMessageReceived {
+}
+
+// JS Class: Wc
+message ContextChangeOpenDocuments {
+}
+
+// JS Class: Zc
+message ContextChangeOracleItems {
+}
+
+// JS Class: Kc
+message ContextChangePinnedContext {
+}
+
+// JS Class: $c
+message ContextChangePinnedGuideline {
+}
+
+// JS Class: Xc
+message ContextChangeActiveNode {
+}
+
+// JS Class: Qc
+message  {
+}
+
+// JS Class: eu
+message CciWithSubrangeWithRetrievalMetadata {
+}
+
+// JS Class: tu
+message CodeContextItemWithRetrievalMetadata {
+}
+
+// JS Class: nu
+message  {
+}
+
+// JS Class: ru
+message CodeContextProviderMetadata {
+}
+
+// JS Class: au
+message ContextModuleStats {
+}
+
+// JS Class: ou
+message ContextModuleStateStats {
+}
+
+// JS Class: iu
+message CodeContextItemIndexStats {
+}
+
+// JS Class: su
+message PersistentContextModuleState {
+}
+
+// JS Class: lu
+message ContextModuleResult {
+}
+
+// JS Class: cu
+message LocalNodeState {
+}
+
+// JS Class: uu
+message IndexDbVersion {
+}
+
+// JS Class: du
+message IndexBuildConfig {
+}
+
+// JS Class: mu
+message  {
+}
+
+// JS Class: pu
+message  {
+}
+
+// JS Class: fu
+message IndexConfig {
+}
+
+// JS Class: hu
+message VectorIndexStats {
+}
+
+// JS Class: _u
+message  {
+}
+
+// JS Class: gu
+message  {
+}
+
+// JS Class: yu
+message RepoStats {
+}
+
+// JS Class: Au
+message  {
+}
+
+// JS Class: Eu
+message  {
+}
+
+// JS Class: bu
+message  {
+}
+
+// JS Class: vu
+message AddRepositoryRequest {
+}
+
+// JS Class: wu
+message  {
+}
+
+// JS Class: Su
+message EnableIndexingRequest {
+}
+
+// JS Class: Tu
+message EnableIndexingResponse {
+}
+
+// JS Class: xu
+message DisableIndexingRequest {
+}
+
+// JS Class: Cu
+message DisableIndexingResponse {
+}
+
+// JS Class: ku
+message  {
+}
+
+// JS Class: Mu
+message EditRepositoryResponse {
+}
+
+// JS Class: Lu
+message  {
+}
+
+// JS Class: Iu
+message DeleteRepositoryResponse {
+}
+
+// JS Class: Nu
+message  {
+}
+
+// JS Class: Ou
+message GetRepositoriesRequest {
+}
+
+// JS Class: Ru
+message GetRepositoriesResponse {
+}
+
+// JS Class: Du
+message  {
+}
+
+// JS Class: Pu
+message GetIndexesResponse {
+}
+
+// JS Class: Bu
+message  {
+}
+
+// JS Class: Fu
+message GetIndexResponse {
+}
+
+// JS Class: ju
+message  {
+}
+
+// JS Class: Uu
+message GetRemoteIndexStatsRequest {
+}
+
+// JS Class: Yu
+message GetRemoteIndexStatsResponse {
+}
+
+// JS Class: Hu
+message  {
+}
+
+// JS Class: qu
+message  {
+}
+
+// JS Class: Gu
+message  {
+}
+
+// JS Class: Ju
+message CancelIndexingResponse {
+}
+
+// JS Class: Vu
+message  {
+}
+
+// JS Class: zu
+message RetryIndexingResponse {
+}
+
+// JS Class: Wu
+message  {
+}
+
+// JS Class: Zu
+message DeleteIndexResponse {
+}
+
+// JS Class: Ku
+message PruneDatabaseRequest {
+}
+
+// JS Class: $u
+message PruneDatabaseResponse {
+}
+
+// JS Class: Xu
+message GetDatabaseStatsRequest {
+}
+
+// JS Class: Qu
+message  {
+}
+
+// JS Class: ed
+message SetIndexConfigRequest {
+}
+
+// JS Class: td
+message SetIndexConfigResponse {
+}
+
+// JS Class: nd
+message GetIndexConfigRequest {
+}
+
+// JS Class: rd
+message GetIndexConfigResponse {
+}
+
+// JS Class: ad
+message GetNumberConnectionsRequest {
+}
+
+// JS Class: od
+message GetNumberConnectionsResponse {
+}
+
+// JS Class: id
+message GetConnectionsDebugInfoRequest {
+}
+
+// JS Class: sd
+message  {
+}
+
+// JS Class: ld
+message GetIndexedRepositoriesRequest {
+}
+
+// JS Class: cd
+message GetIndexedRepositoriesResponse {
+}
+
+// JS Class: ud
+message RepositoryFilter {
+}
+
+// JS Class: dd
+message  {
+}
+
+// JS Class: md
+message GetMatchingFilePathsResponse {
+}
+
+// JS Class: pd
+message GetNearestCCIsFromEmbeddingRequest {
+}
+
+// JS Class: fd
+message ScoredContextItem {
+}
+
+// JS Class: hd
+message GetNearestCCIsFromEmbeddingResponse {
+}
+
+// JS Class: _d
+message GetEmbeddingsForCodeContextItemsRequest {
+}
+
+// JS Class: gd
+message GetEmbeddingsForCodeContextItemsResponse {
+}
+
+// JS Class: yd
+message  {
+}
+
+// JS Class: Ad
+message IndexerEvent {
+}
+
+// JS Class: Ed
+message  {
+}
+
+// JS Class: bd
+message  {
+}
+
+// JS Class: vd
+message  {
+}
+
+// JS Class: wd
+message AddWorkspaceInfo {
+}
+
+// JS Class: Sd
+message  {
+}
+
+// JS Class: Td
+message  {
+}
+
+// JS Class: xd
+message  {
+}
+
+// JS Class: Cd
+message  {
+}
+
+// JS Class: kd
+message RelevantCodeContext {
+}
+
+// JS Class: Md
+message  {
+}
+
+// JS Class: Ld
+message CodeContextItemChange {
+}
+
+// JS Class: Id
+message  {
+}
+
+// JS Class: Nd
+message  {
+}
+
+// JS Class: Od
+message  {
+}
+
+// JS Class: Rd
+message  {
+}
+
+// JS Class: Dd
+message  {
+}
+
+// JS Class: Pd
+message  {
+}
+
+// JS Class: Bd
+message  {
+}
+
+// JS Class: Fd
+message  {
+}
+
+// JS Class: jd
+message  {
+}
+
+// JS Class: Ud
+message RetrieverClassification {
+}
+
+// JS Class: Yd
+message CodeContextItemWithClassification {
+}
+
+// JS Class: Hd
+message  {
+}
+
+// JS Class: qd
+message RetrievalMetrics {
+}
+
+// JS Class: Gd
+message CodeRetrievalEvalResult {
+}
+
+// JS Class: Jd
+message  {
+}
+
+// JS Class: Vd
+message InstructionWithIdList {
+}
+
+// JS Class: zd
+message TimeRange {
+}
+
+// JS Class: Wd
+message  {
+}
+
+// JS Class: Zd
+message AddGithubUsersRequest {
+}
+
+// JS Class: Kd
+message AddGithubUsersResponse {
+}
+
+// JS Class: $d
+message  {
+}
+
+// JS Class: Xd
+message AddUsersRequest {
+}
+
+// JS Class: Qd
+message AddUsersResponse {
+}
+
+// JS Class: em
+message  {
+}
+
+// JS Class: tm
+message KnowledgeBaseSearchResponse {
+}
+
+// JS Class: nm
+message  {
+}
+
+// JS Class: rm
+message GetKnowledgeBaseScopeItemsResponse {
+}
+
+// JS Class: am
+message GetKnowledgeBaseItemsFromScopeItemsRequest {
+}
+
+// JS Class: om
+message GetKnowledgeBaseItemsFromScopeItemsResponse {
+}
+
+// JS Class: im
+message IngestSlackDataRequest {
+}
+
+// JS Class: sm
+message IngestSlackDataResponse {
+}
+
+// JS Class: lm
+message  {
+}
+
+// JS Class: cm
+message IngestGithubDataResponse {
+}
+
+// JS Class: um
+message IngestGoogleDriveDataRequest {
+}
+
+// JS Class: dm
+message IngestGoogleDriveDataResponse {
+}
+
+// JS Class: mm
+message IngestJiraDataRequest {
+}
+
+// JS Class: pm
+message IngestJiraDataResponse {
+}
+
+// JS Class: fm
+message  {
+}
+
+// JS Class: hm
+message IngestJiraPayloadResponse {
+}
+
+// JS Class: _m
+message ForwardResult {
+}
+
+// JS Class: gm
+message ForwardSlackPayloadRequest {
+}
+
+// JS Class: ym
+message ForwardSlackPayloadResponse {
+}
+
+// JS Class: Am
+message IngestSlackPayloadRequest {
+}
+
+// JS Class: Em
+message IngestSlackPayloadResponse {
+}
+
+// JS Class: bm
+message  {
+}
+
+// JS Class: vm
+message CommonDocumentWithScore {
+}
+
+// JS Class: wm
+message  {
+}
+
+// JS Class: Sm
+message QuerySearchResponse {
+}
+
+// JS Class: Tm
+message OpenSearchAddRepositoryRequest {
+}
+
+// JS Class: xm
+message  {
+}
+
+// JS Class: Cm
+message  {
+}
+
+// JS Class: km
+message OpenSearchGetIndexResponse {
+}
+
+// JS Class: Mm
+message  {
+}
+
+// JS Class: Lm
+message HybridSearchResponse {
+}
+
+// JS Class: Im
+message  {
+}
+
+// JS Class: Nm
+message GraphSearchResponse {
+}
+
+// JS Class: Om
+message ConnectorConfig {
+}
+
+// JS Class: Rm
+message ConnectorConfigSlack {
+}
+
+// JS Class: Dm
+message ConnectorConfigGithub {
+}
+
+// JS Class: Pm
+message ConnectorConfigGoogleDrive {
+}
+
+// JS Class: Bm
+message ConnectorConfigJira {
+}
+
+// JS Class: Fm
+message ConnectorInternalConfig {
+}
+
+// JS Class: jm
+message  {
+}
+
+// JS Class: Um
+message  {
+}
+
+// JS Class: Ym
+message ConnectorInternalConfigGithub {
+}
+
+// JS Class: Hm
+message ConnectorInternalConfigGoogleDrive {
+}
+
+// JS Class: qm
+message ConnectorInternalConfigJira {
+}
+
+// JS Class: Gm
+message  {
+}
+
+// JS Class: Jm
+message DeleteKnowledgeBaseConnectionRequest {
+}
+
+// JS Class: Vm
+message DeleteKnowledgeBaseConnectionResponse {
+}
+
+// JS Class: zm
+message UpdateConnectorConfigRequest {
+}
+
+// JS Class: Wm
+message UpdateConnectorConfigResponse {
+}
+
+// JS Class: Zm
+message ConnectorAdditionalParams {
+}
+
+// JS Class: Km
+message  {
+}
+
+// JS Class: $m
+message ConnectorAdditionalParamsGithub {
+}
+
+// JS Class: Xm
+message ConnectKnowledgeBaseAccountResponse {
+}
+
+// JS Class: Qm
+message CancelKnowledgeBaseJobsRequest {
+}
+
+// JS Class: ep
+message CancelKnowledgeBaseJobsResponse {
+}
+
+// JS Class: tp
+message DocumentTypeCount {
+}
+
+// JS Class: np
+message ConnectorState {
+}
+
+// JS Class: rp
+message GetKnowledgeBaseConnectorStateRequest {
+}
+
+// JS Class: ap
+message GetKnowledgeBaseConnectorStateResponse {
+}
+
+// JS Class: op
+message JobState {
+}
+
+// JS Class: ip
+message GetKnowledgeBaseJobStatesRequest {
+}
+
+// JS Class: sp
+message GetKnowledgeBaseJobStatesResponse {
+}
+
+// JS Class: lp
+message  {
+}
+
+// JS Class: cp
+message  {
+}
+
+// JS Class: up
+message SlackPayload {
+}
+
+// JS Class: dp
+message GetKnowledgeBaseWebhookUrlRequest {
+}
+
+// JS Class: mp
+message  {
+}
+
+// JS Class: pp
+message GetConnectorInternalConfigRequest {
+}
+
+// JS Class: fp
+message GetConnectorInternalConfigResponse {
+}
+
+// JS Class: hp
+message  {
+}
+
+// JS Class: _p
+message CortexPlanSummaryComponent {
+}
+
+// JS Class: gp
+message  {
+}
+
+// JS Class: yp
+message CortexPlanState {
+}
+
+// JS Class: Ap
+message  {
+}
+
+// JS Class: Ep
+message CortexStepState {
+}
+
+// JS Class: bp
+message CortexResearchState {
+}
+
+// JS Class: vp
+message  {
+}
+
+// JS Class: wp
+message  {
+}
+
+// JS Class: Sp
+message CortexRunState {
+}
+
+// JS Class: Tp
+message  {
+}
+
+// JS Class: xp
+message ActionSpec {
+}
+
+// JS Class: Cp
+message  {
+}
+
+// JS Class: kp
+message ActionSpecDeleteFile {
+}
+
+// JS Class: Mp
+message  {
+}
+
+// JS Class: Lp
+message  {
+}
+
+// JS Class: Ip
+message  {
+}
+
+// JS Class: Np
+message  {
+}
+
+// JS Class: Op
+message  {
+}
+
+// JS Class: Rp
+message ActionResult {
+}
+
+// JS Class: Dp
+message ActionDebugInfo {
+}
+
+// JS Class: Pp
+message  {
+}
+
+// JS Class: Bp
+message  {
+}
+
+// JS Class: Fp
+message RetrievalStatus {
+}
+
+// JS Class: jp
+message  {
+}
+
+// JS Class: Up
+message  {
+}
+
+// JS Class: Yp
+message CortexPlanConfig {
+}
+
+// JS Class: Hp
+message  {
+}
+
+// JS Class: qp
+message  {
+}
+
+// JS Class: Gp
+message  {
+}
+
+// JS Class: Jp
+message  {
+}
+
+// JS Class: Vp
+message  {
+}
+
+// JS Class: zp
+message  {
+}
+
+// JS Class: Wp
+message  {
+}
+
+// JS Class: Zp
+message  {
+}
+
+// JS Class: Kp
+message  {
+}
+
+// JS Class: $p
+message CascadeTrajectorySummaries {
+}
+
+// JS Class: Xp
+message  {
+}
+
+// JS Class: Qp
+message  {
+}
+
+// JS Class: ef
+message  {
+}
+
+// JS Class: tf
+message MessagePromptMetadata {
+}
+
+// JS Class: nf
+message  {
+}
+
+// JS Class: rf
+message  {
+}
+
+// JS Class: af
+message ChatStartMetadata {
+}
+
+// JS Class: of
+message  {
+}
+
+// JS Class: sf
+message CortexStepUpdate {
+}
+
+// JS Class: lf
+message  {
+}
+
+// JS Class: cf
+message CortexTrajectoryStep {
+}
+
+// JS Class: uf
+message  {
+}
+
+// JS Class: df
+message CascadeExecutorConfig {
+}
+
+// JS Class: mf
+message CascadeConfig {
+}
+
+// JS Class: pf
+message TrajectoryConversionConfig {
+}
+
+// JS Class: ff
+message  {
+}
+
+// JS Class: hf
+message SectionOverrideConfig {
+}
+
+// JS Class: _f
+message CascadeAgenticPlannerManagerConfig {
+}
+
+// JS Class: gf
+message CascadeAgenticPlannerApplierConfig {
+}
+
+// JS Class: yf
+message CascadeAgenticPlannerConfig {
+}
+
+// JS Class: Af
+message  {
+}
+
+// JS Class: Ef
+message MqueryToolConfig {
+}
+
+// JS Class: bf
+message GrepToolConfig {
+}
+
+// JS Class: vf
+message  {
+}
+
+// JS Class: wf
+message ClusterQueryToolConfig {
+}
+
+// JS Class: Sf
+message InspectClusterToolConfig {
+}
+
+// JS Class: Tf
+message AutoCommandConfig {
+}
+
+// JS Class: xf
+message ListDirToolConfig {
+}
+
+// JS Class: Cf
+message  {
+}
+
+// JS Class: kf
+message KnowledgeBaseSearchToolConfig {
+}
+
+// JS Class: Mf
+message FastApplyFallbackConfig {
+}
+
+// JS Class: Lf
+message ReplaceContentToolConfig {
+}
+
+// JS Class: If
+message CodeToolConfig {
+}
+
+// JS Class: Nf
+message IntentToolConfig {
+}
+
+// JS Class: Of
+message ViewFileToolConfig {
+}
+
+// JS Class: Rf
+message SuggestedResponseConfig {
+}
+
+// JS Class: Df
+message SearchWebToolConfig {
+}
+
+// JS Class: Pf
+message MemoryToolConfig {
+}
+
+// JS Class: Bf
+message McpToolConfig {
+}
+
+// JS Class: Ff
+message CustomRecipeConfig {
+}
+
+// JS Class: jf
+message AutoFixLintsConfig {
+}
+
+// JS Class: Uf
+message ProxyWebServerToolConfig {
+}
+
+// JS Class: Yf
+message DeployWebAppToolConfig {
+}
+
+// JS Class: Hf
+message EnterpriseToolConfig {
+}
+
+// JS Class: qf
+message ViewCodeItemToolConfig {
+}
+
+// JS Class: Gf
+message CascadeToolConfig {
+}
+
+// JS Class: Jf
+message CascadePassivePlannerConfig {
+}
+
+// JS Class: Vf
+message ReadKnowledgeBaseItemToolConfig {
+}
+
+// JS Class: zf
+message CascadePlannerConfig {
+}
+
+// JS Class: Wf
+message BaseTrajectoryIdentifier {
+}
+
+// JS Class: Zf
+message CascadeUserBinaryConfirmation {
+}
+
+// JS Class: Kf
+message  {
+}
+
+// JS Class: $f
+message  {
+}
+
+// JS Class: Xf
+message CascadeDeployInteractionSpec {
+}
+
+// JS Class: Qf
+message RequestedInteraction {
+}
+
+// JS Class: eh
+message  {
+}
+
+// JS Class: th
+message CortexStepDummy {
+}
+
+// JS Class: nh
+message  {
+}
+
+// JS Class: rh
+message CortexStepPlanInput {
+}
+
+// JS Class: ah
+message  {
+}
+
+// JS Class: oh
+message CheckpointConfig {
+}
+
+// JS Class: ih
+message CortexStepMquery {
+}
+
+// JS Class: sh
+message  {
+}
+
+// JS Class: lh
+message  {
+}
+
+// JS Class: ch
+message  {
+}
+
+// JS Class: uh
+message  {
+}
+
+// JS Class: dh
+message  {
+}
+
+// JS Class: mh
+message  {
+}
+
+// JS Class: ph
+message CortexStepInformPlanner {
+}
+
+// JS Class: fh
+message InformPlannerConfig {
+}
+
+// JS Class: hh
+message DiffBasedCommandEvalConfig {
+}
+
+// JS Class: _h
+message  {
+}
+
+// JS Class: gh
+message  {
+}
+
+// JS Class: yh
+message  {
+}
+
+// JS Class: Ah
+message  {
+}
+
+// JS Class: Eh
+message  {
+}
+
+// JS Class: bh
+message  {
+}
+
+// JS Class: vh
+message  {
+}
+
+// JS Class: wh
+message  {
+}
+
+// JS Class: Sh
+message  {
+}
+
+// JS Class: Th
+message CortexTrajectoryToPromptConfig {
+}
+
+// JS Class: xh
+message  {
+}
+
+// JS Class: Ch
+message ActiveUserState {
+}
+
+// JS Class: kh
+message  {
+}
+
+// JS Class: Mh
+message  {
+}
+
+// JS Class: Lh
+message  {
+}
+
+// JS Class: Ih
+message  {
+}
+
+// JS Class: Nh
+message CortexStepSearchKnowledgeBase {
+}
+
+// JS Class: Oh
+message CortexStepLookupKnowledgeBase {
+}
+
+// JS Class: Rh
+message CortexStepSuggestedResponses {
+}
+
+// JS Class: Dh
+message CortexStepErrorMessage {
+}
+
+// JS Class: Ph
+message  {
+}
+
+// JS Class: Bh
+message  {
+}
+
+// JS Class: Fh
+message  {
+}
+
+// JS Class: jh
+message  {
+}
+
+// JS Class: Uh
+message  {
+}
+
+// JS Class: Yh
+message  {
+}
+
+// JS Class: Hh
+message  {
+}
+
+// JS Class: qh
+message  {
+}
+
+// JS Class: Gh
+message  {
+}
+
+// JS Class: Jh
+message  {
+}
+
+// JS Class: Vh
+message  {
+}
+
+// JS Class: zh
+message  {
+}
+
+// JS Class: Wh
+message  {
+}
+
+// JS Class: Zh
+message CascadePanelState {
+}
+
+// JS Class: Kh
+message  {
+}
+
+// JS Class: $h
+message  {
+}
+
+// JS Class: Xh
+message CortexMemoryMetadata {
+}
+
+// JS Class: Qh
+message  {
+}
+
+// JS Class: e_
+message CortexMemoryScope {
+}
+
+// JS Class: t_
+message CortexMemoryGlobalScope {
+}
+
+// JS Class: n_
+message  {
+}
+
+// JS Class: r_
+message CortexMemoryAllScope {
+}
+
+// JS Class: a_
+message  {
+}
+
+// JS Class: o_
+message  {
+}
+
+// JS Class: i_
+message MemoryConfig {
+}
+
+// JS Class: s_
+message ViewedFileTrackerConfig {
+}
+
+// JS Class: l_
+message CodeStepCreationOptions {
+}
+
+// JS Class: c_
+message ViewFileStepCreationOptions {
+}
+
+// JS Class: u_
+message UserGrepStepCreationOptions {
+}
+
+// JS Class: d_
+message SnapshotToStepsOptions {
+}
+
+// JS Class: m_
+message  {
+}
+
+// JS Class: p_
+message  {
+}
+
+// JS Class: f_
+message  {
+}
+
+// JS Class: h_
+message  {
+}
+
+// JS Class: __
+message  {
+}
+
+// JS Class: g_
+message  {
+}
+
+// JS Class: y_
+message  {
+}
+
+// JS Class: A_
+message  {
+}
+
+// JS Class: E_
+message CortexStepToolCallProposal {
+}
+
+// JS Class: b_
+message  {
+}
+
+// JS Class: v_
+message  {
+}
+
+// JS Class: w_
+message  {
+}
+
+// JS Class: S_
+message  {
+}
+
+// JS Class: T_
+message  {
+}
+
+// JS Class: x_
+message TrajectoryJudgeConfig {
+}
+
+// JS Class: C_
+message  {
+}
+
+// JS Class: k_
+message EphemeralMessagesConfig {
+}
+
+// JS Class: M_
+message  {
+}
+
+// JS Class: L_
+message RevertMetadata {
+}
+
+// JS Class: I_
+message TrajectoryPrefixMetadata {
+}
+
+// JS Class: N_
+message  {
+}
+
+// JS Class: O_
+message  {
+}
+
+// JS Class: R_
+message  {
+}
+
+// JS Class: D_
+message  {
+}
+
+// JS Class: P_
+message CascadePluginCommand {
+}
+
+// JS Class: B_
+message  {
+}
+
+// JS Class: F_
+message  {
+}
+
+// JS Class: j_
+message  {
+}
+
+// JS Class: U_
+message GetAvailableCascadePluginsResponse {
+}
+
+// JS Class: Y_
+message  {
+}
+
+// JS Class: H_
+message InstallCascadePluginResponse {
+}
+
+// JS Class: q_
+message GetGithubPullRequestInfoRequest {
+}
+
+// JS Class: G_
+message GetGithubPullRequestInfoResponse {
+}
+
+// JS Class: J_
+message  {
+}
+
+// JS Class: V_
+message UpdateAutoCascadeGithubCredentialsResponse {
+}
+
+// JS Class: z_
+message  {
+}
+
+// JS Class: W_
+message  {
+}
+
+// JS Class: Z_
+message  {
+}
+
+// JS Class: K_
+message DeleteAutoCascadeSessionResponse {
+}
+
+// JS Class: $_
+message CheckoutAutoCascadeSessionBranchRequest {
+}
+
+// JS Class: X_
+message CheckoutAutoCascadeSessionBranchResponse {
+}
+
+// JS Class: Q_
+message DiffAutoCascadeSessionBranchRequest {
+}
+
+// JS Class: eg
+message DiffAutoCascadeSessionBranchResponse {
+}
+
+// JS Class: tg
+message MergeAutoCascadeSessionBranchRequest {
+}
+
+// JS Class: ng
+message MergeAutoCascadeSessionBranchResponse {
+}
+
+// JS Class: rg
+message  {
+}
+
+// JS Class: ag
+message SubmitCodingPlanSummaryResponse {
+}
+
+// JS Class: og
+message GetAllCortexPlansRequest {
+}
+
+// JS Class: ig
+message GetAllCortexPlansResponse {
+}
+
+// JS Class: sg
+message  {
+}
+
+// JS Class: lg
+message RecordCortexFeedbackResponse {
+}
+
+// JS Class: cg
+message NewCortexPlanRequest {
+}
+
+// JS Class: ug
+message  {
+}
+
+// JS Class: dg
+message  {
+}
+
+// JS Class: mg
+message GetCortexPlanResponse {
+}
+
+// JS Class: pg
+message  {
+}
+
+// JS Class: fg
+message CommitCodingPlanResponse {
+}
+
+// JS Class: hg
+message  {
+}
+
+// JS Class: _g
+message ReplanCodingPlanResponse {
+}
+
+// JS Class: gg
+message  {
+}
+
+// JS Class: yg
+message PrepareActionResponse {
+}
+
+// JS Class: Ag
+message  {
+}
+
+// JS Class: Eg
+message ApplyActionResponse {
+}
+
+// JS Class: bg
+message  {
+}
+
+// JS Class: vg
+message EditActionResponse {
+}
+
+// JS Class: wg
+message  {
+}
+
+// JS Class: Sg
+message  {
+}
+
+// JS Class: Tg
+message MultilineConfig {
+}
+
+// JS Class: xg
+message  {
+}
+
+// JS Class: Cg
+message  {
+}
+
+// JS Class: kg
+message  {
+}
+
+// JS Class: Mg
+message AcceptCompletionResponse {
+}
+
+// JS Class: Lg
+message  {
+}
+
+// JS Class: Ig
+message ProvideCompletionFeedbackResponse {
+}
+
+// JS Class: Ng
+message HeartbeatRequest {
+}
+
+// JS Class: Og
+message HeartbeatResponse {
+}
+
+// JS Class: Rg
+message GetStatusRequest {
+}
+
+// JS Class: Dg
+message GetStatusResponse {
+}
+
+// JS Class: Pg
+message GetCascadeModelConfigsRequest {
+}
+
+// JS Class: Bg
+message GetCascadeModelConfigsResponse {
+}
+
+// JS Class: Fg
+message  {
+}
+
+// JS Class: jg
+message GetTeamOrganizationalControlsRequest {
+}
+
+// JS Class: Ug
+message GetTeamOrganizationalControlsResponse {
+}
+
+// JS Class: Yg
+message GetMcpServerTemplatesRequest {
+}
+
+// JS Class: Hg
+message GetMcpServerTemplatesResponse {
+}
+
+// JS Class: qg
+message GetCommandModelConfigsRequest {
+}
+
+// JS Class: Gg
+message GetCommandModelConfigsResponse {
+}
+
+// JS Class: Jg
+message GetProcessesRequest {
+}
+
+// JS Class: Vg
+message GetExternalModelResponse {
+}
+
+// JS Class: zg
+message  {
+}
+
+// JS Class: Wg
+message GetProcessesResponse {
+}
+
+// JS Class: Zg
+message GetAuthTokenRequest {
+}
+
+// JS Class: Kg
+message  {
+}
+
+// JS Class: $g
+message RecordEventRequest {
+}
+
+// JS Class: Xg
+message RecordEventResponse {
+}
+
+// JS Class: Qg
+message CancelRequestRequest {
+}
+
+// JS Class: ey
+message CancelRequestResponse {
+}
+
+// JS Class: ty
+message EditConfigurationRequest {
+}
+
+// JS Class: ny
+message EditConfigurationResponse {
+}
+
+// JS Class: ry
+message  {
+}
+
+// JS Class: ay
+message  {
+}
+
+// JS Class: oy
+message  {
+}
+
+// JS Class: iy
+message SaveWindsurfJSAppProjectNameResponse {
+}
+
+// JS Class: sy
+message  {
+}
+
+// JS Class: ly
+message  {
+}
+
+// JS Class: cy
+message  {
+}
+
+// JS Class: uy
+message  {
+}
+
+// JS Class: dy
+message WellSupportedLanguagesRequest {
+}
+
+// JS Class: my
+message WellSupportedLanguagesResponse {
+}
+
+// JS Class: py
+message ProgressBarsRequest {
+}
+
+// JS Class: fy
+message ProgressBarsResponse {
+}
+
+// JS Class: hy
+message  {
+}
+
+// JS Class: _y
+message RecordSearchDocOpenResponse {
+}
+
+// JS Class: gy
+message  {
+}
+
+// JS Class: yy
+message RecordSearchResultsViewResponse {
+}
+
+// JS Class: Ay
+message ContextInfoRequest {
+}
+
+// JS Class: Ey
+message ContextInfoResponse {
+}
+
+// JS Class: by
+message RefreshContextForIdeActionRequest {
+}
+
+// JS Class: vy
+message RefreshContextForIdeActionResponse {
+}
+
+// JS Class: wy
+message  {
+}
+
+// JS Class: Sy
+message GetMatchingCodeContextResponse {
+}
+
+// JS Class: Ty
+message  {
+}
+
+// JS Class: xy
+message GetMatchingIndexedReposResponse {
+}
+
+// JS Class: Cy
+message GetChatMessageResponse {
+}
+
+// JS Class: ky
+message  {
+}
+
+// JS Class: My
+message GetMessageTokenCountResponse {
+}
+
+// JS Class: Ly
+message  {
+}
+
+// JS Class: Iy
+message RecordChatFeedbackResponse {
+}
+
+// JS Class: Ny
+message RecordChatPanelSessionRequest {
+}
+
+// JS Class: Oy
+message RecordChatPanelSessionResponse {
+}
+
+// JS Class: Ry
+message GetChatExperimentsRequest {
+}
+
+// JS Class: Dy
+message GetChatExperimentsResponse {
+}
+
+// JS Class: Py
+message  {
+}
+
+// JS Class: By
+message GetUserAnalyticsSummaryResponse {
+}
+
+// JS Class: Fy
+message GetUserStatusRequest {
+}
+
+// JS Class: jy
+message GetUserStatusResponse {
+}
+
+// JS Class: Uy
+message  {
+}
+
+// JS Class: Yy
+message  {
+}
+
+// JS Class: Hy
+message  {
+}
+
+// JS Class: qy
+message CaptureCodeResponse {
+}
+
+// JS Class: Gy
+message CaptureFileRequest {
+}
+
+// JS Class: Jy
+message CaptureFileResponse {
+}
+
+// JS Class: Vy
+message  {
+}
+
+// JS Class: zy
+message  {
+}
+
+// JS Class: Wy
+message GetFunctionsRequest {
+}
+
+// JS Class: Zy
+message GetFunctionsResponse {
+}
+
+// JS Class: Ky
+message GetClassInfosRequest {
+}
+
+// JS Class: $y
+message GetClassInfosResponse {
+}
+
+// JS Class: Xy
+message ExitRequest {
+}
+
+// JS Class: Qy
+message ExitResponse {
+}
+
+// JS Class: eA
+message  {
+}
+
+// JS Class: tA
+message  {
+}
+
+// JS Class: nA
+message LatencyInfo {
+}
+
+// JS Class: rA
+message  {
+}
+
+// JS Class: aA
+message  {
+}
+
+// JS Class: oA
+message CompletionItem {
+}
+
+// JS Class: iA
+message  {
+}
+
+// JS Class: sA
+message  {
+}
+
+// JS Class: lA
+message  {
+}
+
+// JS Class: cA
+message  {
+}
+
+// JS Class: uA
+message  {
+}
+
+// JS Class: dA
+message ExactSearchPreviewOptions {
+}
+
+// JS Class: mA
+message  {
+}
+
+// JS Class: pA
+message  {
+}
+
+// JS Class: fA
+message  {
+}
+
+// JS Class: hA
+message AddTrackedWorkspaceResponse {
+}
+
+// JS Class: _A
+message  {
+}
+
+// JS Class: gA
+message RemoveTrackedWorkspaceResponse {
+}
+
+// JS Class: yA
+message GetWorkspaceEditStateRequest {
+}
+
+// JS Class: AA
+message  {
+}
+
+// JS Class: EA
+message GetWorkspaceEditStateResponse {
+}
+
+// JS Class: bA
+message GetWorkspaceInfosRequest {
+}
+
+// JS Class: vA
+message  {
+}
+
+// JS Class: wA
+message  {
+}
+
+// JS Class: SA
+message GenerateCommitMessageRequest {
+}
+
+// JS Class: TA
+message  {
+}
+
+// JS Class: xA
+message GenerateCommitMessageResponse {
+}
+
+// JS Class: CA
+message  {
+}
+
+// JS Class: kA
+message RecordCommitMessageSaveResponse {
+}
+
+// JS Class: MA
+message GetUserSettingsRequest {
+}
+
+// JS Class: LA
+message GetUserSettingsResponse {
+}
+
+// JS Class: IA
+message SetUserSettingsRequest {
+}
+
+// JS Class: NA
+message SetUserSettingsResponse {
+}
+
+// JS Class: OA
+message GetDebugDiagnosticsRequest {
+}
+
+// JS Class: RA
+message GetDebugDiagnosticsResponse {
+}
+
+// JS Class: DA
+message  {
+}
+
+// JS Class: PA
+message  {
+}
+
+// JS Class: BA
+message  {
+}
+
+// JS Class: FA
+message GetSuggestedContextScopeItemsResponse {
+}
+
+// JS Class: jA
+message  {
+}
+
+// JS Class: UA
+message GetMatchingContextScopeItemsResponse {
+}
+
+// JS Class: YA
+message ContextStatus {
+}
+
+// JS Class: HA
+message  {
+}
+
+// JS Class: qA
+message IndexStatus {
+}
+
+// JS Class: GA
+message BrainStatus {
+}
+
+// JS Class: JA
+message GetBrainStatusRequest {
+}
+
+// JS Class: VA
+message GetBrainStatusResponse {
+}
+
+// JS Class: zA
+message GetAutoCascadeSessionsRequest {
+}
+
+// JS Class: WA
+message GetAutoCascadeSessionsResponse {
+}
+
+// JS Class: ZA
+message SetPinnedGuidelineRequest {
+}
+
+// JS Class: KA
+message SetPinnedContextRequest {
+}
+
+// JS Class: $A
+message SetPinnedGuidelineResponse {
+}
+
+// JS Class: XA
+message SetPinnedContextResponse {
+}
+
+// JS Class: QA
+message SetupUniversitySandboxRequest {
+}
+
+// JS Class: eE
+message  {
+}
+
+// JS Class: tE
+message  {
+}
+
+// JS Class: nE
+message UnifiedDiff {
+}
+
+// JS Class: rE
+message RenderInsertionSideHintRequest {
+}
+
+// JS Class: aE
+message  {
+}
+
+// JS Class: oE
+message  {
+}
+
+// JS Class: iE
+message  {
+}
+
+// JS Class: sE
+message RenderedSideHintDisplayOptions {
+}
+
+// JS Class: lE
+message  {
+}
+
+// JS Class: cE
+message OnboardingItemState {
+}
+
+// JS Class: uE
+message OnboardingState {
+}
+
+// JS Class: dE
+message ResetOnboardingRequest {
+}
+
+// JS Class: mE
+message ResetOnboardingResponse {
+}
+
+// JS Class: pE
+message SkipOnboardingRequest {
+}
+
+// JS Class: fE
+message SkipOnboardingResponse {
+}
+
+// JS Class: hE
+message GetUserTrajectoryDebugRequest {
+}
+
+// JS Class: _E
+message GetUserTrajectoryDebugResponse {
+}
+
+// JS Class: gE
+message  {
+}
+
+// JS Class: yE
+message ForceBackgroundResearchRefreshResponse {
+}
+
+// JS Class: AE
+message InitializeCascadePanelStateRequest {
+}
+
+// JS Class: EE
+message InitializeCascadePanelStateResponse {
+}
+
+// JS Class: bE
+message StartCascadeRequest {
+}
+
+// JS Class: vE
+message  {
+}
+
+// JS Class: wE
+message  {
+}
+
+// JS Class: SE
+message GetCascadeTrajectoryResponse {
+}
+
+// JS Class: TE
+message  {
+}
+
+// JS Class: xE
+message GetCascadeTrajectoryStepsResponse {
+}
+
+// JS Class: CE
+message GetAllCascadeTrajectoriesRequest {
+}
+
+// JS Class: kE
+message GetAllCascadeTrajectoriesResponse {
+}
+
+// JS Class: ME
+message  {
+}
+
+// JS Class: LE
+message CancelCascadeInvocationResponse {
+}
+
+// JS Class: IE
+message  {
+}
+
+// JS Class: NE
+message CancelCascadeStepsResponse {
+}
+
+// JS Class: OE
+message  {
+}
+
+// JS Class: RE
+message SendUserCascadeMessageResponse {
+}
+
+// JS Class: DE
+message  {
+}
+
+// JS Class: PE
+message RevertToCascadeStepResponse {
+}
+
+// JS Class: BE
+message  {
+}
+
+// JS Class: FE
+message HandleCascadeUserInteractionResponse {
+}
+
+// JS Class: jE
+message  {
+}
+
+// JS Class: UE
+message AcknowledgeCascadeCodeEditResponse {
+}
+
+// JS Class: YE
+message  {
+}
+
+// JS Class: HE
+message GetCodeValidationStatesResponse {
+}
+
+// JS Class: qE
+message  {
+}
+
+// JS Class: GE
+message  {
+}
+
+// JS Class: JE
+message DeleteCascadeTrajectoryResponse {
+}
+
+// JS Class: VE
+message  {
+}
+
+// JS Class: zE
+message ResolveOutstandingStepsResponse {
+}
+
+// JS Class: WE
+message StreamTerminalShellCommandResponse {
+}
+
+// JS Class: ZE
+message GetWebDocsOptionsRequest {
+}
+
+// JS Class: KE
+message GetWebDocsOptionsResponse {
+}
+
+// JS Class: $E
+message UpdateDevExperimentsRequest {
+}
+
+// JS Class: XE
+message UpdateDevExperimentsResponse {
+}
+
+// JS Class: QE
+message  {
+}
+
+// JS Class: eb
+message  {
+}
+
+// JS Class: tb
+message  {
+}
+
+// JS Class: nb
+message  {
+}
+
+// JS Class: rb
+message GetCascadeMemoriesRequest {
+}
+
+// JS Class: ab
+message GetCascadeMemoriesResponse {
+}
+
+// JS Class: ob
+message  {
+}
+
+// JS Class: ib
+message DeleteCascadeMemoryResponse {
+}
+
+// JS Class: sb
+message  {
+}
+
+// JS Class: lb
+message UpdateCascadeMemoryResponse {
+}
+
+// JS Class: cb
+message GetUserMemoriesRequest {
+}
+
+// JS Class: ub
+message GetUserMemoriesResponse {
+}
+
+// JS Class: db
+message RefreshMcpServersRequest {
+}
+
+// JS Class: mb
+message RefreshMcpServersResponse {
+}
+
+// JS Class: pb
+message GetMcpServerStatesRequest {
+}
+
+// JS Class: fb
+message GetMcpServerStatesResponse {
+}
+
+// JS Class: hb
+message GetAllWorkflowsRequest {
+}
+
+// JS Class: _b
+message GetAllWorkflowsResponse {
+}
+
+// JS Class: gb
+message  {
+}
+
+// JS Class: yb
+message SendActionToChatPanelResponse {
+}
+
+// JS Class: Ab
+message  {
+}
+
+// JS Class: Eb
+message RecordUserGrepResponse {
+}
+
+// JS Class: bb
+message GetUnleashDataRequest {
+}
+
+// JS Class: vb
+message GetUnleashDataResponse {
+}
+
+// JS Class: wb
+message ShouldEnableUnleashRequest {
+}
+
+// JS Class: Sb
+message ShouldEnableUnleashResponse {
+}
+
+// JS Class: Tb
+message  {
+}
+
+// JS Class: xb
+message  {
+}
+
+// JS Class: Cb
+message CreateTrajectoryShareRequest {
+}
+
+// JS Class: kb
+message  {
+}
+
+// JS Class: Mb
+message  {
+}
+
+// JS Class: Lb
+message GetAvailableCascadePluginsResponse {
+}
+
+// JS Class: Ib
+message  {
+}
+
+// JS Class: Nb
+message InstallCascadePluginResponse {
+}
+
+// JS Class: Ob
+message  {
+}
+
+// JS Class: Rb
+message LanguageServerStartedResponse {
+}
+
+// JS Class: Db
+message  {
+}
+
+// JS Class: Pb
+message OpenSettingResponse {
+}
+
+// JS Class: Bb
+message  {
+}
+
+// JS Class: Fb
+message OpenFilePointerResponse {
+}
+
+// JS Class: jb
+message  {
+}
+
+// JS Class: Ub
+message InsertCodeAtCursorResponse {
+}
+
+// JS Class: Yb
+message  {
+}
+
+// JS Class: Hb
+message LogEventRequest {
+}
+
+// JS Class: qb
+message LogEventResponse {
+}
+
+// JS Class: Gb
+message CheckTerminalShellSupportRequest {
+}
+
+// JS Class: Jb
+message  {
+}
+
+// JS Class: Vb
+message  {
+}
+
+// JS Class: zb
+message  {
+}
+
+// JS Class: Wb
+message ShowTerminalResponse {
+}
+
+// JS Class: Zb
+message  {
+}
+
+// JS Class: Kb
+message OpenVirtualFileResponse {
+}
+
+// JS Class: $b
+message  {
+}
+
+// JS Class: Xb
+message SaveDocumentResponse {
+}
+
+// JS Class: Qb
+message GetLintErrorsRequest {
+}
+
+// JS Class: ev
+message  {
+}
+
+// JS Class: tv
+message GetLintErrorsResponse {
+}
+
+// JS Class: nv
+message  {
+}
+
+// JS Class: rv
+message OpenDiffZonesResponse {
+}
+
+// JS Class: av
+message  {
+}
+
+// JS Class: ov
+message OpenExternalUrlResponse {
+}
+
+// JS Class: iv
+message  {
+}
+
+// JS Class: sv
+message  {
+}
+
+// JS Class: lv
+message PlaySoundRequest {
+}
+
+// JS Class: cv
+message PlaySoundResponse {
+}
+
+// JS Class: uv
+message OpenWindsurfRulesFileRequest {
+}
+
+// JS Class: dv
+message OpenWindsurfRulesFileResponse {
+}
+
+// JS Class: mv
+message RefreshURIsRequest {
+}
+
+// JS Class: pv
+message RefreshURIsResponse {
+}
+
+// JS Class: fv
+message OpenPluginPageRequest {
+}
+
+// JS Class: hv
+message OpenPluginPageResponse {
+}
+
+// JS Class: _v
+message OpenPluginConfigModalRequest {
+}
+
+// JS Class: gv
+message OpenPluginConfigModalResponse {
+}
+
+// JS Class: Ev
+message  {
+}
+
+// JS Class: bv
+message StreamReactiveUpdatesResponse {
+}
+
+// JS Class: vv
+message TestProto {
+}
+
+// JS Class: wv
+message MessageDiff {
+}
+
+// JS Class: Sv
+message FieldDiff {
+}
+
+// JS Class: Tv
+message RepeatedDiff {
+}
+
+// JS Class: xv
+message MapDiff {
+}
+
+// JS Class: Cv
+message MapKeyDiff {
+}
+
+// JS Class: kv
+message SingularValue {
+}
+
+// JS Class: Mv
+message TestDiffProto {
+}
+
+// JS Class: ow
+message  {
+}
+
+// JS Class: iw
+message FastApply {
+}
+
+// JS Class: sw
+message  {
+}
+
+// JS Class: lw
+message PinnedSystemFeedback {
+}
+
+// JS Class: cw
+message  {
+}
+
+// JS Class: uw
+message  {
+}
+
+// JS Class: dw
+message  {
+}
+
+// JS Class: mw
+message  {
+}
+
+// JS Class: pw
+message  {
+}
+
+// JS Class: fw
+message  {
+}
+
+// JS Class: hw
+message  {
+}
+
+// JS Class: _w
+message  {
+}
+
+// JS Class: gw
+message ChatExperimentStatus {
+}
+
+// JS Class: yw
+message  {
+}
+
+// JS Class: Aw
+message StateUpdate {
+}
+
+// JS Class: Ew
+message  {
+}
+
+// JS Class: bw
+message Heartbeat {
+}
+
+// JS Class: vw
+message UpdateUserSettingsRequest {
+}
+
+// JS Class: ww
+message  {
+}
+
+// JS Class: Sw
+message RetryLastMessage {
+}
+
+// JS Class: Tw
+message DismissPinnedSystemFeedback {
+}
+
+// JS Class: xw
+message WebServerRequest {
+}
+
+// JS Class: Cw
+message WebServerResponse {
+}
+
+// JS Class: kw
+message OnboardingState {
+}
+
+// JS Class: Mw
+message  {
+}
+
+// JS Class: Lw
+message GetMatchingIndexedReposResponse {
+}
+
+// JS Class: Iw
+message  {
+}
+
+// JS Class: Nw
+message GetMatchingCodeContextResponse {
+}
+
+// JS Class: zK
+message  {
+}
+
+// JS Class: WK
+message  {
+}
+
+// JS Class: ZK
+message  {
+}
+
+// JS Class: KK
+message  {
+}
+
+// JS Class: $K
+message CustomQueryRequest {
+}
+
+// JS Class: XK
+message QueryResponseItem {
+}
+
+// JS Class: QK
+message CustomQueryResponse {
+}
+
+// JS Class: e$
+message  {
+}
+
+// JS Class: t$
+message GetAnalyticsResponse {
+}
+
+// JS Class: n$
+message  {
+}
+
+// JS Class: r$
+message AnalyticsResponse {
+}
+
+// JS Class: a$
+message  {
+}
+
+// JS Class: o$
+message UserPageAnalyticsResponse {
+}
+
+// JS Class: i$
+message  {
+}
+
+// JS Class: s$
+message GetPublicAnalyticsResponse {
+}
+
+// JS Class: l$
+message QueryRequest {
+}
+
+// JS Class: c$
+message QueryResult {
+}
+
+// JS Class: u$
+message QueryRequestCompletionStats {
+}
+
+// JS Class: d$
+message QueryResultCompletionStats {
+}
+
+// JS Class: m$
+message  {
+}
+
+// JS Class: p$
+message QueryResultCompletionsByDay {
+}
+
+// JS Class: f$
+message QueryRequestCompletionsByLanguage {
+}
+
+// JS Class: h$
+message QueryResultCompletionsByLanguage {
+}
+
+// JS Class: _$
+message QueryRequestCompletionsByIde {
+}
+
+// JS Class: g$
+message QueryResultCompletionsByIde {
+}
+
+// JS Class: y$
+message QueryRequestCompletionsByRepository {
+}
+
+// JS Class: A$
+message QueryResultCompletionsByRepository {
+}
+
+// JS Class: E$
+message  {
+}
+
+// JS Class: b$
+message QueryResultChatsByDay {
+}
+
+// JS Class: v$
+message  {
+}
+
+// JS Class: w$
+message  {
+}
+
+// JS Class: S$
+message QueryRequestChatStatsByModel {
+}
+
+// JS Class: T$
+message QueryRequestAllChatStatsByModel {
+}
+
+// JS Class: x$
+message QueryResultChatStatsByModel {
+}
+
+// JS Class: C$
+message  {
+}
+
+// JS Class: k$
+message QueryRequestAllUsersCompletionsByLanguage {
+}
+
+// JS Class: M$
+message QueryRequestAllUsersCompletionStats {
+}
+
+// JS Class: L$
+message QueryRequestCompletionsByApiKey {
+}
+
+// JS Class: I$
+message QueryResultCompletionsByApiKey {
+}
+
+// JS Class: N$
+message QueryResultActiveUserCount {
+}
+
+// JS Class: O$
+message QueryRequestPercentCodeWritten {
+}
+
+// JS Class: R$
+message QueryResultPercentCodeWritten {
+}
+
+// JS Class: D$
+message QueryRequestCharsPerOpportunity {
+}
+
+// JS Class: P$
+message QueryResultCharsPerOpportunity {
+}
+
+// JS Class: B$
+message QueryRequestChatStats {
+}
+
+// JS Class: F$
+message QueryResultChatStats {
+}
+
+// JS Class: j$
+message QueryRequestCommandStats {
+}
+
+// JS Class: U$
+message QueryResultCommandStats {
+}
+
+// JS Class: Y$
+message QueryRequestActiveDaysByApiKey {
+}
+
+// JS Class: H$
+message QueryResultActiveDaysByApiKey {
+}
+
+// JS Class: q$
+message  {
+}
+
+// JS Class: G$
+message  {
+}
+
+// JS Class: J$
+message  {
+}
+// Generated at: Sat, May  3, 2025  1:30:27 PM
