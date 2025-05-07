@@ -52,30 +52,24 @@ def calc():
 # compress code into printing final result and append to inputs dict
             total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
             print(total)
-            # key = get_current_time()
-            # inputs = {}
-            # if key in inputs:
-            #     inputs[key].append(total)
-            # else:
-            #     inputs = [{"Time": key, "Operations": [total]}]
-            
-            
+            key = get_current_time()
+            if key in inputs:
+                inputs[key].append(total)
+            else:
+                inputs[key] = [total]
+                  
 # append inputs dict to csv file
             with open("inputs.csv", "a", newline="") as csv_file:
-                key = get_current_time()
-                inputs = {}
-                if key in inputs:
-                    inputs[key].append(total)
-                else:
-                    inputs = [{key : [total]}]
-                    fieldnames = ["Time", "Operations"]
-                    csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction='ignore', delimiter="\t")
-                    for line in inputs:
-                        csv_writer.writerow(line)
-                    
-           
-            
-            
+                # key = get_current_time()
+                # if key in inputs:
+                #     inputs[key].append(total)
+                # else:
+                #     inputs = {key : [total]}
+                fieldnames = ["Time", "Operations"]
+                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction='ignore', delimiter="\t")
+                for line in inputs:
+                    csv_writer.writerow(line)
+    
 # function that prompts user to access calculator or exit 
 def user_choice():
     while True:
@@ -90,10 +84,6 @@ def user_choice():
                     next(csv_file)
                     for line in csv_reader:
                         print(line)
-            
-                # f = open("inputs.csv", "r")
-                # for x, line in enumerate(f):
-                #     print(f"{x}: {line}")
             elif choice == 3:
                 delete_input()
             elif choice is None:
@@ -115,10 +105,7 @@ def delete_input():
         if opt is None:
             return
         remove_lines("inputs.csv", [opt])
-
-
-
-       
+        
 user_choice()
 
 
