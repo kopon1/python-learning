@@ -1,5 +1,5 @@
 # Validate user input into an integer and handle exceptions
-def input_to_int(question):
+def input_to_int(question: str) -> int:
     while True:
         try:
             num = input(f"{question}\nEnter 'q' to exit.\n")
@@ -34,7 +34,7 @@ def appropiate_input_num(question):
             print("Invalid input.", e)
 
 # remove saved user inputs from file     
-def remove_lines(filepath, lines_to_remove):
+def remove_lines(filepath: str, lines_to_remove: int) -> None:
     f = open(filepath, "r+")
     with open("inputs.csv", "r+") as file:
         lines = f.readlines()
@@ -43,23 +43,11 @@ def remove_lines(filepath, lines_to_remove):
         f.truncate()
 
 # ***IGNORE*** PRACTICE PRACTICE PRACTICE
-class person:
-    def __init__(self, name, age, profession):
-        self.name = name
-        self.age = age
-        self.profession = profession
+# class person:
+#     def __init__(self, name, age, profession):
+#         self.name = name
+#         self.age = age
+#         self.profession = profession
 
-person1 = person("Bob", 99, "Unemployed")
-print(person1)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-
-            
+# person1 = person("Bob", 99, "Unemployed")
+# print(person1)
