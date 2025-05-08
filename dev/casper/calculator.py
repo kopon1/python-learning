@@ -50,7 +50,7 @@ def calc():
                 print("Invalid choice, please try again")
                 
 # compress code into printing final result and append to inputs dict
-            total = f"{num1} {opt} {num2} = " f"{round(result, 2)}"
+            total = f"{num1} {opt} {num2} = {round(result, 2)}"
             print(total)
             key = get_current_time()
             if key in inputs:
