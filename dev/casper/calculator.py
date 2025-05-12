@@ -55,11 +55,15 @@ def calc():
             else:
                 inputs[key] = [total]
             with open("inputs.csv", "a") as csv_file:
-                fieldnames = ["Time", "Operations"]
-                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction="ignore")
-                
-                for line in inputs:
-                    csv_writer.writerow(line)
+                csv_writer = csv.DictWriter(csv_file, fieldnames=None)
+                for timestamp in inputs:
+                    for operation in inputs[timestamp]:
+                        new_row = {
+                            "Time": str(timestamp),
+                            "Operation": str(operation)
+                        }
+                        csv_writer.fieldnames = new_row.keys()
+                        csv_writer.writerow(new_row)
         except AttributeError:
             pass     
         
