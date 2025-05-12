@@ -26,11 +26,9 @@ def calc():
             if opt == 1:
                 opt = "+"
                 result = num1 + num2
-
             elif opt == 2:
                 opt = "*"
-                result = num1 * num2 
-                
+                result = num1 * num2                
             elif opt == 3:
                 opt = "/"
                 result = num1 / num2
@@ -38,38 +36,32 @@ def calc():
                     print("Can't divide by zero")
                     continue
                 else:
-                    result = (num1 / num2)
-                     
+                    result = (num1 / num2)   
             elif opt == 4:
                 opt = "-"
                 result = num1 - num2
-
             elif opt is None:
                 return
             else:
                 print("Invalid choice, please try again")
-                
+                              
 # compress code into printing final result and append to inputs dict
             total = f"{num1} {opt} {num2} = {round(result, 2)}"
             print(total)
-            key = get_current_time()
-            if key in inputs:
-                inputs[key].append(total)
-            else:
-                inputs[key] = [total]
-                  
-# append inputs dict to csv file
-            with open("inputs.csv", "a", newline="") as csv_file:
-                # key = get_current_time()
-                # if key in inputs:
-                #     inputs[key].append(total)
-                # else:
-                #     inputs = {key : [total]}
-                fieldnames = ["Time", "Operations"]
-                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction='ignore', delimiter="\t")
-                for line in inputs:
-                    csv_writer.writerow(line)
-    
+            try:
+                key = get_current_time()
+                if key in inputs:
+                    inputs[key].append(total)
+                else:
+                    inputs[key] = [total]
+                with open("inputs.csv", "a") as csv_file:
+                    fieldnames = ["Time", "Operations"]
+                    csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
+                    for row in inputs:
+                        csv_writer.writerow(row)
+            except AttributeError:
+                pass     
+        
 # function that prompts user to access calculator or exit 
 def user_choice():
     while True:
@@ -80,8 +72,7 @@ def user_choice():
             elif choice == 2:
                 with open("inputs.csv", "r") as csv_file:
                     fieldnames = ["Time", "Operations"]
-                    csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter="\t")
-                    next(csv_file)
+                    csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter=",")
                     for line in csv_reader:
                         print(line)
             elif choice == 3:
@@ -99,15 +90,14 @@ def delete_input():
 # open file and read it, then print it to the user enumerating the lines
         f = open("inputs.csv", "r")
         for x, element in enumerate(f):
-                print(f"{x}: {element}")
-                
+                print(f"{x}: {element}")       
         opt = input_to_int("This is your saved history.\nEnter which number you want to delete from history.")
         if opt is None:
             return
         remove_lines("inputs.csv", [opt])
         
 user_choice()
-
+print(inputs)
 
 
     
