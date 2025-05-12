@@ -61,7 +61,7 @@ def calc():
 def delete_input():
     while True:
 # open file and read it, then print it to the user enumerating the lines
-        f = open("inputs.csv", "r")
+        f = open("inputs.csv", "a")
         for x, element in enumerate(f):
                 print(f"{x}: {element}")
                 
@@ -77,12 +77,12 @@ def user_choice():
             if choice == 1:
                 calc()
             elif choice == 2:
-                # with open("./dev/casper/inputs.csv", "r") as csv_file:
-                #     fieldnames = ["Time", "Operations"]
-                #     csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter="\t")
-                #     next(csv_file)
-                #     for line in csv_reader:
-                #         print(line)
+                with open("./dev/casper/inputs.csv", "r") as csv_file:
+                    fieldnames = ["Time", "Operations"]
+                    csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter="\t")
+                    next(csv_file)
+                    for line in csv_reader:
+                        print(line)
                 for k in inputs.keys():
                     print(f"--- {k} ---")
                     for v in inputs[k]:
@@ -96,19 +96,20 @@ def user_choice():
         except Exception as e:
             print("Error", e)
 
-
 if __name__ == "__main__":
     print("RUNNING CALCULATOR")
     user_choice()
-
-
     
-
-
-
-
-
-
-
-
-
+    # user_choice is over meaning the "main menu" is exiting
+    
+    # Open in append mode
+    with open("./dev/casper/inputs.csv", "a") as csv_file:
+        csv_writer = csv.DictWriter(csv_file, fieldnames=None)
+        for timestamp in inputs:
+            for operation in inputs[timestamp]:
+                new_row = {
+                    "Time": str(timestamp),
+                    "Operation": str(operation)
+                }
+                csv_writer.fieldnames = new_row.keys()
+                csv_writer.writerow(new_row)
