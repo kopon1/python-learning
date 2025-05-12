@@ -1,3 +1,7 @@
+import datetime
+
+
+
 # Validate user input into an integer and handle exceptions
 def input_to_int(question: str) -> int:
     while True:
@@ -42,12 +46,17 @@ def remove_lines(filepath: str, lines_to_remove: int) -> None:
         f.writelines(line for i, line in enumerate(lines) if i + 1 not in lines_to_remove)
         f.truncate()
 
-# ***IGNORE*** PRACTICE PRACTICE PRACTICE
-# class person:
-#     def __init__(self, name, age, profession):
-#         self.name = name
-#         self.age = age
-#         self.profession = profession
+def get_current_time():
+    now = datetime.datetime.now()
+    return now.strftime("%D-%M-%Y, %H:%M")
 
-# person1 = person("Bob", 99, "Unemployed")
-# print(person1)
+def delete_input():
+    while True:
+# open file and read it, then print it to the user enumerating the lines
+        f = open("inputs.csv", "r")
+        for x, element in enumerate(f):
+                print(f"{x}: {element}")       
+        opt = input_to_int("This is your saved history.\nEnter which number you want to delete from history.")
+        if opt is None:
+            return
+        remove_lines("inputs.csv", [opt])
