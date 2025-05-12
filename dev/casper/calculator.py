@@ -56,7 +56,8 @@ def calc():
                 inputs[key] = [total]
             with open("inputs.csv", "a") as csv_file:
                 fieldnames = ["Time", "Operations"]
-                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
+                csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction="ignore")
+                
                 for line in inputs:
                     csv_writer.writerow(line)
         except AttributeError:
@@ -72,7 +73,7 @@ def user_choice():
             elif choice == 2:
                 with open("inputs.csv", "r") as csv_file:
                     fieldnames = ["Time", "Operations"]
-                    csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter=",")
+                    csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames)
                     for line in csv_reader:
                         print(line)
             elif choice == 3:
