@@ -4,7 +4,7 @@
 # print(find_small_num([4, 6, 13, 11]))
 # print(find_small_num([-1, 22, 33]))
 
-
+# YAMETE KUDASAI CASPER SENPAI! +90 Aura
 
 def find_small_num(items):
     minimum = items[0]

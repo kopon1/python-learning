@@ -1,6 +1,8 @@
 
 
 def rmv_duplicates(items):
+    # This for loop does nothing. You are looping through items, but you never use the val variable. You can remove the loop and just do the other two lines. -69 Aura
+    # Or, in a single line -> return set(items)
     for val in items:
         result = set(items)
     return result

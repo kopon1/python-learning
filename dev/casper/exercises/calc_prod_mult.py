@@ -1,5 +1,4 @@
-
-
+# NICE. +9 AURA
 
 def calc_mult(items):
     num = 1
