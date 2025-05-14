@@ -1,12 +1,11 @@
-
-from funcs import input_to_int, appropiate_input_num, remove_lines
+from funcs import input_to_int, appropiate_input_num, delete_input, get_current_time
 import csv
 
 
 # Dict that saves user inputs
 inputs = {}
 
-def user_choice():
+def main():
     while True:
         try:
             choice = input_to_int("What would you like to do?\nEnter:\n1 to access calculator\n2 to access previous history\n3 to delete history")
@@ -81,12 +80,12 @@ def calc():
         except AttributeError:
             pass     
              
-user_choice()
+main()
 
 
 if __name__ == "__main__":
     print("RUNNING CALCULATOR")
-    user_choice()
+    main()
 
 
 

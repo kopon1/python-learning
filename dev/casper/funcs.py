@@ -60,3 +60,7 @@ def delete_input():
         if opt is None:
             return
         remove_lines("inputs.csv", [opt])
+        
+        
+if __name__ == "__main__":
+    print("RUNNING CALCULATOR")
