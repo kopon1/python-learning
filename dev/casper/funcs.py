@@ -1,7 +1,5 @@
 import datetime
 
-
-
 # Validate user input into an integer and handle exceptions
 def input_to_int(question: str) -> int:
     while True:
