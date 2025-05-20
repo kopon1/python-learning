@@ -79,10 +79,6 @@ def calc():
                         csv_writer.writerow(new_row)
         except AttributeError:
             pass     
-             
-main()
-
-
 if __name__ == "__main__":
     print("RUNNING CALCULATOR")
     main()
