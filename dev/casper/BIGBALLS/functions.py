@@ -7,7 +7,6 @@ def load_inventory(filename):
     # Reads inventory.csv and returns a dictionary {ball_type: quantity}
     with open("csv_files/inventory.csv", "r") as csv_file:
         csv_reader = csv.DictReader(csv_file, fieldnames=None)
-
         for line in csv_reader:
             print(line)
         csv_file.close()
