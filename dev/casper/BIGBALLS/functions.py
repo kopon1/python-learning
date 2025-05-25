@@ -7,27 +7,11 @@ def load_inventory(filename):
     # Reads inventory.csv and returns a dictionary {ball_type: quantity}
     with open("csv_files/inventory.csv", "r") as csv_file:
         csv_reader = csv.DictReader(csv_file, fieldnames=None)
-        # next(csv_reader)
-        
-        
+
         for line in csv_reader:
             print(line)
         csv_file.close()
-        
-        # for row in csv_reader:
-        #     print(row["ball_type"],":",row["quantity"])
-        
-        # for ball_type in inventory:
-        #     for quantity in inventory[ball_type]:
-        #         new_row = {
-        #             "Ball Type": str(ball_type),
-        #             "Quantity": str(quantity)
-        #         }  
-        #         csv_reader.fieldnames = new_row.keys()
-        #         csv_reader.reader(new_row)
-        
-                
-                
+                    
 def save_inventory(filename, inventory):
     # Writes inventory dictionary back to inventory.csv
     with open("csv_files/inventory.csv", "a") as csv_file:
