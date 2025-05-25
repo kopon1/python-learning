@@ -6,18 +6,28 @@ inventory = {}
 def load_inventory(filename):
     # Reads inventory.csv and returns a dictionary {ball_type: quantity}
     with open("csv_files/inventory.csv", "r") as csv_file:
+<<<<<<< HEAD
         csv_reader = csv.DictReader(csv_file, fieldnames=None)
         for line in csv_reader:
             print(line)
         csv_file.close()
                     
+=======
+        csv_reader = csv.DictReader(csv_file, fieldnames=None) 
+        for line in csv_reader:
+            my_list = []
+            my_list.append(line)
+        return my_list
+    
+>>>>>>> 1610f67 (**ignore**)
 def save_inventory(filename, inventory):
     # Writes inventory dictionary back to inventory.csv
     with open("csv_files/inventory.csv", "a") as csv_file:
-        # fieldnames = ["Ball Type", "Quantity"]
+        my_dict = {"ball_type":int("quantity")}
         csv_writer = csv.DictWriter(csv_file, fieldnames=None)
-        csv_writer.writerows(inventory)
-    
+        for line in my_dict:
+            csv_writer.writerow(line)
+              
 def record_sale():
     # Ask user which ball, how many; update inventory and log to sales.csv
     ball_type = input_to_int("What type of ball would you like to buy?\nEnter 1 for Basketballs\nEnter 2 for Bouncy Balls\nEnter 3 for Yoga Balls\nEnter 4 for Tennis Balls\nEnter 5 for Golf Balls")
@@ -39,23 +49,12 @@ def record_sale():
     if amount == int(amount):
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
+            updt_inventory = {ball_type:amount}
             try:
-                purchase = ball_type
-                key = month_year()
-                if key in inventory:
-                    inventory[key].append(purchase)
-                else:
-                    inventory[key] = [purchase]
                 with open("sales.csv", "a") as csv_file:
                     csv_writer = csv.DictWriter(csv_file, fieldnames=None)
-                    for date in inventory:
-                        for purchase in inventory[date]:
-                            new_row = {
-                                "Date": str(date),
-                                "Purchase": str(purchase)
-                            }
-                            csv_writer.fieldnames = new_row.keys()
-                            csv_writer.writerow(new_row)
+                    for line in updt_inventory:
+                        csv_writer.writerow(line)
             except ValueError as e:
                 print("Error: ", e)
         elif confirmation == "N":
@@ -65,11 +64,11 @@ def record_sale():
     else:
         print("Invalid amount. Please input a valid amount in whole numbers.")
 
-def record_purchase(inventory):
+def record_purchase():
     # Ask user which ball, how many; update inventory and log to purchases.csv
     pass
 
-def view_inventory(inventory):
+def view_inventory():
     # Print out current stock of all balls
     with open("csv_files/inventory.csv", "r") as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -100,5 +99,3 @@ def input_to_int(question: str) -> int:
 def month_year():
     now = datetime.datetime.now()
     return now.strftime("%m/%Y")
-
-load_inventory(inventory)

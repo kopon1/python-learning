@@ -1,7 +1,6 @@
-from functions import input_to_int, record_sale, record_purchase, view_inventory, load_inventory, save_inventory, monthly_report, month_year
-
-
-
+# from functions import input_to_int, record_sale, record_purchase, view_inventory, load_inventory, save_inventory, monthly_report, month_year
+# import functions
+from functions import *
 
 
 def main_menu():
@@ -14,11 +13,11 @@ def main_menu():
                 print("Exiting...")
                 return
             elif choice == 1:
-                record_sale("sales.csv")
+                record_sale()
             elif choice == 2:
-                record_purchase("purchases.csv")
+                record_purchase()
             elif choice == 3:
-                view_inventory("inventory.csv")
+                view_inventory()
             elif choice == 4:
                 pass
             else:
@@ -28,3 +27,4 @@ def main_menu():
 
 if __name__ == '__main__':
     main_menu()
+    saved_inventory = load_inventory(inventory)
