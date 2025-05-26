@@ -23,8 +23,8 @@ def save_csv(filename: str, rows_list: list) -> bool:
             csv_writer.writerow(line)
     
     
-# Takes in the name of a ball and a quantity and registers a sale on the sales object (a new dictionary inside the list read from the CSV).
-# A new entry is created in the sales list with the name of the ball, quantity sold, and timestamp.
+# Takes the name of a ball and a quantity and registers a new sale (a new dictionary) on the sales object (the list read from the CSV).
+# This new entry has the ball type, quantity purchased, and timestamp.
 # ATTENTION: You can only sell balls that you currently have in stock!
 # ATTENTION #2: DO NOT SAVE TO CSV DIRECTLY. Use the lists that were created by reading the CSVs!
 def record_sale():
@@ -63,9 +63,9 @@ def record_sale():
         print("Invalid amount. Please input a valid amount in whole numbers.")
 
 
-# Takes in the name of a ball and a quantity and registers a purchase on the purchases object (a new dictionary inside the list read from the CSV).
-# A new entry is created in the purchases list with the name of the ball, quantity purchased, and timestamp.
-# ATTENTION: You can only have 250 units max of any ball because the Big Balls Inc. warehouse is pretty small. A purchase that exceeds the stock capacity should not be allowed to happen.
+# Takes in the name of a ball and a quantity and registers a new purchase (a new dictionary) on the purchases object (the list read from the CSV).
+# This new entry has the ball type, quantity purchased, and timestamp.
+# ATTENTION: You can only have 250 units max of any ball because the Big Balls Inc. warehouse is pretty small. A purchase that exceeds the stock capacity should not be allowed to happen and the user should be informed.
 def record_purchase():
     pass
 
