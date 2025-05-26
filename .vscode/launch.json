@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy", // This is the debugger type provided by the Python extension
+            "request": "launch",
+            "program": "${file}", // This means it will debug the currently open file
+            "console": "integratedTerminal", // Or "internalConsole", "externalTerminal"
+            "justMyCode": true // Set to false if you want to step into library code
+        }
+    ]
+}
