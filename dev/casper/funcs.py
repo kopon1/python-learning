@@ -46,7 +46,7 @@ def remove_lines(filepath: str, lines_to_remove: int) -> None:
 
 def get_current_time():
     now = datetime.datetime.now()
-    return now.strftime("%D-%M-%Y, %H:%M")
+    return now.strftime("%D-%m-%Y, %H:%M")
 
 def delete_input():
     while True:

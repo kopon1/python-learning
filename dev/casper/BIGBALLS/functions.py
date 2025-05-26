@@ -1,6 +1,8 @@
 import csv
 import helpers
 from pathlib import Path
+import datetime as dt
+
 
 # Reads a CSV file and returns a list of dictionaries. Each dictionary represents a row, having the column headers (fieldnames) as keys and the cell values as values
 def load_csv(filename: str) -> list:
@@ -47,7 +49,7 @@ def record_sale():
     if amount == int(amount):
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
-            updt_inventory = {ball_type:amount}
+            updt_inventory = [{ball_type:[monthly_report(),amount]}]
             try:
                 save_csv("sales.csv", updt_inventory)
                 
@@ -82,5 +84,7 @@ def view_inventory():
 
 
 # Print out the monthly report for the given year-month combo. Ordered by day ascending.
-def monthly_report(year, month):
-    pass
+def monthly_report():
+    now = dt.datetime.now()
+    return now.strftime("%m-%Y")
+    
