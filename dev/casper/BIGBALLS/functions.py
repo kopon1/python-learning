@@ -52,11 +52,6 @@ def record_sale():
             updt_inventory = [{ball_type:[monthly_report(),amount]}]
             try:
                 save_csv("sales.csv", updt_inventory)
-                
-                # with open("sales.csv", "a") as csv_file:
-                #     csv_writer = csv.DictWriter(csv_file, fieldnames=None)
-                #     for line in updt_inventory:
-                #         csv_writer.writerow(line)
             except ValueError as e:
                 print("Error: ", e)
         elif confirmation == "N":
@@ -70,7 +65,8 @@ def record_sale():
 # Takes in the name of a ball and a quantity and registers a new purchase (a new dictionary) on the purchases object (the list read from the CSV).
 # This new entry has the ball type, quantity purchased, and timestamp.
 # ATTENTION: You can only have 250 units max of any ball because the Big Balls Inc. warehouse is pretty small. A purchase that exceeds the stock capacity should not be allowed to happen and the user should be informed.
-def record_purchase():
+def record_purchase(ball, quantity):
+    dict = {ball:[quantity, monthly_report()]}
     pass
 
 
