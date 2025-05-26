@@ -45,14 +45,16 @@ def record_sale():
         print("Invalid input")
     amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
     if amount == int(amount):
-        confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y for Yes or 'N' for No.\n").upper()
+        confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
             updt_inventory = {ball_type:amount}
             try:
-                with open("sales.csv", "a") as csv_file:
-                    csv_writer = csv.DictWriter(csv_file, fieldnames=None)
-                    for line in updt_inventory:
-                        csv_writer.writerow(line)
+                save_csv("sales.csv", updt_inventory)
+                
+                # with open("sales.csv", "a") as csv_file:
+                #     csv_writer = csv.DictWriter(csv_file, fieldnames=None)
+                #     for line in updt_inventory:
+                #         csv_writer.writerow(line)
             except ValueError as e:
                 print("Error: ", e)
         elif confirmation == "N":
