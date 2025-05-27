@@ -35,4 +35,6 @@ if __name__ == '__main__':
     saved_sales = load_csv(csv_folder / "sales.csv")
     saved_purchases = load_csv(csv_folder / "purchases.csv")
     
+    save_csv(csv_folder / "test_sales.csv", saved_sales)
+
     main_menu()
