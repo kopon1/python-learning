@@ -18,13 +18,21 @@ def load_csv(filename: str) -> list:
 # Returns True or False depending on if the writing operation succeeded or not.
 # ATTENTION: This should only happen once, when the program is shutdown.
 def save_csv(filename: str, rows_list: list) -> bool:
-    # Writes inventory dictionary back to inventory.csv
-    with open(filename, "a") as csv_file:
-        csv_writer = csv.DictWriter(csv_file, fieldnames=None)
+
+    if not rows_list:  # If the list is empty, nothing to write
+        return False
+        
+    with open(filename, "w", newline='') as csv_file:
+        # Get fieldnames from the keys of the first dictionary in the list
+        fieldnames = rows_list[0].keys()
+        csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        csv_writer.writeheader()  # Write the header row
+
         for line in rows_list:
             csv_writer.writerow(line)
-    
-    
+    return True  # Return True to indicate success
+
+
 # Takes the name of a ball and a quantity and registers a new sale (a new dictionary) on the sales object (the list read from the CSV).
 # This new entry has the ball type, quantity purchased, and timestamp.
 # ATTENTION: You can only sell balls that you currently have in stock!
@@ -83,4 +91,3 @@ def view_inventory():
 def monthly_report():
     now = dt.datetime.now()
     return now.strftime("%m-%Y")
-    
