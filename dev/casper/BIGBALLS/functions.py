@@ -24,10 +24,10 @@ def save_csv(filename: str, rows_list: list) -> bool:
         
     with open(filename, "a", newline="") as csv_file:
         # Get fieldnames from the keys of the first dictionary in the list
-        fieldnames = rows_list[0].keys() 
-        csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
-        csv_writer.writeheader()  # Write the header row
-
+        # fieldnames = ["Ball Type", "Date", "Quantity"]
+        csv_writer = csv.writer(csv_file, delimiter=",")
+        # csv_writer.writeheader()  # Write the header row
+        
         for line in rows_list:
             csv_writer.writerow(line)
     return True  # Return True to indicate success
@@ -53,11 +53,12 @@ def record_sale():
         ball_type = "Golf Balls"
     else:
         print("Invalid input")
+        return
     amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
     if amount == int(amount):
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
-            updt_inventory = [{ball_type:[monthly_report(), amount]}]
+            updt_inventory = [(ball_type,monthly_report(),amount)]
             try:
                 save_csv("sales.csv", updt_inventory)
             except ValueError as e:
@@ -90,4 +91,4 @@ def view_inventory():
 # Print out the monthly report for the given year-month combo. Ordered by day ascending.
 def monthly_report():
     now = dt.datetime.now()
-    return now.strftime("%m-%Y")
+    return now.strftime("%m-%d-%Y")

@@ -29,12 +29,12 @@ def main_menu():
 if __name__ == '__main__':
     # The following lines get the current directory where Python is running this file.It helps the program know where to look since you might run this on different computers.
     # It also helps if you want to change the folder name or location, you only have to change there reference here
-    csv_folder = Path(__file__).parent / "csv_files"
+    csv_folder = Path(__file__).parent/"csv_files"
     
-    saved_inventory = load_csv(csv_folder / "inventory.csv")
-    saved_sales = load_csv(csv_folder / "sales.csv")
-    saved_purchases = load_csv(csv_folder / "purchases.csv")
+    saved_inventory = load_csv(csv_folder/"inventory.csv")
+    saved_sales = load_csv(csv_folder/"sales.csv")
+    saved_purchases = load_csv(csv_folder/"purchases.csv")
     
-    # save_csv(csv_folder / "test_sales.csv", saved_sales)
+    # save_csv(csv_folder/"test_sales.csv", saved_sales)
 
     main_menu()

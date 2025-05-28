@@ -1,16 +1,11 @@
-Ball_Type, Date, Quantity
-Golf Balls, "['05-2025', 35]"
-Basketballs, "['05-2025', 34]"
-Bouncy Balls
-"['05-2025', 23]"
-Yoga Balls
-"['05-2025', 56]"
-Bouncy Balls
-"['05-2025', [34]]"
-Tennis Balls
-"['05-2025', [50]]"
-Tennis Balls
-"['05-2025', [30]]"
-Bouncy Balls
-"['05-2025', 4]"
-"['05-2025', 4]"
+Basketballs,05-2025,34
+Basketballs,05-2025,1
+Bouncy Balls,05-2025,2
+Yoga Balls,05-2025,3
+Tennis Balls,05-2025,4
+Golf Balls,05-2025,5
+Bouncy Balls,05-05/28/25-2025,45
+Bouncy Balls,05-05/28/25-2025,34
+Bouncy Balls,05-28-25,34
+Yoga Balls,05-28-25,56
+Bouncy Balls,05-28-2025,43
