@@ -22,10 +22,10 @@ def save_csv(filename: str, rows_list: list) -> bool:
     if not rows_list:  # If the list is empty, nothing to write
         return False
         
-    with open(filename, "w", newline='') as csv_file:
+    with open(filename, "a", newline="") as csv_file:
         # Get fieldnames from the keys of the first dictionary in the list
-        fieldnames = rows_list[0].keys()
-        csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        fieldnames = rows_list[0].keys() 
+        csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
         csv_writer.writeheader()  # Write the header row
 
         for line in rows_list:
@@ -57,7 +57,7 @@ def record_sale():
     if amount == int(amount):
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
-            updt_inventory = [{ball_type:[monthly_report(),amount]}]
+            updt_inventory = [{ball_type:[monthly_report(), amount]}]
             try:
                 save_csv("sales.csv", updt_inventory)
             except ValueError as e:
