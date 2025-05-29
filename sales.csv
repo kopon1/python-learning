@@ -1,4 +1,4 @@
-ball_type,date,quantity
+Ball Type,Date,Quantity
 Basketballs,05-2025,34
 Basketballs,05-2025,1
 Bouncy Balls,05-2025,2
@@ -10,3 +10,13 @@ Bouncy Balls,05-05/28/25-2025,34
 Bouncy Balls,05-28-25,34
 Yoga Balls,05-28-25,56
 Bouncy Balls,05-28-2025,43
+Ball Type	Date	Quantity
+Ball Type	Date	Quantity
+Ball Type	Date	Quantity
+Bouncy Balls	05-29-2025	5
+Ball Type,Date,Quantity
+Bouncy Balls,05-29-2025,10
+Ball Type,Date,Quantity
+Bouncy Balls,05-29-2025,3
+Basketballs,05-29-2025,3
+Yoga Balls,05-29-2025,5
