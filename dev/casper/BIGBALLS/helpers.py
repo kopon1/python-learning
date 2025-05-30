@@ -1,5 +1,5 @@
 import datetime as dt
-
+import csv
 def input_to_int(question: str) -> int:
     while True:
         try:
@@ -16,8 +16,17 @@ def input_to_int(question: str) -> int:
             print("Can't divide by zero.", e)
         except Exception as e:
             print("Error.", e)
+def reduce_stock():
+    with open("inventory.csv", "r") as csv_file:
+        csv_reader = csv.DictReader(csv_file, fieldnames=None)
+        for line in csv_reader:
+            print(line)
+    
 
-          
+
+
 def date():
     now = dt.datetime.now()
     return now.strftime("%m-%d-%Y")
+
+reduce_stock()
