@@ -18,6 +18,6 @@ def input_to_int(question: str) -> int:
             print("Error.", e)
 
           
-def month_year():
+def date():
     now = dt.datetime.now()
-    return now.strftime("%m/%Y")
+    return now.strftime("%m-%d-%Y")

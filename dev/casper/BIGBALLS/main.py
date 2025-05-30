@@ -1,6 +1,4 @@
-# from functions import input_to_int, record_sale, record_purchase, view_inventory, load_inventory, save_inventory, monthly_report, month_year
-# import functions
-from functions import *
+import functions
 import helpers
 
 def main_menu():
@@ -13,11 +11,11 @@ def main_menu():
                 print("Exiting...")
                 return
             elif choice == 1:
-                record_sale()
+                functions.record_sale()
             elif choice == 2:
-                record_purchase()
+                functions.record_purchase()
             elif choice == 3:
-                view_inventory()
+                functions.view_inventory()
             elif choice == 4:
                 pass
             else:
@@ -29,11 +27,11 @@ def main_menu():
 if __name__ == '__main__':
     # The following lines get the current directory where Python is running this file.It helps the program know where to look since you might run this on different computers.
     # It also helps if you want to change the folder name or location, you only have to change there reference here
-    csv_folder = Path(__file__).parent/"csv_files"
+    csv_folder = functions.Path(__file__).parent/"csv_files"
     
-    saved_inventory = load_csv(csv_folder/"inventory.csv")
-    saved_sales = load_csv(csv_folder/"sales.csv")
-    saved_purchases = load_csv(csv_folder/"purchases.csv")
+    saved_inventory = functions.load_csv(csv_folder/"inventory.csv")
+    saved_sales = functions.load_csv(csv_folder/"sales.csv")
+    saved_purchases = functions.load_csv(csv_folder/"purchases.csv")
     
     # save_csv(csv_folder/"test_sales.csv", saved_sales)
 

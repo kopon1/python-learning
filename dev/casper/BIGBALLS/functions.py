@@ -1,7 +1,6 @@
 import csv
 import helpers
 from pathlib import Path
-import datetime as dt
 
 
 # Reads a CSV file and returns a list of dictionaries. Each dictionary represents a row, having the column headers (fieldnames) as keys and the cell values as values
@@ -57,7 +56,7 @@ def record_sale():
     if amount == int(amount):
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
-            updt_inventory = [{"Ball Type": str(ball_type), "Date": str(monthly_report()), "Quantity": int(amount)}]
+            updt_inventory = [{"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)}]
             try:
                 save_csv("sales.csv", updt_inventory)
             except ValueError as e:
@@ -74,7 +73,7 @@ def record_sale():
 # This new entry has the ball type, quantity purchased, and timestamp.
 # ATTENTION: You can only have 250 units max of any ball because the Big Balls Inc. warehouse is pretty small. A purchase that exceeds the stock capacity should not be allowed to happen and the user should be informed.
 def record_purchase(ball, quantity):
-    dict = {ball:[quantity, monthly_report()]}
+    dict = {ball:[quantity, helpers.date()]}
     pass
 
 
@@ -88,6 +87,5 @@ def view_inventory():
 
 
 # Print out the monthly report for the given year-month combo. Ordered by day ascending.
-def monthly_report():
-    now = dt.datetime.now()
-    return now.strftime("%m-%d-%Y")
+def monthly_report(month, year):
+    pass
