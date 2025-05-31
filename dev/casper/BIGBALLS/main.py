@@ -23,7 +23,6 @@ def main_menu():
         except ValueError as e:
             print("Error: ", e)
 
-
 if __name__ == '__main__':
     # The following lines get the current directory where Python is running this file.It helps the program know where to look since you might run this on different computers.
     # It also helps if you want to change the folder name or location, you only have to change there reference here

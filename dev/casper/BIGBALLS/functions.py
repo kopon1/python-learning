@@ -2,11 +2,10 @@ import csv
 import helpers
 from pathlib import Path
 
-
 # Reads a CSV file and returns a list of dictionaries. Each dictionary represents a row, having the column headers (fieldnames) as keys and the cell values as values
 def load_csv(filename: str) -> list:
     while True:
-        with open(filename, "r") as csv_file:
+        with open(filename, "r+") as csv_file:
             csv_reader = csv.DictReader(csv_file, fieldnames=None) 
             contents_list = []
             for line in csv_reader:
@@ -63,6 +62,7 @@ def record_sale():
                 updt_inventory = [{"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)}]
                 try:
                     save_csv("sales.csv", updt_inventory)
+                    # helpers.reduce_stock("basketball", 5)
                 except ValueError as e:
                     print("Error: ", e)
             elif confirmation == "N":
