@@ -19,19 +19,20 @@ def input_to_int(question: str) -> int:
         except Exception as e:
             print("Error.", e)
             
+def record_sale_invntry(saved_quantity: int, saved_inventory: list) -> bool:
+    try:
+        with open("../inventory.csv", "w", newline="") as csv_file:
+            fieldnames = ["Ball Type", "Date", "Quantity"]
+            csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
+            csv_writer.writeheader()
+            for sale_dict in saved_inventory:
+                sale_dict["Quantity"] = str(saved_quantity)
+            csv_writer.writerows(saved_inventory)
+        return True
+    except Exception as e:
+        print(f"Error: {e}")
+        return False
             
-# def update_csv_quantity(filename, list):
-#     with open(filename, "r", newline="") as csv_file:
-#         fieldnames = ["Ball Type", "Date", "Quantity"]
-#         csv_reader = csv.DictReader(csv_file, fieldnames=fieldnames, delimiter=",")
-#         for rows in list:
-#             if rows == 
-            
-            
-
-
-
-
 def date():
     now = dt.datetime.now()
     return now.strftime("%m-%d-%Y")

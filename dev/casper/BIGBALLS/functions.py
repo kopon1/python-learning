@@ -69,13 +69,9 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                             return False
                         else:
                             if ball_type == sale_dict["Ball Type"]:
-                                with open("../inventory.csv", "w", newline="") as csv_file:
-                                    fieldnames = ["Ball Type", "Date", "Quantity"]
-                                    csv_reader = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
-                                    for rows in saved_inventory:
-                                        sale_dict["Quantity"] = str(saved_quantity)
-                                        csv_reader.writerows(saved_inventory)
-                                        return True
+                                sale_dict["Quantity"] = str(saved_quantity)
+                                helpers.record_sale_invntry(saved_quantity, saved_inventory)
+                                return True
                     except ValueError as e:
                         print("Error:", e)     
             return True
