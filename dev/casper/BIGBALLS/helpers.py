@@ -22,12 +22,14 @@ def input_to_int(question: str) -> int:
 def record_sale_invntry(saved_quantity: int, saved_inventory: list) -> bool:
     try:
         with open("../inventory.csv", "w", newline="") as csv_file:
-            fieldnames = ["Ball Type", "Date", "Quantity"]
+            fieldnames = ["Ball Type", "Quantity"]
             csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
             csv_writer.writeheader()
+            updated_inventory = []
             for sale_dict in saved_inventory:
                 sale_dict["Quantity"] = str(saved_quantity)
-            csv_writer.writerows(saved_inventory)
+                updated_inventory.append(sale_dict)
+            csv_writer.writerows(updated_inventory)
         return True
     except Exception as e:
         print(f"Error: {e}")
