@@ -37,7 +37,7 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
     while True:
         ball_type = helpers.input_to_int("What type of ball would you like to buy?\nEnter 1 for Basketballs\nEnter 2 for Bouncy Balls\nEnter 3 for Yoga Balls\nEnter 4 for Tennis Balls\nEnter 5 for Golf Balls")
         if ball_type is None:
-            return
+            return False
         elif ball_type == 1:
             ball_type = "Basketballs"
         elif ball_type == 2:
@@ -50,10 +50,12 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
             ball_type = "Golf Balls"
         else:
             print("Invalid input")
-            return
+            return False
+        
         amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
         if amount is None: 
-            return
+            return False
+        
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
             # Insert new line in sales list
@@ -63,10 +65,23 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                 if sale_dict["Ball Type"] == ball_type:
                     saved_quantity = int(sale_dict["Quantity"]) - amount 
                     try:
-                        if int(saved_quantity) <= 0 or int(saved_quantity) >= 250:
+# remove the first check in this line.
+                        if saved_quantity <= 0 or saved_quantity >= 250: 
                             print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
+ # this prints the whole inventory. Access only the current balltype and its quantity on the inventory
                             print(saved_inventory)
                             return False
+                        
+                        
+# In if statements you have three things that can happen.
+# IF starts the if statement
+# ELSE IF allows you to chain multiple ifs together
+# ELSE activates when none of the If and Else Ifs are true. The ELSE is not obligatory.
+# In Python, the Else If is called ELIF. You can use ELIF here instead of using an else followed by another if like you do now.
+# if something:
+#   some code
+# elif something else:
+#    some other code
                         else:
                             if ball_type == sale_dict["Ball Type"]:
                                 sale_dict["Quantity"] = str(saved_quantity)
@@ -74,10 +89,10 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                                 return True
                     except ValueError as e:
                         print("Error:", e)     
-            return True
         elif confirmation == "N":
             return True
-        return False
+        
+        return True
         
         
 
