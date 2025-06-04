@@ -67,7 +67,7 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                 if sale_dict["Ball Type"] == ball_type:
                     saved_quantity = int(sale_dict["Quantity"]) - amount 
                     try:
-                        if saved_quantity <= 0 or saved_quantity >= 250: 
+                        if saved_quantity <= 0 or saved_quantity > 250: 
                             print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
                             print(f"{ball_type}: {sale_dict["Quantity"]}")
                             return False
@@ -139,25 +139,28 @@ def view_inventory(saved_inventory: list):
 # Print out the monthly report for the given year-month combo. Ordered by day ascending.
 def monthly_report(saved_sales):
     while True:
-        try:
-            print("***Big Balls Inc. monthly report menu.")
-            year = helpers.input_to_int("Enter what year you'd like a report on.")
-            if year <= 2015 or year > helpers.year_now():
-                print(f"Please enter a year between 2015-{helpers.year_now()}.")
-                return False
-            else:
-                pass
-            month = helpers.input_to_int(f"Enter what month you'd like a report on for the year {year}.")
-            if month < 1 or month > 12:
-                for sale_dict in saved_sales:
-                    if sale_dict["Date"] == year + month:
-                        print(sale_dict)
-                    elif sale_dict["Date"] != year + month:
-                        print(f"{month}-{year} not found in sales report. This is our current sales.")
-                        print(saved_sales)
-            else:
-                print(f"Please enter a valid month between 1-12.")
-        except ValueError as e:
-            print("Error:", e)
-        except Exception as e:
-            print("Error:", e )
+        print("***Big Balls Inc. monthly report menu***")
+        year = helpers.input_to_int("Enter what year would you like a report on.")
+        if year < 2015 or year > helpers.year_now():
+            print(f"Please enter a year between 2015-{helpers.year_now()}.")
+            return False
+        else:
+            pass
+        month = input(f"Enter what month would you like a report on for the year {year}.\nEnter 'q' to exit.\n").lower()
+        if month == 'q':
+            return False  
+        elif month not in helpers.months_str:
+            print(f"Please enter a valid month between 01-12.")
+            return False
+        else:
+                try:
+                    for sale_dict in saved_sales:
+                        if sale_dict["Date"] == f"{year}-{month}":
+                            print(sale_dict)
+                    # if sale_dict["Date"] != f"{year}={month}":
+                    #     print(f"{year}-{month} not found in sales report. This is our current sales.\n{saved_sales}")
+                    #     return False
+                except ValueError as e:
+                    print("Error:", e)
+                except Exception as e:
+                    print("Error:", e )

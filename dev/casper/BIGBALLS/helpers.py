@@ -1,6 +1,8 @@
 import datetime as dt
 import csv
 
+# List of numbered months used in monthly_report. Int wont return 01-09 and error appears
+months_str = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
 
 def input_to_int(question: str) -> int:
     while True:
