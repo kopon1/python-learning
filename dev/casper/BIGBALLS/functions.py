@@ -18,13 +18,13 @@ def load_csv(filename: str) -> list:
 def save_csv(filename: str, rows_list: list) -> bool:
     while True:
         if not rows_list:  # If the list is empty, nothing to write
-            return False   
+            return False
         with open(filename, "w", newline="") as csv_file:
             # Get fieldnames from the keys of the first dictionary in the list
-            fieldnames = ["Ball Type", "Date", "Quantity"]
-            csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
-            # csv_writer.writeheader() # Write the header row
-            # csv_writer.fieldnames = rows_list.keys()
+            # fieldnames = ["Ball Type", "Date", "Quantity"]
+            csv_writer = csv.DictWriter(csv_file, fieldnames=None, delimiter=",")
+            csv_writer.fieldnames = rows_list.keys()
+            csv_writer.writeheader() # Write the header row
             csv_writer.writerows(rows_list)
         return True  # Return True to indicate success
 
@@ -57,6 +57,7 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
             return False
         elif amount <= 0:
             return print("Please enter a valid amount.")
+        
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
             # Insert new line in sales list
@@ -70,18 +71,6 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                             print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
                             print(f"{ball_type}: {sale_dict["Quantity"]}")
                             return False
-
-                        
-                        
-# In if statements you have three things that can happen.
-# IF starts the if statement
-# ELSE IF allows you to chain multiple ifs together
-# ELSE activates when none of the If and Else Ifs are true. The ELSE is not obligatory.
-# In Python, the Else If is called ELIF. You can use ELIF here instead of using an else followed by another if like you do now.
-# if something:
-#   some code
-# elif something else:
-#    some other code
                         elif ball_type == sale_dict["Ball Type"]:
                             sale_dict["Quantity"] = str(saved_quantity)
                             helpers.record_sale_invntry(saved_quantity, saved_inventory, ball_type)
@@ -90,7 +79,6 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                         print("Error:", e)     
         elif confirmation == "N":
             return False 
-        
         
 
 # Takes in the name of a ball and a quantity and registers a new purchase (a new dictionary) on the purchases object (the list read from the CSV).
