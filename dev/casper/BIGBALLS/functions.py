@@ -55,7 +55,8 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
         amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
         if amount is None: 
             return False
-        
+        elif amount <= 0:
+            return print("Please enter a valid amount.")
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
             # Insert new line in sales list
@@ -65,12 +66,11 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                 if sale_dict["Ball Type"] == ball_type:
                     saved_quantity = int(sale_dict["Quantity"]) - amount 
                     try:
-# remove the first check in this line.
                         if saved_quantity <= 0 or saved_quantity >= 250: 
                             print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
- # this prints the whole inventory. Access only the current balltype and its quantity on the inventory
-                            print(saved_inventory)
+                            print(f"{ball_type}: {sale_dict["Quantity"]}")
                             return False
+
                         
                         
 # In if statements you have three things that can happen.
@@ -82,17 +82,14 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
 #   some code
 # elif something else:
 #    some other code
-                        else:
-                            if ball_type == sale_dict["Ball Type"]:
-                                sale_dict["Quantity"] = str(saved_quantity)
-                                helpers.record_sale_invntry(saved_quantity, saved_inventory)
-                                return True
+                        elif ball_type == sale_dict["Ball Type"]:
+                            sale_dict["Quantity"] = str(saved_quantity)
+                            helpers.record_sale_invntry(saved_quantity, saved_inventory, ball_type)
+                            return True
                     except ValueError as e:
                         print("Error:", e)     
         elif confirmation == "N":
-            return True
-        
-        return True
+            return False 
         
         
 
@@ -105,46 +102,74 @@ def record_purchase(saved_purchases: list, saved_inventory: list) -> bool:
         if ball_type is None:
             return
         elif ball_type == 1:
-            ball_type = "basketballs"
+            ball_type = "Basketballs"
         elif ball_type == 2:
-            ball_type = "bouncy ball"
+            ball_type = "Bouncy Balls"
         elif ball_type == 3:
-            ball_type = "yoga ball"
+            ball_type = "Yoga Balls"
         elif ball_type == 4:
-            ball_type = "tennis ball"
+            ball_type = "Tennis Balls"
         elif ball_type == 5:
-            ball_type = "golf ball"
+            ball_type = "Golf Balls"
         else:
             print("Invalid input")
             return
         amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
         if amount is None: 
-            return
+            return False
+        elif amount <= 0:
+            return print("Please enter a valid amount.")
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
             # Insert new line in sales list
-            saved_purchases.append({"ball_type": str(ball_type), "date": str(helpers.date()), "quantity": int(amount)})
+            saved_purchases.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
             # Update inventory values
             for sale_dict in saved_inventory:
-                if sale_dict["ball_type"] == ball_type:
-                    saved_quantity = int(sale_dict["quantity"]) + amount 
-                    sale_dict["quantity"] = str(saved_quantity)
-                    break     
-            return True
+                if sale_dict["Ball Type"] == ball_type:
+                    saved_quantity = int(sale_dict["Quantity"]) + amount 
+                    try:
+                        if saved_quantity >= 250: 
+                            print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
+                            print(f"{ball_type}: {sale_dict["Quantity"]}\nPlease keep our stock below 250.")
+                            return False
+                        elif ball_type == sale_dict["Ball Type"]:
+                            sale_dict["Quantity"] = str(saved_quantity)
+                            # helpers.record_sale_invntry(saved_quantity, saved_inventory, ball_type)
+                            return True
+                    except ValueError as e:
+                        print("Error:", e)     
         elif confirmation == "N":
-            return True
-        return False
-
+            return False 
 
 # Print out current stock of all balls (from the lists).
-def view_inventory():
-    # with open("csv_files/inventory.csv", "r") as csv_file:
-    #     csv_reader = csv.DictReader(csv_file)
-    #     for line in csv_reader:
-    #         print(line)
-    pass
+def view_inventory(saved_inventory: list):
+    print("***Big Balls Inc. Current Inventory***")
+    for line in saved_inventory:
+        print(line)
 
 
 # Print out the monthly report for the given year-month combo. Ordered by day ascending.
-def monthly_report(month, year):
-    pass
+def monthly_report(saved_sales):
+    while True:
+        try:
+            print("***Big Balls Inc. monthly report menu.")
+            year = helpers.input_to_int("Enter what year you'd like a report on.")
+            if year <= 2015 or year > helpers.year_now():
+                print(f"Please enter a year between 2015-{helpers.year_now()}.")
+                return False
+            else:
+                pass
+            month = helpers.input_to_int(f"Enter what month you'd like a report on for the year {year}.")
+            if month < 1 or month > 12:
+                for sale_dict in saved_sales:
+                    if sale_dict["Date"] == year + month:
+                        print(sale_dict)
+                    elif sale_dict["Date"] != year + month:
+                        print(f"{month}-{year} not found in sales report. This is our current sales.")
+                        print(saved_sales)
+            else:
+                print(f"Please enter a valid month between 1-12.")
+        except ValueError as e:
+            print("Error:", e)
+        except Exception as e:
+            print("Error:", e )
