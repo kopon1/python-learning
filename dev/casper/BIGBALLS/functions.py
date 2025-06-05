@@ -21,9 +21,8 @@ def save_csv(filename: str, rows_list: list) -> bool:
             return False
         with open(filename, "w", newline="") as csv_file:
             # Get fieldnames from the keys of the first dictionary in the list
-            # fieldnames = ["Ball Type", "Date", "Quantity"]
             csv_writer = csv.DictWriter(csv_file, fieldnames=None, delimiter=",")
-            csv_writer.fieldnames = rows_list.keys()
+            csv_writer.fieldnames = list(rows_list[0].keys())
             csv_writer.writeheader() # Write the header row
             csv_writer.writerows(rows_list)
         return True  # Return True to indicate success
@@ -60,23 +59,23 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
         
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
+            try:
             # Insert new line in sales list
-            saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
+                # saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
             # Update inventory values
-            for sale_dict in saved_inventory:
-                if sale_dict["Ball Type"] == ball_type:
-                    saved_quantity = int(sale_dict["Quantity"]) - amount 
-                    try:
-                        if saved_quantity <= 0 or saved_quantity > 250: 
+                for sale_dict in saved_inventory:
+                    if sale_dict["Ball Type"] == ball_type:
+                        saved_quantity = int(sale_dict["Quantity"]) - amount 
+                        if saved_quantity < 0: 
                             print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
                             print(f"{ball_type}: {sale_dict["Quantity"]}")
                             return False
-                        elif ball_type == sale_dict["Ball Type"]:
-                            sale_dict["Quantity"] = str(saved_quantity)
-                            helpers.record_sale_invntry(saved_quantity, saved_inventory, ball_type)
-                            return True
-                    except ValueError as e:
-                        print("Error:", e)     
+                    elif ball_type == sale_dict["Ball Type"]:
+                        sale_dict["Quantity"] = str(saved_quantity)
+                        return True    
+                    saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
+            except ValueError as e:
+                print("Error:", e)     
         elif confirmation == "N":
             return False 
         
@@ -122,7 +121,6 @@ def record_purchase(saved_purchases: list, saved_inventory: list) -> bool:
                             return False
                         elif ball_type == sale_dict["Ball Type"]:
                             sale_dict["Quantity"] = str(saved_quantity)
-                            # helpers.record_sale_invntry(saved_quantity, saved_inventory, ball_type)
                             return True
                     except ValueError as e:
                         print("Error:", e)     

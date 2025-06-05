@@ -11,8 +11,10 @@ def main_menu():
                 print("Exiting...")
                 return
             elif choice == 1:
-                if not functions.record_sale(saved_sales, saved_inventory):
-                    print("There was a problem with recording a new sale.")
+                print(saved_inventory)
+                print(saved_purchases)
+                print(saved_sales)
+                functions.record_sale(saved_sales, saved_inventory)
             elif choice == 2:
                 functions.record_purchase(saved_purchases, saved_inventory)
             elif choice == 3:
@@ -36,6 +38,11 @@ if __name__ == '__main__':
     # save_csv(csv_folder/"test_sales.csv", saved_sales)
 
     main_menu()
+    
+    functions.save_csv(csv_folder/"inventory.csv", saved_inventory)
+    functions.save_csv(csv_folder/"sales.csv", saved_sales)
+    functions.save_csv(csv_folder/"purchases.csv", saved_purchases)
+    
     
     print("finished")
 4
