@@ -27,7 +27,6 @@ def save_csv(filename: str, rows_list: list) -> bool:
             csv_writer.writerows(rows_list)
         return True  # Return True to indicate success
 
-
 # Takes the name of a ball and a quantity and registers a new sale (a new dictionary) on the sales object (the list read from the CSV).
 # This new entry has the ball type, quantity purchased, and timestamp.
 # ATTENTION: You can only sell balls that you currently have in stock!
@@ -50,36 +49,33 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
         else:
             print("Invalid input")
             return False
-        
         amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
         if amount is None: 
             return False
         elif amount <= 0:
             return print("Please enter a valid amount.")
-        
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
             try:
-            # Insert new line in sales list
-                # saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
             # Update inventory values
                 for sale_dict in saved_inventory:
+                    saved_quantity = int(sale_dict["Quantity"]) - amount 
                     if sale_dict["Ball Type"] == ball_type:
-                        saved_quantity = int(sale_dict["Quantity"]) - amount 
                         if saved_quantity < 0: 
                             print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
-                            print(f"{ball_type}: {sale_dict["Quantity"]}")
+                            print(f"{ball_type}: {sale_dict['Quantity']}")
                             return False
-                    elif ball_type == sale_dict["Ball Type"]:
-                        sale_dict["Quantity"] = str(saved_quantity)
-                        return True    
-                    saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
+                        sale_dict["Quantity"] = int(saved_quantity)
+                        # Insert new line in sales list                                                          
+                        saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
+                        # if ball_type not in sale_dict["Ball Type"]:
+                        #     print(f"Sorry, we currently don't have {ball_type} on stock.")
+                        #     return False            
             except ValueError as e:
                 print("Error:", e)     
         elif confirmation == "N":
-            return False 
-        
-
+            return False
+              
 # Takes in the name of a ball and a quantity and registers a new purchase (a new dictionary) on the purchases object (the list read from the CSV).
 # This new entry has the ball type, quantity purchased, and timestamp.
 # ATTENTION: You can only have 250 units max of any ball because the Big Balls Inc. warehouse is pretty small. A purchase that exceeds the stock capacity should not be allowed to happen and the user should be informed.
@@ -108,22 +104,23 @@ def record_purchase(saved_purchases: list, saved_inventory: list) -> bool:
             return print("Please enter a valid amount.")
         confirmation = input(f"You have purchased {amount} {ball_type}.\nDo you confirm?\nEnter 'Y' for Yes or 'N' for No.\n").upper()
         if confirmation == "Y":
-            # Insert new line in sales list
-            saved_purchases.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
             # Update inventory values
-            for sale_dict in saved_inventory:
-                if sale_dict["Ball Type"] == ball_type:
-                    saved_quantity = int(sale_dict["Quantity"]) + amount 
-                    try:
-                        if saved_quantity >= 250: 
+            try:
+                for sale_dict in saved_inventory:
+                    saved_quantity = int(sale_dict["Quantity"]) + amount  
+                    if sale_dict["Ball Type"] == ball_type:
+                        if saved_quantity > 250: 
                             print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
-                            print(f"{ball_type}: {sale_dict["Quantity"]}\nPlease keep our stock below 250.")
+                            print(f"{ball_type}: {sale_dict['Quantity']}\nPlease keep our stock below 250 units.")
                             return False
-                        elif ball_type == sale_dict["Ball Type"]:
-                            sale_dict["Quantity"] = str(saved_quantity)
-                            return True
-                    except ValueError as e:
-                        print("Error:", e)     
+                        sale_dict["Quantity"] = int(saved_quantity)
+                        # Insert new line in purchases list
+                        saved_purchases.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
+            except ValueError as e:
+                print("Error:", e)
+            except Exception as e:
+                print("Error:", e)
+                
         elif confirmation == "N":
             return False 
 
@@ -152,12 +149,13 @@ def monthly_report(saved_sales):
             return False
         else:
                 try:
+                    # iterates through saved_sales list of dicts and finds correct date
                     for sale_dict in saved_sales:
-                        if sale_dict["Date"] == f"{year}-{month}":
+                        if sale_dict["Date"] == f"{month}-{year}":
                             print(sale_dict)
-                    # if sale_dict["Date"] != f"{year}={month}":
-                    #     print(f"{year}-{month} not found in sales report. This is our current sales.\n{saved_sales}")
-                    #     return False
+                        elif f"{month}-{year}" not in sale_dict["Date"]:
+                            print(f"{month}-{year} not found in sales report. This is our current sales.\n{saved_sales}")
+                            return False
                 except ValueError as e:
                     print("Error:", e)
                 except Exception as e:

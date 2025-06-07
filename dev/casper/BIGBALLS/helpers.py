@@ -21,29 +21,29 @@ def input_to_int(question: str) -> int:
         except Exception as e:
             print("Error.", e)
             
-def record_sale_invntry(saved_quantity: int, saved_inventory: list, ball_type) -> bool:
-    try:
-        with open("inventory.csv", "w", newline="") as csv_file:
-            fieldnames = ["Ball Type", "Quantity"]
-            csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
-            csv_writer.writeheader()
-            updated_inventory = []
-            for sale_dict in saved_inventory:
-                if sale_dict["Ball Type"] == ball_type:
-                    sale_dict["Quantity"] = str(saved_quantity)
-                    updated_inventory.append(sale_dict)
-                else:
-                    print(f"Unexpected error. Please try again.")
-                    return
-            csv_writer.writerows(updated_inventory)
-        return True
-    except Exception as e:
-        print(f"Error: {e}")
-        return False
+# def record_sale_invntry(saved_quantity: int, saved_inventory: list, ball_type) -> bool:
+#     try:
+#         with open("inventory.csv", "w", newline="") as csv_file:
+#             fieldnames = ["Ball Type", "Quantity"]
+#             csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
+#             csv_writer.writeheader()
+#             updated_inventory = []
+#             for sale_dict in saved_inventory:
+#                 if sale_dict["Ball Type"] == ball_type:
+#                     sale_dict["Quantity"] = str(saved_quantity)
+#                     updated_inventory.append(sale_dict)
+#                 else:
+#                     print(f"Unexpected error. Please try again.")
+#                     return
+#             csv_writer.writerows(updated_inventory)
+#         return True
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return False
         
 def date():
     now = dt.datetime.now()
-    return now.strftime("%m-%d-%Y")
+    return now.strftime("%m-%Y")
 
 # Current year for user validation in monthly_report() instead of manually updating it yearly
 # This func might be used for future user options

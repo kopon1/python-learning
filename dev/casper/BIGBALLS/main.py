@@ -11,9 +11,6 @@ def main_menu():
                 print("Exiting...")
                 return
             elif choice == 1:
-                print(saved_inventory)
-                print(saved_purchases)
-                print(saved_sales)
                 functions.record_sale(saved_sales, saved_inventory)
             elif choice == 2:
                 functions.record_purchase(saved_purchases, saved_inventory)
@@ -35,8 +32,6 @@ if __name__ == '__main__':
     saved_sales = functions.load_csv(csv_folder/"sales.csv")
     saved_purchases = functions.load_csv(csv_folder/"purchases.csv")
     
-    # save_csv(csv_folder/"test_sales.csv", saved_sales)
-
     main_menu()
     
     functions.save_csv(csv_folder/"inventory.csv", saved_inventory)
