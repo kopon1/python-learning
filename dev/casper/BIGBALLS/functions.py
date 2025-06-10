@@ -1,6 +1,7 @@
 import csv
 import helpers
 from pathlib import Path
+from tabulate import tabulate as tab
 
 # Reads a CSV file and returns a list of dictionaries. Each dictionary represents a row, having the column headers (fieldnames) as keys and the cell values as values
 def load_csv(filename: str) -> list:
@@ -15,16 +16,16 @@ def load_csv(filename: str) -> list:
 # Takes a list of dictionaries (in the format described in load_inventory) and writes to a CSV file.
 # Returns True or False depending on if the writing operation succeeded or not.
 # ATTENTION: This should only happen once, when the program is shutdown.
-def save_csv(filename: str, rows_list: list) -> bool:
+def save_csv(filename: str, sale_dict_list: list) -> bool:
     while True:
-        if not rows_list:  # If the list is empty, nothing to write
+        if not sale_dict_list:  # If the list is empty, nothing to write
             return False
         with open(filename, "w", newline="") as csv_file:
             # Get fieldnames from the keys of the first dictionary in the list
             csv_writer = csv.DictWriter(csv_file, fieldnames=None, delimiter=",")
-            csv_writer.fieldnames = list(rows_list[0].keys())
+            csv_writer.fieldnames = list(sale_dict_list[0].keys())
             csv_writer.writeheader() # Write the header row
-            csv_writer.writerows(rows_list)
+            csv_writer.writerows(sale_dict_list)
         return True  # Return True to indicate success
 
 # Takes the name of a ball and a quantity and registers a new sale (a new dictionary) on the sales object (the list read from the CSV).
@@ -47,7 +48,7 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
         elif ball_type == 5:
             ball_type = "Golf Balls"
         else:
-            print("Invalid input")
+            print("Please enter a valid choice between 1-5.")
             return False
         amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
         if amount is None: 
@@ -62,18 +63,18 @@ def record_sale(saved_sales: list, saved_inventory: list) -> bool:
                     saved_quantity = int(sale_dict["Quantity"]) - amount 
                     if sale_dict["Ball Type"] == ball_type:
                         if saved_quantity < 0: 
-                            print(f"Unable to buy {amount} {ball_type}\nThis is our current stock.")
+                            print(f"Unable to buy {amount} {ball_type}.\nThis is our current stock.")
                             print(f"{ball_type}: {sale_dict['Quantity']}")
                             return False
                         sale_dict["Quantity"] = int(saved_quantity)
                         # Insert new line in sales list                                                          
-                        saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})
-                        # if ball_type not in sale_dict["Ball Type"]:
-                        #     print(f"Sorry, we currently don't have {ball_type} on stock.")
-                        #     return False            
+                        saved_sales.append({"Ball Type": str(ball_type), "Date": str(helpers.date()), "Quantity": int(amount)})         
             except ValueError as e:
                 print("Error:", e)     
         elif confirmation == "N":
+            return False
+        else:
+            print("Please enter a valid choice.")
             return False
               
 # Takes in the name of a ball and a quantity and registers a new purchase (a new dictionary) on the purchases object (the list read from the CSV).
@@ -95,7 +96,7 @@ def record_purchase(saved_purchases: list, saved_inventory: list) -> bool:
         elif ball_type == 5:
             ball_type = "Golf Balls"
         else:
-            print("Invalid input")
+            print("Please choose a valid option between 1-5")
             return
         amount = helpers.input_to_int(f"Enter how many {ball_type} would you like to buy.")
         if amount is None: 
@@ -119,16 +120,19 @@ def record_purchase(saved_purchases: list, saved_inventory: list) -> bool:
             except ValueError as e:
                 print("Error:", e)
             except Exception as e:
-                print("Error:", e)
-                
+                print("Error:", e)   
         elif confirmation == "N":
-            return False 
+            return False
+        else:
+            print("Please enter a valid choice.")
+            return False
 
 # Print out current stock of all balls (from the lists).
 def view_inventory(saved_inventory: list):
     print("***Big Balls Inc. Current Inventory***")
     for line in saved_inventory:
-        print(line)
+        print(tab(saved_inventory, headers="keys", tablefmt="grid"))
+        return
 
 
 # Print out the monthly report for the given year-month combo. Ordered by day ascending.
@@ -152,9 +156,10 @@ def monthly_report(saved_sales):
                     # iterates through saved_sales list of dicts and finds correct date
                     for sale_dict in saved_sales:
                         if sale_dict["Date"] == f"{month}-{year}":
-                            print(sale_dict)
+                            print(tab(saved_sales, headers="keys", tablefmt="grid"))
+                            return True
                         elif f"{month}-{year}" not in sale_dict["Date"]:
-                            print(f"{month}-{year} not found in sales report. This is our current sales.\n{saved_sales}")
+                            print(f"{month}-{year} not found in sales report. This is our current sales.\n{tab(saved_sales, headers="keys", tablefmt="grid")}")
                             return False
                 except ValueError as e:
                     print("Error:", e)

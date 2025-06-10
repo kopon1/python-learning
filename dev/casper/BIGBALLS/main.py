@@ -39,4 +39,4 @@ if __name__ == '__main__':
     functions.save_csv(csv_folder/"purchases.csv", saved_purchases)
     
     
-    print("finished")
+    print("W Xarop sensei frfr ong gonna buy him a coffee and some puertorican food frfr ong.")

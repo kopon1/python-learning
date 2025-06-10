@@ -14,33 +14,13 @@ def input_to_int(question: str) -> int:
                 return int(ball_type)
             else:
                 print("Please enter a valid input.")
-        except ValueError as e:
-            print("Invalid input.", e)
+        except ValueError:
+            print("Invalid input. Please enter a valid choice.")
         except ZeroDivisionError as e:
             print("Can't divide by zero.", e)
         except Exception as e:
             print("Error.", e)
-            
-# def record_sale_invntry(saved_quantity: int, saved_inventory: list, ball_type) -> bool:
-#     try:
-#         with open("inventory.csv", "w", newline="") as csv_file:
-#             fieldnames = ["Ball Type", "Quantity"]
-#             csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=",")
-#             csv_writer.writeheader()
-#             updated_inventory = []
-#             for sale_dict in saved_inventory:
-#                 if sale_dict["Ball Type"] == ball_type:
-#                     sale_dict["Quantity"] = str(saved_quantity)
-#                     updated_inventory.append(sale_dict)
-#                 else:
-#                     print(f"Unexpected error. Please try again.")
-#                     return
-#             csv_writer.writerows(updated_inventory)
-#         return True
-#     except Exception as e:
-#         print(f"Error: {e}")
-#         return False
-        
+                  
 def date():
     now = dt.datetime.now()
     return now.strftime("%m-%Y")
